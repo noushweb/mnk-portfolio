@@ -1,8 +1,14 @@
 services:
   portfolio:
     build: .
-    ports:
-      - "3000:3000"
+    restart: unless-stopped
     environment:
       - RESEND_API_KEY=${RESEND_API_KEY}
-    restart: unless-stopped
+    expose:
+      - "3000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portfolio.rule=Host(`enkay.dev`)"
+      - "traefik.http.routers.portfolio.entrypoints=websecure"
+      - "traefik.http.routers.portfolio.tls.certresolver=letsencrypt"
+      - "traefik.http.services.portfolio.loadbalancer.server.port=3000"
