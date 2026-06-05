@@ -1,0 +1,203 @@
+{
+  "slug": "design-tool-calculator",
+  "title": "Valley Design Tool Calculator",
+  "description": "Precision engineering calculations refactored into a sleek, field-ready mobile experience for iOS.",
+  "hero": {
+    "tag": "iOS Mobile \u00b7 Agricultural Tech",
+    "headline": "Precision engineering calculations \u2014 built for the field.",
+    "image": "/casestudy/images/DTC/hero.webp",
+    "meta": {
+      "client": "Valmont Industries \u00b7 Valley",
+      "platform": "iOS Mobile Application",
+      "role": "Product Designer",
+      "duration": "2022 \u2013 2025",
+      "tools": [
+        "Figma",
+        "FigJam",
+        "iOS Design System"
+      ],
+      "nextProjectSlug": "valley-dealer-suite"
+    }
+  },
+  "overview": {
+    "sectionNumber": "01",
+    "sectionLabel": "Overview",
+    "paragraphs": [
+      "Valley Irrigation needed a mobile companion for dealers and field engineers \u2014 a tool that could perform complex irrigation system calculations on the go."
+    ],
+    "stats": [
+      {
+        "number": "3 Years",
+        "label": "Duration"
+      },
+      {
+        "number": "17 Designed",
+        "label": "Pages"
+      },
+      {
+        "number": "7 Calculator Modules",
+        "label": "Modules"
+      }
+    ]
+  },
+  "process": {
+    "sectionNumber": "04",
+    "sectionLabel": "Process",
+    "heading": "Methodical execution.",
+    "description": "",
+    "phases": [
+      {
+        "number": "1",
+        "title": "Discovery",
+        "description": "Stakeholder workshops and field research to understand dealer workflows.",
+        "highlighted": false
+      },
+      {
+        "number": "2",
+        "title": "UX Strategy",
+        "description": "Translating requirements into logical user flows and wireframes.",
+        "highlighted": false
+      },
+      {
+        "number": "3",
+        "title": "High-Fi Design",
+        "description": "Applying the Valley brand system across 17 pages.",
+        "highlighted": false
+      },
+      {
+        "number": "4",
+        "title": "Handoff",
+        "description": "Developer-ready Figma file with components and annotations.",
+        "highlighted": false
+      }
+    ]
+  },
+  "applications": {
+    "sectionNumber": "03",
+    "sectionLabel": "Screens",
+    "heading": "Calculator Modules",
+    "description": "Complex irrigation calculations redesigned for mobile-first, field-ready use \u2014 moving from a desktop-bound spreadsheet experience to an intuitive iOS interface.",
+    "apps": [
+      {
+        "number": "1",
+        "name": "Calculator Interface",
+        "subtitle": "Precision inputs optimized for field use",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/DTC/work_screens.webp",
+        "keyChanges": [
+          {
+            "before": "Desktop-bound calculation with cluttered interface and no progressive disclosure",
+            "after": "Mobile-first calculator with structured input fields and clear hierarchy"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "2",
+        "name": "Summary Output",
+        "subtitle": "Actionable results at a glance",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/DTC/work_screens1.webp",
+        "keyChanges": [
+          {
+            "before": "Raw data dumps with no visual hierarchy",
+            "after": "Structured summary with clear sectioning and brand-aligned deep navy styling"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "3",
+        "name": "Settings & Preferences",
+        "subtitle": "Configuration that respects the Valley brand",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/DTC/work_screens3.webp",
+        "keyChanges": [
+          {
+            "before": "Disconnected brand identity with no design system consistency",
+            "after": "Consistent design tokens \u2014 deep navy (#003B6F) primary, structured components, clear CTAs"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "4",
+        "name": "Module Selection",
+        "subtitle": "Navigate 7 calculator modules effortlessly",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/DTC/work_screens4.webp",
+        "keyChanges": [
+          {
+            "before": "No mobile experience \u2014 all calculations required a workstation",
+            "after": "7 calculator modules available on iOS: System Flow, Pressure, Electrical, Operating Cost, Slab Volume, Summary"
+          }
+        ],
+        "insight": null
+      }
+    ]
+  },
+  "outcome": {
+    "sectionNumber": "05",
+    "sectionLabel": "Outcome",
+    "quote": "The Valley Design Tool Calculator transformed a desktop-bound, friction-heavy workflow into a sleek, field-ready mobile experience.",
+    "metrics": [
+      {
+        "number": "17",
+        "label": "Pages Designed"
+      },
+      {
+        "number": "7",
+        "label": "Calculator Modules"
+      }
+    ],
+    "deliverables": [
+      {
+        "title": "Mobile First",
+        "description": "Complex calculations now run on iOS \u2014 wherever dealers need them."
+      },
+      {
+        "title": "Complete Modules",
+        "description": "7 calculator modules: System Flow, Pressure, Electrical, Operating Cost, Slab Volume, and Summary."
+      },
+      {
+        "title": "Brand Aligned",
+        "description": "Deep navy (#003B6F) as primary color \u2014 consistent with Valley brand standards."
+      },
+      {
+        "title": "Developer Ready",
+        "description": "Structured components, annotations, and design tokens for clean handoff."
+      }
+    ]
+  },
+  "nextProject": {
+    "label": "Next Project",
+    "title": "Valley Dealer Suite",
+    "description": "A comprehensive dealer-facing suite for the agricultural irrigation industry.",
+    "slug": "valley-dealer-suite"
+  },
+  "screens": {
+    "sectionNumber": "03",
+    "sectionLabel": "Screens",
+    "heading": "Calculator Modules",
+    "description": "Complex irrigation calculations redesigned for mobile-first, field-ready use.",
+    "images": [
+      {
+        "src": "/casestudy/images/DTC/work_screens.webp",
+        "alt": "Calculator Interface"
+      },
+      {
+        "src": "/casestudy/images/DTC/work_screens1.webp",
+        "alt": "Summary Output"
+      },
+      {
+        "src": "/casestudy/images/DTC/work_screens3.webp",
+        "alt": "Settings & Preferences"
+      },
+      {
+        "src": "/casestudy/images/DTC/work_screens4.webp",
+        "alt": "Module Selection"
+      }
+    ],
+    "wideImage": "/casestudy/images/DTC/wide.webp"
+  }
+}

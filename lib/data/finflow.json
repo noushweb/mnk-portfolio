@@ -1,0 +1,264 @@
+{
+  "slug": "finflow",
+  "title": "FinFlow",
+  "description": "A savings app designed to change how India's salaried middle class thinks about money.",
+  "hero": {
+    "tag": "Behavioral Finance \u00b7 Mobile App",
+    "headline": "A savings app that changes how India thinks about money.",
+    "image": "/casestudy/images/finflow/hero.webp",
+    "meta": {
+      "client": "FinFlow (Client Project)",
+      "platform": "iOS & Android",
+      "role": "Product Designer",
+      "duration": "2025 \u2013 2026",
+      "tools": [
+        "Figma",
+        "FigmaMake",
+        "Claude AI",
+        "Manus AI",
+        "FigJam"
+      ]
+    },
+    "nextProjectSlug": "hala-app"
+  },
+  "overview": {
+    "sectionNumber": "01",
+    "sectionLabel": "Overview",
+    "paragraphs": [
+      "Millions of working Indians earn a modest salary every month \u2014 and spend most of it within days of payday. Not because they lack discipline, but because they lack a system.",
+      "A client approached me to design a mobile application that doesn't just track money, but changes how people think about money."
+    ],
+    "quote": "The problem isn't income. The problem is behavior. People need a gentle system that builds saving as a habit \u2014 not a burden.",
+    "stats": [
+      {
+        "number": "50+",
+        "label": "Screens Designed"
+      },
+      {
+        "number": "5",
+        "label": "Core Modules"
+      },
+      {
+        "number": "2",
+        "label": "Plan Tiers"
+      },
+      {
+        "number": "100%",
+        "label": "Dev-Ready Figma"
+      }
+    ]
+  },
+  "process": {
+    "sectionNumber": "04",
+    "sectionLabel": "Process",
+    "heading": "Discover. Define. Design. Deliver.",
+    "description": "I used FigmaMake and Claude AI to accelerate UI generation \u2014 allowing me to explore more design directions, iterate faster, and focus energy on the UX decisions that matter most.",
+    "phases": [
+      {
+        "number": "01",
+        "title": "Discover",
+        "description": "AI-assisted research via Manus AI. Behavioral analysis & competitor audit of India's fintech landscape."
+      },
+      {
+        "number": "02",
+        "title": "Define",
+        "description": "Identified core user pain points. Defined product goals, user personas, and feature priorities."
+      },
+      {
+        "number": "03",
+        "title": "Design",
+        "description": "Wireframes in Figma. High-fidelity UI with FigmaMake & Claude AI. 50+ screens across 5 modules.",
+        "highlighted": true
+      },
+      {
+        "number": "04",
+        "title": "Deliver",
+        "description": "Full screen designs, design system, and developer-ready Figma handoff for engineering teams."
+      }
+    ],
+    "image": "/casestudy/images/finflow/wide1.webp"
+  },
+  "applications": {
+    "sectionNumber": "06",
+    "sectionLabel": "UX Decisions",
+    "heading": "Every decision solves a problem.",
+    "description": "No feature was added for its own sake \u2014 each design decision was traced back to a specific user problem.",
+    "apps": [
+      {
+        "number": "01",
+        "name": "Phone + OTP Login",
+        "subtitle": "Users distrust complex sign-up forms",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [
+          {
+            "before": "Users distrust complex sign-up forms",
+            "after": "Reduces friction, India-first UX patterns"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "02",
+        "name": "Currency Selection at Onboarding",
+        "subtitle": "App needs to feel locally relevant from the start",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [
+          {
+            "before": "App needs to feel locally relevant from the start",
+            "after": "Instant personalization, local trust"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "03",
+        "name": "Daily Spending Tracker on Home",
+        "subtitle": "Users are unaware of daily spending patterns",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [
+          {
+            "before": "Users are unaware of daily spending patterns",
+            "after": "Creates spending mindfulness daily"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "04",
+        "name": "Gold Micro-Investment",
+        "subtitle": "Traditional savings options feel abstract or boring",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [
+          {
+            "before": "Traditional savings options feel abstract or boring",
+            "after": "Leverages deep cultural trust in gold"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "05",
+        "name": "Security Score (85/100)",
+        "subtitle": "Users anxious about data and financial security",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [
+          {
+            "before": "Users anxious about data and financial security",
+            "after": "Visual trust signal, reduces anxiety"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "06",
+        "name": "Free vs Premium Plan",
+        "subtitle": "Not all users can afford subscriptions",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [
+          {
+            "before": "Not all users can afford subscriptions",
+            "after": "Lowers barrier to entry, earns trust first"
+          }
+        ],
+        "insight": null
+      }
+    ]
+  },
+  "outcome": {
+    "sectionNumber": "09",
+    "sectionLabel": "Status",
+    "quote": "Design that changes behavior is the highest form of product design \u2014 it goes beyond pixels and into people's lives.",
+    "metrics": [
+      {
+        "number": "50+",
+        "label": "Screens Designed"
+      },
+      {
+        "number": "5",
+        "label": "Core Modules"
+      },
+      {
+        "number": "2",
+        "label": "Plan Tiers"
+      },
+      {
+        "number": "100%",
+        "label": "Dev-Ready Figma"
+      }
+    ],
+    "deliverables": [
+      {
+        "title": "Full UI design \u2014 50+ screens",
+        "description": ""
+      },
+      {
+        "title": "Onboarding & authentication flow",
+        "description": ""
+      },
+      {
+        "title": "Dashboard & expense tracking",
+        "description": ""
+      },
+      {
+        "title": "Gold & silver investment module",
+        "description": ""
+      },
+      {
+        "title": "Peer lending & borrowing tracker",
+        "description": ""
+      },
+      {
+        "title": "Profile, settings & security",
+        "description": ""
+      },
+      {
+        "title": "Free vs Premium plan screens",
+        "description": ""
+      },
+      {
+        "title": "Developer-ready Figma file",
+        "description": ""
+      }
+    ]
+  },
+  "nextProject": {
+    "label": "Next Project",
+    "title": "Hala App",
+    "description": "A bilingual B2B directory and premium space booking platform.",
+    "slug": "hala-app"
+  },
+  "screens": {
+    "sectionNumber": "05",
+    "sectionLabel": "Features",
+    "heading": "Core features at a glance.",
+    "description": "Every screen built with behavioral design principles.",
+    "images": [
+      {
+        "src": "/casestudy/images/finflow/all_work_page.webp",
+        "alt": "FinFlow overview"
+      },
+      {
+        "src": "/casestudy/images/finflow/work_screens1.webp",
+        "alt": "Dashboard"
+      },
+      {
+        "src": "/casestudy/images/finflow/work_screens2.webp",
+        "alt": "Expense Tracking"
+      },
+      {
+        "src": "/casestudy/images/finflow/work_screens3.webp",
+        "alt": "Gold Investment"
+      },
+      {
+        "src": "/casestudy/images/finflow/work_screens4.webp",
+        "alt": "Peer Lending"
+      }
+    ]
+  }
+}

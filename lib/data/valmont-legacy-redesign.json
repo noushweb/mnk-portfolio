@@ -1,0 +1,248 @@
+{
+  "slug": "valmont-legacy-redesign",
+  "title": "Valmont Legacy Redesign",
+  "description": "Five legacy applications modernised into one unified enterprise web experience.",
+  "hero": {
+    "tag": "Enterprise Web \u00b7 Legacy Redesign",
+    "headline": "Five legacy applications. One unified enterprise experience.",
+    "image": "/casestudy/images/redesign/hero.png",
+    "meta": {
+      "client": "Valmont Industries",
+      "platform": "Enterprise Web Applications",
+      "role": "Product Designer \u2014 Embedded",
+      "duration": "Aug 2022 \u2013 Dec 2025",
+      "tools": [
+        "Figma",
+        "FigJam",
+        "Design Systems",
+        "UX Research",
+        "Dev Handoff"
+      ]
+    },
+    "nextProjectSlug": "valley-dealer-suite"
+  },
+  "overview": {
+    "sectionNumber": "01",
+    "sectionLabel": "Overview",
+    "paragraphs": [
+      "Valmont Industries \u2014 a global leader in infrastructure and agricultural irrigation systems \u2014 was running critical internal operations on a suite of aging desktop applications. Built on outdated UI frameworks, they were difficult to use, inconsistent in experience, and costly to maintain.",
+      "As the embedded Product Designer, I was responsible for researching the legacy systems, understanding how field teams and internal staff actually used them, and translating those workflows into a cohesive, modern enterprise web experience."
+    ],
+    "quote": "Five applications. Five different eras of UI. One mission \u2014 bring them all into a single, unified, modern experience that people actually want to use.",
+    "stats": [
+      {
+        "number": "5",
+        "label": "Apps Redesigned"
+      },
+      {
+        "number": "50+",
+        "label": "Screens Designed"
+      },
+      {
+        "number": "3+",
+        "label": "Years Embedded"
+      },
+      {
+        "number": "1",
+        "label": "Unified Design System"
+      }
+    ]
+  },
+  "process": {
+    "sectionNumber": "02",
+    "sectionLabel": "Process",
+    "heading": "Research-first. Workflow-faithful. Delivered across seven phases.",
+    "description": "Before touching a single frame in Figma, I spent considerable time understanding how each legacy application functioned \u2014 not just technically, but behaviourally. The key principle: fidelity to original workflows. Not reinventing processes \u2014 elevating them.",
+    "phases": [
+      {
+        "number": "Phase 01",
+        "title": "Research",
+        "description": "Studied legacy desktop apps, documented existing user flows, identified pain points and missing UX patterns."
+      },
+      {
+        "number": "Phase 02",
+        "title": "Information Architecture",
+        "description": "Restructured navigation, content hierarchy, and data groupings to match real user mental models."
+      },
+      {
+        "number": "Phase 03",
+        "title": "Wireframing",
+        "description": "Low-fidelity wireframes to validate layout decisions and flow logic before committing to visual design."
+      },
+      {
+        "number": "Phase 04",
+        "title": "Visual Design",
+        "description": "High-fidelity UI built on Valmont brand guidelines \u2014 clean, neutral, data-forward with Valley blue."
+      },
+      {
+        "number": "Phase 05",
+        "title": "Design System",
+        "description": "Shared component library and decision system used across all five applications for full consistency.",
+        "highlighted": true
+      },
+      {
+        "number": "Phase 06",
+        "title": "Dev Handoff",
+        "description": "Structured, developer-friendly Figma files with annotations and spacing specs for seamless implementation."
+      },
+      {
+        "number": "Phase 07",
+        "title": "Prototyping",
+        "description": "Interactive prototypes for stakeholder reviews and usability walkthroughs \u2014 testing before building."
+      }
+    ]
+  },
+  "applications": {
+    "sectionNumber": "03",
+    "sectionLabel": "Applications",
+    "heading": "Five applications transformed \u2014 before and after.",
+    "description": "Each application presented unique challenges \u2014 from Windows-era desktop UIs to raw data tables with no visual hierarchy. The approach remained consistent: research deeply, design from the user's perspective, deliver clean Figma files.",
+    "apps": [
+      {
+        "number": "01",
+        "name": "AG Portal",
+        "subtitle": "Central launchpad for Valmont's internal applications",
+        "beforeImage": "/casestudy/images/redesign/ag%20portal%20-before.png",
+        "afterImage": "/casestudy/images/redesign/ag%20portal%20-after.png",
+        "keyChanges": [
+          {
+            "before": "Image-card nav, no hierarchy",
+            "after": "Icon card launcher grid"
+          },
+          {
+            "before": "No search or filtering",
+            "after": "Global search + region tabs"
+          },
+          {
+            "before": "No brand alignment",
+            "after": "Valley brand system applied"
+          },
+          {
+            "before": "No personalisation",
+            "after": "Favourite App feature"
+          }
+        ],
+        "insight": "The portal redesign set the tone for the entire suite \u2014 establishing the Valley brand header, navigation patterns, and component language used across all five applications."
+      },
+      {
+        "number": "02",
+        "name": "SPIN II",
+        "subtitle": "Production planning tool \u2014 scheduling data and planner management",
+        "beforeImage": "/casestudy/images/redesign/spin%20-%20before.png",
+        "afterImage": "/casestudy/images/redesign/spin%20-%20after.png",
+        "keyChanges": [
+          {
+            "before": "Plain instruction text, no nav",
+            "after": "Valley header + tabbed nav"
+          },
+          {
+            "before": "Unstyled table, raw delete links",
+            "after": "Sortable grid + pagination"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "03",
+        "name": "Security App",
+        "subtitle": "User access, roles, and permissions management across Valmont's systems",
+        "beforeImage": "/casestudy/images/redesign/Security%20App-%20beforev.png",
+        "afterImage": "/casestudy/images/redesign/Security%20App-%20After.png",
+        "keyChanges": [
+          {
+            "before": "Heavy green Windows-era UI",
+            "after": "Valley header + clean white"
+          },
+          {
+            "before": "Raw table + arrow transfer widget",
+            "after": "Structured sidebar + card grid"
+          }
+        ],
+        "insight": "One of the most complex redesigns \u2014 managing nested permission structures required careful IA to keep all controls accessible without overwhelming administrators."
+      },
+      {
+        "number": "04",
+        "name": "SOS \u2014 Schedule of Supply",
+        "subtitle": "Weekly supply scheduling across production sites",
+        "beforeImage": "/casestudy/images/redesign/SOS%20-%20Before.png",
+        "afterImage": "/casestudy/images/redesign/v.png",
+        "keyChanges": [
+          {
+            "before": "Dense spreadsheet, yellow headers",
+            "after": "Clean 5-week grid, Valley brand"
+          },
+          {
+            "before": "Tiny controls, no breathing room",
+            "after": "Spacious dropdowns + slot counters"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "05",
+        "name": "OJV \u2014 Order Jacket Viewer",
+        "subtitle": "Order documentation lookup and management",
+        "beforeImage": "/casestudy/images/redesign/ojv%20-%20before.png",
+        "afterImage": "/casestudy/images/redesign/ojv%20-%20after.png",
+        "keyChanges": [
+          {
+            "before": "Old Valmont Irrigation blue blocks",
+            "after": "Unified Valley header + DB selector"
+          },
+          {
+            "before": "Raw table, VIEW/Delete text links",
+            "after": "Sortable columns + pagination"
+          }
+        ],
+        "insight": null
+      }
+    ]
+  },
+  "outcome": {
+    "sectionNumber": "04",
+    "sectionLabel": "Outcome",
+    "quote": "Across three years of embedded design work, five disconnected, aging desktop applications became a cohesive, modern enterprise web experience \u2014 built on a shared design system and ready for development handoff.",
+    "metrics": [
+      {
+        "number": "5",
+        "label": "Apps Unified"
+      },
+      {
+        "number": "50+",
+        "label": "Screens"
+      },
+      {
+        "number": "1",
+        "label": "Design System"
+      },
+      {
+        "number": "100%",
+        "label": "Dev-Ready"
+      }
+    ],
+    "deliverables": [
+      {
+        "title": "Design System",
+        "description": "Shared component library following Valmont brand guidelines \u2014 used across all 5 apps."
+      },
+      {
+        "title": "50+ Screens",
+        "description": "Wireframes, high-fidelity UI, and interactive prototypes for every flow and state."
+      },
+      {
+        "title": "Dev-Ready Files",
+        "description": "Structured, annotated Figma files for seamless engineering handoff."
+      },
+      {
+        "title": "Unified UX",
+        "description": "Consistent navigation, patterns, and visual language across all 5 applications."
+      }
+    ]
+  },
+  "nextProject": {
+    "label": "Next Project",
+    "title": "Valley Dealer Suite",
+    "description": "A centralized mobile hub for the Valley\u00ae dealer ecosystem \u2014 order tracking, notifications, and app launchpad in one iOS application.",
+    "slug": "valley-dealer-suite"
+  }
+}

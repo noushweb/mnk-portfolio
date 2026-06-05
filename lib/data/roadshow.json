@@ -1,0 +1,213 @@
+{
+  "slug": "roadshow",
+  "title": "Road Show",
+  "description": "Road Show is an end-to-end delivery management platform built to streamline the workflow between operations teams, cashiers, and field delivery agents.",
+  "hero": {
+    "tag": "Web + Mobile \u00b7 Delivery Management",
+    "headline": "One platform connecting supervisors, cashiers, and drivers.",
+    "image": "/casestudy/images/roadshow/hero.webp",
+    "meta": {
+      "client": "Road Show",
+      "platform": "Web + iOS / Android",
+      "role": "Product Designer \u2014 End-to-End",
+      "duration": "2021",
+      "tools": [
+        "UX Research",
+        "Interaction Design",
+        "UI Design",
+        "Prototyping",
+        "Design System"
+      ]
+    },
+    "nextProjectSlug": "design-tool-calculator"
+  },
+  "overview": {
+    "sectionNumber": "01",
+    "sectionLabel": "Overview",
+    "paragraphs": [
+      "Road Show is an end-to-end delivery management platform built to streamline the workflow between operations teams, cashiers, and field delivery agents. A powerful web-based dashboard for supervisors, and a companion mobile app for drivers."
+    ],
+    "stats": [
+      {
+        "number": "21",
+        "label": "Backend Screens"
+      },
+      {
+        "number": "9",
+        "label": "Mobile Screens"
+      },
+      {
+        "number": "2",
+        "label": "Platforms \u00b7 Web + Mobile"
+      }
+    ]
+  },
+  "process": {
+    "sectionNumber": "02",
+    "sectionLabel": "The Problem",
+    "heading": "Delivery operations were running on spreadsheets, phone calls, and guesswork.",
+    "description": "Delivery companies were managing complex, high-volume logistics through disconnected tools. Field agents had no structured workflow. Supervisors had no live view of what was happening on the ground.",
+    "phases": [
+      {
+        "number": "01",
+        "title": "No Live Dashboard",
+        "description": "Supervisors had no unified view of pending, in-progress, or completed deliveries across their fleet."
+      },
+      {
+        "number": "02",
+        "title": "Cash Chaos",
+        "description": "Cash collection from customers was unverified, prone to discrepancies, and had no audit trail."
+      },
+      {
+        "number": "03",
+        "title": "No Driver App",
+        "description": "Field agents received tasks verbally or on paper \u2014 no navigation, no confirmation, no structured status flow."
+      }
+    ],
+    "image": "/casestudy/images/roadshow/wide.webp"
+  },
+  "applications": {
+    "sectionNumber": "03",
+    "sectionLabel": "Applications",
+    "heading": "Command-level visibility for operations teams and a guided experience for field delivery agents.",
+    "description": "The backend is a modular web dashboard giving operations managers a live, structured view of the entire delivery pipeline.",
+    "apps": [
+      {
+        "number": "01",
+        "name": "Backend Dashboard",
+        "subtitle": "7 modules \u2014 Main Dashboard, Customer Mgmt, Route Mgmt, Cashier Mgmt, Task Mgmt, Driver Mgmt",
+        "beforeImage": "/casestudy/images/roadshow/wide.webp",
+        "afterImage": "/casestudy/images/roadshow/wide1.webp",
+        "keyChanges": [
+          {
+            "before": "No live view of fleet status",
+            "after": "Main Dashboard with live task status, driver status, delivery heatmap, and calendar overview"
+          },
+          {
+            "before": "6+ clicks for data-heavy customer operations",
+            "after": "Customer Management with view, search, filter, export, and bulk import \u2014 reduced to 2 clicks"
+          },
+          {
+            "before": "Ad-hoc, unstructured route assignment",
+            "after": "Route Management to create and manage routes with structured driver-to-route assignment"
+          }
+        ],
+        "insight": "Six purpose-built dashboard components give supervisors instant situational awareness."
+      },
+      {
+        "number": "02",
+        "name": "Mobile Application",
+        "subtitle": "9 screens \u2014 Login, On-Duty Toggle, Task List, Cash Collection, Customer Detail, OTP Verification, Fail Reason, Navigate, Status Overview",
+        "beforeImage": "/casestudy/images/roadshow/work_screens1.webp",
+        "afterImage": "/casestudy/images/roadshow/work_screens2.webp",
+        "keyChanges": [
+          {
+            "before": "Tasks received verbally or on paper",
+            "after": "Task List surfacing 45 pending tasks immediately"
+          },
+          {
+            "before": "No cash verification process",
+            "after": "OTP-based verification creating an auditable, dispute-proof record"
+          },
+          {
+            "before": "No documentation of delivery failures",
+            "after": "Fail Reason Entry with Submit/Discard and Fail\u2013Success status slider"
+          }
+        ],
+        "insight": "OTP Verification was a critical UX decision \u2014 by requiring both driver and customer to confirm via OTP, the system created an auditable, dispute-proof record."
+      }
+    ]
+  },
+  "outcome": {
+    "sectionNumber": "06",
+    "sectionLabel": "Outcome",
+    "quote": "Designed with intention. Built for the field. Road Show bridges the gap between operational complexity and human simplicity.",
+    "metrics": [
+      {
+        "number": "30",
+        "label": "Total Screens"
+      },
+      {
+        "number": "7",
+        "label": "Dashboard Modules"
+      },
+      {
+        "number": "2\u21921",
+        "label": "Bulk Import Clicks"
+      },
+      {
+        "number": "0",
+        "label": "Cash Disputes"
+      }
+    ],
+    "deliverables": [
+      {
+        "title": "Real-time operational visibility",
+        "description": "Supervisors monitor live task and delivery progress from one dashboard."
+      },
+      {
+        "title": "Structured cash reconciliation",
+        "description": "OTP verification eliminated ambiguity and created an auditable trail."
+      },
+      {
+        "title": "Driver accountability system",
+        "description": "Fail-reason logging gave managers documented insight into delivery failures."
+      },
+      {
+        "title": "30-screen system delivered",
+        "description": "21 backend + 9 mobile screens with a unified design system, developer-ready."
+      }
+    ]
+  },
+  "nextProject": {
+    "label": "Next Project",
+    "title": "Valley Design Tool Calculator",
+    "description": "Precision irrigation system calculations \u2014 built for dealers in the field as a native iOS mobile app.",
+    "slug": "design-tool-calculator"
+  },
+  "problem": {
+    "sectionNumber": "02",
+    "sectionLabel": "The Problem",
+    "heading": "Delivery operations were running on spreadsheets, phone calls, and guesswork.",
+    "description": "Delivery companies were managing complex, high-volume logistics through disconnected tools.",
+    "cards": [
+      {
+        "title": "No Live Dashboard",
+        "description": "Supervisors had no unified view of pending, in-progress, or completed deliveries across their fleet."
+      },
+      {
+        "title": "Cash Chaos",
+        "description": "Cash collection from customers was unverified, prone to discrepancies, and had no audit trail."
+      },
+      {
+        "title": "No Driver App",
+        "description": "Field agents received tasks verbally or on paper \u2014 no navigation, no confirmation, no structured status flow."
+      }
+    ]
+  },
+  "screens": {
+    "sectionNumber": "04",
+    "sectionLabel": "Mobile App",
+    "heading": "Guided experience for field delivery agents.",
+    "description": "Every interaction optimized for one-handed use and outdoor readability.",
+    "images": [
+      {
+        "src": "/casestudy/images/roadshow/work_screens1.webp",
+        "alt": "Login"
+      },
+      {
+        "src": "/casestudy/images/roadshow/work_screens2.webp",
+        "alt": "On Duty"
+      },
+      {
+        "src": "/casestudy/images/roadshow/work_screens3.webp",
+        "alt": "Task List"
+      },
+      {
+        "src": "/casestudy/images/roadshow/work_screens4.webp",
+        "alt": "Cash Collect"
+      }
+    ],
+    "wideImage": "/casestudy/images/roadshow/wide2.webp"
+  }
+}

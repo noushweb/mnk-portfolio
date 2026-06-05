@@ -1,0 +1,296 @@
+{
+  "slug": "design-system",
+  "title": "Valley Design System",
+  "description": "A comprehensive, production-ready design system built on Tailwind CSS conventions.",
+  "hero": {
+    "tag": "DESIGN SYSTEM \u00b7 ENTERPRISE",
+    "headline": "A production-ready design system bridging design and engineering.",
+    "image": "/casestudy/images/design%20system/hero-mokker.png",
+    "meta": {
+      "client": "Valmont Industries",
+      "platform": "Web App \u00b7 Tablet",
+      "role": "Product Designer \u2014 End-to-End",
+      "duration": "15+ Categories",
+      "tools": [
+        "Figma",
+        "Tailwind CSS",
+        "Auto-Layout",
+        "Dev Mode"
+      ]
+    },
+    "nextProjectSlug": "field-layout-tool"
+  },
+  "overview": {
+    "sectionNumber": "01",
+    "sectionLabel": "Overview",
+    "paragraphs": [
+      "A comprehensive, production-ready design system built on Tailwind CSS conventions \u2014 delivering full component coverage, state documentation, and developer-handoff annotations across Valmont's Valley product suite.",
+      "Every token maps directly to a Tailwind class name. Every interactive component documents all six states. Every annotation was built for developer clarity \u2014 not designer satisfaction."
+    ],
+    "stats": [
+      {
+        "number": "15+ Categories",
+        "label": "Components"
+      },
+      {
+        "number": "6 States Each",
+        "label": "State Coverage"
+      },
+      {
+        "number": "Tailwind CSS",
+        "label": "Token Alignment"
+      }
+    ]
+  },
+  "process": {
+    "sectionNumber": "02",
+    "sectionLabel": "Challenge",
+    "heading": "Without a system, every screen is a new decision.",
+    "description": "Valmont's Valley product suite spans enterprise web applications and field tablet tools \u2014 multiple surfaces, multiple teams, multiple engineering stacks. Without a unified design language, the same button appeared in four different sizes across six different screens.",
+    "phases": [
+      {
+        "number": "01",
+        "title": "Inconsistency",
+        "description": "Same components, different sizes and colours across screens built by different teams.",
+        "highlighted": true
+      },
+      {
+        "number": "02",
+        "title": "Slow Handoff",
+        "description": "Developers re-interpreted designs rather than implementing a named spec \u2014 introducing drift on every sprint.",
+        "highlighted": true
+      },
+      {
+        "number": "03",
+        "title": "No States",
+        "description": "Components existed in one state \u2014 the happy path. Hover, disabled, error, and validation were built ad hoc.",
+        "highlighted": true
+      }
+    ]
+  },
+  "applications": {
+    "sectionNumber": "04",
+    "sectionLabel": "COMPONENT LIBRARY",
+    "heading": "Every component. Every state. Every size.",
+    "description": "A comprehensive library of production-ready UI components, each documented with full state coverage, size variants, and annotation for developer handoff.",
+    "apps": [
+      {
+        "number": "01",
+        "name": "Inputs",
+        "subtitle": "Text, textarea, suffix/prefix, labeled. 4 sizes \u00d7 6 states.",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/design%20system/comp-1-inputs.png",
+        "keyChanges": [
+          {
+            "before": "Inconsistent text fields across products",
+            "after": "4 standardized sizes \u00d7 6 interaction states"
+          },
+          {
+            "before": "No icon or label conventions",
+            "after": "Icon left/right/both configurations with consistent spacing"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "02",
+        "name": "Dropdown",
+        "subtitle": "Simple, multiselect with tags/count, grouped options, search with inline add.",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/design%20system/comp-3-dropdown.png",
+        "keyChanges": [
+          {
+            "before": "Basic select only, no multi-select",
+            "after": "Single, multi with tags/count, grouped, and search variants"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "03",
+        "name": "Buttons",
+        "subtitle": "Primary, secondary, ghost, destructive. Icon-only buttons enforce tooltip accessibility rule.",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/design%20system/comp-4-buttons.png",
+        "keyChanges": [
+          {
+            "before": "Four different button sizes across six screens",
+            "after": "4 variants with consistent sizing and state rules"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "04",
+        "name": "Selectors",
+        "subtitle": "Toggle, Checkbox, Radio button and Radio group.",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/design%20system/comp-6-selectors.png",
+        "keyChanges": [
+          {
+            "before": "Ad-hoc toggle and checkbox implementations",
+            "after": "Toggle, Checkbox, Radio button, and Radio group \u2014 all 4 states"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "05",
+        "name": "Tabs",
+        "subtitle": "Desktop (MD/LG) and Mobile variants.",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/design%20system/comp-8-tabs.png",
+        "keyChanges": [
+          {
+            "before": "No responsive tab patterns",
+            "after": "Desktop and Mobile variants documented separately"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "06",
+        "name": "Dialog / Modal",
+        "subtitle": "Scrollable body with fixed header + footer.",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/design%20system/comp-12-modal.png",
+        "keyChanges": [
+          {
+            "before": "Inconsistent modal sizing and overflow",
+            "after": "Scrollable body with fixed header + footer, max height 95vh"
+          }
+        ],
+        "insight": null
+      }
+    ]
+  },
+  "outcome": {
+    "sectionNumber": "06",
+    "sectionLabel": "Outcome",
+    "quote": "Standardized 200+ UI components into a master design system \u2014 increasing designer-to-developer handoff speed by 25% across the Valley product suite.",
+    "metrics": [
+      {
+        "number": "200+",
+        "label": "UI Components"
+      },
+      {
+        "number": "25%",
+        "label": "Faster Handoffs"
+      }
+    ],
+    "deliverables": [
+      {
+        "title": "Single Source of Truth",
+        "description": "One Figma file serves as the definitive component reference for all Valley products."
+      },
+      {
+        "title": "25% Faster Handoffs",
+        "description": "Named components, annotated interactions, and Tailwind-aligned tokens mean developers implement rather than interpret."
+      },
+      {
+        "title": "Full State Coverage",
+        "description": "Every component ships with all 6 interaction states."
+      }
+    ]
+  },
+  "nextProject": {
+    "label": "NEXT PROJECT",
+    "title": "Field Layout Tool",
+    "description": "",
+    "slug": "field-layout-tool"
+  },
+  "problem": {
+    "sectionNumber": "02",
+    "sectionLabel": "Challenge",
+    "heading": "Without a system, every screen is a new decision.",
+    "description": "Valmont's Valley product suite spans enterprise web applications and field tablet tools \u2014 multiple surfaces, multiple teams, multiple engineering stacks.",
+    "cards": [
+      {
+        "title": "Inconsistency",
+        "description": "Same components, different sizes and colours across screens built by different teams."
+      },
+      {
+        "title": "Slow Handoff",
+        "description": "Developers re-interpreted designs rather than implementing a named spec \u2014 introducing drift on every sprint."
+      },
+      {
+        "title": "No States",
+        "description": "Components existed in one state \u2014 the happy path. Hover, disabled, error, and validation were built ad hoc."
+      }
+    ]
+  },
+  "components": {
+    "sectionNumber": "04",
+    "sectionLabel": "Component Library",
+    "heading": "Every component. Every state. Every size.",
+    "description": "A comprehensive library of production-ready UI components.",
+    "items": [
+      {
+        "name": "Inputs",
+        "subtitle": "Text, textarea, suffix/prefix, labeled",
+        "image": "/casestudy/images/design%20system/comp-1-inputs.png",
+        "description": "4 standardized sizes \u00d7 6 interaction states",
+        "tags": [
+          "4 sizes",
+          "6 states",
+          "Icon variants"
+        ]
+      },
+      {
+        "name": "Dropdown",
+        "subtitle": "Single, multi, grouped, search",
+        "image": "/casestudy/images/design%20system/comp-3-dropdown.png",
+        "description": "Multi-select with tags/count, grouped options, search with inline add",
+        "tags": [
+          "Multi",
+          "Search",
+          "Validation"
+        ]
+      },
+      {
+        "name": "Buttons",
+        "subtitle": "Primary, secondary, ghost, destructive",
+        "image": "/casestudy/images/design%20system/comp-4-buttons.png",
+        "description": "4 variants with consistent sizing and state rules",
+        "tags": [
+          "4 variants",
+          "States",
+          "Accessibility"
+        ]
+      },
+      {
+        "name": "Selectors",
+        "subtitle": "Toggle, Checkbox, Radio button",
+        "image": "/casestudy/images/design%20system/comp-6-selectors.png",
+        "description": "Full state coverage including disabled",
+        "tags": [
+          "Toggle",
+          "Checkbox",
+          "Radio"
+        ]
+      },
+      {
+        "name": "Tabs",
+        "subtitle": "Desktop and Mobile variants",
+        "image": "/casestudy/images/design%20system/comp-8-tabs.png",
+        "description": "Active blue underline, composed tab bars up to 7 items",
+        "tags": [
+          "Desktop",
+          "Mobile",
+          "Responsive"
+        ]
+      },
+      {
+        "name": "Dialog / Modal",
+        "subtitle": "Scrollable body, fixed header+footer",
+        "image": "/casestudy/images/design%20system/comp-12-modal.png",
+        "description": "Compact and full-width footer variants, max height 95vh",
+        "tags": [
+          "Modal",
+          "Scrollable",
+          "Responsive"
+        ]
+      }
+    ]
+  }
+}

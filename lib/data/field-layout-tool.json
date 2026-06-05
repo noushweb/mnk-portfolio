@@ -1,0 +1,238 @@
+{
+  "slug": "field-layout-tool",
+  "title": "Field Layout Tool",
+  "description": "A GPS-powered tablet app for agricultural pivot planning \u2014 entirely in the field, not at a desk.",
+  "hero": {
+    "tag": "Agriculture \u00b7 iPad App",
+    "headline": "A GPS-powered tablet app for agricultural pivot planning.",
+    "image": "/casestudy/images/FLT/hero.png",
+    "meta": {
+      "client": "Valley (Valmont Industries)",
+      "platform": "iPad (Tablet)",
+      "role": "Product Designer \u2014 End-to-End",
+      "duration": "2022 \u2013 2025",
+      "tools": [
+        "Figma",
+        "FigJam",
+        "Google Maps API",
+        "GPS Integration"
+      ],
+      "nextProjectSlug": "work-detail"
+    }
+  },
+  "overview": {
+    "sectionNumber": "01",
+    "sectionLabel": "Overview",
+    "paragraphs": [
+      "The Field Layout Tool is a professional-grade iPad application for agricultural dealers who plan and install center-pivot irrigation systems \u2014 entirely in the field, not at a desk.",
+      "Before this app, dealers depended on a legacy desktop tool that required them to be at a computer, offered no GPS precision, and had no elevation awareness. This project replaced that workflow entirely with a connected, GPS-accurate, field-first experience."
+    ],
+    "stats": [
+      {
+        "number": "3 Years",
+        "label": "Duration"
+      },
+      {
+        "number": "iPad App",
+        "label": "Platform"
+      },
+      {
+        "number": "50+ Screens",
+        "label": "Screens Delivered"
+      }
+    ]
+  },
+  "process": {
+    "sectionNumber": "03",
+    "sectionLabel": "Process",
+    "heading": "Research \u2192 Architecture \u2192 Design \u2192 Prototype \u2192 Handoff",
+    "description": "",
+    "phases": [
+      {
+        "number": "1",
+        "title": "Legacy Audit",
+        "description": "Deeply studied the existing desktop application \u2014 documented every screen, every user action, every pain point. Mapped the old workflow step by step.",
+        "highlighted": false
+      },
+      {
+        "number": "2",
+        "title": "User Flow Mapping",
+        "description": "Used FigJam to map the complete new user journey \u2014 from syncing a project, through GPS drawing and navigation, to syncing data back to the desktop.",
+        "highlighted": false
+      },
+      {
+        "number": "3",
+        "title": "Design System",
+        "description": "Built a full design system following Valley brand guidelines \u2014 tablet-first, outdoor-use conditions: large touch targets, high contrast, clear hierarchy.",
+        "highlighted": false
+      },
+      {
+        "number": "4",
+        "title": "Feature Design",
+        "description": "Each core feature designed with its full range of states: empty, loading, active, success, error, and edge cases. Nothing was left undocumented.",
+        "highlighted": false
+      },
+      {
+        "number": "5",
+        "title": "Developer Handoff",
+        "description": "Restructured the final Figma file from the ground up for developer clarity \u2014 named layers, organized components, annotated interactions, 50+ screens.",
+        "highlighted": false
+      }
+    ]
+  },
+  "applications": {
+    "sectionNumber": "05",
+    "sectionLabel": "Design Decisions",
+    "heading": "Key Design Decisions",
+    "description": "Every decision was filtered through one reality: a dealer standing in a large field, in direct sunlight, wearing gloves.",
+    "apps": [
+      {
+        "number": "1",
+        "name": "Oversized Vertex Handles",
+        "subtitle": "44pt minimum touch targets for gloved-hand, outdoor use",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/FLT/one.png",
+        "keyChanges": [
+          {
+            "before": "Standard 24pt touch targets become unusable in gloved-hand, direct-sunlight conditions",
+            "after": "All interactive map elements use a minimum 44pt touch target \u2014 significantly larger than convention"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "2",
+        "name": "Yellow Navigation Line",
+        "subtitle": "Maximum contrast against all terrain types in direct sunlight",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/FLT/2@2x.png",
+        "keyChanges": [
+          {
+            "before": "Valley blue navigation line blends into sky-tone satellite imagery",
+            "after": "Bright yellow (#F2C94C) provides maximum contrast against green fields, brown soil, grey roads \u2014 visible in direct sunlight"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "3",
+        "name": "Color Gradient Proximity Bar",
+        "subtitle": "Glanceable proximity \u2014 no reading required",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/FLT/3@2x.png",
+        "keyChanges": [
+          {
+            "before": "Numeric countdown during navigation requires focused reading",
+            "after": "Full-width Red \u2192 Green gradient bar lets a dealer look up and know instantly how close they are"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "4",
+        "name": "Vertex Offset \u2014 Precision Input",
+        "subtitle": "GPS-accurate repositioning without physical drag error",
+        "beforeImage": "",
+        "afterImage": "/casestudy/images/FLT/4@2x.png",
+        "keyChanges": [
+          {
+            "before": "A 5mm drag error on a tablet screen represents 20\u201350 feet of misalignment in the field",
+            "after": "Dealers input exact angle + distance \u2014 GPS-accurate repositioning without physical drag error"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "5",
+        "name": "Full-Screen Sync Confirmation",
+        "subtitle": "Impossible to miss before closing the app",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [
+          {
+            "before": "Small toast notification \u2014 easy to miss after uploading irreplaceable field data in remote locations",
+            "after": "Large centered green checkmark \u2014 impossible to miss before closing the app, critical for unreliable rural connectivity"
+          }
+        ],
+        "insight": null
+      },
+      {
+        "number": "6",
+        "name": "Dual Progress Indicators",
+        "subtitle": "Both percentage and item count shown simultaneously",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [
+          {
+            "before": "Single percentage progress leaves dealers guessing about total items",
+            "after": "Both percentage (57%) and item count (14/28) shown simultaneously \u2014 quick gestalt plus precise tracking over slow rural connections"
+          }
+        ],
+        "insight": null
+      }
+    ]
+  },
+  "outcome": {
+    "sectionNumber": "06",
+    "sectionLabel": "Outcome",
+    "quote": "The result is an app that looks simple \u2014 because the complexity was absorbed into the design. The dealer experience is clean, direct, and confidence-inspiring.",
+    "metrics": [
+      {
+        "number": "50+",
+        "label": "Screens Delivered"
+      },
+      {
+        "number": "0",
+        "label": "Manual Data Re-entries"
+      }
+    ],
+    "deliverables": [
+      {
+        "title": "GPS Accuracy",
+        "description": "GPS-accurate field surveys replaced imprecise desktop point placement \u2014 eliminating the guesswork that drove costly on-site errors."
+      },
+      {
+        "title": "Elevation Intelligence",
+        "description": "Real-time elevation data introduced for the first time in the dealer workflow \u2014 enabling accurate slope-sensitive pivot engineering from the field."
+      },
+      {
+        "title": "Connected Pipeline",
+        "description": "Sync pipeline connects tablet field data directly to desktop engineering calculations \u2014 zero manual re-entry, zero transcription errors."
+      },
+      {
+        "title": "In Production",
+        "description": "50+ screens delivered, full design system production-ready, and the Navigation tool eliminated the need for separate GPS devices on field visits."
+      }
+    ]
+  },
+  "nextProject": {
+    "label": "Next Project",
+    "title": "Valmont Industries",
+    "description": "End-to-end UX/UI design for enterprise software at a global manufacturing company.",
+    "slug": "work-detail"
+  },
+  "screens": {
+    "sectionNumber": "04",
+    "sectionLabel": "Screens",
+    "heading": "Key screens from the Field Layout Tool.",
+    "description": "Designed for outdoor, gloved-hand use on iPad.",
+    "images": [
+      {
+        "src": "/casestudy/images/FLT/one.png",
+        "alt": "Navigation Screen"
+      },
+      {
+        "src": "/casestudy/images/FLT/2@2x.png",
+        "alt": "Line Tool & Live Draw"
+      },
+      {
+        "src": "/casestudy/images/FLT/3@2x.png",
+        "alt": "Pivot Planning"
+      },
+      {
+        "src": "/casestudy/images/FLT/4@2x.png",
+        "alt": "Boundary Drawing"
+      }
+    ]
+  }
+}

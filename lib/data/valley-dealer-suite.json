@@ -1,0 +1,208 @@
+{
+  "slug": "valley-dealer-suite",
+  "title": "Valley Dealer Suite",
+  "description": "Valley\u00ae is the world's leading irrigation brand. Yet dealer representatives had no mobile tool to manage complex order pipelines.",
+  "hero": {
+    "tag": "iOS Mobile \u00b7 Valley\u00ae",
+    "headline": "A centralized mobile hub for the Valley\u00ae dealer ecosystem.",
+    "image": "/casestudy/images/Dealer/hero.webp",
+    "meta": {
+      "client": "Valmont Industries \u00b7 Valley\u00ae",
+      "platform": "iOS Mobile Application",
+      "role": "Product Designer \u2014 End-to-End",
+      "duration": "2024",
+      "tools": [
+        "Figma",
+        "FigJam",
+        "Figma Prototyping"
+      ]
+    },
+    "nextProjectSlug": "design-system"
+  },
+  "overview": {
+    "sectionNumber": "01",
+    "sectionLabel": "Overview",
+    "paragraphs": [
+      "Valley\u00ae is the world's leading irrigation brand. Yet dealer representatives \u2014 managing complex order pipelines daily \u2014 had no mobile tool to do this simply and efficiently.",
+      "The Valley\u00ae Dealer Suite is a centralized mobile hub \u2014 a single app where dealers can track open orders, receive real-time notifications, access the Valley\u00ae app ecosystem, and get clear status updates on every order in their pipeline, all from their phone."
+    ],
+    "stats": [
+      {
+        "number": "iOS Mobile",
+        "label": "Platform"
+      },
+      {
+        "number": "3 Categories",
+        "label": "Notification Streams"
+      },
+      {
+        "number": "6-Step Walkthrough",
+        "label": "Onboarding Steps"
+      }
+    ]
+  },
+  "process": {
+    "sectionNumber": "03",
+    "sectionLabel": "Process",
+    "heading": "Structured, iterative \u2014 dealer workflows first.",
+    "description": "",
+    "phases": [
+      {
+        "number": "01",
+        "title": "Discover",
+        "description": "Research on dealer workflows, pain points, and existing Valley\u00ae tools."
+      },
+      {
+        "number": "02",
+        "title": "Define",
+        "description": "Mapped user goals, core flows, and information architecture."
+      },
+      {
+        "number": "03",
+        "title": "Design",
+        "description": "Wireframes \u2192 Hi-Fi screens \u2192 Component system, Valley\u00ae brand aligned."
+      },
+      {
+        "number": "04",
+        "title": "Prototype",
+        "description": "Interactive Figma prototypes for stakeholder review and flow validation."
+      },
+      {
+        "number": "05",
+        "title": "Handoff",
+        "description": "Dev-ready Figma file with annotated specs and design tokens. 100% complete."
+      }
+    ],
+    "image": "/casestudy/images/Dealer/wide.webp"
+  },
+  "applications": {
+    "sectionNumber": "05",
+    "sectionLabel": "Features",
+    "heading": "Every screen built for a dealer in the field.",
+    "description": "",
+    "apps": [
+      {
+        "number": "01",
+        "name": "Authentication & Onboarding",
+        "subtitle": "The entry experience was designed to be fast, trusted, and brand-forward.",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [
+          {
+            "before": "",
+            "after": "Brand-first entry with app version info and a single primary CTA."
+          },
+          {
+            "before": "",
+            "after": "Post-login landing communicates the three key app capabilities instantly."
+          }
+        ],
+        "insight": "The dark navy header with the white Valley\u00ae logo was maintained throughout the entire app \u2014 dealers always know exactly which platform they're on."
+      },
+      {
+        "number": "02",
+        "name": "Order Management",
+        "subtitle": "The heart of the app. Dealers need to know \u2014 at a glance \u2014 what orders are open, delayed, unconfirmed.",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [
+          {
+            "before": "",
+            "after": "Card rows with order number, date, status badge, PO number, and total."
+          },
+          {
+            "before": "",
+            "after": "Filter by status, sort by date \u2014 quickly narrowing to orders that need attention."
+          }
+        ],
+        "insight": "The 'Last Checked' timestamp on the orders dashboard was a deliberate trust signal."
+      },
+      {
+        "number": "03",
+        "name": "Notification System & Launchpad",
+        "subtitle": "Notifications split into three color-coded categories.",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [
+          {
+            "before": "",
+            "after": "Three color-coded notification categories preventing alert fatigue."
+          },
+          {
+            "before": "",
+            "after": "Valley\u00ae App Launchpad serves as a single entry point to the entire Valley\u00ae digital ecosystem."
+          }
+        ],
+        "insight": null
+      }
+    ]
+  },
+  "outcome": {
+    "sectionNumber": "06",
+    "sectionLabel": "Outcome",
+    "quote": "Enterprise tools deserve the same UX craft as consumer apps. Every second of confusion costs real trust \u2014 and real revenue.",
+    "metrics": [
+      {
+        "number": "1",
+        "label": "Unified Hub"
+      },
+      {
+        "number": "3",
+        "label": "Notif. Streams"
+      },
+      {
+        "number": "6",
+        "label": "Onboarding Steps"
+      },
+      {
+        "number": "100%",
+        "label": "Dev-Ready"
+      }
+    ],
+    "deliverables": [
+      {
+        "title": "Unified Pipeline",
+        "description": "One app replaced multiple fragmented touchpoints."
+      },
+      {
+        "title": "Zero Missed Alerts",
+        "description": "Three color-coded notification streams ensure order delays reach dealers through the right priority channel."
+      },
+      {
+        "title": "Self-Service Day One",
+        "description": "A 6-step tooltip walkthrough eliminated the need for training sessions."
+      }
+    ]
+  },
+  "nextProject": {
+    "label": "Next Project",
+    "title": "Valley Design System",
+    "description": "",
+    "slug": "design-system"
+  },
+  "screens": {
+    "sectionNumber": "04",
+    "sectionLabel": "Screens",
+    "heading": "Every screen built for a dealer in the field.",
+    "description": "The complete iOS experience from login to order management.",
+    "images": [
+      {
+        "src": "/casestudy/images/Dealer/work_screens1.webp",
+        "alt": "Splash & Login"
+      },
+      {
+        "src": "/casestudy/images/Dealer/work_screens2.webp",
+        "alt": "Open Orders"
+      },
+      {
+        "src": "/casestudy/images/Dealer/work_screens3.webp",
+        "alt": "Notifications"
+      },
+      {
+        "src": "/casestudy/images/Dealer/work_screens4.webp",
+        "alt": "Order Detail"
+      }
+    ],
+    "wideImage": "/casestudy/images/Dealer/all_work_page.webp"
+  }
+}

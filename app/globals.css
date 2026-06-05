@@ -1,0 +1,450 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg: #F8F8F5;
+  --color-bg-alt: #EFEFE9;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #0F0F0E;
+  --color-text-secondary: #5A5A56;
+  --color-text-muted: #9A9A94;
+  --color-accent: #1A1A1A;
+  --color-accent-warm: #E8521A;
+  --color-border: #E2E2DC;
+  --color-tag-bg: #EEEEE8;
+  --font-heading: var(--font-space-grotesk);
+  --font-body: var(--font-space-grotesk);
+}
+
+.dark {
+  --color-bg: #0F0F0E;
+  --color-bg-alt: #181816;
+  --color-surface: #1E1E1C;
+  --color-text-primary: #F0F0EA;
+  --color-text-secondary: #9A9A90;
+  --color-text-muted: #6A6A66;
+  --color-accent: #F0F0EA;
+  --color-accent-warm: #E8521A;
+  --color-border: #2E2E2C;
+  --color-tag-bg: #252523;
+}
+
+body {
+  font-family: var(--font-body), sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .display-font {
+  font-family: var(--font-heading), sans-serif;
+}
+
+.section-number {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  position: relative;
+  background-color: #323232;
+  color: #F8F8F5;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: 6px;
+  background: conic-gradient(
+    var(--color-accent-warm),
+    #323232,
+    var(--color-accent-warm),
+    #323232,
+    var(--color-accent-warm)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: 1.5px;
+  z-index: -1;
+  border-radius: 3px;
+  background: #323232;
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+  animation: rotateBorder 2s linear infinite;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #F8F8F5;
+  transform: translateY(-2px);
+}
+
+.btn-primary:hover::after {
+  background: #323232;
+}
+
+.btn-primary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-primary > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-primary-light {
+  position: relative;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-primary-light::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: 6px;
+  background: conic-gradient(
+    var(--color-accent-warm),
+    white,
+    var(--color-accent-warm),
+    white,
+    var(--color-accent-warm)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.btn-primary-light::after {
+  content: '';
+  position: absolute;
+  inset: 1.5px;
+  z-index: -1;
+  border-radius: 3px;
+  background: white;
+}
+
+.btn-primary-light:hover::before {
+  opacity: 1;
+  animation: rotateBorder 2s linear infinite;
+}
+
+.btn-primary-light:hover {
+  background-color: transparent;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-primary-light:hover::after {
+  background: var(--color-accent-warm);
+}
+
+.btn-primary-light:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-primary-light > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-outline {
+  position: relative;
+  border: none;
+  color: var(--color-accent);
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-outline::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  border-radius: 4px;
+  background: conic-gradient(
+    var(--color-accent),
+    var(--color-accent-warm),
+    var(--color-accent),
+    var(--color-accent-warm),
+    var(--color-accent)
+  );
+  animation: rotateBorder 2s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-outline::after {
+  content: '';
+  position: absolute;
+  inset: 1.5px;
+  z-index: -1;
+  border-radius: 3px;
+  background: var(--color-bg);
+  transition: background 0.25s ease;
+}
+
+.btn-outline:hover::before {
+  opacity: 1;
+}
+
+.btn-outline:hover {
+  color: var(--color-bg);
+}
+
+.btn-outline:hover::after {
+  background: var(--color-accent);
+}
+
+.btn-outline:active {
+  transform: scale(0.98);
+}
+
+.btn-outline > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* rotating border keyframe */
+@keyframes rotateBorder {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* aurora animation */
+@keyframes aurora {
+  from { background-position: 50% 50%, 50% 50%; }
+  to { background-position: 350% 50%, 350% 50%; }
+}
+
+.animate-aurora {
+  animation: aurora 60s linear infinite;
+}
+
+/* ── Grain overlay ── */
+.grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+.dark .grain {
+  opacity: 0.06;
+}
+
+/* ── Navigation ── */
+.nav-link {
+  position: relative;
+  color: var(--color-text-secondary);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-text-primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-text-primary);
+  transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.scrolled-nav {
+  background-color: var(--color-surface) !important;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dark .scrolled-nav {
+  background-color: var(--color-surface) !important;
+  border-bottom-color: var(--color-border);
+}
+
+/* ── Hero entrance ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-hero-text {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.animate-hero-text-delay-1 {
+  animation-delay: 0.15s;
+}
+
+.animate-hero-text-delay-2 {
+  animation-delay: 0.35s;
+}
+
+.animate-hero-text-delay-3 {
+  animation-delay: 0.55s;
+}
+
+.animate-hero-image {
+  animation: fadeInRight 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+/* ── Hero dark mode image treatment ── */
+.dark .animate-hero-image img {
+  filter: brightness(0.85) contrast(1.1);
+}
+
+/* ── Card hover lift ── */
+.card-hover-lift {
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+              box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Image zoom on hover ── */
+.img-zoom-wrapper {
+  overflow: hidden;
+}
+
+.img-zoom-wrapper img {
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.img-zoom-wrapper:hover img {
+  transform: scale(1.04);
+}
+
+/* ── Contact SVG rotation ── */
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.contact-bg-circle {
+  animation: slowRotate 120s linear infinite;
+}
+
+/* ── Tag pill hover ── */
+.tag-pill {
+  transition: all 0.2s ease;
+}
+
+a:hover .tag-pill {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* ── Underline reveal ── */
+.underline-reveal {
+  position: relative;
+}
+
+.underline-reveal::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent-warm);
+  transition: width 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.underline-reveal:hover::after {
+  width: 100%;
+}
+
+/* ── Accessibility ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .contact-bg-circle {
+    animation: none;
+  }
+}

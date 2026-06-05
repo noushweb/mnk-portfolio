@@ -1,0 +1,174 @@
+{
+  "slug": "hala-app",
+  "title": "Hala App",
+  "description": "A smart bilingual directory connecting Qatar's businesses and communities through a mobile-first platform with Arabic and English support.",
+  "hero": {
+    "tag": "iOS & Android · Qatar · Bilingual",
+    "headline": "A smart bilingual directory connecting Qatar's businesses and communities.",
+    "image": "",
+    "meta": {
+      "client": "Hala",
+      "platform": "iOS & Android",
+      "role": "Lead Product Designer",
+      "duration": "",
+      "tools": ["Directory", "Premium Booking", "Subscription Plans", "Map & Location", "Bilingual UI"]
+    },
+    "nextProjectSlug": "roadshow"
+  },
+  "overview": {
+    "sectionNumber": "01",
+    "sectionLabel": "Overview",
+    "paragraphs": [
+      "Hala is a Qatar-based mobile application that bridges businesses and consumers through a smart, bilingual directory and premium advertising platform. Companies list their services and book premium placement spaces. Users discover local businesses by category — in both Arabic and English, seamlessly.",
+      "Qatar's diverse, multilingual population needs a single trusted platform to discover and engage with local businesses — in both Arabic and English. Most existing apps had poor RTL support or inconsistent visual hierarchy when switching languages. Both sides of the market were underserved."
+    ],
+    "stats": [
+      { "number": "20+", "label": "Screens Designed" },
+      { "number": "2", "label": "Languages · EN + AR" },
+      { "number": "3", "label": "Subscription Tiers" }
+    ]
+  },
+  "process": {
+    "sectionNumber": "03",
+    "sectionLabel": "Design Process",
+    "heading": "From dual-user research to bilingual, high-fidelity screens.",
+    "description": "The language toggle was not a feature — it was the first UX decision. The moment a user picks their language, the entire app speaks their world.",
+    "phases": [
+      {
+        "number": "01",
+        "title": "Discovery & Research",
+        "description": "Analyzed competitor apps in the MENA region and identified a critical gap: most apps either had poor RTL support or inconsistent visual hierarchy when switching languages. Mapped out both business-side and consumer-side user journeys to understand divergent needs within a single product."
+      },
+      {
+        "number": "02",
+        "title": "IA & Flows",
+        "description": "Structured two core flows — onboarding & registration (for businesses and users) and the discovery & engagement flow. Defined the plan selection screen (Platinum, Gold, Silver) as the key business conversion touchpoint, requiring focused hierarchy and pricing clarity."
+      },
+      {
+        "number": "03",
+        "title": "Visual Design",
+        "description": "Built the UI around a deep navy blue (#1A1A6E) and golden yellow (#F7B500) palette — evoking Qatar's authoritative, premium market feel. High contrast ensured readability across Arabic and English text at all sizes. Coral-red icons created clear, warm category signifiers."
+      },
+      {
+        "number": "04",
+        "title": "Bilingual UX",
+        "description": "Designed language selection as the very first interaction — giving users immediate agency before entering any flow. Every screen was built with RTL/LTR mirroring in mind. Text alignment, icon placement, and navigation direction all adapt to the selected language, creating a truly native experience in both directions."
+      },
+      {
+        "number": "05",
+        "title": "Prototyping & Handoff",
+        "description": "Delivered high-fidelity prototypes covering all user flows. Developer handoff included annotated Figma files with spacing, component states, and bilingual layout notes — ensuring the engineering team could implement both language directions without guesswork."
+      }
+    ]
+  },
+  "applications": {
+    "sectionNumber": "04",
+    "sectionLabel": "Key Screens",
+    "heading": "Eight screens. Every touchpoint in the user journey, considered.",
+    "description": "",
+    "apps": [
+      {
+        "number": "01",
+        "name": "Splash & Language Selection",
+        "subtitle": "",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Bold navy canvas with the golden Hala logo. A bilingual toggle lets users choose English or Arabic before entering the app — the entire experience localizes from the first tap."
+      },
+      {
+        "number": "02",
+        "name": "Login Screen",
+        "subtitle": "",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Clean, minimal login on dark navy. A golden CTA button draws the eye immediately. Reset password and register links reduce friction for users who land here by mistake."
+      },
+      {
+        "number": "03",
+        "name": "Registration Screen",
+        "subtitle": "",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Business registration collects personal then professional identity in a single scrollable form — mirroring natural onboarding logic for a zero-friction sign-up."
+      },
+      {
+        "number": "04",
+        "name": "Home / Premium Space",
+        "subtitle": "",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Leads with a \"Premium Space\" banner showcasing partner brand logos — immediately communicating value to businesses. A \"Book your Space\" CTA drives the core business action. The category search grid follows for consumer discovery."
+      },
+      {
+        "number": "05",
+        "name": "Category Search",
+        "subtitle": "",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Six bold tiles (Medical, Food, Car, Electronic, Travel, Education) with coral-red circular icons. A search bar above serves both browse and intent-driven users in a single view."
+      },
+      {
+        "number": "06",
+        "name": "Plan Selection",
+        "subtitle": "",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Platinum expanded by default, pricing (QAR 29) and \"Book Now\" CTA prominently placed. A conversion-focused touchpoint designed with clear hierarchy, pricing transparency, and minimal cognitive load."
+      },
+      {
+        "number": "07",
+        "name": "Category Listing",
+        "subtitle": "",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "\"Premium\" tags on select listings create a visual hierarchy rewarding businesses who invest in the platform — and signaling quality to users browsing the directory."
+      },
+      {
+        "number": "08",
+        "name": "Location / Map View",
+        "subtitle": "",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Embedded map with a \"Drive\" CTA — reducing the steps from discovery to navigation to a single tap. Business name displayed clearly above the action button."
+      }
+    ]
+  },
+  "outcome": {
+    "sectionNumber": "06",
+    "sectionLabel": "Outcome",
+    "quote": "A bilingual B2B directory and premium space booking platform designed to connect Qatar's businesses and communities — with clarity, trust, and purpose.",
+    "metrics": [
+      { "number": "20+", "label": "Screens" },
+      { "number": "EN + AR", "label": "LTR + RTL" },
+      { "number": "3", "label": "Plan Tiers" }
+    ],
+    "deliverables": [
+      {
+        "title": "Authority",
+        "description": "Deep navy palette commands trust in a premium market — the right visual language for Qatar's B2B context."
+      },
+      {
+        "title": "Warmth",
+        "description": "Coral-red category icons and golden accents create approachability — turning a directory into an experience people want to use."
+      },
+      {
+        "title": "Clarity",
+        "description": "High contrast typography and consistent components across 20+ screens and two language directions — zero hierarchy confusion in any language."
+      }
+    ]
+  },
+  "nextProject": {
+    "label": "Next Project",
+    "title": "Road Show",
+    "description": "An end-to-end delivery management platform connecting supervisors, cashiers, and field delivery agents across web and mobile.",
+    "slug": "roadshow"
+  }
+}

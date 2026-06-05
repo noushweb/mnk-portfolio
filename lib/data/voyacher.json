@@ -1,0 +1,204 @@
+{
+  "slug": "voyacher",
+  "title": "Voyacher",
+  "description": "Voyacher is a Qatar-based travel platform built around a single idea \u2014 purchase a digital voucher in QAR, then use it to book any service on the platform.",
+  "hero": {
+    "tag": "Travel Voucher Platform \u00b7 Web \u00b7 Qatar",
+    "headline": "Buy a voucher. Book anything.",
+    "image": "/casestudy/images/voyacher/hero.webp",
+    "meta": {
+      "client": "Voyasa Travels",
+      "platform": "Web (Responsive)",
+      "role": "Product Designer \u2014 End-to-End",
+      "duration": "2024",
+      "tools": [
+        "UX Research",
+        "Information Architecture",
+        "Hi-Fi UI",
+        "Design System",
+        "Prototypes"
+      ]
+    },
+    "nextProjectSlug": "finflow"
+  },
+  "overview": {
+    "sectionNumber": "01",
+    "sectionLabel": "Overview",
+    "paragraphs": [
+      "Voyacher is not a typical travel booking platform. At its core, it's a voucher ecosystem \u2014 users buy a QAR-denominated digital voucher and use that balance to book anything the platform offers.",
+      "The services \u2014 flights, Hajj & Umrah packages, healthcare travel to UK hospitals, international tours \u2014 are not separate products. They are redemption destinations. Everything flows through the voucher."
+    ],
+    "quote": "The hardest design problem wasn't building six service flows. It was making the voucher feel like the natural, obvious way to start \u2014 not a workaround.",
+    "stats": [
+      {
+        "number": "6",
+        "label": "Redemption services"
+      },
+      {
+        "number": "6",
+        "label": "Voucher denominations"
+      },
+      {
+        "number": "1",
+        "label": "Unified design system"
+      },
+      {
+        "number": "100%",
+        "label": "Dev-ready Figma"
+      }
+    ],
+    "image": "/casestudy/images/voyacher/all_work_page.webp"
+  },
+  "process": {
+    "sectionNumber": "03",
+    "sectionLabel": "How It Works",
+    "heading": "Three steps. One wallet. Any journey.",
+    "description": "The entire platform logic lives in this loop \u2014 and the design had to make each step feel effortless.",
+    "phases": [
+      {
+        "number": "01",
+        "title": "Buy a Voucher",
+        "description": "Choose a QAR denomination \u2014 from QAR 50 to QAR 5,000. Pay once. For yourself, or as a gift for someone else. The voucher lands instantly in your wallet."
+      },
+      {
+        "number": "02",
+        "title": "Your Wallet",
+        "description": "Check your balance, view active vouchers, and manage transfers \u2014 all in one place. Your voucher balance is visible across every checkout flow on the platform."
+      },
+      {
+        "number": "03",
+        "title": "Redeem Anywhere",
+        "description": "When booking any service \u2014 flights, Umrah packages, healthcare, international tours \u2014 apply your voucher balance at checkout. One tap. Done."
+      }
+    ]
+  },
+  "applications": {
+    "sectionNumber": "05",
+    "sectionLabel": "Redemption",
+    "heading": "Where your voucher takes you.",
+    "description": "The six services on the platform are not separate products \u2014 they are the destinations your voucher unlocks.",
+    "apps": [
+      {
+        "number": "1",
+        "name": "Flights",
+        "subtitle": "Domestic & international",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Voucher applies at checkout"
+      },
+      {
+        "number": "2",
+        "name": "Hajj & Umrah",
+        "subtitle": "Sacred journey packages",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Voucher applies at checkout"
+      },
+      {
+        "number": "3",
+        "name": "Healthcare Travel",
+        "subtitle": "UK hospitals \u00b7 QAR pricing",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Voucher applies at checkout"
+      },
+      {
+        "number": "4",
+        "name": "International Tours",
+        "subtitle": "Europe \u00b7 Middle East \u00b7 beyond",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Voucher applies at checkout"
+      },
+      {
+        "number": "5",
+        "name": "Fly Now, Pay Later",
+        "subtitle": "0% interest \u00b7 Instant approval",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Voucher + BNPL at checkout"
+      },
+      {
+        "number": "6",
+        "name": "Gift & Corporate",
+        "subtitle": "QAR denominations \u00b7 P2P transfer",
+        "beforeImage": "",
+        "afterImage": "",
+        "keyChanges": [],
+        "insight": "Transfer via wallet"
+      }
+    ]
+  },
+  "outcome": {
+    "sectionNumber": "08",
+    "sectionLabel": "Outcome",
+    "quote": "Voyacher turned six separate travel services into one wallet experience. The voucher isn't a payment method \u2014 it's the product.",
+    "metrics": [
+      {
+        "number": "6",
+        "label": "Services unified"
+      },
+      {
+        "number": "6",
+        "label": "Denominations"
+      },
+      {
+        "number": "1",
+        "label": "Design system"
+      },
+      {
+        "number": "100%",
+        "label": "Dev-ready"
+      }
+    ],
+    "deliverables": [
+      {
+        "title": "Voucher Wallet Dashboard",
+        "description": "Unified wallet showing balance, voucher sources, transfer capabilities, and OTP-secured transactions."
+      },
+      {
+        "title": "Six Service Redemption Flows",
+        "description": "Flights, Hajj & Umrah, Healthcare Travel, International Tours, BNPL, and Gift & Corporate."
+      },
+      {
+        "title": "Dev-Ready Design System",
+        "description": "100% Figma design system covering all service flows, the wallet, and the transfer experience."
+      }
+    ]
+  },
+  "nextProject": {
+    "label": "Next Project",
+    "title": "FinFlow",
+    "description": "A behavioral savings app for India's middle class.",
+    "slug": "finflow"
+  },
+  "screens": {
+    "sectionNumber": "05",
+    "sectionLabel": "Redemption",
+    "heading": "Where your voucher takes you.",
+    "description": "The six services on the platform are not separate products \u2014 they are the destinations your voucher unlocks.",
+    "images": [
+      {
+        "src": "/casestudy/images/voyacher/work_screens1.webp",
+        "alt": "Voyacher main screen"
+      },
+      {
+        "src": "/casestudy/images/voyacher/work_screens3.webp",
+        "alt": "Voyacher screen 3"
+      },
+      {
+        "src": "/casestudy/images/voyacher/work_screens4.webp",
+        "alt": "Voyacher screen 4"
+      },
+      {
+        "src": "/casestudy/images/voyacher/work_screens2.webp",
+        "alt": "Voyacher transfer screen"
+      }
+    ]
+  }
+}
