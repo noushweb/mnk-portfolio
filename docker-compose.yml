@@ -2,8 +2,7 @@ services:
   portfolio:
     build: .
     restart: unless-stopped
-    environment:
-      - RESEND_API_KEY=${RESEND_API_KEY}
+    env_file: .env
     expose:
       - "3000"
     labels:
