@@ -581,19 +581,19 @@ function RedemptionSection() {
                         <svc.icon className="w-3.5 h-3.5 text-white" />
                       </div>
                       <div>
-                        <p className="font-bold text-xs">{svc.title}</p>
-                        <p className="text-[10px] text-[var(--color-text-secondary)]">
+                        <p className="font-bold text-sm">{svc.title}</p>
+                        <p className="text-xs text-[var(--color-text-secondary)]">
                           {svc.subtitle}
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="p-4 bg-[var(--color-bg)]">
-                    <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed">
+                    <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
                       {svc.desc}
                     </p>
                     <p
-                      className="text-[10px] font-bold mt-2"
+                      className="text-xs font-bold mt-2"
                       style={{ color: "#5B21B6" }}
                     >
                       {svc.tag}
