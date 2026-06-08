@@ -154,7 +154,7 @@ export default function Header() {
       >
         <div className="flex flex-col p-8 pt-24 space-y-8">
           <a
-            href="#about"
+            href="/#about"
             onClick={closeMenu}
             className="text-lg font-medium text-[var(--color-text-primary)] uppercase tracking-[1.5px] py-2 border-b border-[var(--color-border)]"
           >
@@ -183,13 +183,6 @@ export default function Header() {
           >
             Get CV
           </a>
-          <Link
-            href="/articles"
-            onClick={closeMenu}
-            className="text-lg font-medium text-[var(--color-text-primary)] uppercase tracking-[1.5px] py-2 border-b border-[var(--color-border)]"
-          >
-            Articles
-          </Link>
           <a
             href="#contact"
             onClick={closeMenu}
