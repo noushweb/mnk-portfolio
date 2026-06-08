@@ -275,21 +275,14 @@ function VisualDesign() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
               {principles.map((pr,i)=><ScrollReveal key={pr.title} delay={200+i*80}><div className="bg-[var(--color-surface)] p-5 rounded-xl border border-[var(--color-border)]"><div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style={{background:pr.gold?FF_GOLD_BG:FF_LIGHT}}><pr.icon className="w-[18px] h-[18px]" style={{color:pr.gold?FF_GOLD:FF_BLUE}}/></div><h3 className="font-bold text-sm mb-2">{pr.title}</h3><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{pr.desc}</p></div></ScrollReveal>)}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <ScrollReveal delay={400}>
-                <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
-                  <div className="py-3 px-5 font-bold text-sm bg-[var(--color-surface)] border-b border-[var(--color-border)]">AI-Assisted Design Stack</div>
-                  <div className="p-5 bg-[var(--color-surface)] space-y-3">
-                    {[{t:"Figma",r:"Main design tool"},{t:"FigmaMake",r:"AI-assisted UI generation"},{t:"Claude AI",r:"UX copy & design logic"},{t:"Manus AI",r:"Research & behavioral analysis"},{t:"FigJam",r:"User flows & ideation"}].map(x=><div key={x.t} className="flex justify-between text-sm"><span className="font-medium">{x.t}</span><span className="text-[var(--color-text-secondary)]">{x.r}</span></div>)}
-                  </div>
+            <ScrollReveal delay={400}>
+              <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
+                <div className="py-3 px-5 font-bold text-sm bg-[var(--color-surface)] border-b border-[var(--color-border)]">AI-Assisted Design Stack</div>
+                <div className="p-5 bg-[var(--color-surface)] space-y-3">
+                  {[{t:"Figma",r:"Main design tool"},{t:"FigmaMake",r:"AI-assisted UI generation"},{t:"Claude AI",r:"UX copy & design logic"},{t:"Manus AI",r:"Research & behavioral analysis"},{t:"FigJam",r:"User flows & ideation"}].map(x=><div key={x.t} className="flex justify-between text-sm"><span className="font-medium">{x.t}</span><span className="text-[var(--color-text-secondary)]">{x.r}</span></div>)}
                 </div>
-              </ScrollReveal>
-              <ScrollReveal delay={500}>
-                <div className="bg-[var(--color-surface)] rounded-xl border border-[var(--color-border)] p-8">
-                  <StatsGrid items={[{n:"50+",l:"Screens Designed"},{n:"5",l:"Core Modules"},{n:"2",l:"Plan Tiers"},{n:"100%",l:"Dev-Ready Figma"}]} color={FF_BLUE} />
-                </div>
-              </ScrollReveal>
-            </div>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </div>
