@@ -6,12 +6,6 @@ import {
   Layers,
   CreditCard,
   Gift,
-  ShoppingBag,
-  Wallet,
-  CheckCircle,
-  List,
-  Send,
-  ShieldCheck,
   Plane,
   MoonStar,
   HeartPulse,
@@ -120,22 +114,16 @@ export default function VoyacherPage() {
       {/* 02 / The Problem */}
       <ProblemSection />
 
-      {/* 03 / How It Works */}
-      <HowItWorksSection />
+      {/* 03 / Platform */}
+      <PlatformSection />
 
-      {/* 04 / The Wallet */}
-      <WalletSection />
-
-      {/* 05 / Redemption */}
-      <RedemptionSection />
-
-      {/* 06 / Transfer */}
+      {/* 04 / Transfer */}
       <TransferSection />
 
-      {/* 07 / Decisions */}
+      {/* 05 / Decisions */}
       <DecisionsSection />
 
-      {/* 08 / Outcome */}
+      {/* 06 / Outcome */}
       <OutcomeSectionVoyacher />
 
       {/* Next Project */}
@@ -181,12 +169,6 @@ function OverviewSection() {
                 it&apos;s a voucher ecosystem — users buy a QAR-denominated
                 digital voucher and use that balance to book anything the
                 platform offers.
-              </p>
-              <p className="text-xl md:text-2xl font-light leading-relaxed text-[var(--color-text-secondary)] mb-12 max-w-3xl">
-                The services — flights, Hajj &amp; Umrah packages, healthcare
-                travel to UK hospitals, international tours — are not separate
-                products. They are redemption destinations. Everything flows
-                through the voucher.
               </p>
               <Image
                 src="/casestudy/images/voyacher/all_work_page.webp"
@@ -298,210 +280,20 @@ function ProblemSection() {
   );
 }
 
-function HowItWorksSection() {
+function PlatformSection() {
   const steps = [
-    {
-      icon: ShoppingBag,
-      step: "Step 01",
-      title: "Buy a Voucher",
-      desc: "Choose a QAR denomination — from QAR 50 to QAR 5,000. Pay once. For yourself, or as a gift for someone else. The voucher lands instantly in your wallet.",
-    },
-    {
-      icon: Wallet,
-      step: "Step 02",
-      title: "Your Wallet",
-      desc: "Check your balance, view active vouchers, and manage transfers — all in one place. Your voucher balance is visible across every checkout flow on the platform.",
-    },
-    {
-      icon: CheckCircle,
-      step: "Step 03",
-      title: "Redeem Anywhere",
-      desc: "When booking any service — flights, Umrah packages, Cleveland Clinic healthcare, international tours — apply your voucher balance at checkout. One tap. Done.",
-    },
+    { num: "01", title: "Buy a Voucher", desc: "Choose QAR 50–5,000. For yourself or as a gift. Instant delivery to your wallet." },
+    { num: "02", title: "Your Wallet", desc: "Check balance, view active vouchers, manage transfers — one place." },
+    { num: "03", title: "Redeem Anywhere", desc: "Apply your balance at checkout — flights, Umrah, healthcare, tours. One tap." },
   ];
 
-  return (
-    <div className="px-8 md:px-20 py-32">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 mb-16">
-          <div className="lg:col-span-3">
-            <ScrollReveal>
-              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--color-text-muted)] mb-4">
-                03 / How It Works
-              </p>
-            </ScrollReveal>
-          </div>
-          <div className="lg:col-span-9">
-            <ScrollReveal delay={100}>
-              <h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-4 max-w-2xl">
-                Three steps. One wallet. Any journey.
-              </h2>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-8">
-                The entire platform logic lives in this loop — and the design
-                had to make each step feel effortless.
-              </p>
-            </ScrollReveal>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
-              <div className="hidden md:block absolute top-10 left-[33%] right-[33%] h-px bg-[var(--color-border)] z-0" />
-              {steps.map((s, i) => (
-                <ScrollReveal key={s.title} delay={200 + i * 100}>
-                  <div
-                    className={`relative z-10 text-center px-6 ${i > 0 ? "mt-8 md:mt-0" : ""}`}
-                  >
-                    <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg bg-[#5B21B6]">
-                      <s.icon className="w-7 h-7 text-white" />
-                    </div>
-                    <p
-                      className="text-[10px] uppercase tracking-widest font-bold mb-2"
-                      style={{ color: "#5B21B6" }}
-                    >
-                      {s.step}
-                    </p>
-                    <h3 className="font-bold text-xl mb-3">{s.title}</h3>
-                    <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
-                      {s.desc}
-                    </p>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function WalletSection() {
-  const features = [
-    {
-      icon: Wallet,
-      title: "Balance at a Glance",
-      desc: "Total available balance shown prominently — QAR 3,250 in a bold, high-contrast hero card. No hunting for numbers, no ambiguity.",
-    },
-    {
-      icon: List,
-      title: "Voucher Source Breakdown",
-      desc: "Each active voucher shows its source — purchased, gifted, or transferred — with expiry date and individual amounts.",
-    },
-    {
-      icon: Send,
-      title: "Transfer to Anyone",
-      desc: "Send any amount from your balance to another Voyacher user — in four steps with OTP confirmation.",
-    },
-    {
-      icon: ShieldCheck,
-      title: "OTP-Secured Transfers",
-      desc: "Every transfer is verified with a 6-digit OTP. Users never feel exposed — the security step is visible, quick, and reassuring.",
-    },
-  ];
-
-  return (
-    <div className="py-24 bg-[var(--color-bg-alt)]">
-      <div className="px-8 md:px-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 mb-12">
-            <div className="lg:col-span-3">
-              <ScrollReveal>
-                <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--color-text-muted)] mb-4">
-                  04 / The Wallet
-                </p>
-              </ScrollReveal>
-            </div>
-            <div className="lg:col-span-9">
-              <ScrollReveal delay={100}>
-                <h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-4 max-w-2xl">
-                  A travel wallet that works like a bank — but feels like a
-                  gift.
-                </h2>
-                <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-10">
-                  The wallet dashboard was the centrepiece of the platform. It
-                  needed to communicate trust and clarity — showing exactly how
-                  much is available, where it came from, and how to use or send
-                  it.
-                </p>
-              </ScrollReveal>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {features.map((f, i) => (
-              <ScrollReveal key={f.title} delay={200 + i * 100}>
-                <div className="bg-[var(--color-surface)] rounded-xl p-6 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 bg-[#5B21B6]">
-                    <f.icon className="w-4 h-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-sm mb-1">{f.title}</p>
-                    <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
-                      {f.desc}
-                    </p>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function RedemptionSection() {
   const services = [
-    {
-      icon: Plane,
-      bg: "bg-[#E8F0FE] dark:bg-[#0d1b3e]",
-      iconBg: "#0052A3",
-      title: "Flights",
-      subtitle: "Domestic & international",
-      desc: "Search flights from Doha to anywhere. Apply voucher balance at checkout — or use the full balance to cover the fare entirely.",
-      tag: "Voucher applies at checkout",
-    },
-    {
-      icon: MoonStar,
-      bg: "bg-[#F0FDF4] dark:bg-[#0d2818]",
-      iconBg: "#0A5C55",
-      title: "Hajj & Umrah",
-      subtitle: "Sacred journey packages",
-      desc: "Book Umrah packages, Hajj itineraries, group tours, and VIP services — with a tone that never feels transactional.",
-      tag: "Voucher applies at checkout",
-    },
-    {
-      icon: HeartPulse,
-      bg: "bg-[#FEF2F2] dark:bg-[#2d1515]",
-      iconBg: "#DC2626",
-      title: "Healthcare Travel",
-      subtitle: "UK hospitals · QAR pricing",
-      desc: "Book medical procedures at UK hospitals like Cleveland Clinic London. All QAR-priced with full transparency.",
-      tag: "Voucher applies at checkout",
-    },
-    {
-      icon: Globe2,
-      bg: "bg-[#FFF3E0] dark:bg-[#2d1f0a]",
-      iconBg: "#D4890A",
-      title: "International Tours",
-      subtitle: "Europe · Middle East · beyond",
-      desc: "Tour packages across Europe, the Middle East, and beyond. Destination cards give enough to decide without overwhelm.",
-      tag: "Voucher applies at checkout",
-    },
-    {
-      icon: CreditCard,
-      bg: "bg-[#ECFDF5] dark:bg-[#0d2818]",
-      iconBg: "#059669",
-      title: "Fly Now, Pay Later",
-      subtitle: "0% interest · Instant approval",
-      desc: "Use voucher as deposit, split remaining into installments. BNPL at checkout — never forced.",
-      tag: "Voucher + BNPL at checkout",
-    },
-    {
-      icon: Gift,
-      bg: "bg-[#F5F3FF] dark:bg-[#1a1530]",
-      iconBg: "#5B21B6",
-      title: "Gift & Corporate",
-      subtitle: "QAR denominations · P2P transfer",
-      desc: "Buy a voucher for someone else. Corporate incentives, wedding gifts, family top-ups — all P2P with OTP security.",
-      tag: "Transfer via wallet",
-    },
+    { icon: Plane, iconBg: "#0052A3", title: "Flights", subtitle: "Domestic & international" },
+    { icon: MoonStar, iconBg: "#0A5C55", title: "Hajj & Umrah", subtitle: "Sacred journey packages" },
+    { icon: HeartPulse, iconBg: "#DC2626", title: "Healthcare Travel", subtitle: "UK hospitals · QAR pricing" },
+    { icon: Globe2, iconBg: "#D4890A", title: "International Tours", subtitle: "Europe · Middle East · beyond" },
+    { icon: CreditCard, iconBg: "#059669", title: "Fly Now, Pay Later", subtitle: "0% interest · voucher + BNPL" },
+    { icon: Gift, iconBg: "#5B21B6", title: "Gift & Corporate", subtitle: "P2P transfer · OTP secured" },
   ];
 
   return (
@@ -511,126 +303,81 @@ function RedemptionSection() {
           <div className="lg:col-span-3">
             <ScrollReveal>
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--color-text-muted)] mb-4">
-                05 / Redemption
+                03 / Platform
               </p>
             </ScrollReveal>
           </div>
           <div className="lg:col-span-9">
             <ScrollReveal delay={100}>
               <h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-4 max-w-2xl">
-                Where your voucher takes you.
+                Buy → Wallet → Redeem. The voucher loop.
               </h2>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-8">
-                The six services on the platform are not separate products —
-                they are the destinations your voucher unlocks. Each was
-                designed with its own emotional language, but all share the same
-                checkout moment: your voucher balance, right there, ready to
-                apply.
+              <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-10">
+                The entire platform runs on one loop — buy a voucher, hold it in your wallet,
+                redeem it on any service. Six services. One balance. Every journey.
               </p>
             </ScrollReveal>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-          <ScrollReveal direction="left">
-            <div className="flex flex-col gap-6">
-              <Image
-                src="/casestudy/images/voyacher/work_screens1.webp"
-                alt="Voyacher Wallet Dashboard"
-                width={800}
-                height={500}
-                className="w-full rounded-xl object-cover"
-                style={{ aspectRatio: "16/10" }}
-              />
-              <div className="grid grid-cols-2 gap-4">
-                <Image
-                  src="/casestudy/images/voyacher/work_screens3.webp"
-                  alt="Voyacher Service Screenshot 1"
-                  width={400}
-                  height={300}
-                  className="w-full rounded-xl object-cover"
-                  style={{ aspectRatio: "4/3" }}
-                />
-                <Image
-                  src="/casestudy/images/voyacher/work_screens4.webp"
-                  alt="Voyacher Service Screenshot 2"
-                  width={400}
-                  height={300}
-                  className="w-full rounded-xl object-cover"
-                  style={{ aspectRatio: "4/3" }}
-                />
+        {/* Steps */}
+        <div className="grid grid-cols-3 gap-4 mb-16">
+          {steps.map((s, i) => (
+            <ScrollReveal key={s.num} delay={200 + i * 100}>
+              <div className="bg-[var(--color-surface)] rounded-xl p-6 text-center border border-[var(--color-border)]">
+                <p className="text-3xl font-black tracking-tighter mb-2" style={{ color: "#5B21B6" }}>
+                  {s.num}
+                </p>
+                <p className="font-bold text-sm mb-2">{s.title}</p>
+                <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+                  {s.desc}
+                </p>
               </div>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal direction="right" delay={100}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {services.map((svc) => (
-                <div
-                  key={svc.title}
-                  className="rounded-xl overflow-hidden border border-[var(--color-border)]"
-                >
-                  <div
-                    className={`p-4 border-b border-[var(--color-border)] ${svc.bg}`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <div
-                        className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-                        style={{ background: svc.iconBg }}
-                      >
-                        <svc.icon className="w-3.5 h-3.5 text-white" />
-                      </div>
-                      <div>
-                        <p className="font-bold text-sm">{svc.title}</p>
-                        <p className="text-xs text-[var(--color-text-secondary)]">
-                          {svc.subtitle}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-4 bg-[var(--color-bg)]">
-                    <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
-                      {svc.desc}
-                    </p>
-                    <p
-                      className="text-xs font-bold mt-2"
-                      style={{ color: "#5B21B6" }}
-                    >
-                      {svc.tag}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </ScrollReveal>
+            </ScrollReveal>
+          ))}
         </div>
+
+        {/* Services grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+          {services.map((svc) => (
+            <ScrollReveal key={svc.title} delay={300}>
+              <div className="bg-[var(--color-surface)] rounded-xl p-4 flex items-center gap-3 border border-[var(--color-border)]">
+                <div
+                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: svc.iconBg }}
+                >
+                  <svc.icon className="w-4 h-4 text-white" />
+                </div>
+                <div>
+                  <p className="font-bold text-sm">{svc.title}</p>
+                  <p className="text-xs text-[var(--color-text-muted)]">
+                    {svc.subtitle}
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+
+        <ScrollReveal delay={400}>
+          <Image
+            src="/casestudy/images/voyacher/work_screens1.webp"
+            alt="Voyacher Platform Screenshots"
+            width={1200}
+            height={600}
+            className="w-full rounded-xl object-cover"
+            style={{ aspectRatio: "2/1" }}
+          />
+        </ScrollReveal>
       </div>
     </div>
   );
 }
-
 function TransferSection() {
   const steps = [
-    {
-      num: "1",
-      title: "Your Balance",
-      desc: "The starting point — total balance shown with a clear \"Transfer\" action. No hidden navigation.",
-    },
-    {
-      num: "2",
-      title: "Enter Amount",
-      desc: "Choose how much to transfer. Remaining balance updates live so users never accidentally over-send.",
-    },
-    {
-      num: "3",
-      title: "Recipient Details",
-      desc: "Enter the recipient's phone number or Voyacher username. A preview of their display name confirms the right person before proceeding.",
-    },
-    {
-      num: "4",
-      title: "Review & OTP Confirm",
-      desc: "Full summary — amount, recipient, remaining balance — before the OTP screen. 6-digit code sent to the sender's mobile.",
-    },
+    { num: "1", title: "Enter Amount", desc: "Choose how much to send. Remaining balance updates live — never over-send." },
+    { num: "2", title: "Recipient", desc: "Phone number or username. Display name preview confirms the right person." },
+    { num: "3", title: "OTP Confirm", desc: "6-digit code sent to your mobile. Full summary before final confirmation." },
   ];
 
   return (
@@ -641,20 +388,19 @@ function TransferSection() {
             <div className="lg:col-span-3">
               <ScrollReveal>
                 <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--color-text-muted)] mb-4">
-                  06 / Transfer
+                  04 / Transfer
                 </p>
               </ScrollReveal>
             </div>
             <div className="lg:col-span-9">
               <ScrollReveal delay={100}>
                 <h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-4 max-w-2xl">
-                  Send your balance. Four steps. Full confidence.
+                  Send your balance. Three steps. OTP secured.
                 </h2>
                 <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-10">
-                  Peer-to-peer voucher transfer was the most trust-sensitive
-                  flow on the platform. Money is moving between people. Every
-                  step had to be explicit, reversible up to the final
-                  confirmation, and secured with OTP verification.
+                  Peer-to-peer voucher transfer with live balance tracking
+                  and OTP verification — every step explicit, reversible
+                  until confirmed.
                 </p>
               </ScrollReveal>
             </div>
@@ -666,7 +412,7 @@ function TransferSection() {
                 {steps.map((s) => (
                   <div
                     key={s.num}
-                    className="bg-[var(--color-surface)] rounded-xl p-5 flex items-start gap-4"
+                    className="bg-[var(--color-surface)] rounded-xl p-5 flex items-start gap-4 border border-[var(--color-border)]"
                   >
                     <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm bg-[#5B21B6]">
                       {s.num}
@@ -679,21 +425,6 @@ function TransferSection() {
                     </div>
                   </div>
                 ))}
-                <div className="bg-[#5B21B6] rounded-xl p-5 flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 bg-white/20">
-                    <Check className="w-3.5 h-3.5 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-sm text-white mb-1">
-                      Transfer Initiated
-                    </p>
-                    <p className="text-sm leading-relaxed text-white/75">
-                      Success screen with full transfer summary and next steps —
-                      confirmation of amount, recipient, and updated balance. No
-                      ambiguity about what just happened.
-                    </p>
-                  </div>
-                </div>
               </div>
             </ScrollReveal>
 
@@ -749,7 +480,7 @@ function DecisionsSection() {
           <div className="lg:col-span-3">
             <ScrollReveal>
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--color-text-muted)] mb-4">
-                07 / Decisions
+                05 / Decisions
               </p>
             </ScrollReveal>
           </div>
@@ -816,7 +547,7 @@ function OutcomeSectionVoyacher() {
             <div className="lg:col-span-3">
               <ScrollReveal>
                 <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--color-text-muted)] mb-4">
-                  08 / Outcome
+                  06 / Outcome
                 </p>
               </ScrollReveal>
             </div>

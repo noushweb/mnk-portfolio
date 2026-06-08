@@ -28,12 +28,10 @@ export default function FinflowPage() {
       </div>
       <Overview />
       <Problem />
-      <Research />
-      <Process />
+      <DesignProcess />
       <Features />
       <UXDecisions />
       <VisualDesign />
-      <Reflection />
       <Status />
       <NextProjectCTA />
     </main>
@@ -165,70 +163,22 @@ function Problem() {
   );
 }
 
-function Research() {
-  const insights = [
-    {n:1,title:"Payday Impulse Spending",desc:"Users make large non-essential purchases immediately after salary — clothing, dining, electronics — leaving saving as a low priority."},
-    {n:2,title:"Small Salary Reality",desc:"Average target users earn ₹15,000–₹40,000/month. Any solution must work within tight budgets without making users feel inadequate."},
-    {n:3,title:"Peer Lending is Cultural",desc:"Informal money lending among friends and family is deeply ingrained in Indian culture — a feature to track and manage this was essential."},
-    {n:4,title:"Gold as a Savings Vehicle",desc:"Many Indian households trust gold as a savings form. Integrating gold micro-investment aligned with cultural saving behavior."},
-    {n:5,title:"Language of Simplicity",desc:"Users respond to plain, friendly language — not financial jargon. The tone had to feel like a helpful friend, not a bank."},
-  ];
-  const gaps = ["Too investment-focused, not beginner-friendly","No behavioral nudges or saving education","Complex onboarding with too many steps","No peer lending or informal money tracking","Lacks emotional design — cold and corporate"];
-  return (
-    <div className="px-8 md:px-20 py-32">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 mb-16">
-          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="03" label="Research"/></ScrollReveal></div>
-          <div className="lg:col-span-9">
-            <ScrollReveal delay={100}>
-              <h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-4 max-w-2xl">AI-assisted research. Human-centered insights.</h2>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-10">Using Manus AI to conduct structured research — analyzing behavioral patterns, financial literacy gaps, and existing app shortcomings for India&apos;s salaried middle class.</p>
-            </ScrollReveal>
-            <div className="space-y-3 mb-12">
-              {insights.map((ins,i)=><ScrollReveal key={i} delay={200+i*80}><div className="bg-[var(--color-surface)] rounded-xl p-5 flex items-start gap-4"><div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-sm" style={{background:FF_BLUE}}>{ins.n}</div><div><p className="font-bold text-sm mb-1">{ins.title}</p><p className="text-sm text-[var(--color-text-secondary)]">{ins.desc}</p></div></div></ScrollReveal>)}
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <ScrollReveal delay={300}>
-                <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
-                  <div className="py-3 px-5 text-white font-bold text-sm" style={{background:FF_BLUE}}>User Persona</div>
-                  <div className="p-5 bg-[var(--color-surface)] space-y-3">
-                    {[{l:"Age",v:"24–40 years"},{l:"Occupation",v:"Salaried employee"},{l:"Monthly Income",v:"₹15,000 – ₹40,000"},{l:"Location",v:"Tier 1 & 2 cities"},{l:"Goal",v:"Save, reduce stress"}].map(r=><div key={r.l} className="flex justify-between text-sm"><span className="text-[var(--color-text-muted)]">{r.l}</span><span className="font-medium">{r.v}</span></div>)}
-                    <div className="flex justify-between text-sm pt-2 border-t border-[var(--color-border)]"><span className="text-[#DC2626] font-bold">Pain Point</span><span className="text-[#DC2626] font-medium">Spends impulsively</span></div>
-                  </div>
-                </div>
-              </ScrollReveal>
-              <ScrollReveal delay={400}>
-                <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
-                  <div className="py-3 px-5 font-bold text-sm bg-[var(--color-surface)] border-b border-[var(--color-border)]">Competitor Gaps</div>
-                  <div className="p-5 bg-[var(--color-surface)] space-y-3">
-                    {gaps.map((g,i)=><div key={i} className="flex items-start gap-2 text-sm"><XCircle className="w-4 h-4 text-[#DC2626] flex-shrink-0 mt-0.5"/><span className="text-[var(--color-text-secondary)]">{g}</span></div>)}
-                  </div>
-                </div>
-              </ScrollReveal>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Process() {
+function DesignProcess() {
   const phases = [
-    {num:"Phase 01",title:"Discover",desc:"AI-assisted research via Manus AI. Behavioral analysis & competitor audit of India's fintech landscape."},
-    {num:"Phase 02",title:"Define",desc:"Identified core user pain points. Defined product goals, user personas, and feature priorities."},
+    {num:"Phase 01",title:"Research",desc:"AI-assisted behavioral analysis via Manus AI. 5 key user insights: payday impulse spending, small-salary reality, cultural peer lending, gold trust, and simplicity-first language."},
+    {num:"Phase 02",title:"Define",desc:"Identified core pain points. Defined product goals, user personas (24–40, salaried, ₹15K–₹40K), and feature priorities."},
     {num:"Phase 03",title:"Design",desc:"Wireframes in Figma. High-fidelity UI with FigmaMake & Claude AI. 50+ screens across 5 modules.",hl:true},
     {num:"Phase 04",title:"Deliver",desc:"Full screen designs, design system, and developer-ready Figma handoff for engineering teams."},
   ];
   return (
-    <div className="py-24 bg-[var(--color-bg-alt)]">
-      <div className="px-8 md:px-20"><div className="max-w-7xl mx-auto">
+    <div className="px-8 md:px-20 py-32">
+      <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 mb-16">
-          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="04" label="Process"/></ScrollReveal></div>
+          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="03" label="Design Process"/></ScrollReveal></div>
           <div className="lg:col-span-9">
             <ScrollReveal delay={100}>
               <h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-4 max-w-2xl">Discover. Define. Design. Deliver.</h2>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-8">I used FigmaMake and Claude AI to accelerate UI generation — allowing me to explore more design directions, iterate faster, and focus energy on the UX decisions that matter most.</p>
+              <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-8">AI-accelerated research and design — Manus AI for behavioral analysis, FigmaMake + Claude AI for UI generation. Faster iteration, more time on UX decisions.</p>
               <Image src="/casestudy/images/finflow/wide1.webp" alt="Design Process Overview" width={1200} height={514} className="w-full rounded-xl object-cover mb-10" style={{aspectRatio:"21/9"}} />
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -236,11 +186,10 @@ function Process() {
             </div>
           </div>
         </div>
-      </div></div>
+      </div>
     </div>
   );
 }
-
 function Features() {
   const features = [
     {icon:Home,title:"Smart Dashboard",subtitle:"Salary-aware home screen",bg:FF_LIGHT,darkBg:"#1a2540",iconBg:FF_BLUE,color:FF_BLUE,items:["Personalized greeting with salary cycle awareness","Balance, income, expense & savings at a glance","Daily spending tracker for mindfulness"]},
@@ -255,7 +204,7 @@ function Features() {
     <div className="px-8 md:px-20 py-32">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 mb-16">
-          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="05" label="Features"/></ScrollReveal></div>
+          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="04" label="Features"/></ScrollReveal></div>
           <div className="lg:col-span-9">
             <ScrollReveal delay={100}>
               <h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-4 max-w-2xl">Six modules. One coherent system built for real life.</h2>
@@ -288,7 +237,7 @@ function UXDecisions() {
     <div className="py-24 bg-[var(--color-bg-alt)]">
       <div className="px-8 md:px-20"><div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 mb-16">
-          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="06" label="UX Decisions"/></ScrollReveal></div>
+          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="05" label="UX Decisions"/></ScrollReveal></div>
           <div className="lg:col-span-9">
             <ScrollReveal delay={100}>
               <h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-4 max-w-2xl">Every decision solves a problem.</h2>
@@ -317,7 +266,7 @@ function VisualDesign() {
     <div className="px-8 md:px-20 py-32">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 mb-16">
-          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="07" label="Visual Design"/></ScrollReveal></div>
+          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="06" label="Visual Design"/></ScrollReveal></div>
           <div className="lg:col-span-9">
             <ScrollReveal delay={100}>
               <h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-4 max-w-2xl">Warm confidence. Built for trust, not performance.</h2>
@@ -348,36 +297,6 @@ function VisualDesign() {
   );
 }
 
-function Reflection() {
-  const cards = [
-    "AI accelerates, but doesn't replace design thinking. The decisions that mattered most were still human ones.",
-    "Cultural context is a design asset. Gold, peer lending, and local UX patterns are competitive advantages.",
-    "Simplicity is the hardest thing to design. Removing things takes more skill than adding them.",
-    "Behavior change starts with trust. You can't nudge someone who doesn't trust the product.",
-  ];
-  return (
-    <div className="py-24 bg-[var(--color-bg-alt)]">
-      <div className="px-8 md:px-20"><div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 mb-12">
-          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="08" label="Reflection"/></ScrollReveal></div>
-          <div className="lg:col-span-9">
-            <ScrollReveal delay={100}><h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-10 max-w-2xl">What this project taught me.</h2></ScrollReveal>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-              {cards.map((c,i)=><ScrollReveal key={i} delay={200+i*80}><div className="bg-[var(--color-surface)] rounded-xl p-5 flex items-start gap-4"><Lightbulb className="w-5 h-5 flex-shrink-0 mt-0.5" style={{color:FF_BLUE}}/><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{c}</p></div></ScrollReveal>)}
-            </div>
-            <ScrollReveal delay={400}>
-              <blockquote className="pl-6 border-l-4" style={{borderColor:FF_BLUE}}>
-                <p className="text-lg italic text-[var(--color-text-secondary)] leading-relaxed mb-2">&ldquo;Design that changes behavior is the highest form of product design — it goes beyond pixels and into people&apos;s lives.&rdquo;</p>
-                <p className="text-sm text-[var(--color-text-muted)]">— Mohammed Noushad, Product Designer</p>
-              </blockquote>
-            </ScrollReveal>
-          </div>
-        </div>
-      </div></div>
-    </div>
-  );
-}
-
 function Status() {
   const completed = ["Full UI design — 50+ screens","Onboarding & authentication flow","Dashboard & expense tracking","Gold & silver investment module","Peer lending & borrowing tracker","Profile, settings & security","Free vs Premium plan screens","Developer-ready Figma file"];
   const coming = ["User testing & usability study","Hindi & regional language support","App Store & Play Store launch","Saving goal & gamification layer","Outcome metrics & success data"];
@@ -385,7 +304,7 @@ function Status() {
     <div className="px-8 md:px-20 py-32">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 mb-12">
-          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="09" label="Status"/></ScrollReveal></div>
+          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="07" label="Status"/></ScrollReveal></div>
           <div className="lg:col-span-9">
             <ScrollReveal delay={100}><h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-10 max-w-2xl">Design complete. Launch coming.</h2></ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
