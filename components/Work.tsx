@@ -73,7 +73,7 @@ export default function Work() {
                 <Link href={p.href} id={p.id} className="group block">
                   <div className="relative h-full overflow-hidden rounded-2xl border border-[var(--color-border)]/50 bg-[var(--color-surface)]/30 backdrop-blur-md transition-all duration-300 hover:border-[var(--color-accent-warm)]/50 hover:shadow-xl hover:shadow-[var(--color-accent-warm)]/5">
                     <div className="relative aspect-[16/10] overflow-hidden">
-                      <Image src={p.image} alt={p.title} width={800} height={500} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                      <Image src={p.image} alt={p.title} width={800} height={500} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                       <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-surface)]/80 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-40" />
                       <div className="absolute bottom-3 left-3">
                         <span className="inline-block px-3 py-1 bg-[var(--color-surface)]/60 backdrop-blur-sm text-[var(--color-text-secondary)] text-[10px] uppercase font-bold tracking-widest rounded-full border border-[var(--color-border)]/30">{p.tag}</span>

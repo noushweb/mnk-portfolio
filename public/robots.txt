@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enkay.dev/sitemap.xml
