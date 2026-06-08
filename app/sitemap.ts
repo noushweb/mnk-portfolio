@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { articles } from "@/lib/articles-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://enkay.dev";
@@ -18,10 +19,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/design-system", priority: 0.5 },
   ];
 
-  return staticRoutes.map((route) => ({
+  const routes = staticRoutes.map((route) => ({
     url: `${baseUrl}${route.path}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: route.priority,
   }));
+
+  // Add individual article pages
+  for (const article of articles) {
+    routes.push({
+      url: `${baseUrl}/articles/${article.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    });
+  }
+
+  return routes;
 }

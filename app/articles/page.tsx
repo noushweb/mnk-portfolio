@@ -2,62 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Clock, ChevronLeft, ChevronRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import { articles } from "@/lib/articles-data";
 
 export const metadata: Metadata = {
   title: "Articles | Mohammed Noushad — Product Designer",
   description:
-    "Notes, reflections, and deep dives on product design, design systems, and building better digital experiences.",
+    "Notes, reflections, and deep dives on product design, design systems, AI-assisted development, and building better digital experiences.",
 };
 
 const PER_PAGE = 4;
-
-const articles = [
-  {
-    slug: "design-systems-at-scale",
-    date: "12 May 2026",
-    category: "Design Systems",
-    title: "Design Systems at Scale: Lessons from 5+ Enterprise Apps",
-    excerpt:
-      "How we built and maintained a unified design system that powers multiple enterprise applications — from component architecture to cross-team adoption.",
-    readTime: "6 min read",
-  },
-  {
-    slug: "ux-of-industrial-software",
-    date: "28 Apr 2026",
-    category: "Product Design",
-    title: "The UX of Industrial Software: Why It Deserves Better Design",
-    excerpt:
-      "Industrial and B2B software has long been treated as an afterthought in design. Here's why that's changing — and what designers can do about it.",
-    readTime: "5 min read",
-  },
-  {
-    slug: "research-or-intuition",
-    date: "15 Mar 2026",
-    category: "UX Process",
-    title: "Research-Led or Intuition-First? Finding Balance in Product Design",
-    excerpt:
-      "A reflection on when to lean on user research and when to trust your design intuition — based on 11+ years of shipping products.",
-    readTime: "4 min read",
-  },
-  {
-    slug: "visual-to-product-thinking",
-    date: "20 Feb 2026",
-    category: "Career",
-    title: "From Visual Design to Product Thinking: A Designer's Evolution",
-    excerpt:
-      "How shifting from visual-first to problem-first changed everything about my design practice — and the career decisions that shaped it.",
-    readTime: "7 min read",
-  },
-  {
-    slug: "ai-assisted-workflows",
-    date: "08 Jan 2026",
-    category: "AI & Design",
-    title: "AI-Assisted Design Workflows: What Actually Works in 2026",
-    excerpt:
-      "A practical look at integrating AI tools into a real product design workflow — what's hype, what's helpful, and where humans still lead.",
-    readTime: "5 min read",
-  },
-];
 
 export default async function ArticlesPage({
   searchParams,
