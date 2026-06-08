@@ -347,7 +347,7 @@ function ApplicationsSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
                 </div>
                 <div>
                   <h3 className="font-bold text-2xl">{app.name}</h3>
-                  <p className="text-sm text-[var(--color-text-muted)]">
+                  <p className="text-base text-[var(--color-text-muted)]">
                     {app.subtitle}
                   </p>
                 </div>
@@ -400,7 +400,7 @@ function ApplicationsSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
                 {app.insight && (
                   <div className="bg-[var(--color-bg-alt)] rounded-xl p-4 flex items-start gap-3 border border-[var(--color-border)]">
                     <Lightbulb className="w-4 h-4 text-[var(--color-accent-warm)] flex-shrink-0 mt-0.5" />
-                    <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed">
+                    <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
                       {app.insight}
                     </p>
                   </div>
