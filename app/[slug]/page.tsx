@@ -219,13 +219,13 @@ function OverviewSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
 
 function StatsGrid({ stats }: { stats: { number: string; label: string }[] }) {
   return (
-    <div className={`grid gap-px bg-[var(--color-border)]`} style={{ gridTemplateColumns: `repeat(${stats.length}, 1fr)` }}>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[var(--color-border)]">
       {stats.map((s) => (
-        <div key={s.label} className="bg-[var(--color-bg)] px-6 py-8">
-          <p className="text-5xl font-black tracking-tighter text-[var(--color-text-primary)] mb-2">
+        <div key={s.label} className="bg-[var(--color-bg)] px-4 md:px-6 py-6 md:py-8">
+          <p className="text-4xl md:text-5xl font-black tracking-tighter text-[var(--color-text-primary)] mb-2">
             {s.number}
           </p>
-          <p className="text-sm text-[var(--color-text-muted)]">{s.label}</p>
+          <p className="text-xs md:text-sm text-[var(--color-text-muted)]">{s.label}</p>
         </div>
       ))}
     </div>
@@ -376,28 +376,20 @@ function ApplicationsSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
                   </div>
                 )}
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div
-                  className="grid gap-3"
-                  style={{
-                    gridTemplateColumns: `repeat(2, 1fr)`,
-                  }}
+                  className="grid grid-cols-2 gap-3"
                 >
                   {app.keyChanges.map((kc, i) => (
-                    <div key={i} className="flex items-center gap-2 col-span-1">
+                    <div key={i} className="flex items-center gap-2">
                       <X className="w-3 h-3 text-[#EB5757] flex-shrink-0" />
                       <p className="text-xs text-[var(--color-text-secondary)]">
                         {kc.before}
                       </p>
-                      {i + 1 < app.keyChanges.length && (
-                        <div key={`after-${i}`} className="flex items-center gap-2 col-span-1 hidden">
-                          {/* placeholder for grid alignment */}
-                        </div>
-                      )}
                     </div>
                   ))}
                   {app.keyChanges.map((kc, i) => (
-                    <div key={`check-${i}`} className="flex items-center gap-2 col-span-1">
+                    <div key={`check-${i}`} className="flex items-center gap-2">
                       <Check className="w-3 h-3 text-[var(--color-accent-warm)] flex-shrink-0" />
                       <p className="text-xs text-[var(--color-text-primary)]">
                         {kc.after}
@@ -519,7 +511,7 @@ function ProblemSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
               </ScrollReveal>
             </div>
           </div>
-          <div className={`grid gap-4`} style={{ gridTemplateColumns: `repeat(${Math.min(cs.problem.cards.length, 3)}, 1fr)` }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {cs.problem.cards.map((card, i) => (
               <ScrollReveal key={card.title} delay={i * 100}>
                 <div className="bg-[var(--color-surface)] p-6 rounded-xl border border-[var(--color-border)]">
