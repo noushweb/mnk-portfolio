@@ -105,10 +105,10 @@ function Applications() {
           <div className="rounded-xl border border-[var(--color-border)] overflow-hidden"><Image src={app.after} alt={`${app.name} — After`} width={600} height={400} className="w-full h-auto block" /></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="grid grid-cols-2 gap-3">{app.changes.map((kc,j)=><div key={j} className="flex items-center gap-2 col-span-1"><X className="w-3 h-3 text-[#EB5757] flex-shrink-0"/><p className="text-xs text-[var(--color-text-secondary)]">{kc.b}</p></div>)}</div>
-          <div className="grid grid-cols-2 gap-3">{app.changes.map((kc,j)=><div key={`ch-${j}`} className="flex items-center gap-2 col-span-1"><Check className="w-3 h-3 text-[var(--color-accent-warm)] flex-shrink-0"/><p className="text-xs text-[var(--color-text-primary)]">{kc.a}</p></div>)}</div>
+          <div className="grid grid-cols-2 gap-3">{app.changes.map((kc,j)=><div key={j} className="flex items-center gap-2 col-span-1"><X className="w-3 h-3 text-[#EB5757] flex-shrink-0"/><p className="text-sm text-[var(--color-text-secondary)]">{kc.b}</p></div>)}</div>
+          <div className="grid grid-cols-2 gap-3">{app.changes.map((kc,j)=><div key={`ch-${j}`} className="flex items-center gap-2 col-span-1"><Check className="w-3 h-3 text-[var(--color-accent-warm)] flex-shrink-0"/><p className="text-sm text-[var(--color-text-primary)]">{kc.a}</p></div>)}</div>
         </div>
-        {app.insight && <div className="mt-4 bg-[var(--color-bg-alt)] rounded-xl p-4 flex items-start gap-3 border border-[var(--color-border)]"><Lightbulb className="w-4 h-4 text-[var(--color-accent-warm)] flex-shrink-0 mt-0.5"/><p className="text-xs text-[var(--color-text-secondary)] leading-relaxed">{app.insight}</p></div>}
+        {app.insight && <div className="mt-4 bg-[var(--color-bg-alt)] rounded-xl p-4 flex items-start gap-3 border border-[var(--color-border)]"><Lightbulb className="w-4 h-4 text-[var(--color-accent-warm)] flex-shrink-0 mt-0.5"/><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{app.insight}</p></div>}
       </div></ScrollReveal>)}
     </div></div>
   );

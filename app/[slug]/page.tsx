@@ -383,7 +383,7 @@ function ApplicationsSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
                   {app.keyChanges.map((kc, i) => (
                     <div key={i} className="flex items-center gap-2">
                       <X className="w-3 h-3 text-[#EB5757] flex-shrink-0" />
-                      <p className="text-xs text-[var(--color-text-secondary)]">
+                      <p className="text-sm text-[var(--color-text-secondary)]">
                         {kc.before}
                       </p>
                     </div>
@@ -391,7 +391,7 @@ function ApplicationsSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
                   {app.keyChanges.map((kc, i) => (
                     <div key={`check-${i}`} className="flex items-center gap-2">
                       <Check className="w-3 h-3 text-[var(--color-accent-warm)] flex-shrink-0" />
-                      <p className="text-xs text-[var(--color-text-primary)]">
+                      <p className="text-sm text-[var(--color-text-primary)]">
                         {kc.after}
                       </p>
                     </div>

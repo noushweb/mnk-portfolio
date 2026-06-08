@@ -214,13 +214,13 @@ function MobileApp() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2">
                 <div className="divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-xl overflow-hidden">
-                  {screens.map((sc,i)=><ScrollReveal key={sc.n} delay={300+i*60}><div className="p-4 flex items-start gap-3 bg-[var(--color-surface)]"><span className="flex-shrink-0 w-6 text-xs font-bold" style={{color:sc.hl?RED:"var(--color-text-muted)"}}>{sc.n}</span><sc.icon className="w-4 h-4 flex-shrink-0 mt-0.5" style={{color:sc.hl?RED:"var(--color-text-muted)"}}/><div><h4 className="font-bold text-sm">{sc.name}</h4><p className="text-xs text-[var(--color-text-secondary)]">{sc.desc}</p></div></div></ScrollReveal>)}
+                  {screens.map((sc,i)=><ScrollReveal key={sc.n} delay={300+i*60}><div className="p-4 flex items-start gap-3 bg-[var(--color-surface)]"><span className="flex-shrink-0 w-6 text-xs font-bold" style={{color:sc.hl?RED:"var(--color-text-muted)"}}>{sc.n}</span><sc.icon className="w-4 h-4 flex-shrink-0 mt-0.5" style={{color:sc.hl?RED:"var(--color-text-muted)"}}/><div><h4 className="font-bold text-sm">{sc.name}</h4><p className="text-sm text-[var(--color-text-secondary)]">{sc.desc}</p></div></div></ScrollReveal>)}
                 </div>
               </div>
               <div>
                 <ScrollReveal delay={500}><h3 className="font-bold text-lg mb-4">Design Principles</h3></ScrollReveal>
                 <div className="space-y-4">
-                  {principles.map((p,i)=><ScrollReveal key={p.t} delay={500+i*80}><div className="bg-[var(--color-surface)] p-5 rounded-xl"><p.icon className="w-5 h-5 mb-2" style={{color:RED}}/><h4 className="font-bold text-sm mb-1">{p.t}</h4><p className="text-xs text-[var(--color-text-secondary)] leading-relaxed">{p.d}</p></div></ScrollReveal>)}
+                  {principles.map((p,i)=><ScrollReveal key={p.t} delay={500+i*80}><div className="bg-[var(--color-surface)] p-5 rounded-xl"><p.icon className="w-5 h-5 mb-2" style={{color:RED}}/><h4 className="font-bold text-sm mb-1">{p.t}</h4><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{p.d}</p></div></ScrollReveal>)}
                 </div>
               </div>
             </div>
@@ -247,7 +247,7 @@ function KeyFlows() {
                   {["Admin","Cashier Mgmt","Add Cashier","Modal Form"].map((s,i)=><span key={i} className="flex items-center gap-2">{i>0&&<ArrowRight className="w-3 h-3 text-[var(--color-text-muted)]"/>}<span className="px-3 py-1.5 bg-[var(--color-bg-alt)] text-[var(--color-text-secondary)] text-xs font-medium rounded-lg">{s}</span></span>)}
                   <ArrowRight className="w-3 h-3 text-[var(--color-text-muted)]"/><span className="px-3 py-1.5 text-white text-xs font-medium rounded-lg" style={{background:RED}}>Add / Add & Another</span>
                 </div>
-                <p className="text-xs text-[var(--color-text-secondary)]">Bulk &apos;Add & Another&apos; action reduces repetitive form cycles by 60% for high-volume cashier setup.</p>
+                <p className="text-sm text-[var(--color-text-secondary)]">Bulk &apos;Add & Another&apos; action reduces repetitive form cycles by 60% for high-volume cashier setup.</p>
               </ScrollReveal>
 
               <ScrollReveal delay={300}>
@@ -256,7 +256,7 @@ function KeyFlows() {
                   {["Login","On Duty","Task List","Navigate","Enter Amount","Verify"].map((s,i)=><span key={i} className="flex items-center gap-2">{i>0&&<ArrowRight className="w-3 h-3 text-[var(--color-text-muted)]"/>}<span className="px-3 py-1.5 bg-[var(--color-bg-alt)] text-[var(--color-text-secondary)] text-xs font-medium rounded-lg">{s}</span></span>)}
                   <ArrowRight className="w-3 h-3 text-[var(--color-text-muted)]"/><span className="px-3 py-1.5 text-white text-xs font-medium rounded-lg" style={{background:"#4CAF50"}}>OTP Confirmed</span>
                 </div>
-                <p className="text-xs text-[var(--color-text-secondary)]">9 steps from login to confirmed collection — no ambiguity, no disputes, fully auditable.</p>
+                <p className="text-sm text-[var(--color-text-secondary)]">9 steps from login to confirmed collection — no ambiguity, no disputes, fully auditable.</p>
               </ScrollReveal>
             </div>
 
