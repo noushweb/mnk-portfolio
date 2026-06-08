@@ -21,7 +21,7 @@ export default function Logo({ href = "/", onClick }: { href?: string; onClick?:
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        <svg width="209" height="34" viewBox="0 0 209 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-[28px] w-auto" aria-hidden="true">
+        <svg width="209" height="34" viewBox="0 0 209 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-[22px] md:h-[28px] w-auto" aria-hidden="true">
           <title>Mohammed Noushad Logo</title>
           <g clipPath="url(#clip-logo)">
             <path d="M0 7.28574V0H33.0691L36.3882 3.31906V10.0381L33.0691 13.3572H29.1025V7.28574H0ZM0 20.6429V13.3572H21.1691V20.6429H0ZM36.3882 30.6406L33.0691 33.9596H0V26.6739H29.1025V20.6024H33.0691L36.3882 23.9215V30.6406Z" style={{ fill: defaultColor }} />
