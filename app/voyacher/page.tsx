@@ -321,7 +321,7 @@ function PlatformSection() {
         </div>
 
         {/* Steps */}
-        <div className="grid grid-cols-3 gap-4 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
           {steps.map((s, i) => (
             <ScrollReveal key={s.num} delay={200 + i * 100}>
               <div className="bg-[var(--color-surface)] rounded-xl p-6 text-center border border-[var(--color-border)]">
