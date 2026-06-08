@@ -112,7 +112,7 @@ export default function WorkPage() {
                       <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-surface)]/80 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-40" />
                       <div className="absolute top-4 left-4 flex gap-2">
                         {p.tags.map((tag) => (
-                          <span key={tag} className="bg-[var(--color-surface)]/60 backdrop-blur-sm text-[var(--color-text-secondary)] dark:text-white/90 text-[10px] px-3 py-1 uppercase tracking-wider font-semibold rounded-full border border-[var(--color-border)]/30">{tag}</span>
+                          <span key={tag} className="bg-[var(--color-surface)]/80 backdrop-blur-sm text-[var(--color-text-primary)] text-[10px] px-3 py-1 uppercase tracking-wider font-semibold rounded-full border border-[var(--color-border)]/40">{tag}</span>
                         ))}
                       </div>
                     </div>
