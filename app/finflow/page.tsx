@@ -5,7 +5,7 @@ import {
   ArrowRight, TrendingDown, LayoutDashboard, HeartOff, ShieldOff,
   XCircle, Home, BarChart2, Coins, Users, GraduationCap, ShieldCheck,
   Check, Layers, Heart, Eye, Smartphone, Sparkles, Globe2,
-  Lightbulb, CheckCircle2, Rocket, Clock,
+  Lightbulb,
 } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -14,10 +14,7 @@ export const metadata: Metadata = {
   description: "A savings app designed to change how India thinks about money.",
 };
 
-const FF_BLUE = "#1845A8";
-const FF_GOLD = "#C9860A";
-const FF_LIGHT = "#E8F0FE";
-const FF_GOLD_BG = "#FEF3C7";
+const ACCENT = "var(--color-accent-warm)";
 
 export default function FinflowPage() {
   return (
@@ -32,7 +29,6 @@ export default function FinflowPage() {
       <Features />
       <UXDecisions />
       <VisualDesign />
-      <Status />
       <NextProjectCTA />
     </main>
   );
@@ -59,8 +55,8 @@ function Hero() {
         <div className="lg:col-span-5 flex flex-col justify-center order-2 lg:order-1">
           <ScrollReveal>
             <div className="flex items-center gap-2 mb-6">
-              <span className="inline-block px-3 py-1 bg-[#E8F0FE] dark:bg-[#0d1b3e] text-[#1845A8] dark:text-[#60a5fa] text-[11px] font-bold uppercase tracking-wider rounded-full">Behavioral Finance · Mobile App</span>
-              <span className="inline-block px-3 py-1 bg-[#FEF3C7] dark:bg-[#3d2e0a] text-[#C9860A] dark:text-[#fbbf24] text-[11px] font-bold uppercase tracking-wider rounded-full">Under Development</span>
+              <span className="inline-block px-3 py-1 bg-[var(--color-tag-bg)] text-[var(--color-text-secondary)] text-[11px] font-bold uppercase tracking-wider rounded-full">Behavioral Finance · Mobile App</span>
+              <span className="inline-block px-3 py-1 bg-[var(--color-tag-bg)] text-[var(--color-text-secondary)] text-[11px] font-bold uppercase tracking-wider rounded-full">Under Development</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tighter leading-[1.1] mb-8">A savings app that changes how India thinks about money.</h1>
           </ScrollReveal>
@@ -81,7 +77,7 @@ function Hero() {
                 </div>
               </div>
             </div>
-            <Link href="/hala-app" className="group inline-flex items-center gap-4 bg-[#323232] text-white px-8 py-4 font-bold uppercase tracking-widest text-[12px] hover:bg-[var(--color-accent-warm)] transition-all w-fit">
+            <Link href="/roadshow" className="btn-primary">
               Next Project <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </ScrollReveal>
@@ -114,10 +110,10 @@ function Overview() {
             <ScrollReveal delay={100}>
               <p className="text-xl md:text-2xl font-light leading-relaxed text-[var(--color-text-secondary)] mb-6 max-w-3xl">Millions of working Indians earn a modest salary every month — and spend most of it within days of payday. Not because they lack discipline, but because they lack a system.</p>
               <p className="text-xl md:text-2xl font-light leading-relaxed text-[var(--color-text-secondary)] mb-12 max-w-3xl">A client approached me to design a mobile application that doesn&apos;t just track money, but <em>changes how people think about money</em> — making saving feel natural, rewarding, and achievable for everyday salaried workers in India.</p>
-              <blockquote className="pl-6 border-l-4 mb-12" style={{borderColor:FF_BLUE}}>
+              <blockquote className="pl-6 border-l-4 border-[var(--color-accent-warm)] mb-12">
                 <p className="text-lg italic text-[var(--color-text-secondary)] leading-relaxed">&ldquo;The problem isn&apos;t income. The problem is behavior. People need a gentle system that builds saving as a habit — not a burden.&rdquo;</p>
               </blockquote>
-              <StatsGrid items={[{n:"50+",l:"Screens Designed"},{n:"5",l:"Core Modules"},{n:"2",l:"Plan Tiers"},{n:"100%",l:"Dev-Ready Figma"}]} color={FF_BLUE} />
+              <StatsGrid items={[{n:"50+",l:"Screens Designed"},{n:"5",l:"Core Modules"},{n:"2",l:"Plan Tiers"},{n:"100%",l:"Dev-Ready Figma"}]} />
             </ScrollReveal>
           </div>
         </div>
@@ -126,9 +122,9 @@ function Overview() {
   );
 }
 
-function StatsGrid({items,color}:{items:{n:string;l:string}[],color:string}) {
+function StatsGrid({items}:{items:{n:string;l:string}[]}) {
   return <div className={`grid gap-px bg-[var(--color-border)]`} style={{gridTemplateColumns:`repeat(${items.length},1fr)`}}>
-    {items.map(s=><div key={s.l} className="bg-[var(--color-bg)] px-6 py-8"><p className="text-5xl font-black tracking-tighter mb-2" style={{color}}>{s.n}</p><p className="text-sm text-[var(--color-text-muted)]">{s.l}</p></div>)}
+    {items.map(s=><div key={s.l} className="bg-[var(--color-bg)] px-6 py-8"><p className="text-5xl font-black tracking-tighter mb-2 text-[var(--color-text-primary)]">{s.n}</p><p className="text-sm text-[var(--color-text-muted)]">{s.l}</p></div>)}
   </div>;
 }
 
@@ -150,7 +146,7 @@ function Problem() {
               <h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-6 max-w-2xl">Paycheck to paycheck — a behavior problem, not an income problem.</h2>
               <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-10">Through AI-assisted research using Manus AI, I explored the financial behavior patterns of India&apos;s salaried middle-class population. The findings painted a vivid, common, and rarely-addressed picture.</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-                {stats.map((s,i)=><ScrollReveal key={i} delay={200+i*80}><div className="bg-[var(--color-surface)] p-6 rounded-xl text-center"><p className="text-4xl font-black tracking-tighter mb-2" style={{color:FF_BLUE}}>{s.n}</p><p className="text-xs text-[var(--color-text-secondary)]">{s.l}</p></div></ScrollReveal>)}
+                {stats.map((s,i)=><ScrollReveal key={i} delay={200+i*80}><div className="bg-[var(--color-surface)] p-6 rounded-xl text-center"><p className="text-4xl font-black tracking-tighter mb-2 text-[var(--color-text-primary)]">{s.n}</p><p className="text-xs text-[var(--color-text-secondary)]">{s.l}</p></div></ScrollReveal>)}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {cards.map((c,i)=><ScrollReveal key={c.title} delay={300+i*80}><div className="bg-[var(--color-surface)] p-6 rounded-xl">                  <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4 bg-[#FEE2E2] dark:bg-[#2d1515]"><c.icon className="w-[18px] h-[18px] text-[#DC2626] dark:text-[#fca5a5]"/></div><h3 className="font-bold text-sm mb-2">{c.title}</h3><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{c.desc}</p></div></ScrollReveal>)}
@@ -182,7 +178,7 @@ function DesignProcess() {
               <Image src="/casestudy/images/finflow/wide1.webp" alt="Design Process Overview" width={1200} height={514} className="w-full rounded-xl object-cover mb-10" style={{aspectRatio:"21/9"}} />
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {phases.map((p,i)=><ScrollReveal key={p.title} delay={200+i*80}><div className={`p-6 rounded-xl ${p.hl?"text-white":"bg-[var(--color-surface)]"}`} style={p.hl?{background:FF_BLUE}:{}}><span className={`text-[10px] font-bold uppercase tracking-widest`} style={{color:p.hl?"rgba(255,255,255,0.6)":FF_BLUE}}>{p.num}</span><h3 className="font-bold text-base mt-2 mb-2">{p.title}</h3><p className={`text-sm leading-relaxed`} style={{color:p.hl?"rgba(255,255,255,0.7)":"var(--color-text-secondary)"}}>{p.desc}</p></div></ScrollReveal>)}
+              {phases.map((p,i)=><ScrollReveal key={p.title} delay={200+i*80}><div className="p-6 rounded-xl bg-[var(--color-surface)]"><span className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-text-muted)]">{p.num}</span><h3 className="font-bold text-base mt-2 mb-2">{p.title}</h3><p className="text-sm leading-relaxed text-[var(--color-text-secondary)]">{p.desc}</p></div></ScrollReveal>)}
             </div>
           </div>
         </div>
@@ -192,12 +188,12 @@ function DesignProcess() {
 }
 function Features() {
   const features = [
-    {icon:Home,title:"Smart Dashboard",subtitle:"Salary-aware home screen",bg:FF_LIGHT,darkBg:"#1a2540",iconBg:FF_BLUE,color:FF_BLUE,items:["Personalized greeting with salary cycle awareness","Balance, income, expense & savings at a glance","Daily spending tracker for mindfulness"]},
-    {icon:BarChart2,title:"Expense Tracking",subtitle:"Categorized spending insights",bg:FF_LIGHT,darkBg:"#1a2540",iconBg:FF_BLUE,color:FF_BLUE,items:["Categorized spending with visual breakdowns","Payment reminders to prevent missed bills","Gently reveals spending patterns over time"]},
-    {icon:Coins,title:"Gold & Silver Investment",subtitle:"Culturally familiar micro-investing",bg:FF_GOLD_BG,darkBg:"#3d2e0a",iconBg:FF_GOLD,color:FF_GOLD,items:["Micro-investment starting from ₹100","Live price charts, buy/sell in small amounts","Portfolio view with full transaction history"]},
-    {icon:Users,title:"Peer Lending Tracker",subtitle:"Digitizing a cultural behavior",bg:FF_LIGHT,darkBg:"#1a2540",iconBg:FF_BLUE,color:FF_BLUE,items:["Track money lent to and borrowed from friends","Payment schedules, reminders & progress bars","Send money requests directly in-app"]},
-    {icon:GraduationCap,title:"Saving Education",subtitle:"Built-in behavioral nudges",bg:FF_LIGHT,darkBg:"#1a2540",iconBg:FF_BLUE,color:FF_BLUE,items:["Nudges to encourage consistent saving behavior","Simple, friendly language — no financial jargon","Progress milestones to celebrate small wins"]},
-    {icon:ShieldCheck,title:"Security & Trust",subtitle:"Designed to build long-term trust",bg:FF_LIGHT,darkBg:"#1a2540",iconBg:FF_BLUE,color:FF_BLUE,items:["Biometric login, 2FA, visible security score","Device activity log for full transparency","Security score (85/100) as a visible trust signal"]},
+    {icon:Home,title:"Smart Dashboard",subtitle:"Salary-aware home screen",items:["Personalized greeting with salary cycle awareness","Balance, income, expense & savings at a glance","Daily spending tracker for mindfulness"]},
+    {icon:BarChart2,title:"Expense Tracking",subtitle:"Categorized spending insights",items:["Categorized spending with visual breakdowns","Payment reminders to prevent missed bills","Gently reveals spending patterns over time"]},
+    {icon:Coins,title:"Gold & Silver Investment",subtitle:"Culturally familiar micro-investing",items:["Micro-investment starting from ₹100","Live price charts, buy/sell in small amounts","Portfolio view with full transaction history"]},
+    {icon:Users,title:"Peer Lending Tracker",subtitle:"Digitizing a cultural behavior",items:["Track money lent to and borrowed from friends","Payment schedules, reminders & progress bars","Send money requests directly in-app"]},
+    {icon:GraduationCap,title:"Saving Education",subtitle:"Built-in behavioral nudges",items:["Nudges to encourage consistent saving behavior","Simple, friendly language — no financial jargon","Progress milestones to celebrate small wins"]},
+    {icon:ShieldCheck,title:"Security & Trust",subtitle:"Designed to build long-term trust",items:["Biometric login, 2FA, visible security score","Device activity log for full transparency","Security score (85/100) as a visible trust signal"]},
   ];
   const screens = ["/casestudy/images/finflow/work_screens1.webp","/casestudy/images/finflow/work_screens2.webp","/casestudy/images/finflow/work_screens3.webp","/casestudy/images/finflow/work_screens4.webp"];
   return (
@@ -215,7 +211,7 @@ function Features() {
               </div>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {features.map((f,i)=><ScrollReveal key={f.title} delay={300+i*80}><div className="rounded-xl overflow-hidden border border-[var(--color-border)]"><div className={`p-4 border-b border-[var(--color-border)] ${f.bg === FF_GOLD_BG ? "bg-[#FEF3C7] dark:bg-[#3d2e0a]" : "bg-[#E8F0FE] dark:bg-[#0d1b3e]"}`}><div className="flex items-center gap-2"><div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{background:f.iconBg}}><f.icon className="w-3.5 h-3.5 text-white"/></div><div><p className="font-bold text-sm text-[var(--color-text-primary)]">{f.title}</p><p className="text-xs text-[var(--color-text-secondary)]">{f.subtitle}</p></div></div></div><div className="p-4 bg-[var(--color-surface)] space-y-2">{f.items.map((item,j)=><div key={j} className="flex items-start gap-2 text-sm"><Check className="w-3 h-3 flex-shrink-0 mt-0.5" style={{color:f.color}}/><span className="text-[var(--color-text-secondary)]">{item}</span></div>)}</div></div></ScrollReveal>)}
+              {features.map((f,i)=><ScrollReveal key={f.title} delay={300+i*80}><div className="rounded-xl overflow-hidden border border-[var(--color-border)]"><div className="p-4 border-b border-[var(--color-border)] bg-[var(--color-bg-alt)]"><div className="flex items-center gap-2"><div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 bg-[var(--color-tag-bg)]"><f.icon className="w-3.5 h-3.5 text-[var(--color-text-secondary)]"/></div><div><p className="font-bold text-sm text-[var(--color-text-primary)]">{f.title}</p><p className="text-xs text-[var(--color-text-secondary)]">{f.subtitle}</p></div></div></div><div className="p-4 bg-[var(--color-surface)] space-y-2">{f.items.map((item,j)=><div key={j} className="flex items-start gap-2 text-sm"><Check className="w-3 h-3 flex-shrink-0 mt-0.5 text-[var(--color-text-muted)]"/><span className="text-[var(--color-text-secondary)]">{item}</span></div>)}</div></div></ScrollReveal>)}
             </div>
           </div>
         </div>
@@ -244,7 +240,7 @@ function UXDecisions() {
               <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-10">No feature was added for its own sake — each design decision was traced back to a specific user problem.</p>
             </ScrollReveal>
             <div className="space-y-4">
-              {decisions.map((d,i)=><ScrollReveal key={i} delay={200+i*80}><div className="bg-[var(--color-surface)] rounded-xl p-6 grid grid-cols-1 md:grid-cols-3 gap-4 items-start"><div><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-1">Decision</p><p className="font-bold text-sm">{d.d}</p></div><div><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-1">Problem Solved</p><p className="text-sm text-[var(--color-text-secondary)]">{d.p}</p></div><div><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-1">Impact</p><p className="text-sm font-medium" style={{color:FF_BLUE}}>{d.i}</p></div></div></ScrollReveal>)}
+              {decisions.map((d,i)=><ScrollReveal key={i} delay={200+i*80}><div className="bg-[var(--color-surface)] rounded-xl p-6 grid grid-cols-1 md:grid-cols-3 gap-4 items-start"><div><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-1">Decision</p><p className="font-bold text-sm">{d.d}</p></div><div><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-1">Problem Solved</p><p className="text-sm text-[var(--color-text-secondary)]">{d.p}</p></div><div><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-1">Impact</p><p className="text-sm font-medium text-[var(--color-text-primary)]">{d.i}</p></div></div></ScrollReveal>)}
             </div>
           </div>
         </div>
@@ -259,7 +255,7 @@ function VisualDesign() {
     {icon:Heart,title:"Warm Confidence",desc:"Blue tones signal trust; soft whites reduce financial anxiety"},
     {icon:Eye,title:"Progressive Disclosure",desc:"Complex features revealed gradually — beginners never overwhelmed"},
     {icon:Smartphone,title:"Familiar Patterns",desc:"OTP login, UPI-style flows — patterns users already know"},
-    {icon:Sparkles,title:"Rewarding Moments",desc:"Micro-celebrations for saving milestones — behavior reinforcement",gold:true},
+    {icon:Sparkles,title:"Rewarding Moments",desc:"Micro-celebrations for saving milestones — behavior reinforcement"},
     {icon:Globe2,title:"Cultural Context",desc:"Gold, peer lending, ₹ notation — design that speaks India"},
   ];
   return (
@@ -273,7 +269,7 @@ function VisualDesign() {
               <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-10">Blue signals trust. Gold signals cultural familiarity. Soft whites reduce financial anxiety. Every visual decision had a behavioral rationale.</p>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-              {principles.map((pr,i)=><ScrollReveal key={pr.title} delay={200+i*80}><div className="bg-[var(--color-surface)] p-5 rounded-xl border border-[var(--color-border)]"><div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style={{background:pr.gold?FF_GOLD_BG:FF_LIGHT}}><pr.icon className="w-[18px] h-[18px]" style={{color:pr.gold?FF_GOLD:FF_BLUE}}/></div><h3 className="font-bold text-sm mb-2">{pr.title}</h3><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{pr.desc}</p></div></ScrollReveal>)}
+              {principles.map((pr,i)=><ScrollReveal key={pr.title} delay={200+i*80}><div className="bg-[var(--color-surface)] p-5 rounded-xl border border-[var(--color-border)]"><div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4 bg-[var(--color-tag-bg)]"><pr.icon className="w-[18px] h-[18px] text-[var(--color-text-secondary)]"/></div><h3 className="font-bold text-sm mb-2">{pr.title}</h3><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{pr.desc}</p></div></ScrollReveal>)}
             </div>
             <ScrollReveal delay={400}>
               <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
@@ -290,36 +286,6 @@ function VisualDesign() {
   );
 }
 
-function Status() {
-  const completed = ["Full UI design — 50+ screens","Onboarding & authentication flow","Dashboard & expense tracking","Gold & silver investment module","Peer lending & borrowing tracker","Profile, settings & security","Free vs Premium plan screens","Developer-ready Figma file"];
-  const coming = ["User testing & usability study","Hindi & regional language support","App Store & Play Store launch","Saving goal & gamification layer","Outcome metrics & success data"];
-  return (
-    <div className="px-8 md:px-20 py-32">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 mb-12">
-          <div className="lg:col-span-3"><ScrollReveal><SectionLabel num="07" label="Status"/></ScrollReveal></div>
-          <div className="lg:col-span-9">
-            <ScrollReveal delay={100}><h2 className="text-3xl md:text-4xl font-light tracking-tighter leading-tight mb-10 max-w-2xl">Design complete. Launch coming.</h2></ScrollReveal>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <ScrollReveal delay={200}>
-                <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
-                  <div className="p-4 border-b border-[var(--color-border)] bg-[#F0FDF4] dark:bg-[#0d2818] flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#4CAF50] dark:text-[#4ade80]"/><span className="font-bold text-sm text-[#166534] dark:text-[#4ade80]">Design Completed</span></div>
-                  <div className="p-5 bg-[var(--color-surface)] space-y-2">{completed.map((c,i)=><div key={i} className="flex items-start gap-2 text-sm"><Check className="w-3.5 h-3.5 text-[#4CAF50] flex-shrink-0 mt-0.5"/><span className="text-[var(--color-text-secondary)]">{c}</span></div>)}</div>
-                </div>
-              </ScrollReveal>
-              <ScrollReveal delay={300}>
-                <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
-                  <div className="p-4 border-b border-[var(--color-border)] bg-[#E8F0FE] dark:bg-[#0d1b3e] flex items-center gap-2"><Rocket className="w-4 h-4 text-[#1845A8] dark:text-[#60a5fa]"/><span className="font-bold text-sm text-[#1845A8] dark:text-[#60a5fa]">Coming Soon</span></div>
-                  <div className="p-5 bg-[var(--color-surface)] space-y-2">{coming.map((c,i)=><div key={i} className="flex items-start gap-2 text-sm"><Clock className="w-3.5 h-3.5 text-[var(--color-text-muted)] flex-shrink-0 mt-0.5"/><span className="text-[var(--color-text-secondary)]">{c}</span></div>)}</div>
-                </div>
-              </ScrollReveal>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function NextProjectCTA() {
   return (
@@ -327,9 +293,9 @@ function NextProjectCTA() {
       <div className="max-w-7xl mx-auto text-center">
         <ScrollReveal>
           <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-[var(--color-text-muted)] mb-6">Next Project</p>
-          <h2 className="text-4xl md:text-6xl font-light tracking-tighter text-[var(--color-bg)] mb-8">Hala App</h2>
-          <p className="text-[var(--color-bg)]/60 text-lg mb-12 max-w-xl mx-auto">A bilingual B2B directory and premium space booking platform designed to connect Qatar&apos;s businesses and communities.</p>
-          <Link href="/hala-app" className="group inline-flex items-center gap-4 border border-[var(--color-bg)] text-[var(--color-bg)] px-10 py-4 font-bold uppercase tracking-widest text-[12px] hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] transition-all">View Case Study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
+          <h2 className="text-4xl md:text-6xl font-light tracking-tighter text-[var(--color-bg)] mb-8">Road Show</h2>
+          <p className="text-[var(--color-bg)]/60 text-lg mb-12 max-w-xl mx-auto">An end-to-end delivery management platform connecting supervisors, cashiers, and field delivery agents across web and mobile.</p>
+          <Link href="/roadshow" className="btn-primary">View Case Study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
         </ScrollReveal>
       </div>
     </section>

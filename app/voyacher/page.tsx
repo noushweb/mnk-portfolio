@@ -45,7 +45,7 @@ export default function VoyacherPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             <div className="lg:col-span-5 flex flex-col justify-center order-2 lg:order-1">
               <ScrollReveal>
-                <span className="inline-block px-3 py-1 rounded-full w-fit mb-6 text-[#5B21B6] dark:text-[#a78bfa] text-[11px] font-bold uppercase tracking-wider" style={{background: "#F5F3FF"}}>
+                <span className="inline-block px-3 py-1 rounded-full w-fit mb-6 bg-[var(--color-tag-bg)] text-[var(--color-text-secondary)] text-[11px] font-bold uppercase tracking-wider">
                   Travel Voucher Platform · Web · Qatar
                 </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tighter leading-[1.1] mb-8">
@@ -85,7 +85,7 @@ export default function VoyacherPage() {
                 </div>
                 <Link
                   href="/finflow"
-                  className="group inline-flex items-center gap-4 bg-[#323232] text-white px-8 py-4 font-bold uppercase tracking-widest text-[12px] hover:bg-[var(--color-accent-warm)] transition-all w-fit"
+                  className="btn-primary"
                 >
                   Next Project
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -180,7 +180,7 @@ function OverviewSection() {
               />
               <blockquote
                 className="pl-6 border-l-4 mb-12"
-                style={{ borderColor: "#5B21B6" }}
+                style={{ borderColor: "var(--color-accent-warm)" }}
               >
                 <p className="text-lg italic text-[var(--color-text-secondary)] leading-relaxed">
                   &ldquo;The hardest design problem wasn&apos;t building six
@@ -194,10 +194,7 @@ function OverviewSection() {
                     key={s.label}
                     className="bg-[var(--color-bg)] px-6 py-8"
                   >
-                    <p
-                      className="text-5xl font-black tracking-tighter mb-2"
-                      style={{ color: "#5B21B6" }}
-                    >
+                    <p className="text-5xl font-black tracking-tighter mb-2 text-[var(--color-text-primary)]">
                       {s.number}
                     </p>
                     <p className="text-sm text-[var(--color-text-muted)]">
@@ -288,12 +285,12 @@ function PlatformSection() {
   ];
 
   const services = [
-    { icon: Plane, iconBg: "#0052A3", title: "Flights", subtitle: "Domestic & international" },
-    { icon: MoonStar, iconBg: "#0A5C55", title: "Hajj & Umrah", subtitle: "Sacred journey packages" },
-    { icon: HeartPulse, iconBg: "#DC2626", title: "Healthcare Travel", subtitle: "UK hospitals · QAR pricing" },
-    { icon: Globe2, iconBg: "#D4890A", title: "International Tours", subtitle: "Europe · Middle East · beyond" },
-    { icon: CreditCard, iconBg: "#059669", title: "Fly Now, Pay Later", subtitle: "0% interest · voucher + BNPL" },
-    { icon: Gift, iconBg: "#5B21B6", title: "Gift & Corporate", subtitle: "P2P transfer · OTP secured" },
+    { icon: Plane, title: "Flights", subtitle: "Domestic & international" },
+    { icon: MoonStar, title: "Hajj & Umrah", subtitle: "Sacred journey packages" },
+    { icon: HeartPulse, title: "Healthcare Travel", subtitle: "UK hospitals · QAR pricing" },
+    { icon: Globe2, title: "International Tours", subtitle: "Europe · Middle East · beyond" },
+    { icon: CreditCard, title: "Fly Now, Pay Later", subtitle: "0% interest · voucher + BNPL" },
+    { icon: Gift, title: "Gift & Corporate", subtitle: "P2P transfer · OTP secured" },
   ];
 
   return (
@@ -325,7 +322,7 @@ function PlatformSection() {
           {steps.map((s, i) => (
             <ScrollReveal key={s.num} delay={200 + i * 100}>
               <div className="bg-[var(--color-surface)] rounded-xl p-6 text-center border border-[var(--color-border)]">
-                <p className="text-3xl font-black tracking-tighter mb-2" style={{ color: "#5B21B6" }}>
+                <p className="text-3xl font-black tracking-tighter mb-2 text-[var(--color-text-primary)]">
                   {s.num}
                 </p>
                 <p className="font-bold text-sm mb-2">{s.title}</p>
@@ -343,10 +340,9 @@ function PlatformSection() {
             <ScrollReveal key={svc.title} delay={300}>
               <div className="bg-[var(--color-surface)] rounded-xl p-4 flex items-center gap-3 border border-[var(--color-border)]">
                 <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: svc.iconBg }}
+                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 bg-[var(--color-tag-bg)]"
                 >
-                  <svc.icon className="w-4 h-4 text-white" />
+                  <svc.icon className="w-4 h-4 text-[var(--color-text-secondary)]" />
                 </div>
                 <div>
                   <p className="font-bold text-sm">{svc.title}</p>
@@ -414,7 +410,7 @@ function TransferSection() {
                     key={s.num}
                     className="bg-[var(--color-surface)] rounded-xl p-5 flex items-start gap-4 border border-[var(--color-border)]"
                   >
-                    <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm bg-[#5B21B6]">
+                    <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm bg-[var(--color-text-muted)]">
                       {s.num}
                     </div>
                     <div>
@@ -516,7 +512,7 @@ function DecisionsSection() {
                       <p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-1">
                         Outcome
                       </p>
-                      <p className="text-sm font-medium" style={{ color: "#5B21B6" }}>
+                      <p className="text-sm font-medium text-[var(--color-text-primary)]">
                         {d.outcome}
                       </p>
                     </div>
@@ -566,8 +562,7 @@ function OutcomeSectionVoyacher() {
                       className="bg-[var(--color-bg)] px-8 py-8 text-center"
                     >
                       <p
-                        className="text-4xl font-black tracking-tighter mb-2"
-                        style={{ color: "#5B21B6" }}
+                        className="text-4xl font-black tracking-tighter mb-2 text-[var(--color-text-primary)]"
                       >
                         {s.number}
                       </p>
@@ -579,7 +574,7 @@ function OutcomeSectionVoyacher() {
                 </div>
                 <div
                   className="border-l-4 pl-8"
-                  style={{ borderColor: "#5B21B6" }}
+                  style={{ borderColor: "var(--color-accent-warm)" }}
                 >
                   <p className="text-lg font-light text-[var(--color-text-secondary)] leading-relaxed mb-4">
                     &ldquo;Designing Voyacher taught me that the hardest part of
@@ -619,13 +614,7 @@ function NextProjectSectionVoyacher() {
             A behavioral savings app for India&apos;s middle class — designed to
             change how people think about money.
           </p>
-          <Link
-            href="/finflow"
-            className="group inline-flex items-center gap-4 border border-[var(--color-bg)] text-[var(--color-bg)] px-10 py-4 font-bold uppercase tracking-widest text-[12px] hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] transition-all"
-          >
-            View Case Study
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </Link>
+          <Link href="/finflow" className="btn-primary">View Case Study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
         </ScrollReveal>
       </div>
     </section>

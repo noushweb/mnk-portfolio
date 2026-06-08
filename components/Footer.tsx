@@ -69,7 +69,7 @@ export default function Footer() {
         <div className="space-y-2 text-center md:text-left">
           <Logo />
           <p className="text-[var(--color-text-secondary)] text-sm">
-            End-to-end design. Real-world results.
+            Design meets code.
           </p>
         </div>
         <div className="flex gap-8">

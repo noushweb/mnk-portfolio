@@ -43,7 +43,7 @@ function Hero() {
               </div>
               <div><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-2">Tools</p><div className="flex flex-wrap gap-2">{["Figma","Tailwind CSS","Auto-Layout","Dev Mode"].map(t=><span key={t} className="px-2.5 py-1 bg-[var(--color-tag-bg)] text-[var(--color-text-secondary)] text-[11px] font-medium rounded-full">{t}</span>)}</div></div>
             </div>
-            <Link href="/field-layout-tool" className="group inline-flex items-center gap-4 bg-[#323232] text-white px-8 py-4 font-bold uppercase tracking-widest text-[12px] hover:bg-[var(--color-accent-warm)] transition-all w-fit">NEXT PROJECT <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
+            <Link href="/field-layout-tool" className="btn-primary">NEXT PROJECT <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
           </ScrollReveal>
         </div>
         <div className="flex-1"><ScrollReveal direction="right"><div className="bg-[var(--color-surface)] rounded-xl overflow-hidden">                      <Image src="/casestudy/images/design%20system/hero_design_%20system.webp" alt="Valley Design System" width={593} height={450} className="w-full h-auto block" /></div></ScrollReveal></div>
@@ -54,15 +54,15 @@ function Hero() {
 
 function Overview() {
   return (
-    <div className="px-8 md:px-20 py-32 bg-[var(--color-bg)]"><div className="max-w-7xl mx-auto"><div className="flex gap-20">
-      <div className="w-[240px] flex-shrink-0"><ScrollReveal><p className="text-xs uppercase tracking-[0.3em] font-bold text-[var(--color-text-muted)]">01 / Overview</p></ScrollReveal></div>
-      <div className="flex-1 max-w-[533px]">
+    <div className="px-8 md:px-20 py-32 bg-[var(--color-bg)]"><div className="max-w-7xl mx-auto"><div className="flex flex-col md:flex-row gap-8 md:gap-20">
+      <div className="md:w-[240px] flex-shrink-0"><ScrollReveal><p className="text-xs uppercase tracking-[0.3em] font-bold text-[var(--color-text-muted)]">01 / Overview</p></ScrollReveal></div>
+      <div className="flex-1 max-w-full md:max-w-[533px]">
         <ScrollReveal delay={100}>
           <p className="text-xl leading-relaxed text-[var(--color-text-secondary)] mb-6">A comprehensive, production-ready design system built on Tailwind CSS conventions — delivering full component coverage, state documentation, and developer-handoff annotations across Valmont&apos;s Valley product suite.</p>
           <p className="text-lg leading-relaxed text-[var(--color-text-secondary)]">Every token maps directly to a Tailwind class name. Every interactive component documents all six states. Every annotation was built for developer clarity — not designer satisfaction.</p>
         </ScrollReveal>
       </div>
-      <div className="flex flex-col gap-5 ml-auto">
+      <div className="flex flex-col gap-5 md:ml-auto">
         <ScrollReveal delay={200}>
           {[{l:"Components",v:"15+ Categories",accent:true},{l:"State Coverage",v:"6 States Each"},{l:"Token Alignment",v:"Tailwind CSS"}].map((s,i)=><div key={s.l} className={`border-l-2 pl-6 ${i>0?"mt-4":""}`} style={{borderColor:s.accent?"var(--color-accent-warm)":"var(--color-border)"}}><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-1">{s.l}</p><p className="text-xl font-medium">{s.v}</p></div>)}
         </ScrollReveal>
@@ -74,13 +74,13 @@ function Overview() {
 function Challenge() {
   const cards = [{t:"Inconsistency",d:"Same components, different sizes and colours across screens built by different teams."},{t:"Slow Handoff",d:"Developers re-interpreted designs rather than implementing a named spec — introducing drift on every sprint."},{t:"No States",d:"Components existed in one state — the happy path. Hover, disabled, error, and validation were built ad hoc."}];
   return (
-    <div className="px-8 md:px-20 py-32 bg-[var(--color-bg-alt)]"><div className="max-w-7xl mx-auto"><div className="flex gap-20">
-      <div className="w-[240px] flex-shrink-0"><ScrollReveal><p className="text-xs uppercase tracking-[0.3em] font-bold text-[var(--color-text-muted)]">02 / Challenge</p></ScrollReveal></div>
+    <div className="px-8 md:px-20 py-32 bg-[var(--color-bg-alt)]"><div className="max-w-7xl mx-auto"><div className="flex flex-col md:flex-row gap-8 md:gap-20">
+      <div className="md:w-[240px] flex-shrink-0"><ScrollReveal><p className="text-xs uppercase tracking-[0.3em] font-bold text-[var(--color-text-muted)]">02 / Challenge</p></ScrollReveal></div>
       <div className="flex-1">
         <ScrollReveal delay={100}>
           <h2 className="text-[28px] font-medium tracking-tight mb-6">Without a system, every screen is a new decision.</h2>
           <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mb-12">Valmont&apos;s Valley product suite spans enterprise web applications and field tablet tools — multiple surfaces, multiple teams, multiple engineering stacks. Without a unified design language, the same button appeared in four different sizes across six different screens.</p>
-          <div className="flex flex-wrap gap-6">{cards.map((c,i)=><ScrollReveal key={i} delay={200+i*100}><div className="bg-[var(--color-surface)] border border-[var(--color-border)] w-full md:max-w-[298px] p-6"><span className="text-[22px] font-medium text-[var(--color-accent-warm)]">{c.t}</span><p className="text-sm text-[var(--color-text-secondary)] mt-3">{c.d}</p></div></ScrollReveal>)}</div>
+          <div className="flex flex-wrap gap-6">{cards.map((c,i)=><ScrollReveal key={i} delay={200+i*100}><div className="bg-[var(--color-surface)] border border-[var(--color-border)] w-full md:max-w-[298px] p-6"><span className="text-[22px] font-medium text-[var(--color-text-primary)]">{c.t}</span><p className="text-sm text-[var(--color-text-secondary)] mt-3">{c.d}</p></div></ScrollReveal>)}</div>
         </ScrollReveal>
       </div>
     </div></div></div>
@@ -137,7 +137,7 @@ function Principles() {
     <div className="px-8 md:px-20 py-32 bg-[var(--color-bg-alt)]"><div className="max-w-7xl mx-auto">
       <ScrollReveal>      <h2 className="text-4xl font-light tracking-tight mb-12">The system follows five non-negotiables.</h2></ScrollReveal>
       <div className="flex flex-wrap gap-6">
-        {prs.map((p,i)=><ScrollReveal key={i} delay={i*80}><div className="bg-[var(--color-surface)] border border-[var(--color-border)] p-8 w-full md:w-[410px]"><span className="text-[22px] font-medium text-[var(--color-accent-warm)]">0{i+1}</span><h4 className="font-bold text-lg mt-1 mb-2 text-[var(--color-text-primary)]">{p.t}</h4><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{p.d}</p></div></ScrollReveal>)}
+        {prs.map((p,i)=><ScrollReveal key={i} delay={i*80}><div className="bg-[var(--color-surface)] border border-[var(--color-border)] p-8 w-full md:w-[410px]"><span className="text-[22px] font-medium text-[var(--color-text-muted)]">0{i+1}</span><h4 className="font-bold text-lg mt-1 mb-2 text-[var(--color-text-primary)]">{p.t}</h4><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{p.d}</p></div></ScrollReveal>)}
       </div>
     </div></div>
   );
@@ -145,11 +145,11 @@ function Principles() {
 
 function Outcome() {
   return (
-    <div className="px-8 md:px-20 py-32 bg-[var(--color-bg)]"><div className="max-w-7xl mx-auto"><div className="flex gap-20">
-      <div className="w-[240px] flex-shrink-0"><ScrollReveal><p className="text-xs uppercase tracking-[0.3em] font-bold text-[var(--color-text-muted)]">06 / Outcome</p></ScrollReveal></div>
-      <div className="flex-1 max-w-[920px]">
+    <div className="px-8 md:px-20 py-32 bg-[var(--color-bg)]"><div className="max-w-7xl mx-auto"><div className="flex flex-col md:flex-row gap-8 md:gap-20">
+      <div className="md:w-[240px] flex-shrink-0"><ScrollReveal><p className="text-xs uppercase tracking-[0.3em] font-bold text-[var(--color-text-muted)]">06 / Outcome</p></ScrollReveal></div>
+      <div className="flex-1 max-w-full md:max-w-[920px]">
         <ScrollReveal delay={100}><blockquote className="text-[28px] font-light leading-[40px] text-[var(--color-text-primary)] mb-16">&ldquo;Standardized 200+ UI components into a master design system — increasing designer-to-developer handoff speed by 25% across the Valley product suite.&rdquo;</blockquote></ScrollReveal>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">{[{t:"Single Source of Truth",d:"One Figma file serves as the definitive component reference for all Valley products — web and tablet — eliminating per-project design drift."},{t:"25% Faster Handoffs",d:"Named components, annotated interactions, and Tailwind-aligned tokens mean developers implement rather than interpret."},{t:"Full State Coverage",d:"Every component ships with all 6 interaction states. Edge cases, validation, disabled, and error flows are designed before a line of code is written."},{t:"Field-Tested",d:"The same token set that powers enterprise web dashboards is deployed directly in the Field Layout Tool iPad app — one system, two surfaces."}].map((x,i)=><ScrollReveal key={i} delay={200+i*100}><div><p className="text-[11px] uppercase tracking-widest font-bold text-[var(--color-accent-warm)] mb-4">{x.t}</p><p className="text-[var(--color-text-secondary)] leading-relaxed">{x.d}</p></div></ScrollReveal>)}</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">{[{t:"Single Source of Truth",d:"One Figma file serves as the definitive component reference for all Valley products — web and tablet — eliminating per-project design drift."},{t:"25% Faster Handoffs",d:"Named components, annotated interactions, and Tailwind-aligned tokens mean developers implement rather than interpret."},{t:"Full State Coverage",d:"Every component ships with all 6 interaction states. Edge cases, validation, disabled, and error flows are designed before a line of code is written."},{t:"Field-Tested",d:"The same token set that powers enterprise web dashboards is deployed directly in the Field Layout Tool iPad app — one system, two surfaces."}].map((x,i)=><ScrollReveal key={i} delay={200+i*100}><div><p className="text-[11px] uppercase tracking-widest font-bold text-[var(--color-text-primary)] mb-4">{x.t}</p><p className="text-[var(--color-text-secondary)] leading-relaxed">{x.d}</p></div></ScrollReveal>)}</div>
       </div>
     </div></div></div>
   );

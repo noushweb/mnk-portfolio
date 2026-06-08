@@ -42,10 +42,10 @@ function Hero() {
               </div>
               <div><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-2">Tools</p><div className="flex flex-wrap gap-2">{["Figma","FigJam","Google Maps API","GPS Integration"].map(t=><span key={t} className="px-2.5 py-1 bg-[var(--color-tag-bg)] text-[var(--color-text-secondary)] text-[11px] font-medium rounded-full">{t}</span>)}</div></div>
             </div>
-            <Link href="/valmont-legacy-redesign" className="group inline-flex items-center gap-4 bg-[#323232] text-white px-8 py-4 font-bold uppercase tracking-widest text-[12px] hover:bg-[var(--color-accent-warm)] transition-all w-fit">Next Project <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
+            <Link href="/valmont-legacy-redesign" className="btn-primary">Next Project <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
           </ScrollReveal>
         </div>
-        <div className="lg:col-span-7 order-1 lg:order-2"><ScrollReveal direction="right"><div className="relative aspect-[4/3] bg-[var(--color-bg-alt)] border border-[var(--color-border)] overflow-hidden"><Image src="/casestudy/images/FLT/hero.png" alt="Field Layout Tool" fill className="object-cover object-top" /><div className="absolute top-4 right-4 bg-[var(--color-surface)] px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-[#27AE60]"/><span className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-text-secondary)]">In Production</span></div></div></ScrollReveal></div>
+        <div className="lg:col-span-7 order-1 lg:order-2"><ScrollReveal direction="right"><div className="relative aspect-[4/3] bg-[var(--color-bg-alt)] border border-[var(--color-border)] overflow-hidden"><Image src="/casestudy/images/FLT/hero.png" alt="Field Layout Tool" fill className="object-cover object-top" /><div className="absolute top-4 right-4 bg-[var(--color-surface)] px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-[#27AE60]"/><span className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-text-secondary)]">Deployed</span></div></div></ScrollReveal></div>
       </div>
     </section>
   );
@@ -130,6 +130,6 @@ function Outcome() {
 
 function NextProject() {
   return (
-    <section className="bg-[var(--color-accent)] py-32 px-8 md:px-20"><Link href="/work-detail" className="max-w-7xl mx-auto block group"><ScrollReveal><p className="text-[11px] uppercase tracking-[0.4em] text-[var(--color-text-muted)] font-bold mb-6">Next Project</p><h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-[var(--color-bg)] tracking-tighter mb-10 group-hover:text-[var(--color-accent-warm)] transition-colors">Valmont Industries — Legacy Redesign</h2><div className="w-16 h-16 rounded-full border border-[var(--color-bg)]/20 flex items-center justify-center group-hover:bg-[var(--color-accent-warm)] group-hover:border-[var(--color-accent-warm)] transition-all"><ArrowRight className="w-6 h-6 text-[var(--color-bg)]" /></div></ScrollReveal></Link></section>
+    <section className="bg-[var(--color-accent)] py-32 px-8 md:px-20"><Link href="/valmont-legacy-redesign" className="max-w-7xl mx-auto block group"><ScrollReveal><p className="text-[11px] uppercase tracking-[0.4em] text-[var(--color-text-muted)] font-bold mb-6">Next Project</p><h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-[var(--color-bg)] tracking-tighter mb-10 group-hover:text-[var(--color-accent-warm)] transition-colors">Valmont Industries — Legacy Redesign</h2><div className="w-16 h-16 rounded-full border border-[var(--color-bg)]/20 flex items-center justify-center group-hover:bg-[var(--color-accent-warm)] group-hover:border-[var(--color-accent-warm)] transition-all"><ArrowRight className="w-6 h-6 text-[var(--color-bg)]" /></div></ScrollReveal></Link></section>
   );
 }

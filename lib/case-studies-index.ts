@@ -148,7 +148,6 @@ export interface CaseStudy {
 import vmont from "./data/valmont-legacy-redesign.json";
 import voya from "./data/voyacher.json";
 import finf from "./data/finflow.json";
-import hala from "./data/hala-app.json";
 import road from "./data/roadshow.json";
 import vds from "./data/valley-dealer-suite.json";
 import flt from "./data/field-layout-tool.json";

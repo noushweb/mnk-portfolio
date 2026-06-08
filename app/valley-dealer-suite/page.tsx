@@ -43,7 +43,7 @@ function Hero() {
               </div>
               <div><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-2">Tools</p><div className="flex flex-wrap gap-2">{["Figma","FigJam","Figma Prototyping"].map(t=><span key={t} className="px-2.5 py-1 bg-[var(--color-tag-bg)] text-[var(--color-text-secondary)] text-[11px] font-medium rounded-full">{t}</span>)}</div></div>
             </div>
-            <Link href="/design-system" className="group inline-flex items-center gap-4 bg-[#323232] text-white px-8 py-4 font-bold uppercase tracking-widest text-[12px] hover:bg-[var(--color-accent-warm)] transition-all w-fit">Next Project <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
+            <Link href="/design-system" className="btn-primary">Next Project <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
           </ScrollReveal>
         </div>
         <div className="lg:col-span-7 order-1 lg:order-2"><ScrollReveal direction="right"><div className="rounded-2xl border border-[var(--color-border)] shadow-lg overflow-hidden"><Image src="/casestudy/images/Dealer/hero.webp" alt="Valley Dealer Suite" width={800} height={500} className="w-full h-auto block" /></div></ScrollReveal></div>
@@ -75,9 +75,9 @@ function Overview() {
 
 function Challenge() {
   const cards = [
-    {icon:PackageX,bg:"#FEF3F2",c:"#EB5757",t:"No Order Visibility",d:"Dealers lacked a real-time mobile view of open orders, statuses, and purchase details while in the field."},
-    {icon:BellOff,bg:"#FFFBEB",c:"#F2994A",t:"Missed Notifications",d:"Critical order updates, delays, and feature announcements had no dedicated mobile delivery channel."},
-    {icon:Puzzle,bg:"#EEF4FF",c:"#005DAA",t:"Fragmented Ecosystem",d:"Valley® has multiple dealer tools with no central launchpad connecting them for quick, unified access."},
+    {icon:PackageX,t:"No Order Visibility",d:"Dealers lacked a real-time mobile view of open orders, statuses, and purchase details while in the field."},
+    {icon:BellOff,t:"Missed Notifications",d:"Critical order updates, delays, and feature announcements had no dedicated mobile delivery channel."},
+    {icon:Puzzle,t:"Fragmented Ecosystem",d:"Valley® has multiple dealer tools with no central launchpad connecting them for quick, unified access."},
   ];
   return (
     <div className="bg-[var(--color-bg-alt)] py-32 mb-32">
@@ -90,7 +90,7 @@ function Challenge() {
               <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed mb-12">Critical updates were missed. Workflows were fragmented. Dealers needed a reliable, mobile-first way to check order statuses, receive alerts on delays, and navigate the Valley® app ecosystem — all in one place.</p>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {cards.map((c,i)=><ScrollReveal key={c.t} delay={200+i*100}><div className="bg-[var(--color-surface)] border border-[var(--color-border)] p-8"><div className="w-10 h-10 flex items-center justify-center mb-5 rounded-lg" style={{background:c.bg}}><c.icon className="w-5 h-5" style={{color:c.c}}/></div><h4 className="font-bold text-sm uppercase tracking-widest mb-3">{c.t}</h4><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{c.d}</p></div></ScrollReveal>)}
+              {cards.map((c,i)=><ScrollReveal key={c.t} delay={200+i*100}><div className="bg-[var(--color-surface)] border border-[var(--color-border)] p-8"><div className="w-10 h-10 flex items-center justify-center mb-5 rounded-lg bg-[#FEE2E2] dark:bg-[#2d1515]"><c.icon className="w-5 h-5 text-[#DC2626] dark:text-[#fca5a5]"/></div><h4 className="font-bold text-sm uppercase tracking-widest mb-3">{c.t}</h4><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{c.d}</p></div></ScrollReveal>)}
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@ function Features() {
 function FeatureBlock({num,title,desc,items,insight,uxInsight,last}:{num:string;title:string;desc:string;items:{accent?:boolean;t:string;d:string}[],insight?:string;uxInsight?:string;last?:boolean}) {
   return (
     <div className={`grid grid-cols-1 lg:grid-cols-12 gap-0 items-start ${last?"":"mb-24"}`}>
-      <div className="lg:col-span-1"><ScrollReveal><span className="text-[10px] uppercase tracking-widest text-[var(--color-accent-warm)]">{num}</span></ScrollReveal></div>
+      <div className="lg:col-span-1"><ScrollReveal><span className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)]">{num}</span></ScrollReveal></div>
       <div className="lg:col-span-5 lg:pr-16">
         <ScrollReveal delay={100}>
           <h4 className="text-2xl font-medium tracking-tight mb-6">{title}</h4>
@@ -151,13 +151,13 @@ function FeatureBlock({num,title,desc,items,insight,uxInsight,last}:{num:string;
             {items.map((it,i)=><div key={i} className="flex gap-4"><div className="w-1 flex-shrink-0 mt-1 rounded" style={{background:it.accent?"var(--color-accent-warm)":"var(--color-border)",height:40}}/><div><p className="font-bold text-sm text-[var(--color-text-primary)] mb-1">{it.t}</p><p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{it.d}</p></div></div>)}
           </div>}
           {num==="03" && <div className="space-y-3 mt-8">
-            {[{c:"#EB5757",t:"Order Status",s:"Delays, confirmations, and shipment alerts"},{c:"#F2C94C",t:"New Features",s:"App updates and capability announcements"},{c:"#005DAA",t:"Valley Bulletins",s:"Pricing updates, product news, dealer comms"}].map(n=><div key={n.t} className="flex items-center gap-4 bg-[var(--color-surface)] border border-[var(--color-border)] px-5 py-3.5"><div className="w-3 h-3 rounded-full flex-shrink-0" style={{background:n.c}}/><div><span className="text-sm font-bold text-[var(--color-text-primary)]">{n.t}</span><span className="text-xs text-[var(--color-text-muted)] ml-2">{n.s}</span></div></div>)}
+            {[{t:"Order Status",s:"Delays, confirmations, and shipment alerts"},{t:"New Features",s:"App updates and capability announcements"},{t:"Valley Bulletins",s:"Pricing updates, product news, dealer comms"}].map(n=><div key={n.t} className="flex items-center gap-4 bg-[var(--color-surface)] border border-[var(--color-border)] px-5 py-3.5"><div className="w-3 h-3 rounded-full flex-shrink-0 bg-[var(--color-text-muted)]"/><div><span className="text-sm font-bold text-[var(--color-text-primary)]">{n.t}</span><span className="text-xs text-[var(--color-text-muted)] ml-2">{n.s}</span></div></div>)}
             <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed pt-2">The <strong className="text-[var(--color-text-primary)]">Valley® App Launchpad</strong> within the suite serves as a single entry point to the entire Valley® digital ecosystem — reducing app-switching friction and keeping dealers in flow.</p>
           </div>}
         </ScrollReveal>
       </div>
       <div className="lg:col-span-6 mt-8 lg:mt-0">
-        {insight && <ScrollReveal delay={200}><div className="bg-[#003D72]/5 border border-[#003D72]/10 p-6 rounded"><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-4">Design Decision</p><p className="text-sm italic text-[var(--color-text-secondary)]">{insight}</p></div></ScrollReveal>}
+        {insight && <ScrollReveal delay={200}><div className="bg-[var(--color-bg-alt)] border border-[var(--color-border)] p-6 rounded"><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-4">Design Decision</p><p className="text-sm italic text-[var(--color-text-secondary)]">{insight}</p></div></ScrollReveal>}
         {uxInsight && <ScrollReveal delay={200}><div className="bg-[var(--color-bg-alt)] border border-[var(--color-border)] p-6 rounded"><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-4">UX Insight</p><p className="text-sm italic text-[var(--color-text-secondary)] mb-4">{uxInsight}</p><div className="bg-[var(--color-surface)] border border-[var(--color-border)] px-4 py-2.5 rounded w-fit flex items-center gap-3"><Clock className="w-4 h-4 text-[var(--color-text-muted)]"/><span className="text-xs text-[var(--color-text-muted)]">Last checked: Today, 9:41 AM</span></div></div></ScrollReveal>}
         {num==="03" && <ScrollReveal delay={200}><div className="grid grid-cols-2 gap-4">
           {[{icon:Edit3,t:"Edit Mode",d:"Select all, mark read/unread, bulk delete. Full inbox control."},{icon:Loader2,t:"Loading State",d:"Branded animation prevents jarring empty-state flash."},{icon:Trash2,t:"Delete Animation",d:"Trash icon animates, then a 'Done!' confirmation — no silent deletion."},{icon:Inbox,t:"Empty State",d:'"Watch this space!" — reassures users the feature is active, not broken.'}].map((x,i)=><div key={i} className="bg-[var(--color-surface)] border border-[var(--color-border)] p-5"><x.icon className="w-5 h-5 text-[var(--color-text-muted)] mb-3"/><p className="text-sm font-bold text-[var(--color-text-primary)] mb-1">{x.t}</p><p className="text-xs text-[var(--color-text-secondary)] leading-relaxed">{x.d}</p></div>)}
@@ -179,10 +179,10 @@ function Outcome() {
               Enterprise tools deserve the same UX craft as consumer apps. Every second of confusion costs real trust — and real revenue.
             </blockquote>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-0 border border-[var(--color-border)] mb-16">
-              {[{n:"1",l:"Unified Hub"},{n:"3",l:"Notif. Streams"},{n:"6",l:"Onboarding Steps"},{n:"100%",l:"Dev-Ready"}].map(s=><div key={s.l} className="p-6 text-center border-r border-[var(--color-border)] last:border-r-0"><p className="text-3xl font-bold text-[var(--color-accent-warm)] mb-1">{s.n}</p><p className="text-xs text-[var(--color-text-muted)] uppercase tracking-widest font-bold">{s.l}</p></div>)}
+              {[{n:"1",l:"Unified Hub"},{n:"3",l:"Notif. Streams"},{n:"6",l:"Onboarding Steps"},{n:"100%",l:"Dev-Ready"}].map(s=><div key={s.l} className="p-6 text-center border-r border-[var(--color-border)] last:border-r-0"><p className="text-3xl font-bold text-[var(--color-text-primary)] mb-1">{s.n}</p><p className="text-xs text-[var(--color-text-muted)] uppercase tracking-widest font-bold">{s.l}</p></div>)}
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">
-              {[{t:"Unified Pipeline",d:"One app replaced multiple fragmented touchpoints — dealers manage their entire order pipeline from a single screen, without switching tools."},{t:"Zero Missed Alerts",d:"Three color-coded notification streams ensure order delays, feature updates, and bulletins each reach dealers through the right priority channel."},{t:"Self-Service Day One",d:"A 6-step tooltip walkthrough eliminated the need for training sessions — dealers become independent users on first launch."},{t:"Functional Empathy",d:"Loading states, delete confirmations, and empty states weren't decorative — they were deliberate trust signals that make the app feel considered and reliable."}].map((x,i)=><ScrollReveal key={i} delay={200+i*100}><div><p className="text-[11px] uppercase tracking-widest font-bold text-[var(--color-accent-warm)] mb-4">{x.t}</p><p className="text-[var(--color-text-secondary)] leading-relaxed">{x.d}</p></div></ScrollReveal>)}
+              {[{t:"Unified Pipeline",d:"One app replaced multiple fragmented touchpoints — dealers manage their entire order pipeline from a single screen, without switching tools."},{t:"Zero Missed Alerts",d:"Three color-coded notification streams ensure order delays, feature updates, and bulletins each reach dealers through the right priority channel."},{t:"Self-Service Day One",d:"A 6-step tooltip walkthrough eliminated the need for training sessions — dealers become independent users on first launch."},{t:"Functional Empathy",d:"Loading states, delete confirmations, and empty states weren't decorative — they were deliberate trust signals that make the app feel considered and reliable."}].map((x,i)=><ScrollReveal key={i} delay={200+i*100}><div><p className="text-[11px] uppercase tracking-widest font-bold text-[var(--color-text-primary)] mb-4">{x.t}</p><p className="text-[var(--color-text-secondary)] leading-relaxed">{x.d}</p></div></ScrollReveal>)}
             </div>
           </ScrollReveal>
         </div>
@@ -193,14 +193,6 @@ function Outcome() {
 
 function NextProject() {
   return (
-    <section className="bg-[var(--color-accent)] py-32 px-8 md:px-20">
-      <Link href="/design-system" className="max-w-7xl mx-auto block group">
-        <ScrollReveal>
-          <p className="text-[11px] uppercase tracking-[0.4em] text-[var(--color-text-muted)] font-bold mb-6">Next Project</p>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-[var(--color-bg)] tracking-tighter mb-10 group-hover:text-[var(--color-accent-warm)] transition-colors">Valley Design System</h2>
-          <div className="w-16 h-16 rounded-full border border-[var(--color-bg)]/20 flex items-center justify-center group-hover:bg-[var(--color-accent-warm)] group-hover:border-[var(--color-accent-warm)] transition-all"><ArrowRight className="w-6 h-6 text-[var(--color-bg)]" /></div>
-        </ScrollReveal>
-      </Link>
-    </section>
+    <section className="bg-[var(--color-accent)] py-32 px-8 md:px-20"><div className="max-w-7xl mx-auto text-center"><ScrollReveal><p className="text-[11px] font-bold uppercase tracking-[0.3em] text-[var(--color-text-muted)] mb-6">Next Project</p><h2 className="text-4xl md:text-6xl font-light tracking-tighter text-[var(--color-bg)] mb-8">Valley Design System</h2><p className="text-[var(--color-bg)]/60 text-lg mb-12 max-w-xl mx-auto">A comprehensive design system for the Valley® product ecosystem — components, tokens, and patterns.</p><Link href="/design-system" className="btn-primary">View Case Study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link></ScrollReveal></div></section>
   );
 }

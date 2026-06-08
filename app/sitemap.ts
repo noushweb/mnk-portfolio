@@ -13,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/finflow", priority: 0.6 },
     { path: "/roadshow", priority: 0.6 },
     { path: "/valley-dealer-suite", priority: 0.5 },
-    { path: "/hala-app", priority: 0.5 },
     { path: "/field-layout-tool", priority: 0.5 },
     { path: "/design-tool-calculator", priority: 0.5 },
     { path: "/design-system", priority: 0.5 },

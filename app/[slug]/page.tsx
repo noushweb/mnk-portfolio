@@ -89,7 +89,7 @@ export default async function CaseStudyPage({
               {cs.hero.nextProjectSlug && (
                 <Link
                   href={`/${cs.hero.nextProjectSlug}`}
-                  className="group inline-flex items-center gap-4 bg-[#323232] text-white px-8 py-4 font-bold uppercase tracking-widest text-[12px] hover:bg-[var(--color-accent-warm)] transition-all w-fit"
+            className="btn-primary"
                 >
                   Next Project
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -269,18 +269,10 @@ function ProcessSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
             {cs.process.phases.map((phase, i) => (
               <ScrollReveal key={phase.title} delay={i * 80}>
                 <div
-                  className={`p-6 rounded-xl ${
-                    phase.highlighted
-                      ? "bg-[var(--color-accent-warm)] text-white"
-                      : "bg-[var(--color-surface)]"
-                  }`}
+                  className="p-6 rounded-xl bg-[var(--color-surface)]"
                 >
                   <span
-                    className={`text-[10px] font-bold uppercase tracking-widest ${
-                      phase.highlighted
-                        ? "text-white/60"
-                        : "text-[var(--color-accent-warm)]"
-                    }`}
+                    className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-text-muted)]"
                   >
                     {phase.number}
                   </span>
@@ -288,11 +280,7 @@ function ProcessSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
                     {phase.title}
                   </h3>
                   <p
-                    className={`text-sm leading-relaxed ${
-                      phase.highlighted
-                        ? "text-white/70"
-                        : "text-[var(--color-text-secondary)]"
-                    }`}
+                    className="text-sm leading-relaxed text-[var(--color-text-secondary)]"
                   >
                     {phase.description}
                   </p>
@@ -342,7 +330,7 @@ function ApplicationsSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
               }`}
             >
               <div className="flex items-center gap-4 mb-10">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white font-black text-sm flex-shrink-0 bg-[var(--color-accent-warm)]">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white font-black text-sm flex-shrink-0 bg-[var(--color-text-muted)]">
                   {app.number}
                 </div>
                 <div>
@@ -478,7 +466,7 @@ function NextProjectSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
           </p>
           <Link
             href={`/${cs.nextProject.slug}`}
-            className="btn-primary"
+            className="group inline-flex items-center gap-4 bg-[#323232] text-white px-8 py-4 font-bold uppercase tracking-widest text-[12px] hover:bg-[var(--color-accent-warm)] transition-all w-fit"
           >
             View Case Study <ArrowRight className="w-4 h-4" />
           </Link>
@@ -515,7 +503,7 @@ function ProblemSection({ cs }: { cs: ReturnType<typeof getCaseStudy> }) {
             {cs.problem.cards.map((card, i) => (
               <ScrollReveal key={card.title} delay={i * 100}>
                 <div className="bg-[var(--color-surface)] p-6 rounded-xl border border-[var(--color-border)]">
-                  <h3 className="font-bold text-lg mb-2 text-[var(--color-accent-warm)]">{card.title}</h3>
+                  <h3 className="font-bold text-lg mb-2 text-[var(--color-text-primary)]">{card.title}</h3>
                   <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{card.description}</p>
                 </div>
               </ScrollReveal>
@@ -597,7 +585,7 @@ function DesignDecisionsSection({ cs }: { cs: ReturnType<typeof getCaseStudy> })
             {items.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 80}>
                 <div className="bg-[var(--color-surface)] p-6 rounded-xl border border-[var(--color-border)]">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-accent-warm)]">{item.number}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-text-muted)]">{item.number}</span>
                   <h3 className="font-bold text-lg mt-2 mb-1">{item.title}</h3>
                   <p className="text-xs text-[var(--color-text-muted)] mb-3">{item.subtitle}</p>
                   {item.image && (

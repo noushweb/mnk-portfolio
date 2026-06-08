@@ -19,7 +19,7 @@
         "FigJam"
       ]
     },
-    "nextProjectSlug": "hala-app"
+    "nextProjectSlug": "roadshow"
   },
   "overview": {
     "sectionNumber": "01",
@@ -229,9 +229,9 @@
   },
   "nextProject": {
     "label": "Next Project",
-    "title": "Hala App",
-    "description": "A bilingual B2B directory and premium space booking platform.",
-    "slug": "hala-app"
+    "title": "Road Show",
+    "description": "An end-to-end delivery management platform connecting supervisors, cashiers, and drivers.",
+    "slug": "roadshow"
   },
   "screens": {
     "sectionNumber": "05",

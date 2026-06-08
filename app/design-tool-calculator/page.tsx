@@ -39,7 +39,7 @@ function Hero() {
               </div>
               <div><p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-bold mb-2">Tools</p><div className="flex flex-wrap gap-2">{["Figma","FigJam","iOS Design System"].map(t=><span key={t} className="px-2.5 py-1 bg-[var(--color-tag-bg)] text-[var(--color-text-secondary)] text-[11px] font-medium rounded-full">{t}</span>)}</div></div>
             </div>
-            <Link href="/valley-dealer-suite" className="group inline-flex items-center gap-4 bg-[#323232] text-white px-8 py-4 font-bold uppercase tracking-widest text-[12px] hover:bg-[var(--color-accent-warm)] transition-all w-fit">Next Project <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
+            <Link href="/valley-dealer-suite" className="btn-primary">Next Project <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
           </ScrollReveal>
         </div>
         <div className="lg:col-span-7 order-1 lg:order-2"><ScrollReveal direction="right"><div className="aspect-[16/10] bg-[var(--color-bg-alt)] rounded border border-[var(--color-border)] overflow-hidden"><Image src="/casestudy/images/DTC/hero.webp" alt="Design Tool Calculator" width={800} height={500} className="w-full h-full object-cover" /></div></ScrollReveal></div>
@@ -97,7 +97,7 @@ function Outcome() {
   return (
     <div className="bg-[var(--color-bg-alt)] py-24 px-8 md:px-20"><div className="max-w-7xl mx-auto">
       <ScrollReveal><blockquote className="text-2xl md:text-3xl font-light italic leading-relaxed text-[var(--color-text-secondary)] max-w-3xl mb-16">&ldquo;The Valley Design Tool Calculator transformed a desktop-bound, friction-heavy workflow into a sleek, field-ready mobile experience.&rdquo;</blockquote></ScrollReveal>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">{[{t:"Mobile First",d:"Complex calculations now run on iOS — wherever dealers need them."},{t:"Complete Modules",d:"7 calculator modules: System Flow, Pressure, Electrical, Operating Cost, Slab Volume, and Summary."},{t:"Brand Aligned",d:"Deep navy (#003B6F) as primary color — consistent with Valley brand standards."},{t:"Developer Ready",d:"Structured components, annotations, and design tokens for clean handoff."}].map((x,i)=><ScrollReveal key={i} delay={100+i*100}><div><p className="text-[11px] uppercase tracking-widest font-bold text-[var(--color-accent-warm)] mb-4">{x.t}</p><p className="text-[var(--color-text-secondary)] leading-relaxed">{x.d}</p></div></ScrollReveal>)}</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">{[{t:"Mobile First",d:"Complex calculations now run on iOS — wherever dealers need them."},{t:"Complete Modules",d:"7 calculator modules: System Flow, Pressure, Electrical, Operating Cost, Slab Volume, and Summary."},{t:"Brand Aligned",d:"Deep navy (#003B6F) as primary color — consistent with Valley brand standards."},{t:"Developer Ready",d:"Structured components, annotations, and design tokens for clean handoff."}].map((x,i)=><ScrollReveal key={i} delay={100+i*100}><div><p className="text-[11px] uppercase tracking-widest font-bold text-[var(--color-text-primary)] mb-4">{x.t}</p><p className="text-[var(--color-text-secondary)] leading-relaxed">{x.d}</p></div></ScrollReveal>)}</div>
     </div></div>
   );
 }
