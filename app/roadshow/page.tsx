@@ -11,7 +11,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Road Show — Case Study | Mohammed Noushad",
-  description: "End-to-end delivery management platform connecting supervisors, cashiers, and drivers.",
+  description: "End-to-end delivery management platform connecting supervisors, cashiers, and drivers — route planning, real-time tracking, and settlement workflows in one mobile dashboard.",
   openGraph: {
     title: "Road Show — Case Study",
   },

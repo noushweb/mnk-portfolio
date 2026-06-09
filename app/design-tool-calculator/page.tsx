@@ -6,7 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Valley Design Tool Calculator — Case Study | Mohammed Noushad",
-  description: "Precision engineering calculations — built for the field.",
+  description: "Precision engineering calculations built for the field — structural load analysis and irrigation planning tools that work offline on any device, anywhere.",
   openGraph: {
     title: "Valley Design Tool Calculator — Case Study",
   },

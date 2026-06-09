@@ -11,7 +11,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "FinFlow — Case Study | Mohammed Noushad",
-  description: "A savings app designed to change how India thinks about money.",
+  description: "A savings app designed to change how India thinks about money — behavioral nudges, goal-based tracking, and a gamified rewards layer that builds lasting financial habits.",
   openGraph: {
     title: "FinFlow — Case Study",
   },

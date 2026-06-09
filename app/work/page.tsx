@@ -7,7 +7,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Work | Mohammed Noushad — Product Designer",
   description:
-    "A selection of projects across product design and design systems.",
+    "A curated selection of product design projects — enterprise web apps, mobile platforms, design systems, and UX case studies from concept to shipped product.",
   openGraph: {
     title: "Work",
   },
