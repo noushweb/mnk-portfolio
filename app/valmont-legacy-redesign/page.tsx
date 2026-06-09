@@ -7,6 +7,9 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Valmont Legacy Redesign — Case Study | Mohammed Noushad",
   description: "Five legacy applications modernised into one unified enterprise web experience.",
+  openGraph: {
+    title: "Valmont Legacy Redesign — Case Study",
+  },
 };
 
 export default function ValmontPage() {

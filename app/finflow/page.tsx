@@ -12,6 +12,9 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "FinFlow — Case Study | Mohammed Noushad",
   description: "A savings app designed to change how India thinks about money.",
+  openGraph: {
+    title: "FinFlow — Case Study",
+  },
 };
 
 const ACCENT = "var(--color-accent-warm)";

@@ -7,6 +7,9 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Valley Dealer Suite — Case Study | Mohammed Noushad",
   description: "A centralized mobile hub for the Valley® dealer ecosystem.",
+  openGraph: {
+    title: "Valley Dealer Suite — Case Study",
+  },
 };
 
 export default function VdsPage() {

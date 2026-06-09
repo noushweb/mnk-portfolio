@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Work | Mohammed Noushad — Product Designer",
   description:
     "A selection of projects across product design and design systems.",
+  openGraph: {
+    title: "Work",
+  },
 };
 
 const projects = [

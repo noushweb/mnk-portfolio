@@ -7,6 +7,9 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Field Layout Tool — Case Study | Mohammed Noushad",
   description: "A GPS-powered tablet app for agricultural pivot planning.",
+  openGraph: {
+    title: "Field Layout Tool — Case Study",
+  },
 };
 
 const WARM = "var(--color-accent-warm)";

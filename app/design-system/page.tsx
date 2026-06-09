@@ -7,6 +7,9 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Valley Design System — Case Study | Mohammed Noushad",
   description: "A production-ready design system bridging design and engineering.",
+  openGraph: {
+    title: "Valley Design System — Case Study",
+  },
 };
 
 export default function DsPage() {

@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Voyacher — Case Study | Mohammed Noushad",
   description:
     "Voyacher is a Qatar-based travel platform — buy a voucher, book anything.",
+  openGraph: {
+    title: "Voyacher — Case Study",
+  },
 };
 
 export default function VoyacherPage() {

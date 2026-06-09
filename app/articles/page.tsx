@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Articles | Mohammed Noushad — Product Designer",
   description:
     "Notes, reflections, and deep dives on product design, design systems, AI-assisted development, and building better digital experiences.",
+  openGraph: {
+    title: "Articles",
+  },
 };
 
 const PER_PAGE = 4;
