@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const projects = [
   {
     href: "/valmont-legacy-redesign",
-    image: "/casestudy/images/redesign/home.png",
+    image: "/casestudy/images/redesign/home.webp",
     tags: ["Enterprise", "B2B"],
     title: "Valmont Industries — Legacy Redesign",
     description: "5 legacy apps modernised into one unified enterprise web suite.",
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     href: "/field-layout-tool",
-    image: "/casestudy/images/FLT/main.png",
+    image: "/casestudy/images/FLT/main.webp",
     tags: ["AgTech", "Tablet"],
     imageBg: "#F0FDF4",
     title: "Field Layout Tool",

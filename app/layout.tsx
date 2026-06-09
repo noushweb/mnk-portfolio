@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   description:
     "Senior Product Designer in Dubai. 11+ years in UX/UI, design systems & AI-powered development. I design, build & ship — concept to deployed product, no handoffs.",
   metadataBase: new URL("https://enkay.dev"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
-    title: "Mohammed Noushad — Senior Product Designer",
+    title: {
+      template: "%s | Mohammed Noushad",
+      default: "Mohammed Noushad — Senior Product Designer",
+    },
     description:
       "Senior Product Designer in Dubai. 11+ years in UX/UI, design systems & AI-powered development. I design, build & ship — concept to deployed product, no handoffs.",
     url: "https://enkay.dev",
@@ -45,7 +45,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mohammed Noushad — Senior Product Designer",
+    title: {
+      template: "%s | Mohammed Noushad",
+      default: "Mohammed Noushad — Senior Product Designer",
+    },
     description:
       "Senior Product Designer in Dubai. 11+ years in UX/UI, design systems & AI-powered development.",
     images: ["/og-image.jpg"],

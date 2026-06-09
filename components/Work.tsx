@@ -12,7 +12,7 @@ const projects = [
     meta: "Enterprise Product Design · Dubai, UAE",
     description: "Designing clarity into complex industrial software.",
     linkText: "View Project",
-    image: "/casestudy/images/redesign/home.png",
+    image: "/casestudy/images/redesign/home.webp",
   },
   {
     id: "project-voyacher",

@@ -22,7 +22,6 @@ export default function Logo({ href = "/", onClick }: { href?: string; onClick?:
         onMouseLeave={() => setHovered(false)}
       >
         <svg width="209" height="34" viewBox="0 0 209 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-[22px] md:h-[28px] w-auto" aria-hidden="true">
-          <title>Mohammed Noushad Logo</title>
           <g clipPath="url(#clip-logo)">
             <path d="M0 7.28574V0H33.0691L36.3882 3.31906V10.0381L33.0691 13.3572H29.1025V7.28574H0ZM0 20.6429V13.3572H21.1691V20.6429H0ZM36.3882 30.6406L33.0691 33.9596H0V26.6739H29.1025V20.6024H33.0691L36.3882 23.9215V30.6406Z" style={{ fill: defaultColor }} />
             <path d="M50.1505 18.2953V34.0001H42.8647V7.28574L50.1505 18.2953ZM72.0077 26.7144L76.541 33.5953L76.1767 33.9596H67.7982L64.4386 28.9001L59.6624 21.6953L50.11 7.24526L45.6171 0.364287L45.9814 0H54.36L72.0077 26.7144ZM72.0077 15.7048V0H79.2934V26.6739L72.0077 15.6643V15.7048Z" style={pathStyle(true)} />

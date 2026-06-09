@@ -45,7 +45,7 @@ function Hero() {
             <Link href="/valmont-legacy-redesign" className="btn-primary">Next Project <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
           </ScrollReveal>
         </div>
-        <div className="lg:col-span-7 order-1 lg:order-2"><ScrollReveal direction="right"><div className="relative aspect-[4/3] bg-[var(--color-bg-alt)] border border-[var(--color-border)] overflow-hidden"><Image src="/casestudy/images/FLT/hero.png" alt="Field Layout Tool" fill className="object-cover object-top" /><div className="absolute top-4 right-4 bg-[var(--color-surface)] px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-[#27AE60]"/><span className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-text-secondary)]">Deployed</span></div></div></ScrollReveal></div>
+        <div className="lg:col-span-7 order-1 lg:order-2"><ScrollReveal direction="right"><div className="relative aspect-[4/3] bg-[var(--color-bg-alt)] border border-[var(--color-border)] overflow-hidden"><Image src="/casestudy/images/FLT/hero.webp" alt="Field Layout Tool" fill className="object-cover object-top" /><div className="absolute top-4 right-4 bg-[var(--color-surface)] px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-[#27AE60]"/><span className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-text-secondary)]">Deployed</span></div></div></ScrollReveal></div>
       </div>
     </section>
   );
@@ -93,7 +93,7 @@ function Screens() {
     <div className="px-4 md:px-8 py-16 max-w-7xl mx-auto">
       <ScrollReveal><p className="text-xs uppercase tracking-[0.3em] font-bold text-[var(--color-text-muted)] mb-8 px-4">04 / Screens</p></ScrollReveal>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {[{src:"/casestudy/images/FLT/one.png",alt:"Navigation Screen"},{src:"/casestudy/images/FLT/2@2x.png",alt:"Line Tool & Live Draw"},{src:"/casestudy/images/FLT/3@2x.png",alt:"Pivot Planning"},{src:"/casestudy/images/FLT/4@2x.png",alt:"Boundary Drawing"}].map((img,i)=><ScrollReveal key={i} delay={i*100}><Image src={img.src} alt={img.alt} width={600} height={450} className="w-full rounded-lg" /></ScrollReveal>)}
+        {[{src:"/casestudy/images/FLT/one.webp",alt:"Navigation Screen"},{src:"/casestudy/images/FLT/2@2x.webp",alt:"Line Tool & Live Draw"},{src:"/casestudy/images/FLT/3@2x.webp",alt:"Pivot Planning"},{src:"/casestudy/images/FLT/4@2x.webp",alt:"Boundary Drawing"}].map((img,i)=><ScrollReveal key={i} delay={i*100}><Image src={img.src} alt={img.alt} width={600} height={450} className="w-full rounded-lg" /></ScrollReveal>)}
       </div>
     </div>
   );

@@ -110,12 +110,12 @@ function Foundations() {
 
 function ComponentLibrary() {
   const comps = [
-    {img:"/casestudy/images/design%20system/comp-1-inputs.png",t:"Inputs",d:"Text, textarea, suffix/prefix, labeled. 4 sizes × 6 states.",tags:["XS·SM·MD·LG","6 States"]},
-    {img:"/casestudy/images/design%20system/comp-3-dropdown.png",t:"Dropdown",d:"Simple, multiselect, grouped, search with inline add.",tags:["Single·Multi","Search"]},
-    {img:"/casestudy/images/design%20system/comp-4-buttons.png",t:"Buttons",d:"Primary, secondary, ghost, destructive. Icon-only buttons with tooltips.",tags:["4 Variants","Accessibility"]},
-    {img:"/casestudy/images/design%20system/comp-6-selectors.png",t:"Selectors",d:"Toggle, Checkbox, Radio button and Radio group. All 4 states.",tags:["Toggle·Check·Radio"]},
-    {img:"/casestudy/images/design%20system/comp-8-tabs.png",t:"Tabs",d:"Desktop (MD/LG) and Mobile variants. Active: blue underline.",tags:["Desktop·Mobile"]},
-    {img:"/casestudy/images/design%20system/comp-12-modal.png",t:"Dialog / Modal",d:"Scrollable body with fixed header + footer. Max height 95vh.",tags:["Compact·Full-Width"]},
+    {img:"/casestudy/images/design%20system/comp-1-inputs.webp",t:"Inputs",d:"Text, textarea, suffix/prefix, labeled. 4 sizes × 6 states.",tags:["XS·SM·MD·LG","6 States"]},
+    {img:"/casestudy/images/design%20system/comp-3-dropdown.webp",t:"Dropdown",d:"Simple, multiselect, grouped, search with inline add.",tags:["Single·Multi","Search"]},
+    {img:"/casestudy/images/design%20system/comp-4-buttons.webp",t:"Buttons",d:"Primary, secondary, ghost, destructive. Icon-only buttons with tooltips.",tags:["4 Variants","Accessibility"]},
+    {img:"/casestudy/images/design%20system/comp-6-selectors.webp",t:"Selectors",d:"Toggle, Checkbox, Radio button and Radio group. All 4 states.",tags:["Toggle·Check·Radio"]},
+    {img:"/casestudy/images/design%20system/comp-8-tabs.webp",t:"Tabs",d:"Desktop (MD/LG) and Mobile variants. Active: blue underline.",tags:["Desktop·Mobile"]},
+    {img:"/casestudy/images/design%20system/comp-12-modal.webp",t:"Dialog / Modal",d:"Scrollable body with fixed header + footer. Max height 95vh.",tags:["Compact·Full-Width"]},
   ];
   return (
     <div className="px-8 md:px-20 py-32 bg-[var(--color-bg)]"><div className="max-w-7xl mx-auto">
