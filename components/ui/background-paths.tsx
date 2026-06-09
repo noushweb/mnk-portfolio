@@ -11,8 +11,7 @@ function FloatingPaths({ position }: { position: number }) {
 
   return (
     <div className="absolute inset-0 pointer-events-none">
-      <svg className="w-full h-full text-[var(--color-text-primary)] dark:text-[var(--color-text-primary)]" viewBox="0 0 696 316" fill="none">
-        <title>Background Paths</title>
+      <svg className="w-full h-full text-[var(--color-text-primary)] dark:text-[var(--color-text-primary)]" viewBox="0 0 696 316" fill="none" aria-hidden="true">
         {paths.map((path) => {
             const isAccent = path.id === 5 || path.id === 16 || path.id === 27;
             return (
