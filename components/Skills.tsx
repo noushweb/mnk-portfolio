@@ -18,6 +18,7 @@ const aiDev = [
   "OpenCode",
   "Figma AI",
   "Figma",
+  "Pencil",
   "Hermes",
   "Agent Platforms",
   "Next.js",
