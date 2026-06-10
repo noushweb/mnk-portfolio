@@ -101,6 +101,17 @@ export default function Work() {
               View All Work{" "}
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
+            <p className="mt-6 text-xs text-[var(--color-text-muted)]">
+              More design work at{" "}
+              <a
+                href="https://enkay.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--color-accent)] hover:text-[var(--color-accent-warm)] underline underline-offset-2 transition-colors"
+              >
+                enkay.dev
+              </a>
+            </p>
           </div>
         </ScrollReveal>
       </div>
