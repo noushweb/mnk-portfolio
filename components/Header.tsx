@@ -61,7 +61,7 @@ export default function Header() {
                 Articles
               </Link>
               <a
-                href="/casestudy/cv/mohammed_noushad_cv.pdf"
+                href="/casestudy/cv/mohammed_noushad_cv_ats.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-[13px] uppercase tracking-[1.5px] text-[var(--color-text-secondary)] nav-link"
@@ -175,7 +175,7 @@ export default function Header() {
             Articles
           </Link>
           <a
-            href="/casestudy/cv/mohammed_noushad_cv.pdf"
+            href="/casestudy/cv/mohammed_noushad_cv_ats.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMenu}
