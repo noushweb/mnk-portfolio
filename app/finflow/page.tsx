@@ -8,7 +8,6 @@ import {
   Lightbulb,
 } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
-import CaseStudyJsonLd from "@/components/CaseStudyJsonLd";
 
 export const metadata: Metadata = {
   title: "FinFlow — Case Study | Mohammed Noushad",
@@ -26,7 +25,6 @@ const ACCENT = "var(--color-accent-warm)";
 export default function FinflowPage() {
   return (
     <main className="pt-32 pb-24">
-      <CaseStudyJsonLd title="FinFlow" description="Behavioral savings app designed for India's aspirational middle class — zero-based budgeting, goal-based round-ups, and AI-powered financial literacy." slug="finflow" />
       <div className="px-8 md:px-20">
         <Breadcrumb />
         <Hero />

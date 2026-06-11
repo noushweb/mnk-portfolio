@@ -38,37 +38,6 @@ export default function About() {
               </p>
             </blockquote>
           </ScrollReveal>
-          <ScrollReveal delay={250}>
-            <div className="space-y-6 pt-4">
-              <h3 className="text-sm uppercase tracking-widest font-bold text-[var(--color-text-muted)]">Industries I&apos;ve designed for</h3>
-              <div className="flex flex-wrap gap-2">
-                {["Enterprise / B2B", "FinTech", "Travel", "Logistics", "Agritech", "SaaS"].map((industry) => (
-                  <span key={industry} className="px-4 py-2 bg-[var(--color-tag-bg)] text-[var(--color-text-secondary)] text-sm font-medium rounded-full">
-                    {industry}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal delay={300}>
-            <div className="space-y-6 pt-4 border-t border-[var(--color-border)]">
-              <h3 className="text-sm uppercase tracking-widest font-bold text-[var(--color-text-muted)]">Frequently Asked</h3>
-              <div className="space-y-4">
-                <details className="group">
-                  <summary className="text-lg font-medium text-[var(--color-text-primary)] cursor-pointer hover:text-[var(--color-accent-warm)] transition-colors">What does a Product Designer actually do?</summary>
-                  <p className="mt-2 text-[var(--color-text-secondary)] leading-relaxed">A Product Designer shapes the entire user experience of a digital product — from research and strategy through to visual interface design. I go further: I also build what I design, using AI-powered development to ship working products, not just mockups.</p>
-                </details>
-                <details className="group">
-                  <summary className="text-lg font-medium text-[var(--color-text-primary)] cursor-pointer hover:text-[var(--color-accent-warm)] transition-colors">How do you combine design and AI?</summary>
-                  <p className="mt-2 text-[var(--color-text-secondary)] leading-relaxed">I use Claude for design reasoning and architecture, OpenCode for implementation inside my editor, and agent platforms like Hermes with n8n for workflow automation. AI handles the production grunt work — I provide the design judgment, taste, and strategic direction.</p>
-                </details>
-                <details className="group">
-                  <summary className="text-lg font-medium text-[var(--color-text-primary)] cursor-pointer hover:text-[var(--color-accent-warm)] transition-colors">What makes your workflow different?</summary>
-                  <p className="mt-2 text-[var(--color-text-secondary)] leading-relaxed">No handoffs. No waiting for engineering. I design in Figma, build in Next.js, and ship directly — with SEO, metadata, and performance optimised from day one. What used to take two sprints and three handoff meetings now happens in days, end to end.</p>
-                </details>
-              </div>
-            </div>
-          </ScrollReveal>
         </div>
       </div>
     </section>

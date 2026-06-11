@@ -24,7 +24,6 @@ export default function Contact() {
             engagements across the UAE — and open to remote collaboration
             globally.
           </p>
-          <p className="text-[var(--color-bg)] opacity-50 text-sm mt-3">Typically respond within 24 hours.</p>
         </ScrollReveal>
         <ScrollReveal delay={200}>
           <div className="py-8">
@@ -45,11 +44,6 @@ export default function Contact() {
               <span>Available Immediately</span>
               <span>·</span>
               <span>Hybrid &amp; Remote</span>
-            </div>
-            <div className="flex gap-4 text-sm text-[var(--color-bg)] opacity-50 font-medium">
-              <a href="https://linkedin.com/in/m-noushad" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 hover:text-[var(--color-accent-warm)] transition-all">LinkedIn</a>
-              <a href="https://behance.net/mohammednoushad" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 hover:text-[var(--color-accent-warm)] transition-all">Behance</a>
-              <a href="https://github.com/noushweb" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 hover:text-[var(--color-accent-warm)] transition-all">GitHub</a>
             </div>
             <ContactButton />
           </div>

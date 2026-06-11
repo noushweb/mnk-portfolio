@@ -2,12 +2,11 @@ interface ArticleJsonLdProps {
   title: string;
   description: string;
   date: string;
-  updated?: string;
   slug: string;
   category: string;
 }
 
-export default function ArticleJsonLd({ title, description, date, updated, slug, category }: ArticleJsonLdProps) {
+export default function ArticleJsonLd({ title, description, date, slug, category }: ArticleJsonLdProps) {
   const baseUrl = "https://enkay.dev";
   const url = `${baseUrl}/articles/${slug}`;
 
@@ -18,7 +17,6 @@ export default function ArticleJsonLd({ title, description, date, updated, slug,
       "headline": title,
       "description": description,
       "datePublished": date,
-      ...(updated ? { "dateModified": updated } : {}),
       "author": {
         "@type": "Person",
         "name": "Mohammed Noushad",

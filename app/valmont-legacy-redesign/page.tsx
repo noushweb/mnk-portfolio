@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check, X, Lightbulb } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
-import CaseStudyJsonLd from "@/components/CaseStudyJsonLd";
 
 export const metadata: Metadata = {
   title: "Valmont Legacy Redesign — Case Study | Mohammed Noushad",
@@ -19,7 +18,6 @@ export const metadata: Metadata = {
 export default function ValmontPage() {
   return (
     <main className="pt-32 pb-24">
-      <CaseStudyJsonLd title="Valmont Legacy Redesign" description="Five legacy enterprise applications modernised into one unified web experience — redesigned information architecture, shared component library, and role-based dashboards." slug="valmont-legacy-redesign" />
       <div className="px-8 md:px-20">
         <ScrollReveal><div className="max-w-7xl mx-auto mb-12"><div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] text-[var(--color-text-muted)] font-bold"><Link href="/work" className="hover:text-[var(--color-text-primary)] transition-colors">Work</Link><span className="text-xs">›</span><span className="text-[var(--color-text-primary)]">Valmont Legacy Redesign</span></div></div></ScrollReveal>
         <Hero />

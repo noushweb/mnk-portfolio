@@ -13,7 +13,6 @@ import {
   Check,
 } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
-import CaseStudyJsonLd from "@/components/CaseStudyJsonLd";
 
 export const metadata: Metadata = {
   title: "Voyacher — Case Study | Mohammed Noushad",
@@ -30,7 +29,6 @@ export const metadata: Metadata = {
 export default function VoyacherPage() {
   return (
     <main className="pt-32 pb-24">
-      <CaseStudyJsonLd title="Voyacher" description="Voyacher is a Qatar-based travel platform — buy a voucher, book anything. A complete UX redesign covering discovery flows, voucher management, and cross-device checkout." slug="voyacher" />
       <div className="px-8 md:px-20">
         {/* Breadcrumb */}
         <ScrollReveal>
