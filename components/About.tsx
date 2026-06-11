@@ -12,7 +12,7 @@ export default function About() {
             <div className="sticky top-32 space-y-4">
               <span className="section-number">01 / ABOUT</span>
               <h2 className="text-4xl md:text-5xl font-medium tracking-tight">
-                Design is where I started. AI is where I&apos;m going.
+                What happens when a Product Designer starts building with AI?
               </h2>
             </div>
           </ScrollReveal>
@@ -24,7 +24,7 @@ export default function About() {
                 I&apos;ve been a Product Designer for over 10 years, based in Dubai. Design is my foundation — understanding users, crafting flows, building design systems that actually work.
               </p>
               <p className="text-[var(--color-text-secondary)] leading-relaxed">
-                Over the past year, I&apos;ve added something new: I can now build what I design. Using Claude and tools like OpenCode, I develop full applications — concept to deployed product. No handoff, no waiting. I also handle SEO — using AI tools to get products found, not just built.
+                Over the past year, I have added a powerful new capability: I build what I design, end to end. Using Claude for architecture and reasoning, OpenCode for implementation, and agent platforms like Hermes with n8n for workflow automation, I take products from concept to deployed application without relying on engineering handoffs. I handle SEO as part of the build process — using AI tools to audit, optimise, and ensure products get found by the right users. My stack is Next.js, TypeScript, React, and Tailwind CSS — technologies I learned through hands-on building, not theory. Every project ships with production-grade code, structured metadata, AI-crawler-accessible content, and search-engine-optimised architecture built in from day one.
               </p>
               <p className="text-[var(--color-text-secondary)] leading-relaxed">
                 I still build design systems, but faster — directly with Claude, then into Figma. What used to take weeks now happens in hours. I learn something new every day. The tools change fast, and I keep up because I genuinely enjoy it.

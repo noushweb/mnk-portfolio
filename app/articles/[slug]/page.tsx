@@ -89,7 +89,11 @@ export default async function ArticlePage({
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-tight mb-6">
             {article.title}
           </h1>
-          <div className="flex items-center gap-4 text-sm text-[var(--color-text-muted)]">
+          <div className="flex items-center gap-4 text-sm text-[var(--color-text-muted)] flex-wrap">
+            <span className="font-medium text-[var(--color-text-primary)]">
+              By Mohammed Noushad
+            </span>
+            <span className="w-1 h-1 rounded-full bg-[var(--color-border)]" />
             <span className="uppercase tracking-[0.15em] font-semibold">
               {article.date}
             </span>
