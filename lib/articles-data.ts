@@ -6,6 +6,7 @@ export interface ArticleSection {
 export interface Article {
   slug: string;
   date: string;
+  updated?: string;
   category: string;
   title: string;
   excerpt: string;
@@ -17,6 +18,7 @@ export const articles: Article[] = [
   {
     slug: "building-what-i-design",
     date: "08 Jun 2026",
+    updated: "11 Jun 2026",
     category: "AI & Development",
     title: "I Started Building What I Design — Here's What Changed",
     excerpt:
@@ -68,6 +70,7 @@ export const articles: Article[] = [
   {
     slug: "agent-platforms-for-designers",
     date: "05 Jun 2026",
+    updated: "11 Jun 2026",
     category: "AI & Design",
     title: "Agent Platforms for Designers: A No-Nonsense Guide",
     excerpt:
@@ -120,6 +123,7 @@ export const articles: Article[] = [
   {
     slug: "ai-accelerated-design-systems",
     date: "03 Jun 2026",
+    updated: "11 Jun 2026",
     category: "Design Systems",
     title: "How AI Cut My Design System Workflow from Weeks to Hours",
     excerpt:

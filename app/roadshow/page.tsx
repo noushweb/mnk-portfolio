@@ -8,6 +8,7 @@ import {
   ShieldCheck, CircleX, MapPin, BarChartHorizontal, Sun, Layers, Shield, Check,
 } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import CaseStudyJsonLd from "@/components/CaseStudyJsonLd";
 
 export const metadata: Metadata = {
   title: "Road Show — Case Study | Mohammed Noushad",
@@ -25,6 +26,7 @@ const ACCENT = "var(--color-accent-warm)";
 export default function RoadshowPage() {
   return (
     <main className="pt-32 pb-24">
+      <CaseStudyJsonLd title="Road Show" description="End-to-end delivery management platform connecting supervisors, cashiers, and drivers — route planning, real-time tracking, and settlement workflows in one mobile dashboard." slug="roadshow" />
       <div className="px-8 md:px-20">
         <ScrollReveal>
           <div className="max-w-7xl mx-auto mb-12">

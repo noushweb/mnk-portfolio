@@ -1,36 +1,29 @@
-interface ArticleJsonLdProps {
+interface CaseStudyJsonLdProps {
   title: string;
   description: string;
-  date: string;
-  updated?: string;
   slug: string;
-  category: string;
+  imageUrl?: string;
 }
 
-export default function ArticleJsonLd({ title, description, date, updated, slug, category }: ArticleJsonLdProps) {
+export default function CaseStudyJsonLd({ title, description, slug, imageUrl }: CaseStudyJsonLdProps) {
   const baseUrl = "https://enkay.dev";
-  const url = `${baseUrl}/articles/${slug}`;
+  const url = `${baseUrl}/${slug}`;
 
   const schema = [
     {
       "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": title,
+      "@type": "CreativeWork",
+      "name": title,
       "description": description,
-      "datePublished": date,
-      ...(updated ? { "dateModified": updated } : {}),
+      "url": url,
       "author": {
         "@type": "Person",
         "name": "Mohammed Noushad",
         "url": baseUrl,
       },
-      "publisher": {
-        "@type": "Person",
-        "name": "Mohammed Noushad",
-        "url": baseUrl,
-      },
-      "url": url,
-      "mainEntityOfPage": { "@type": "WebPage", "@id": url },
+      "about": title,
+      "inLanguage": "en",
+      ...(imageUrl ? { image: `${baseUrl}${imageUrl}` } : {}),
     },
     {
       "@context": "https://schema.org",
@@ -45,8 +38,8 @@ export default function ArticleJsonLd({ title, description, date, updated, slug,
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Articles",
-          "item": `${baseUrl}/articles`,
+          "name": "Work",
+          "item": `${baseUrl}/work`,
         },
         {
           "@type": "ListItem",

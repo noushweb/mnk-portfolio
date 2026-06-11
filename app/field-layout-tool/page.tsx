@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Hand, Navigation, BarChart2, Crosshair, CheckCircle2, Layers } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import CaseStudyJsonLd from "@/components/CaseStudyJsonLd";
 
 export const metadata: Metadata = {
   title: "Field Layout Tool — Case Study | Mohammed Noushad",
@@ -20,6 +21,7 @@ const WARM = "var(--color-accent-warm)";
 export default function FltPage() {
   return (
     <main className="pt-32 pb-24">
+      <CaseStudyJsonLd title="Field Layout Tool" description="A GPS-powered tablet app for agricultural pivot planning — real-time field mapping, zone layout, and crop planning tools built for farm technicians in the field." slug="field-layout-tool" />
       <div className="px-8 md:px-20">
         <ScrollReveal><div className="max-w-7xl mx-auto mb-12"><div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] text-[var(--color-text-muted)] font-bold"><Link href="/work" className="hover:text-[var(--color-text-primary)] transition-colors">Work</Link><span className="text-xs">›</span><span className="text-[var(--color-text-primary)]">Field Layout Tool</span></div></div></ScrollReveal>
         <Hero />

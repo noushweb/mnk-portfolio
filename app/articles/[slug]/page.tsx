@@ -61,6 +61,7 @@ export default async function ArticlePage({
         title={article.title}
         description={article.excerpt}
         date={article.date}
+        updated={article.updated}
         slug={article.slug}
         category={article.category}
       />
@@ -102,6 +103,14 @@ export default async function ArticlePage({
               <Clock className="w-3.5 h-3.5" />
               {article.readTime}
             </span>
+            {article.updated && (
+              <>
+                <span className="w-1 h-1 rounded-full bg-[var(--color-border)]" />
+                <span className="text-[var(--color-text-muted)] text-xs">
+                  Updated {article.updated}
+                </span>
+              </>
+            )}
           </div>
         </header>
 
