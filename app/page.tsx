@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
@@ -5,6 +6,27 @@ import Work from "@/components/Work";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import { StaggerTestimonials } from "@/components/ui/stagger-testimonials";
+
+export const metadata: Metadata = {
+  title: "Mohammed Noushad — Senior Product Designer",
+  description:
+    "Senior Product Designer. 11+ years in UX/UI, design systems & AI-powered development. I design, build & ship — concept to deployed product, no handoffs.",
+  openGraph: {
+    title: "Mohammed Noushad — Senior Product Designer",
+    description:
+      "Senior Product Designer. 11+ years in UX/UI, design systems & AI-powered development. I design, build & ship — concept to deployed product, no handoffs.",
+    url: "https://enkay.dev",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Mohammed Noushad — Senior Product Designer",
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (

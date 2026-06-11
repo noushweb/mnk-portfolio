@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   description: "A savings app designed to change how India thinks about money — behavioral nudges, goal-based tracking, and a gamified rewards layer that builds lasting financial habits.",
   openGraph: {
     title: "FinFlow — Case Study",
+    description: "Behavioral savings app designed for India's aspirational middle class — zero-based budgeting, goal-based round-ups, and AI-powered financial literacy.",
+    type: "article",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "FinFlow — Case Study" }],
   },
 };
 

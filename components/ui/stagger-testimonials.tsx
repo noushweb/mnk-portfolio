@@ -8,13 +8,13 @@ const SQRT_5000 = Math.sqrt(5000);
 
 const testimonials = [
   { tempId: 0, testimonial: "Noushad took our Zuruni concept and turned it into a polished, working product. Design and dev — he handled it all.", by: "Muneer, Founder at KartBlue", init: "MU" },
-  { tempId: 1, testimonial: "Polished Figma work, user-focused, adapted quickly to shifting priorities. Reliable and collaborative — earned the team's trust.", by: "Christopher, Product Manager at Valmont", init: "CA" },
-  { tempId: 2, testimonial: "Working with Mohammed is like having a design partner who anticipates problems before they happen.", by: "Raj, CTO at FinFlow", init: "RK" },
-  { tempId: 3, testimonial: "Six travel services, one platform, zero confusion. Noushad made our complex product feel simple.", by: "Abdul Razzaq, CEO at Voyacher", init: "AR" },
-  { tempId: 4, testimonial: "Clean, structured Figma files with annotations that our devs actually understand.", by: "David, Frontend Lead", init: "DW" },
-  { tempId: 5, testimonial: "The Field Layout Tool is proof — outdoor, gloved hands, direct sunlight, and it just works.", by: "Michael, Field Operations at Valley", init: "MO" },
-  { tempId: 6, testimonial: "End-to-end ownership from research to handoff. He doesn't drop things halfway.", by: "Priya, Design Director", init: "PS" },
-  { tempId: 7, testimonial: "The bilingual UX for Hala App was flawless. Arabic and English feel equally native.", by: "Omar, Product Lead at Hala", init: "OA" },
+  { tempId: 1, testimonial: "Working with Mohammed is like having a design partner who anticipates problems before they happen.", by: "Raj, CTO at FinFlow", init: "RK" },
+  { tempId: 2, testimonial: "Six travel services, one platform, zero confusion. Noushad made our complex product feel simple.", by: "Abdul Razzaq, CEO at Voyacher", init: "AR" },
+  { tempId: 3, testimonial: "Noushad fit right in from day one. Clear communicator, deeply reliable — exactly the kind of person you want on your team.", by: "Aslam, HR at Valmont", init: "AS" },
+  { tempId: 4, testimonial: "Polished Figma work, user-focused, adapted quickly to shifting priorities. Reliable and collaborative — earned the team's trust.", by: "Christopher, Product Manager at Valmont", init: "CA" },
+  { tempId: 5, testimonial: "Turning chaotic delivery operations into a smooth, connected workflow. Our entire fleet runs through it now.", by: "Vikram, Ops at Road Show", init: "VK" },
+  { tempId: 6, testimonial: "The Field Layout Tool is proof — outdoor, gloved hands, direct sunlight, and it just works.", by: "Michael, Field Operations at Valley", init: "MO" },
+  { tempId: 7, testimonial: "End-to-end ownership from research to handoff. He doesn't drop things halfway.", by: "Priya, Design Director", init: "PS" },
 ];
 
 interface TestimonialCardProps {

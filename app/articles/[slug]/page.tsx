@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock } from "lucide-react";
 import ArticleTOC from "@/components/ArticleTOC";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 import { getArticle, getAllSlugs, articles } from "@/lib/articles-data";
 
 export function generateStaticParams() {
@@ -21,6 +22,15 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Mohammed Noushad`,
     description: article.excerpt,
+    openGraph: {
+      title: article.title,
+      description: article.excerpt,
+      type: "article",
+      publishedTime: article.date,
+      images: [
+        { url: "/og-image.jpg", width: 1200, height: 630, alt: article.title },
+      ],
+    },
   };
 }
 
@@ -47,6 +57,13 @@ export default async function ArticlePage({
 
   return (
     <main className="flex-1 pt-32 pb-20 px-8 md:px-20 w-full">
+      <ArticleJsonLd
+        title={article.title}
+        description={article.excerpt}
+        date={article.date}
+        slug={article.slug}
+        category={article.category}
+      />
       <div className="max-w-7xl mx-auto">
         {/* Breadcrumb */}
         <nav className="mb-12">

@@ -55,7 +55,7 @@ export default function Footer() {
               hello@enkay.dev
             </a>
             <p className="mt-8 text-xs text-[var(--color-text-muted)] uppercase tracking-widest">
-              &copy; 2026 Mohammed Noushad · Dubai, UAE
+              &copy; {new Date().getFullYear()} Mohammed Noushad · Dubai, UAE
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="text-[var(--color-text-muted)] text-xs font-medium uppercase tracking-widest">
-          &copy; 2026 Mohammed Noushad. Built in Dubai.
+          &copy; {new Date().getFullYear()} Mohammed Noushad. Built in Dubai.
         </div>
       </div>
     </footer>

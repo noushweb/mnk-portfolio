@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     "Voyacher is a Qatar-based travel platform — buy a voucher, book anything. A complete UX redesign covering discovery flows, voucher management, and cross-device checkout.",
   openGraph: {
     title: "Voyacher — Case Study",
+    description: "Voyacher is a Qatar-based travel platform — buy a voucher, book anything. A complete UX redesign covering discovery flows, voucher management, and cross-device checkout.",
+    type: "article",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Voyacher — Case Study" }],
   },
 };
 

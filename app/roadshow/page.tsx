@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   description: "End-to-end delivery management platform connecting supervisors, cashiers, and drivers — route planning, real-time tracking, and settlement workflows in one mobile dashboard.",
   openGraph: {
     title: "Road Show — Case Study",
+    description: "End-to-end delivery management platform connecting supervisors, cashiers, and drivers — route planning, real-time tracking, and settlement workflows in one mobile dashboard.",
+    type: "article",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Road Show — Case Study" }],
   },
 };
 

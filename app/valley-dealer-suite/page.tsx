@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   description: "A centralized mobile hub for the Valley® dealer ecosystem — inventory management, order tracking, and customer support workflows unified in one app.",
   openGraph: {
     title: "Valley Dealer Suite — Case Study",
+    description: "A centralized mobile hub for the Valley® dealer ecosystem — inventory management, order tracking, and customer support workflows unified in one app.",
+    type: "article",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Valley Dealer Suite — Case Study" }],
   },
 };
 
