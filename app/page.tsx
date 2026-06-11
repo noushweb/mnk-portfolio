@@ -10,12 +10,17 @@ import { StaggerTestimonials } from "@/components/ui/stagger-testimonials";
 export const metadata: Metadata = {
   title: "Mohammed Noushad — Senior Product Designer",
   description:
-    "Senior Product Designer. 11+ years in UX/UI, design systems & AI-powered development. I design, build & ship — concept to deployed product, no handoffs.",
+    "Senior Product Designer in Dubai with 11+ years in UX/UI, design systems, and AI-powered development. I design, build, and ship products — no handoffs.",
+  alternates: {
+    canonical: "https://enkay.dev",
+  },
   openGraph: {
     title: "Mohammed Noushad — Senior Product Designer",
     description:
-      "Senior Product Designer. 11+ years in UX/UI, design systems & AI-powered development. I design, build & ship — concept to deployed product, no handoffs.",
+      "Senior Product Designer in Dubai with 11+ years in UX/UI, design systems, and AI-powered development. I design, build, and ship products — no handoffs.",
     url: "https://enkay.dev",
+    siteName: "Mohammed Noushad",
+    locale: "en_US",
     type: "website",
     images: [
       {

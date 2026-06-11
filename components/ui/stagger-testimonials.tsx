@@ -42,9 +42,9 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ position, testimonial
       }}
     >
       <div className="mb-4 h-12 w-12 rounded-full bg-[var(--color-accent-warm)] text-[var(--color-bg)] flex items-center justify-center font-bold text-sm border-2 border-[var(--color-bg)]">{testimonial.init}</div>
-      <h3 className={cn("text-base sm:text-xl font-medium", isCenter ? "text-[var(--color-bg)]" : "text-[var(--color-text-primary)]")}>
+      <blockquote className={cn("text-base sm:text-xl font-medium", isCenter ? "text-[var(--color-bg)]" : "text-[var(--color-text-primary)]")}>
         &ldquo;{testimonial.testimonial}&rdquo;
-      </h3>
+      </blockquote>
       <p className={cn("absolute bottom-8 left-8 right-8 mt-2 text-sm", isCenter ? "text-[var(--color-bg)]/70" : "text-[var(--color-text-muted)]")}>
         — {testimonial.by}
       </p>

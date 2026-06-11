@@ -50,6 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@noushad_design",
+    creator: "@noushad_design",
     title: {
       template: "%s | Mohammed Noushad",
       default: "Mohammed Noushad — Senior Product Designer",
