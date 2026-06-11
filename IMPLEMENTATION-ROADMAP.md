@@ -39,41 +39,22 @@
 
 ### Week 1
 
-#### Task 2.1: Create `/about` page
-**Files:** `app/about/page.tsx` (NEW)  
-**Effort:** 4 hours  
-**Content:**
-- Expanded bio: 11+ years, Dubai-based, journey from visual design → product thinking → AI-powered development
-- Credentials: education, certifications, notable clients (Valmont, Voyacher, FinFlow, KartBlue)
-- Industries served: Enterprise, FinTech, Travel, Logistics, Agritech
-- Tools & stack: Figma, Claude, OpenCode, Hermes, Next.js, TypeScript, Tailwind CSS
-- Personal: what drives him, design philosophy
-- FAQ section: "What does a Product Designer do?", "How do you combine design and development?", "What industries do you specialise in?"
+#### Task 2.1: Enhance Homepage About section (no new page)
+**Files:** `components/About.tsx`  
+**Effort:** 2 hours  
+**Content additions:**
+- Add education / certification mention (if applicable)
+- Add specific client industries served: Enterprise, FinTech, Travel, Logistics, Agritech
+- Expand citable passage to ~150 words with specific metrics
+- Add 3-4 FAQ items as collapsible or inline Q&A: "What does a Product Designer do?", "How do you combine design and AI?", "What industries do you specialise in?"
 
-**Metadata:**
-```
-title: "About Mohammed Noushad — Senior Product Designer in Dubai"
-description: "11+ years in UX/UI design, now combining design with AI-powered development..." (~155 chars)
-openGraph: same, with image
-alternates.canonical: "https://enkay.dev/about"
-```
-
-#### Task 2.2: Create `/contact` page
-**Files:** `app/contact/page.tsx` (NEW)  
-**Effort:** 3 hours  
-**Content:**
-- Full NAP: Mohammed Noushad, Dubai, UAE, hello@enkay.dev
-- Availability: "Available Immediately — Hybrid & Remote"
-- Services inquiry form or prominent mailto CTA
-- Calendar booking link (Calendly or similar)
-- LinkedIn + Behance + GitHub links
-- Response time expectation: "Typically respond within 24 hours"
-
-**Metadata:**
-```
-title: "Contact Mohammed Noushad — Hire a Product Designer in Dubai"
-description: "Available for senior product design roles and freelance engagements in Dubai, UAE..."
-```
+#### Task 2.2: Enhance Contact section (no new page)
+**Files:** `components/Contact.tsx`  
+**Effort:** 1 hour  
+**Content additions:**
+- Add response time expectation: "Typically respond within 24 hours"
+- Add LinkedIn + Behance + GitHub text links (not just footer icons)
+- Improve NAP: make "Dubai, UAE" more prominent as location signal
 
 #### Task 2.3: Add CreativeWork schema to case study pages
 **Files:** 8 case study page.tsx files  
@@ -94,12 +75,10 @@ description: "Available for senior product design roles and freelance engagement
 ### Week 2
 
 #### Task 2.5: Internal linking pass
-**Effort:** 2 hours  
+**Effort:** 1 hour  
 **Changes:**
 1. In "The UX of Industrial Software" article → link "Valmont Legacy Redesign" case study
 2. In "How AI Cut My Design System Workflow" → link "Valley Design System" case study
-3. In "Design Systems at Scale" → link "Valley Design System" case study
-4. In "I Started Building What I Design" → link "FinFlow" + "Road Show" case studies
 5. On each case study page → add "Related Articles" section (2-3 links)
 
 #### Task 2.6: Expand citable passages (target 5+)
@@ -149,8 +128,7 @@ description: "Available for senior product design roles and freelance engagement
 - [x] BreadcrumbList (per article) ✅
 - [ ] CreativeWork (per case study) — Task 2.3
 - [ ] Review (per testimonial) — Task 3.2
-- [ ] AboutPage (on /about) — Task 2.1
-- [ ] ContactPage (on /contact) — Task 2.2
+- [ ] FAQPage (on About section, homepage) — Task 2.1
 
 ---
 

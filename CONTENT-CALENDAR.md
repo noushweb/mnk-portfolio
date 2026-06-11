@@ -48,8 +48,8 @@
 | Home `/` | Live | — |
 | Work `/work` | Live | — |
 | Articles `/articles` | Live | — |
-| About `/about` | **Planned** — Task 2.1 | HIGH |
-| Contact `/contact` | **Planned** — Task 2.2 | HIGH |
+| About section (on Homepage) | Live — enhance with FAQ, credentials | Medium |
+| Contact section (on Homepage) | Live — enhance with response time, links | Low |
 
 ---
 
