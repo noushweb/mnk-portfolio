@@ -9,14 +9,9 @@ export const metadata: Metadata = {
   description: "Precision engineering calculations built for the field — structural load analysis and irrigation planning tools that work offline on any device, anywhere.",
   openGraph: {
     title: "Valley Design Tool Calculator — Case Study",
-    images: [
-      {
-        url: "/casestudy/images/DTC/hero.webp",
-        width: 1200,
-        height: 630,
-        alt: "Valley Design Tool Calculator — Engineering Case Study",
-      },
-    ],
+    description: "Precision engineering calculations built for the field — structural load analysis and irrigation planning tools that work offline on any device, anywhere.",
+    type: "article",
+    images: [{ url: "/casestudy/images/DTC/hero.webp", width: 1200, height: 630, alt: "Valley Design Tool Calculator — Engineering Case Study" }],
   },
 };
 

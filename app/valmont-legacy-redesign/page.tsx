@@ -9,14 +9,9 @@ export const metadata: Metadata = {
   description: "Five legacy enterprise applications modernised into one unified web experience — redesigned information architecture, shared component library, and role-based dashboards.",
   openGraph: {
     title: "Valmont Legacy Redesign — Case Study",
-    images: [
-      {
-        url: "/casestudy/images/redesign/hero.webp",
-        width: 1200,
-        height: 630,
-        alt: "Valmont Legacy Redesign — Enterprise Case Study",
-      },
-    ],
+    description: "Five legacy enterprise applications modernised into one unified web experience — redesigned information architecture, shared component library, and role-based dashboards.",
+    type: "article",
+    images: [{ url: "/casestudy/images/redesign/hero.webp", width: 1200, height: 630, alt: "Valmont Legacy Redesign — Enterprise Case Study" }],
   },
 };
 

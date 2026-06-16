@@ -1,0 +1,36 @@
+# Mohammed Noushad — Senior Product Designer
+> Portfolio and case studies. UX/UI design, design systems, AI-powered development. Dubai, UAE.
+
+## Main Pages
+- [Home](https://enkay.dev): Mohammed Noushad — Senior Product Designer. Portfolio and case studies.
+- [Work](https://enkay.dev/work): All case studies — Valmont Industries, Voyacher, FinFlow, Road Show, Valley Dealer Suite, Field Layout Tool, Design Tool Calculator, Valley Design System.
+- [Articles](https://enkay.dev/articles): Thoughts on design, AI, product thinking, and building what you design.
+
+## Case Studies
+- [Valmont Legacy Redesign](https://enkay.dev/valmont-legacy-redesign): Five legacy enterprise applications modernised into one unified web experience — redesigned information architecture, shared component library, and role-based dashboards.
+- [Voyacher](https://enkay.dev/voyacher): Qatar-based travel platform — buy a voucher, book anything. Complete UX redesign covering discovery flows, voucher management, and cross-device checkout.
+- [FinFlow](https://enkay.dev/finflow): Behavioral savings app designed for India's aspirational middle class — zero-based budgeting, goal-based round-ups, and AI-powered financial literacy.
+- [Road Show](https://enkay.dev/roadshow): End-to-end delivery management platform connecting supervisors, cashiers, and drivers — route planning, real-time tracking, and settlement workflows.
+- [Valley Dealer Suite](https://enkay.dev/valley-dealer-suite): Centralized mobile hub for the Valley dealer ecosystem — inventory management, order tracking, and customer support workflows.
+- [Field Layout Tool](https://enkay.dev/field-layout-tool): GPS-powered tablet app for agricultural pivot planning — real-time field mapping, zone layout, and crop planning tools built for field technicians.
+- [Valley Design Tool Calculator](https://enkay.dev/design-tool-calculator): Precision engineering calculations built for the field — structural load analysis and irrigation planning tools that work offline.
+- [Valley Design System](https://enkay.dev/design-system): Production-ready design system bridging design and engineering — design tokens, component library, and governance guidelines across 5+ enterprise products.
+
+## Articles
+- [I Started Building What I Design](https://enkay.dev/articles/building-what-i-design): For 10 years I designed and handed off. Then I picked up Claude, OpenCode, and Next.js. Now I ship what I design.
+- [Agent Platforms for Designers](https://enkay.dev/articles/agent-platforms-for-designers): I set up Hermes, wired it to n8n, and now AI agents handle my SEO, research, and repetitive design tasks.
+- [How AI Cut My Design System Workflow from Weeks to Hours](https://enkay.dev/articles/ai-accelerated-design-systems): I used to spend two weeks on a component set. Now I design in Claude, convert to Figma, and ship in an afternoon.
+- [Design Systems at Scale](https://enkay.dev/articles/design-systems-at-scale): How we built and maintained a unified design system that powers multiple enterprise applications.
+- [The UX of Industrial Software](https://enkay.dev/articles/ux-of-industrial-software): Industrial and B2B software has long been treated as an afterthought in design. Here's why that's changing.
+- [Research-Led or Intuition-First?](https://enkay.dev/articles/research-or-intuition): A reflection on when to lean on user research and when to trust your design intuition.
+- [From Visual Design to Product Thinking](https://enkay.dev/articles/visual-to-product-thinking): How shifting from visual-first to problem-first changed everything about my design practice.
+- [AI-Assisted Design Workflows](https://enkay.dev/articles/ai-assisted-workflows): A practical look at integrating AI tools into a real product design workflow.
+
+## About
+Mohammed Noushad is a Senior Product Designer based in Dubai with 11+ years of experience in UX/UI design, design systems, and AI-powered development. He works across the full product lifecycle — from research and strategy through to code and deployment — using Claude, OpenCode, and agent platforms to ship what he designs without handoff delays. His work spans enterprise software, fintech, travel platforms, logistics, and agricultural technology. He has designed and shipped products for Valmont Industries, Voyacher, FinFlow, Road Show, and KartBlue.
+
+## Contact
+- Email: hello@enkay.dev
+- LinkedIn: https://linkedin.com/in/m-noushad
+- Behance: https://behance.net/mohammednoushad
+- GitHub: https://github.com/noushweb

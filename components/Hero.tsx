@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTheme } from "./ThemeProvider";
 import { BackgroundPaths } from "./ui/background-paths";
 
@@ -17,11 +18,15 @@ export default function Hero() {
       className="relative w-full px-8 md:px-20 py-16 md:py-[100px] overflow-hidden lg:flex lg:items-center"
     >
       <div className="hidden lg:block absolute right-0 top-0 w-[55%] h-full animate-hero-image">
-        <img
+        <Image
           key={theme}
           src={imgSrc}
           alt="Mohammed Noushad — Product Designer"
           className="w-full h-full object-contain"
+          width={800}
+          height={600}
+          priority
+          sizes="(max-width: 1024px) 100vw, 55vw"
         />
       </div>
 
@@ -32,7 +37,7 @@ export default function Hero() {
           </h1>
           <div className="space-y-3 animate-hero-text animate-hero-text-delay-1">
             <p className="text-base sm:text-lg md:text-xl text-[var(--color-text-secondary)] font-normal max-w-full lg:max-w-[620px]">
-              Product Designer · AI-Powered Development · Dubai
+              Product Designer · AI-Powered Development
             </p>
             <p className="text-[var(--color-text-secondary)] max-w-full lg:max-w-[500px] leading-[1.6] text-sm sm:text-base">
               After a decade designing products, I now use Claude, OpenCode, and agent platforms to build what I design — concept to working product, no handoffs, no delays.
@@ -46,11 +51,14 @@ export default function Hero() {
       </div>
 
       <div className="lg:hidden mt-8 animate-hero-text animate-hero-text-delay-3">
-        <img
+        <Image
           key={`m-${theme}`}
           src={imgSrc}
           alt="Mohammed Noushad"
           className="w-full object-contain rounded-lg"
+          width={600}
+          height={400}
+          sizes="100vw"
         />
       </div>
     </section>

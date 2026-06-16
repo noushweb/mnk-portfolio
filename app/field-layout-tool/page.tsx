@@ -9,14 +9,9 @@ export const metadata: Metadata = {
   description: "A GPS-powered tablet app for agricultural pivot planning — real-time field mapping, zone layout, and crop planning tools built for farm technicians in the field.",
   openGraph: {
     title: "Field Layout Tool — Case Study",
-    images: [
-      {
-        url: "/casestudy/images/FLT/hero.webp",
-        width: 1200,
-        height: 630,
-        alt: "Field Layout Tool — Pivot Planning Case Study",
-      },
-    ],
+    description: "A GPS-powered tablet app for agricultural pivot planning — real-time field mapping, zone layout, and crop planning tools built for farm technicians in the field.",
+    type: "article",
+    images: [{ url: "/casestudy/images/FLT/hero.webp", width: 1200, height: 630, alt: "Field Layout Tool — Pivot Planning Case Study" }],
   },
 };
 

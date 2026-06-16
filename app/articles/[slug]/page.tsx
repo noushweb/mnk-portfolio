@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock } from "lucide-react";
 import ArticleTOC from "@/components/ArticleTOC";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 import { getArticle, getAllSlugs, articles } from "@/lib/articles-data";
 
 export function generateStaticParams() {
@@ -21,6 +22,15 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Mohammed Noushad`,
     description: article.excerpt,
+    openGraph: {
+      title: article.title,
+      description: article.excerpt,
+      type: "article",
+      publishedTime: article.date,
+      images: [
+        { url: "/og-image.jpg", width: 1200, height: 630, alt: article.title },
+      ],
+    },
   };
 }
 
@@ -47,6 +57,13 @@ export default async function ArticlePage({
 
   return (
     <main className="flex-1 pt-32 pb-20 px-8 md:px-20 w-full">
+      <ArticleJsonLd
+        title={article.title}
+        description={article.excerpt}
+        date={article.date}
+        slug={article.slug}
+        category={article.category}
+      />
       <div className="max-w-7xl mx-auto">
         {/* Breadcrumb */}
         <nav className="mb-12">
@@ -72,7 +89,11 @@ export default async function ArticlePage({
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-tight mb-6">
             {article.title}
           </h1>
-          <div className="flex items-center gap-4 text-sm text-[var(--color-text-muted)]">
+          <div className="flex items-center gap-4 text-sm text-[var(--color-text-muted)] flex-wrap">
+            <span className="font-medium text-[var(--color-text-primary)]">
+              By Mohammed Noushad
+            </span>
+            <span className="w-1 h-1 rounded-full bg-[var(--color-border)]" />
             <span className="uppercase tracking-[0.15em] font-semibold">
               {article.date}
             </span>
