@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     "Voyacher is a Qatar-based travel platform — buy a voucher, book anything. A complete UX redesign covering discovery flows, voucher management, and cross-device checkout.",
   openGraph: {
     title: "Voyacher — Case Study",
+    images: [
+      {
+        url: "/casestudy/images/voyacher/hero.webp",
+        width: 1200,
+        height: 630,
+        alt: "Voyacher — Travel Platform Case Study",
+      },
+    ],
   },
 };
 
