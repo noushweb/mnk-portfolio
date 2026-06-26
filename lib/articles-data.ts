@@ -15,6 +15,72 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "ai-and-product-design",
+    date: "22 Jun 2026",
+    category: "AI & Design",
+    title: "AI and Product Design: Not What I Expected",
+    excerpt:
+      "Everyone said AI would replace designers. Instead it changed what 'designer' even means. Here's what I actually do now — and what I stopped doing altogether.",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "The prediction everyone got wrong",
+        body: [
+          "Two years ago the conversation was simple. One side said AI would replace designers entirely. The other side said AI was just fancy autocomplete and real design would always need humans. Both sides were wrong.",
+          "AI did not replace me. But it did replace a version of me — the one who spent Tuesday afternoons making 47 variants of the same button, the one who manually wrote alt text for 200 images, the one who audited spacing inconsistencies across five apps by screenshotting everything and squinting.",
+          "That version of me is gone. And I do not miss him.",
+          "What replaced him is not a machine. It is a different kind of designer — one who spends less time making things and more time deciding what things should be. Less pixel pushing, more direction setting. Less production, more judgment.",
+          "Nobody prepared me for this shift. Not design school. Not the design community. Everyone is still arguing about whether AI will take our jobs while the jobs themselves are quietly becoming something else.",
+        ],
+      },
+      {
+        heading: "What I actually do now",
+        body: [
+          "A year ago my week looked like this: design screens in Figma (40%), write documentation (20%), sit in meetings about the screens and the documentation (25%), actual thinking time (15%).",
+          "Now it is different. I spend maybe 15% of my week in Figma. The rest is defining what needs to be built, reviewing what AI generated, refining the parts that need human taste, and — this is the weird one — actually shipping things.",
+          "I ship more now than I ever did as a pure designer. Not because I learned to code. Because AI handles the production work and I handle the direction. The ratio flipped. I used to spend 80% of my time executing and 20% deciding. Now it is maybe 30% executing and 70% deciding.",
+          "The quality of my decisions improved because I have more time to think. The quality of execution is roughly the same — but it happens in hours instead of days.",
+        ],
+      },
+      {
+        heading: "What I stopped doing (completely)",
+        body: [
+          "I stopped designing every state of every component by hand. AI generates the loading, empty, error, disabled, focused, hovered, active states from the base design. I review and approve. Five minutes instead of two hours.",
+          "I stopped writing documentation from scratch. I describe the component, Claude writes the usage guidelines, accessibility notes, and code examples. I edit for voice and accuracy. Documentation used to be the part I dreaded most. Now I barely think about it.",
+          "I stopped doing competitive audits manually. An agent researches competitors, screenshots their interfaces, identifies patterns, and writes a summary. I read the summary and spot the insights a machine would miss.",
+          "I stopped doing SEO and performance audits myself. My agent checks my site weekly and fixes what it can.",
+          "None of these are design tasks exactly. But they were eating design time. Now they are not.",
+        ],
+      },
+      {
+        heading: "What got harder",
+        body: [
+          "Something else happened that nobody warned me about. When AI handles the production, the pressure on my judgment goes up. There is no buffer anymore. No 'I spent three days on this so it must be good.' If I make a bad call on direction, AI amplifies it across every variant, every state, every breakpoint — in minutes instead of days.",
+          "The speed is intoxicating. And dangerous. I have shipped things too fast because the AI made it easy, only to realise later that I had not thought through the edge case properly. The old slow process had a hidden benefit: friction gave me time to second-guess myself. Now I need to build that friction intentionally.",
+          "I also had to get comfortable with a new kind of ambiguity. When I designed every pixel myself, I knew exactly why each decision was made — because I made it. Now I review AI output and sometimes think: this is better than what I would have done, but I am not sure why. That is unsettling. The machine occasionally has better taste than me on specific execution details. My job becomes recognising when that happens, and knowing when to override it.",
+        ],
+      },
+      {
+        heading: "What I tell people who ask about this",
+        body: [
+          "Junior designers ask me if they should learn AI tools or focus on traditional craft. My answer is unsatisfying: both, but not equally.",
+          "Learn the tools. But learn them like you learn keyboard shortcuts, not like you learn typography. They will change. Next year's AI design tool will not work like this year's. The underlying skill that does not expire is taste. Judgment. The ability to look at two versions of something and know which one is right — and more importantly, why.",
+          "I would also say: stop thinking of AI as a tool and start thinking of it as a junior designer you are directing. Be specific about what you want. Review everything. Do not accept output you cannot explain. The worst thing you can do is treat AI like magic and ship whatever it gives you. The best thing: treat it like a very fast but occasionally confused teammate who needs clear direction and constant feedback.",
+        ],
+      },
+      {
+        heading: "The part nobody is saying out loud",
+        body: [
+          "Here is what I actually think: a lot of what we called 'design skill' in the last decade was actually production skill. Making things look polished. Creating exhaustive component libraries. Writing thorough documentation. These are valuable — but they are repeatable. And AI is really good at repeatable things.",
+          "What remains is harder to teach and harder to automate. Understanding users deeply enough to know what they need before they do. Making trade-offs between business goals and user needs. Building trust with stakeholders. Recognising when a design is good enough to ship versus when it needs another round.",
+          "These are not new skills. They have always been the most important part of design. AI just stripped away everything else, and suddenly they are the only thing left.",
+          "That is uncomfortable if you built your career on execution craft. It is liberating if you always felt that the thinking was the real work and the pixel-pushing was just the delivery mechanism.",
+          "I am in the second camp. But I did not know it until AI forced me to find out.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "building-what-i-design",
     date: "08 Jun 2026",
     category: "AI & Development",
