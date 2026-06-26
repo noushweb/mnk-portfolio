@@ -23,12 +23,13 @@ export default function JsonLd() {
     "url": "https://enkay.dev",
     "email": "hello@enkay.dev",
     "description":
-      "Senior Product Designer based in Dubai with 11+ years in UX/UI, design systems, and AI-powered development.",
+      "Senior Product Designer based in Dubai and India with 11+ years in UX/UI, design systems, and AI-powered development.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Dubai",
       "addressCountry": "AE",
     },
+    "areaServed": ["Dubai", "UAE", "India", "Middle East"],
     "knowsAbout": [
       "UX/UI Design",
       "Product Design",

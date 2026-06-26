@@ -24,17 +24,17 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Mohammed Noushad — Senior Product Designer",
+  title: "Mohammed Noushad — Senior Product Designer | Dubai, UAE",
   description:
-    "Senior Product Designer in Dubai. 11+ years in UX/UI, design systems & AI-powered development. I design, build & ship — concept to deployed product, no handoffs.",
+    "Senior Product Designer in Dubai & India. 11+ years in UX/UI, enterprise design systems & AI-powered product development. Portfolio of shipped products for Valmont, Voyacher, FinFlow.",
   metadataBase: new URL("https://enkay.dev"),
   openGraph: {
     title: {
       template: "%s | Mohammed Noushad",
-      default: "Mohammed Noushad — Senior Product Designer",
+      default: "Mohammed Noushad — Senior Product Designer | Dubai, UAE",
     },
     description:
-      "Senior Product Designer in Dubai. 11+ years in UX/UI, design systems & AI-powered development. I design, build & ship — concept to deployed product, no handoffs.",
+      "Senior Product Designer in Dubai & India. 11+ years in UX/UI, enterprise design systems & AI-powered product development. Portfolio of shipped products for Valmont, Voyacher, FinFlow.",
     url: "https://enkay.dev",
     siteName: "Mohammed Noushad",
     locale: "en_US",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     creator: "@noushad_design",
     title: {
       template: "%s | Mohammed Noushad",
-      default: "Mohammed Noushad — Senior Product Designer",
+      default: "Mohammed Noushad — Senior Product Designer | Dubai, UAE",
     },
     description:
       "Senior Product Designer in Dubai. 11+ years in UX/UI, design systems & AI-powered development.",
