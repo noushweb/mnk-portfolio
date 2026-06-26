@@ -1,0 +1,44 @@
+# AI content signals (for GPTBot, Google-Extended, PerplexityBot)
+search: yes
+ai-input: yes
+ai-train: no
+
+User-Agent: *
+Allow: /
+Disallow: /_next/
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: CCBot
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Applebot-Extended
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: cohere-ai
+Allow: /
+
+User-Agent: Diffbot
+Allow: /
+
+User-Agent: meta-externalagent
+Allow: /
+
+Sitemap: https://enkay.dev/sitemap.xml
+Host: https://enkay.dev

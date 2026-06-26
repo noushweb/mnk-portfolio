@@ -24,6 +24,7 @@
 - [The UX of Industrial Software](https://enkay.dev/articles/ux-of-industrial-software): Industrial and B2B software has long been treated as an afterthought in design. Here's why that's changing.
 - [Research-Led or Intuition-First?](https://enkay.dev/articles/research-or-intuition): A reflection on when to lean on user research and when to trust your design intuition.
 - [From Visual Design to Product Thinking](https://enkay.dev/articles/visual-to-product-thinking): How shifting from visual-first to problem-first changed everything about my design practice.
+- [AI and Product Design: Not What I Expected](https://enkay.dev/articles/ai-and-product-design): Everyone said AI would replace designers. Instead it changed what "designer" even means.
 - [AI-Assisted Design Workflows](https://enkay.dev/articles/ai-assisted-workflows): A practical look at integrating AI tools into a real product design workflow.
 
 ## About
