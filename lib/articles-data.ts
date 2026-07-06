@@ -962,6 +962,77 @@ export const articles: Article[] = [
       },
     ],
   }
+,
+  {
+    slug: "auto-dubai-20260706",
+    date: "06 Jul 2026",
+    category: "Career",
+    title: "I thought 11 years of design experience meant I knew what I was doing",
+    excerpt:
+      "I’m Mohammed Noushad. Senior Product Designer. 11 years in the game. Dubai-based. And until two years ago, I was convinced that my job was to make things look g...",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "I was wrong.",
+        body: [
+          "I’m Mohammed Noushad. Senior Product Designer. 11 years in the game. Dubai-based. And until two years ago, I was convinced that my job was to make things look good.",
+          "Then Valmont happened.",
+          "Not the company. The moment. The specific Tuesday morning when I sat in a meeting room in Dubai Internet City, staring at a whiteboard covered in Arabic and English notes, realizing I had no idea what my stakeholders were actually saying. I nodded along like I understood. I drew boxes. I said “user journey” a lot. The client kept repeating a word I didn’t catch. Later, my PM told me it was “integration.” They were asking about the API layer. I had designed four screens that week that didn’t connect to anything.",
+          "I went home, opened my portfolio, and realized I had been a decoration specialist for ten years.",
+          "That was the day I stopped calling myself a UX designer and started figuring out what a product designer actually does.",
+        ],
+      },
+      {
+        heading: "The Valmont project that broke and rebuilt me",
+        body: [
+          "Valmont is an enterprise company. They operate in 40 countries. Their product suite is sprawling. My brief was to redesign five enterprise applications that ran on legacy systems built in the early 2000s. The users were field technicians in Saudi Arabia, logistics managers in Egypt, and C-suite executives in Dubai. They all spoke different languages. Literally and technically.",
+          "I was the only designer on the project.",
+          "I started by doing what I always did. High fidelity mockups. Perfect pixel alignment. A design system with 60 components. I was proud of it. Then the developers came back with a 40% reduction in handoff time. That was the good news.",
+          "The bad news was that the product still sucked.",
+          "The field technicians couldn’t read the Arabic interface because I had used a font that looked great in English but broke in right-to-left. The logistics managers complained that the dashboard showed data from yesterday, not today. The executives wanted one view. I gave them three.",
+          "I had designed a beautiful system that didn’t work for anyone.",
+          "So I scrapped it. All of it. I spent the next three months sitting in the field with technicians. I watched them use their phones with one hand while carrying equipment with the other. I learned that “error state” in Arabic doesn’t translate the same way. I realized that the most important feature wasn’t a fancy animation. It was the ability to submit a form offline and sync later.",
+          "I rebuilt the design system from scratch. 60 components became 40. But each one was tested in three languages. Each one accounted for edge cases like slow networks, screen readers, and one-handed use.",
+          "The handoff time reduction stayed at 40%. But the real metric was adoption. Field technicians stopped calling support. Logistics managers stopped printing reports. The executives got their single view.",
+          "That project taught me that enterprise design in Dubai isn’t about aesthetics. It’s about translation. Literal translation between Arabic and English. Technical translation between business logic and user behavior. Cultural translation between how a Saudi manager expects to interact with software and how a German developer built it.",
+          "I started billing myself as a bilingual UX designer. Not because I speak Arabic fluently (I don’t), but because I understand the gap between what the business says and what the user needs. In Dubai, that gap is wider than anywhere else I’ve worked.",
+        ],
+      },
+      {
+        heading: "Why I started coding and stopped caring about titles",
+        body: [
+          "I used to think designers who coded were imposters. That was before I tried to hand off a Figma prototype to a React developer and watched him spend two days rebuilding a dropdown menu because I hadn’t accounted for the state when the user scrolled past the 50th option.",
+          "So I learned TypeScript. Then React. Then Next.js. I didn’t do it to become a developer. I did it to stop wasting everyone’s time.",
+          "Now I use Claude to generate component variants. I run n8n to automate my design handoff workflows. I built a personal tool called Hermes that maps user flows directly to code components. I still design in Figma, but my final deliverable is often a working prototype in Next.js. Not a mockup.",
+          "The developers stopped rolling their eyes at me. The PMs started including me in architecture discussions. I stopped being the person who says “that’s a technical constraint” and started being the person who says “we can build that in two sprints if we simplify the state management.”",
+          "I also started freelancing. 8 clients so far. Two stand out.",
+          "FinFlow was a fintech startup. They had a complex dashboard for tracking cross-border payments. The founder wanted a “simple UI.” What he needed was a data hierarchy that matched how treasury managers actually think. I built the prototype in TypeScript using a component library I had written for Valmont. It took three weeks. They launched in six.",
+          "Voyacher was a travel platform. They wanted a booking flow that didn’t feel like a tax filing. I spent a week mapping every possible edge case. Lost connection mid-booking. User switches from English to Arabic. User adds a companion with a different nationality. I designed the flow in React and tested it with actual users in Deira. The final product had a 90% completion rate.",
+          "Both projects paid well. Both taught me that the design industry is full of people who can make things look good but very few who can make things work.",
+        ],
+      },
+      {
+        heading: "What I actually look for in a role now",
+        body: [
+          "I don’t care about your design process. I don’t care about your Figma plugins. I care about whether your product works in the real world. In Dubai, that means working in two languages, on slow networks, on devices that cost less than 500 dirhams.",
+          "I look for teams that let me talk to users. Not surveys. Not user personas created in a workshop. I want to sit in a warehouse in Al Quoz and watch a worker use your app while wearing gloves. I want to see the moment they get frustrated and switch to paper.",
+          "I look for developers who will tell me my design is impossible to build. I prefer that over developers who silently rebuild everything from scratch.",
+          "I look for PMs who understand that design is not a deliverable. It’s a decision-making framework. If your PM asks me for a “design for the login screen,” I know this isn’t going to work. If your PM asks me to “figure out why users are dropping off at the payment step,” I’m interested.",
+        ],
+      },
+      {
+        heading: "The honest truth about being a senior product designer in Dubai",
+        body: [
+          "Dubai is a strange market. The money is good. The ambition is high. But the maturity is low. Many companies here think design is the last step before development. They hire a “senior product designer” and expect them to make slides.",
+          "I’ve been in meetings where the CEO asked me to “make the logo bigger” while ignoring the fact that the app crashes on Android. I’ve been told that Arabic users “prefer more text” when the real issue was that the translation was wrong.",
+          "My value isn’t in my 11 years. It’s in the fact that I’ve failed enough to know what doesn’t work. I’ve designed for 40 countries. I’ve built design systems that scaled. I’ve reduced handoff time by 40% and then realized that was the wrong metric.",
+          "I still don’t know what I’m doing most days. But I know what questions to ask. I know when to stop designing and start coding. I know that the best interface is the one the user doesn’t notice.",
+          "And I know that if you’re hiring a senior product designer in Dubai, you need someone who speaks the language of enterprise, the language of code, and the language of the user. All three. Not two out of three.",
+          "I’m Mohammed Noushad. I design products that work in the real world. Not in Figma.",
+        ],
+      },
+    ],
+  }
 ];
 
 export function getArticle(slug: string): Article | undefined {
