@@ -5,9 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
-  turbopack: {
-    root: "/opt/data/enkay-dev-portfolio",
-  },
 };
 
 export default nextConfig;
