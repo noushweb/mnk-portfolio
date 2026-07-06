@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import LeadForm from "@/components/LeadForm";
 
 export const metadata: Metadata = {
   title: "Product Designer Dubai | Mohammed Noushad",
@@ -80,7 +81,11 @@ export default function DubaiPage() {
             </div>
           </div>
 
-          <div className="pt-8 border-t border-[var(--color-border)]">
+          <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
+            <div className="space-y-4">
+              <h2 className="text-2xl font-medium">Let&apos;s talk</h2>
+              <LeadForm source="dubai" />
+            </div>
             <Link href="/work" className="text-[var(--color-accent)] hover:underline font-medium">
               View all case studies →
             </Link>

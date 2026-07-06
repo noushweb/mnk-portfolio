@@ -6,6 +6,12 @@
 - [Work](https://enkay.dev/work): All case studies — Valmont Industries, Voyacher, FinFlow, Road Show, Valley Dealer Suite, Field Layout Tool, Design Tool Calculator, Valley Design System.
 - [Articles](https://enkay.dev/articles): Thoughts on design, AI, product thinking, and building what you design.
 
+## Location Pages
+- [Product Designer Dubai](https://enkay.dev/dubai): Senior Product Designer in Dubai — enterprise UX/UI, design systems, AI-powered development for the Middle East.
+- [Product Designer India](https://enkay.dev/india): Product designer from India — remote-first, fintech UX, design systems for global teams.
+- [Senior UI Designer Riyadh](https://enkay.dev/riyadh): Senior UI Designer available for Riyadh — enterprise design systems, fintech, Figma mastery, embedded team experience.
+- [Freelance Product Designer UAE](https://enkay.dev/uae): Freelance Product Designer in UAE — 0→1 product design, design systems, UX audits, AI-enhanced workflows.
+
 ## Case Studies
 - [Valmont Legacy Redesign](https://enkay.dev/valmont-legacy-redesign): Five legacy enterprise applications modernised into one unified web experience — redesigned information architecture, shared component library, and role-based dashboards.
 - [Voyacher](https://enkay.dev/voyacher): Qatar-based travel platform — buy a voucher, book anything. Complete UX redesign covering discovery flows, voucher management, and cross-device checkout.

@@ -16,6 +16,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/field-layout-tool", priority: 0.5, lastmod: "2026-05-15", freq: "yearly" as const },
     { path: "/design-tool-calculator", priority: 0.5, lastmod: "2026-05-15", freq: "yearly" as const },
     { path: "/design-system", priority: 0.5, lastmod: "2026-05-15", freq: "yearly" as const },
+    { path: "/dubai", priority: 0.7, lastmod: "2026-07-05", freq: "monthly" as const },
+    { path: "/india", priority: 0.6, lastmod: "2026-07-05", freq: "monthly" as const },
+    { path: "/riyadh", priority: 0.7, lastmod: "2026-07-05", freq: "monthly" as const },
+    { path: "/uae", priority: 0.7, lastmod: "2026-07-05", freq: "monthly" as const },
   ];
 
   const routes = staticRoutes.map((route) => ({
