@@ -442,6 +442,526 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "senior-product-designer-dubai",
+    date: "05 Jul 2026",
+    category: "Career",
+    title: "Untitled",
+    excerpt:
+      "I moved to Dubai four years ago. Not for the tax-free salary, not for the Burj Khalifa views, not for the Instagram brunches. I moved because a project I was fr...",
+    readTime: "7 min read",
+    content: [
+      {
+        heading: "## The move nobody asks about",
+        body: [
+          "I moved to Dubai four years ago. Not for the tax-free salary, not for the Burj Khalifa views, not for the Instagram brunches. I moved because a project I was freelancing on turned into a full-time offer at Valmont Industries, and I needed to be closer to the agricultural dealers and field technicians I was designing for.",
+          "Nobody tells you this when you search \"senior product designer Dubai\" on LinkedIn. Most of the work here is not glamorous. It is not designing the next big consumer app. It is sitting in a hybrid office in Dubai Investments Park, trying to figure out why a dealer in rural Egypt cannot find the submit button because the latency on their ancient tablet makes the modal disappear before they can tap it.",
+          "That is the real Dubai design scene.",
+        ],
+      },
+      {
+        heading: "What the day-to-day actually looks like",
+        body: [
+          "At Valmont, I have been leading UX/UI for five enterprise web applications. These are not sexy products. They are tools for agricultural dealers and field technicians across 40 countries. Irrigation scheduling. Inventory management. Service requests. The kind of software that makes or breaks a farmer\'s season.",
+          "The biggest project was a legacy consolidation. Five separate apps, each built by different teams over a decade, all with their own design language, navigation patterns, and god-awful colour palettes. My job: unify them into a single platform.",
+          "This took 18 months. Not because the UI was complicated. Because the politics were. Every app had a product owner who believed their users were \"special\" and could not possibly use the same navigation as everyone else. I spent more meetings explaining why consistency matters than I did actually designing anything.",
+          "The result is a shared component library with 60+ reusable components, design tokens, and documentation that actually gets used. But getting there meant sitting through 40-minute arguments about whether a button should have rounded corners or sharp ones. I wish I was joking.",
+        ],
+      },
+      {
+        heading: "Freelancing in Dubai is weird",
+        body: [
+          "Before Valmont, I freelanced for years. Dubai is a strange market for freelance designers. You get two types of clients. Startups with zero budget who want \"the Apple of fintech\" for 5,000 AED. And government entities who want you to redesign their portal but will not let you talk to any actual users.",
+          "I learned to say no to both. The startups burn you out. The government projects pay well but move at the speed of bureaucracy. The sweet spot is mid-sized companies that have real products, real users, and real problems, but no in-house design team.",
+          "One project that actually mattered: a logistics dashboard for a company tracking cold chain shipments across the GCC. The original design had 47 data points on a single screen. The operations team could not find the temperature alerts because they were buried under 12 other metrics. I spent two weeks watching them work, realised they only needed six metrics at a time, and redesigned the whole thing around a \"what needs your attention right now\" philosophy. Alert response conversion went up 34%.",
+          "That is the work that keeps me going. Not the portfolio-polished case studies. The real impact on real people doing real jobs.",
+        ],
+      },
+      {
+        heading: "The tools I actually use right now",
+        body: [
+          "I see a lot of senior product designers in Dubai flexing their design thinking workshops and Miro boards. Cool. I use Figma, same as everyone. But here is what has actually changed my workflow in the last year.",
+          "AI tools. Daily. Not for generating entire UIs. That is still mostly garbage for anything complex. But for the boring stuff. Figma AI helps me rename layers and generate variant sets. Claude helps me write microcopy. I built an n8n workflow that takes my Hotjar session recordings, summarises user behaviour patterns, and drops them into a Notion database with suggested design changes. Saves me about six hours a week.",
+          "The thing that genuinely surprised me was Cursor and Claude Code for bridging design and front-end. I write HTML, CSS, and TypeScript myself. But when I am building prototypes for Valmont, I can go from a Figma frame to a working React component in about 40 minutes. Not production ready. But good enough to test with real users. That speed matters when your stakeholders are in different time zones and you only get one shot at feedback.",
+          "I am also tinkering with Agentic Experience Design. Designing interfaces where the AI is an active participant, not just a search bar. Think: a field technician says \"show me the last three service reports for this pump\" and the system surfaces them without navigating through five menus. I built a prototype using Hermes and OpenAI\'s API. It is clunky. But it points to where we are heading.",
+        ],
+      },
+      {
+        heading: "Things I wish someone had told me",
+        body: [
+          "\"Senior Product Designer\" means completely different things depending on where you land. At some companies here, you are the only designer and you also do QA testing and write the copy. At others, you manage a team and never touch Figma. I have done both. Neither is wrong. The important thing is knowing which one you are walking into.",
+          "The market is small. Dubai has maybe 200 to 300 product design roles at any given time. Most are fintech, real estate, or logistics. Consumer tech is basically nonexistent here. If you want to design social apps, London or Berlin will give you more options.",
+          "The best part, and I mean this, is the user diversity. I have designed for users in Egypt, Saudi, Pakistan, Kenya, and Brazil, all from one office. A Nigerian dealer does not navigate the same way a German one does. Colours carry different meanings. Iconography that reads clearly in one country is confusing in another. You cannot take a Western design system, translate the strings, and call it a day.",
+          "I have been doing this for 11 years. I have built design systems that scaled across five products. I have consolidated legacy apps. I have freelanced, worked in agencies, and worked in-house. Dubai has been good to me.",
+          "But if you are coming here expecting the Instagram version, the sky-pool meetings, the effortless career growth, you will be disappointed. The real work is the same everywhere. It is messy. It is political. It is solving the same problems over and over until they stick.",
+          "The difference in Dubai is you get to solve those problems for a genuinely global user base, in a city that is still figuring out what it wants to be. That is interesting. That is why I am still here.",
+          "And those agricultural dealers in rural Egypt? They still cannot find the submit button sometimes. But we are getting there.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "senior-product-designer-riyadh",
+    date: "05 Jul 2026",
+    category: "Career",
+    title: "Untitled",
+    excerpt:
+      "The first Saudi government portal I worked on, I made a mistake that still makes me cringe. I designed the entire interface left-to-right, in English, and figur...",
+    readTime: "7 min read",
+    content: [
+      {
+        heading: "I moved to Dubai eight years ago thinking I understood the Middle East. I did not. And when I started taking on projects that served users in Riyadh, I realized I knew even less than I thought.",
+        body: [
+          "The first Saudi government portal I worked on, I made a mistake that still makes me cringe. I designed the entire interface left-to-right, in English, and figured I would just flip it for Arabic later. Flip it. Like it was a mirror. Like Arabic speakers were just English speakers who happened to read the other way. I spent two weeks on a layout that completely fell apart the moment someone pasted actual Arabic content into it. The text did not just reverse, the entire visual hierarchy collapsed. Call-to-action buttons that felt natural in English looked lost in Arabic. The information architecture I was so proud of assumed a reading pattern that half the users did not follow.",
+          "I had to rebuild the whole thing from scratch. That was a 5,000 AED lesson in humility.",
+        ],
+      },
+      {
+        heading: "The bilingual thing is not just about layout",
+        body: [
+          "If you are a senior product designer in Riyadh, or looking to work there, you already know the obvious stuff. The Vision 2030 momentum. The flood of government digitization contracts. The sheer volume of new startups that need someone who can actually ship, not just make Figma look pretty. What you might not know is the stuff that only becomes visible after you have shipped a few products that real Saudis use every day.",
+          "The bilingual thing is not just about layout. It is about trust. Saudi users have been burned by bad localization for years. Government apps where the Arabic feels like Google Translate. Bank portals where the switch language button literally breaks the navigation. When you design an interface that genuinely works in both languages, where the Arabic does not feel like an afterthought, users notice. I have had users message me specifically about the Arabic version of an app, thanking me because \"finally something that reads like a human wrote it.\" That feedback means more than any NPS score.",
+          "I learned this the hard way on the Voyacher travel platform. Voyacher serves the Qatar and broader Gulf market, mostly Arabic-speaking travelers booking flights and packages. The design challenge was not just making a booking flow. It was building something that felt native to a user in Doha or Riyadh, not a skinned version of a Western travel site. Cultural patterns around travel booking are different here. Group bookings with extended family. Last-minute decisions during Eid breaks. Payment preferences that do not match the Stripe checkout you copied from a Dribbble shot. I redesigned the entire booking experience from the ground up, and the version that shipped works seamlessly RTL and LTR without a single layout hack. That came from failing at it once before.",
+        ],
+      },
+      {
+        heading: "Enterprise design in Saudi is a different sport",
+        body: [
+          "Another thing nobody tells you: enterprise design in Saudi is a different sport. At Valmont Industries, I led UX for five enterprise apps serving agriculture across 40 countries. Heavy stuff. Data tables with 47 data points per row. Irrigation dashboards that actual farmers look at at 5 AM before heading out. The kind of complexity where a bad dropdown menu literally costs someone a day of crop yield.",
+          "When I consolidated those five legacy apps into a single unified platform, the hardest part was not the visual design. It was convincing stakeholders that \"clean and simple\" does not mean \"less powerful.\" Saudi enterprise clients, especially government-adjacent ones, tend to equate features with value. More buttons, more tables, more everything. Your job as a designer is to push back without sounding like you do not understand their business. That takes years to learn.",
+          "I built a 60-plus component design system to support that consolidation. The design-to-dev handoff time dropped 40 percent, which sounds impressive until you realize the previous handoff process involved annotated PDFs and Slack threads that spiraled into 200 messages. So yeah, 40 percent improvement. The real win was that the system worked. Engineers stopped asking me the same questions every sprint. The components handled edge cases I had not even thought of because the engineers had already solved them within the system. That is what a real design system does. It is not a Figma library you show off in your portfolio. It is a thing that makes your teammates not hate you.",
+        ],
+      },
+      {
+        heading: "The code advantage",
+        body: [
+          "These days I code more than I used to. React, Next.js, TypeScript. I use AI tools like Claude and Cursor and n8n to move faster, but I am not one of those designers who thinks AI replaces thinking. It replaces typing. There is a difference. When I built FinFlow, a savings app I designed and shipped as a freelance project, I wrote most of the frontend myself. It is hard to design a component you cannot build. And in Riyadh, where the talent market is still catching up to the ambition, being a designer who can also read a pull request gives you leverage that pure visual designers simply do not have.",
+          "The best part about designing for the Saudi market right now is that things are not settled. There is no dominant design pattern for government services yet. No one has figured out the perfect mobile banking flow for a population that skews young, digital-native, and impatient. Every project feels like you are building the first version of something, because in many cases you are. That is rare. In most mature markets, you spend your career optimizing existing patterns by two percent. Here you get to define the pattern.",
+          "The worst part is the timeline expectations. Everything is urgent. Everything was supposed to launch yesterday. You learn to say no a lot. You learn to ship the version that solves 80 percent of the problem and iterate live, because waiting for perfection means the project gets canceled or handed to someone who says yes faster. That is not a Saudi problem specifically, but the pace of transformation here amplifies it. Vision 2030 is not sitting around waiting for your design review.",
+          "If you are a senior product designer considering Riyadh, or already working there and wondering if your experience is normal: it probably is. Designing here means navigating bilingual interfaces, enterprise clients with deep skepticism, and deadlines that should be illegal. It also means shipping work that millions of people actually use, in a market where good design is genuinely scarce and genuinely valued.",
+          "I would take that trade any day.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "product-designer-kerala",
+    date: "05 Jul 2026",
+    category: "Career",
+    title: "I\'m a product designer from Kerala. Here\'s what 11 years of designing for global clients actually looks like.",
+    excerpt:
+      "I was the guy who had to fix this mess.",
+    readTime: "7 min read",
+    content: [
+      {
+        heading: "Three years ago, I was sitting in my apartment in Dubai, staring at five separate enterprise apps that all did roughly the same thing. Different codebases, different UI patterns, different login screens. Farmers in 40 countries were using these things daily, and every single one looked like it came from a different company.",
+        body: [
+          "I was the guy who had to fix this mess.",
+          "That\'s the kind of problem nobody tells you about in design school. They teach you grids and color theory and maybe some Figma basics. They don\'t teach you how to convince a room full of engineers in Iowa that consolidating five legacy agriculture apps into one platform is worth six months of their lives. They definitely don\'t teach you how to do it when half the stakeholders have never met you in person.",
+          "I\'m from Kerala. I did my diploma in Bangalore, bounced around startups for a few years, and eventually landed at Valmont Industries as their Senior Product Designer. That\'s where the five-app consolidation project happened. It took 18 months, a lot of late nights, and more stakeholder presentations than I care to remember. But we shipped it. One unified platform. 60+ reusable components in a design system we built from scratch. Design-to-dev handoff time dropped by 40%.",
+          "Here\'s the thing about being a **product designer from Kerala** working globally: your location stops mattering the moment your work speaks louder than your address.",
+        ],
+      },
+      {
+        heading: "The remote design reality nobody talks about",
+        body: [
+          "I get messages from junior designers in Kochi and Trivandrum all the time asking how to land international clients. The assumption is that there\'s some secret. A portfolio trick. A networking hack.",
+          "There isn\'t.",
+          "When I started freelancing, I took on projects I had no business taking. A fintech savings app called FinFlow. A travel platform redesign for Voyacher. Logistics dashboards. I learned on the job, messed up plenty, and got better by doing the work, not by reading threads about how to get the work.",
+          "The one advantage I had was that I could code. Not \"I took a HTML course once\" coding. I could actually build the things I designed. HTML, CSS, TypeScript, React, Next.js. When a client in Dubai asks \"how long will this take to implement,\" I can give them an answer based on experience, not a guess. That alone has won me more projects than any portfolio piece.",
+        ],
+      },
+      {
+        heading: "The Kerala advantage is real",
+        body: [
+          "I didn\'t fully appreciate this until I started working with designers from other parts of the world. Growing up in Kerala gives you a few things that translate shockingly well to product design work:",
+          "You\'re fluent in English from primary school onward. That matters when you\'re writing microcopy, presenting to US clients, or arguing about button labels in a Slack thread at 11 PM.",
+          "You grow up surrounded by dense visual information. Temple architecture, hand-painted film posters, the controlled chaos of a Thrissur market. You develop an eye for composition without realizing it.",
+          "And honestly? You learn to work with constraints. Unreliable electricity, slow internet, tight budgets. When a client says \"we need this in two weeks,\" you don\'t flinch. You\'ve dealt with worse.",
+          "None of this guarantees you\'ll be a good designer. But it means you\'re not starting from behind.",
+        ],
+      },
+      {
+        heading: "How AI actually changed things (not the hype version)",
+        body: [
+          "Two years ago, I would have told you AI tools were interesting but not useful for serious design work. I was wrong.",
+          "I use Claude daily now. Not for generating designs. I use it to write design specs faster, to audit my own work for consistency issues, to translate stakeholder feedback into actionable tasks. I built workflows in n8n that automate the boring parts of design ops. I use Cursor when I\'m prototyping in code. I run a local AI assistant called Hermes that handles research and documentation.",
+          "The real shift isn\'t that AI replaces designers. It\'s that AI makes a solo designer in Kozhikode as productive as a small team in San Francisco. The playing field didn\'t just level. It tilted.",
+          "For **UX designers in Kerala** who want global clients, this is the actual opportunity. Not competing on price. Competing on output quality and speed, because the tools now let you operate at a level that used to require a support team.",
+        ],
+      },
+      {
+        heading: "What eleven years taught me",
+        body: [
+          "I\'ve designed for farmers in Brazil who couldn\'t read English. I\'ve designed for fintech users who save 500 rupees a month and need to see that progress clearly. I\'ve designed for logistics operators who need to scan a dashboard in three seconds and make a decision.",
+          "Every one of these users taught me the same lesson: nobody cares about your Figma file. Nobody cares about your design system documentation. They care whether the thing works, whether it\'s obvious, and whether it gets out of their way.",
+          "If you\'re a **product designer in Kerala** trying to break into global work, build real things. Don\'t just post case studies. Ship side projects. Write about what you learned. Put your actual thinking in public, not just the polished final mockups. The clients who matter will find you through the work, not through your Dribbble profile.",
+          "I\'m still figuring things out myself. I still take on projects that scare me. I still have days where I open Figma and stare at a blank canvas for an hour before anything useful happens. But I\'ve stopped waiting for permission to do the work.",
+          "That\'s the whole thing, really. The work is the permission.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "product-designer-kochi",
+    date: "05 Jul 2026",
+    category: "Career",
+    title: "I\'m a Product Designer Working from Kochi. Here\'s What That Actually Looks Like.",
+    excerpt:
+      "I nodded.",
+    readTime: "7 min read",
+    content: [
+      {
+        heading: "Three years ago, I was sitting in a client meeting in Dubai, explaining wireframes to stakeholders in Saudi Arabia, while my mom was WhatsApping me photos of the fish curry she\'d made for lunch back in Kerala. My colleague leaned over and whispered, *\"Wait, you\'re from Kochi? Like... Kochi, Kerala?\"*",
+        body: [
+          "I nodded.",
+          "*\"And you\'re doing product design... from there?\"*",
+          "I nodded again, and honestly, I didn\'t fully appreciate how strange that sounded until much later.",
+          "I\'m Mohammed Noushad. I\'ve been a product designer for 11 years now. Most of that time, I lived in Dubai. But for the past few years, I\'ve been splitting my time between Dubai and Kochi, and increasingly, Kochi is where I do my best work.",
+          "This isn\'t one of those *\"Kochi is the next Silicon Valley\"* posts. It\'s not. And I\'m not going to tell you that working from Kerala is some magical productivity hack. Some days the power goes out, sometimes the internet gets moody, and I\'ve definitely taken calls where an auto-rickshaw horn became an accidental sound effect in my design review.",
+          "But here\'s what\'s actually true: Kochi is quietly becoming one of the most interesting places in India to be a product designer, and almost nobody is talking about it.",
+        ],
+      },
+      {
+        heading: "The thing about Infopark that surprised me",
+        body: [
+          "When I first walked into Infopark a few years ago, I expected the usual IT park energy: cubicles, Dell monitors, people discussing Java frameworks. What I found instead was a startup floor that reminded me more of a WeWork in Bangalore than anything I\'d associated with Kochi before.",
+          "There\'s a genuine buzz now. Fintech teams building UPI products for Tier-2 cities. A travel-tech startup that\'s actually competing with the big players on UX (I know because I redesigned a travel platform myself, Voyacher, and I\'ve seen what good travel UX looks like). Healthtech, agritech, logistics. Small teams, often under 15 people, shipping real products.",
+          "The designers I\'ve met at Infopark events don\'t carry the same insecurity I see in some other cities. They\'re not constantly looking over their shoulder at what Bangalore is doing. They\'re too busy building things for the 40 million Malayalis who don\'t live in tech hubs.",
+        ],
+      },
+      {
+        heading: "Remote work leveled the playing field",
+        body: [
+          "Here\'s something I learned the hard way: your location doesn\'t matter nearly as much as your output.",
+          "I led UX and UI for five enterprise applications at Valmont Industries, an agriculture technology company operating across 40 countries. I consolidated five legacy apps into one unified platform. I built a 60-component design system from scratch. None of my end users in Nebraska or Brazil cared whether I was sketching flows from a desk in Dubai or a coffee shop in Fort Kochi.",
+          "The design-to-dev handoff time dropped by 40% after we systematized things. That number came from better component documentation, not from me being physically present in a US office.",
+          "What made remote design possible wasn\'t just Figma (though Figma changed everything). It was the combination of async communication tools, screen recording for walkthroughs, and getting comfortable with the fact that a well-annotated Figma file communicates more than a two-hour meeting ever could.",
+          "If you\'re a UI UX designer in Kochi wondering if you can work for a global company without moving to Bangalore, you can. I\'ve done it. You just have to be twice as organized and three times as good at written communication.",
+        ],
+      },
+      {
+        heading: "The AI thing nobody wants to admit",
+        body: [
+          "I use AI tools now. Claude. Cursor. n8n automations. I\'ve built my own Hermes agent setup that handles parts of my workflow I used to waste hours on.",
+          "Here\'s the uncomfortable truth: AI doesn\'t make mediocre designers great. It makes good designers faster. If you can\'t articulate *why* a design decision works, no language model will fix that for you. But if you already know your craft? AI is the difference between delivering a design system in four months versus eight.",
+          "This is actually where Kochi-based designers have an edge. The cost of living here means you can afford to experiment. You can spend three months going deep on AI-assisted design workflows without burning through your savings. I know designers in Bangalore paying 40% of their income on rent who can\'t take that kind of risk.",
+          "I\'ve been writing HTML and CSS since I started, and I still code in TypeScript and React today. Knowing how your designs actually get built, not just how they look in a mockup, changes everything. When a developer tells me something is \"technically impossible\" in Next.js, I can usually tell whether they mean \"actually impossible\" or \"I don\'t want to do it.\" That literacy came from coding real projects, not from reading Medium articles.",
+        ],
+      },
+      {
+        heading: "What I wish someone told me 11 years ago",
+        body: [
+          "Nobody told me product design was a career option when I was growing up in Kerala. I moved to Bangalore for my education, worked my way into the industry, and spent years doing freelance projects for fintech startups and logistics companies before I ever called myself a \"product designer.\"",
+          "The 8+ freelance clients I\'ve worked with (across fintech, travel, logistics) taught me more about design than any course could. Building FinFlow, a savings app for gig workers, taught me that good UX is about understanding money anxiety, not about pixel-perfect shadows. Redesigning a travel platform taught me that booking flows break in ways you can\'t predict until you watch a real user struggle through them.",
+          "If you\'re a product designer in Kochi right now, you have something I didn\'t have: a local community. The meetups are small but serious. The designers I meet genuinely want to build better products, not just prettier Dribbble shots. And you have the infrastructure. SmartCity is expanding, the startup grants are real, and remote work means your next job could be in Toronto or Tokyo without you ever leaving your balcony in Kakkanad.",
+        ],
+      },
+      {
+        heading: "This isn\'t a pitch",
+        body: [
+          "I\'m not selling a course. I don\'t have a design mentorship program. I\'m just saying what I\'ve seen: Kochi works. Not because it\'s perfect. It\'s not. But because the things that actually matter for a design career (skill, communication, taste, speed) don\'t depend on your city anymore.",
+          "If you\'re looking for a product designer in Kochi who can build design systems for enterprise, prototype in code, and ship things that work across 40 countries, I exist. So do a lot of other talented people here. That\'s the point.",
+          "The fish curry is pretty good too.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "product-designer-india",
+    date: "05 Jul 2026",
+    category: "Career",
+    title: "What Eleven Years as a Product Designer Taught Me About Building for India",
+    excerpt:
+      "It was 2013. I had just finished my diploma and landed a freelance project, a basic inventory app for a textile wholesaler. I showed up with clean screens, logi...",
+    readTime: "7 min read",
+    content: [
+      {
+        heading: "I failed my first usability test in Bangalore and it had nothing to do with the interface.",
+        body: [
+          "It was 2013. I had just finished my diploma and landed a freelance project, a basic inventory app for a textile wholesaler. I showed up with clean screens, logical flows, the kind of work that impresses a portfolio review panel. The owner, a middle-aged man in a dimly lit Chickpet office, opened the app on his Samsung Galaxy Y. He squinted at the screen for maybe three seconds. Then he handed the phone to his teenage son and said, \"Tell me what this boy has made.\"",
+          "I had designed everything in English. His son translated every label into Kannada, live, while I sat there pretending my \"intuitive\" interface wasn\'t completely useless to the actual user.",
+          "That was my introduction to what it means to be a **product designer** serving **India**. Nobody teaches you this in a Bangalore classroom. They teach you grids and color theory and Figma. They don\'t teach you that your user might be a 55-year-old dealer in rural Maharashtra running your enterprise app on a phone with 512MB of RAM and a 3G connection that drops out every time a truck passes by.",
+          "I learned that lesson properly at Valmont, where I led UX for five enterprise apps used across 40 countries. All built for Western users first, then awkwardly shipped to Indian dealers. My job was to consolidate them into one platform. I built a design system with 60-plus components. I cut design-to-dev handoff time by 40 percent. Our dealers didn\'t care about any of that. What they noticed was the app crashing when a field officer tried to upload a photo of a broken irrigation pivot. What they noticed was error messages run through Google Translate.",
+          "So I stopped designing for my portfolio and started designing for that dealer.",
+        ],
+      },
+      {
+        heading: "What Being a Senior Product Designer in India Actually Means",
+        body: [
+          "There is a strange tension in being a **senior product designer** from **India** working out of Dubai. People hear \"Dubai\" and picture fintech dashboards for oil money. The reality is less glamorous. My mornings start at 6 AM Gulf time to catch the India team before lunch. My evenings stretch late for design reviews with European stakeholders. I have become fluent in time zone arithmetic, subtracting 1.5 hours for India, adding 3 for Europe, praying nobody schedules a meeting at 2 AM.",
+          "When I graduated in Bangalore, \"UX designer\" was barely a job title. Companies wanted web designers who could use Photoshop and maybe write HTML. Now LinkedIn is flooded with product designers from India, portfolios polished, Figma skills probably sharper than mine.",
+          "What hasn\'t changed is the gap between how we present our work and how it lands with Indian users.",
+          "I see portfolios full of dark mode dashboards and glassmorphism effects, the visual language that wins Dribbble likes. Then I think about the Indian user opening that interface on a cracked screen under direct sunlight at a bus stop. Contrast ratios wrong. Touch targets too small. Data loads too heavy for the network. Nobody briefed the designer on real conditions. Nobody said, \"This will be used outdoors, by someone wearing reading glasses bought from a street vendor.\"",
+          "At Valmont, I started testing on the worst device I could find, an old Android phone from a drawer. If it worked on that, it had a chance in the field. If it didn\'t, I stripped things down. No animations. No unnecessary calls. Text readable with brightness maxed because the user was standing in a wheat field at noon. This isn\'t portfolio work. It\'s what keeps a business running.",
+          "My freelance work taught me the same lessons. I built FinFlow, a savings app. I rebuilt the Voyacher travel platform. These projects let me code, which I genuinely enjoy. HTML, CSS, TypeScript, React, Next.js. I use AI tools now, Claude, Cursor, n8n. None of them solve the fundamental problem: understanding the person on the other end of the screen.",
+          "Indian users are not a monolith. I have designed for English-speaking founders in Bangalore and for Hindi-speaking agricultural dealers in Uttar Pradesh. For users who read Arabic, which I can do haltingly. For users who speak Malayalam, my native language. For users who switch between three languages mid-conversation. The app handles this gracefully or it fails.",
+          "Supporting a language is not just translating strings. A Kannada label might be 40 percent longer than English, breaking your carefully laid out form. Concepts like \"depreciation schedule\" don\'t have clean translations. You design around the explanation, not the word.",
+          "I moved to Dubai years ago. It\'s a good base. The work is steady, the exposure real. But India never leaves your design brain once it\'s been shaped there. I still think about low bandwidth, older devices, users who might not read the language my interface defaults to.",
+          "Sometimes I meet designers here who have only designed for users like themselves: English speaking, high speed internet, latest iPhone. I don\'t envy them. Designing for constraints makes you better. Designing for India makes you honest because the users won\'t pretend to be impressed. They\'ll close your app and find one that works. Or they\'ll call their nephew who \"knows computers.\" Or they\'ll go back to their paper ledger that has worked fine for twenty years.",
+          "That last one still haunts me. The paper ledger. The ultimate competitor. If your app cannot beat the simplicity of a notebook, it doesn\'t matter how pretty the UI is.",
+          "Eleven years in. Sixty-plus component design system. Products in 40 countries. Eight-plus freelance clients across fintech, travel, logistics. I write code. I use AI tools daily. I still sit down with every new project and ask: who is actually going to use this, and what does their real day look like?",
+          "Not their persona document. Not the user journey map. Their actual day. The commute. The network quality. The device in their pocket. The language they think in.",
+          "That question started in a textile office in Chickpet. I have been asking it ever since.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "product-designer-bangalore",
+    date: "05 Jul 2026",
+    category: "Career",
+    title: "What 11 Years of Product Design Taught Me About Standing Out in Bangalore",
+    excerpt:
+      "I still remember walking into my first design class in Bangalore, 2008. Diploma program. I had no portfolio, no MacBook, and no idea what \"user experience\" even...",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "I still remember walking into my first design class in Banga...",
+        body: [
+          "I still remember walking into my first design class in Bangalore, 2008. Diploma program. I had no portfolio, no MacBook, and no idea what \"user experience\" even meant. I just knew I liked making things look good and I\'d spent way too much time customizing my Orkut profile. The guy next to me already had three freelance clients and a Behance page with 2,000 followers. I remember thinking: I am so far behind.",
+          "That feeling never fully goes away in Bangalore. It\'s a city where everyone seems to be building something. Walk into any cafe in Koramangala and you\'ll overhear three pitch meetings before your coffee arrives. For a **product designer in Bangalore**, the talent density is absurd. I\'ve worked with designers here who can prototype faster than I can sketch. That\'s not an exaggeration.",
+          "But looking back at 11 years, I think the thing that actually matters isn\'t raw skill. It\'s something quieter.",
+        ],
+      },
+      {
+        heading: "I moved to Dubai after my diploma. Not because I had a grand...",
+        body: [
+          "I moved to Dubai after my diploma. Not because I had a grand plan. A friend\'s uncle needed a designer for his logistics startup and offered to sponsor my visa. I said yes because it sounded better than sitting in Bangalore traffic and applying to 50 jobs a week. That logistics gig turned into eight years of building real products for real people who would yell at you if the UI broke at 2 AM.",
+          "Somewhere in there I led UX and UI for five enterprise applications at Valmont, an agriculture company operating across 40 countries. When I joined, they had five separate legacy apps that looked like they were built in 2007. Different navigation patterns, inconsistent form fields, buttons doing different things on different screens. The kind of mess that makes you question your career choices at 11 PM on a Wednesday. I consolidated all of that into a single unified platform and built a 60-component design system from scratch.",
+          "That design system cut our design-to-development handoff time by 40%. Not because I\'m some genius. Because when you give engineers a box of consistent Lego pieces instead of five different instruction manuals, things move faster. Shocking, I know.",
+        ],
+      },
+      {
+        heading: "I also ended up freelancing for eight plus clients along the...",
+        body: [
+          "I also ended up freelancing for eight plus clients along the way: fintech apps, travel platforms, logistics dashboards. One of them was an Indian fintech startup that had raised a seed round and needed a savings app built from zero. I designed and built FinFlow over four months, doing both the UI and the frontend in React. The founder was in Bangalore. I was in Dubai. We did everything over Slack and Loom. That was 2021. These days that setup is normal. Back then, it felt like we were getting away with something.",
+          "Here\'s what I\'ve learned about being a **UI UX designer in Bangalore** versus everywhere else I\'ve worked:",
+          "Bangalore has this unique culture where design is treated as product thinking, not decoration. In some cities, designers are the people you call after the engineers have built everything. \"Make it look nice.\" In Bangalore, especially in the startup ecosystem, design gets a seat at the table early. Founders here have seen enough products fail because of bad UX that they\'re willing to invest in it upfront. That\'s rare.",
+        ],
+      },
+      {
+        heading: "But the competition is brutal. Every year, fresh graduates p...",
+        body: [
+          "But the competition is brutal. Every year, fresh graduates pour out of design schools in the city. They\'re hungry. They\'ll work for less than you. They probably know Figma plugins you\'ve never heard of. So how do you stand out?",
+          "For me, the answer was stepping outside pure design. I learned to code. Not \"I can center a div\" level. I mean building full applications in TypeScript, React, Next.js. I can have a design idea and ship a working prototype without waiting for an engineer. When I freelance with Indian startups, this is usually the thing that makes them say \"oh, okay.\" A designer who can hand you a Figma file is one thing. A designer who can also build the thing and handle the CSS and make sure it works on a 500-rupee Android phone is something else entirely.",
+          "And then there\'s AI. I don\'t mean the buzzword version. I mean I use Claude and Cursor daily as part of my workflow. I\'ve built automations with n8n that handle stuff I used to spend hours on. I run Hermes, an AI agent framework, to extend what I can do as a solo practitioner. This is not about replacing designers. It\'s about one person being able to do work that used to take a team of three. That\'s a competitive advantage whether you\'re applying to a Bangalore startup or freelancing remotely.",
+        ],
+      },
+      {
+        heading: "The remote-first shift has changed the game for Bangalore ba...",
+        body: [
+          "The remote-first shift has changed the game for Bangalore based product designers. You don\'t need to be in the city physically to work with its best companies anymore. I\'m in Dubai and I still work with Bangalore startups regularly. The time difference is manageable. The cultural understanding is there; I grew up speaking Malayalam, I can hold a conversation in Hindi, and I understand how Indian users think about products differently than Western users. That matters more than a zip code.",
+          "Speaking of Indian users: they\'re ruthless. In a good way. If your app loads slowly on a patchy Jio connection, you\'ll hear about it. If your checkout flow has one extra step, the drop-off will tell you everything you need to know. Designing for Indian audiences made me a better designer. You can\'t hide behind fancy animations when your users are on budget phones with 2GB of RAM.",
+          "The diploma I got in Bangalore all those years ago wasn\'t the thing that made me a designer. It gave me a foundation. The rest came from shipping work, breaking things, and having enough uncomfortable conversations with engineers to learn what actually matters. My portfolio at enkay.dev has the projects that survived.",
+        ],
+      },
+      {
+        heading: "If you\'re a product designer in Bangalore right now, here\'s ...",
+        body: [
+          "If you\'re a product designer in Bangalore right now, here\'s my honest take: the city has more design talent than almost anywhere. That means being \"good at Figma\" won\'t differentiate you. What will differentiate you is being the designer who can also build, the designer who understands AI workflows, the designer who has shipped something real and can point to it. Not just Dribbble shots. Actual products that people use and occasionally complain about.",
+          "That\'s the bar now. It\'s high. But honestly, that\'s why I still like doing this after 11 years.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "product-designer-abu-dhabi",
+    date: "05 Jul 2026",
+    category: "Career",
+    title: "What 11 Years of Product Design Taught Me About Working in Abu Dhabi",
+    excerpt:
+      "I\'d been a product designer for eight years at that point. I\'d shipped enterprise apps across forty countries at Valmont. I\'d built a sixty-component design sys...",
+    readTime: "7 min read",
+    content: [
+      {
+        heading: "When someone searches for a \"product designer abu dhabi\" on LinkedIn, they probably picture gleaming government portals and ADGM fintech apps. Six months into my first Abu Dhabi government project, I sat in a meeting room with twelve stakeholders staring at a wireframe I\'d spent three days on. A senior director pointed at the Arabic header and said, \"This reads left to right in your layout. We read right to left. Fix it before tomorrow\'s review.\"",
+        body: [
+          "I\'d been a product designer for eight years at that point. I\'d shipped enterprise apps across forty countries at Valmont. I\'d built a sixty-component design system from scratch. And I\'d just made the most basic bilingual mistake a ui ux designer abu dhabi could make.",
+          "Nobody else in the room laughed. I didn\'t either, until I got to my car.",
+        ],
+      },
+      {
+        heading: "Dubai gets the headlines. Abu Dhabi gets the work.",
+        body: [
+          "When people hear \"product designer UAE,\" they picture Dubai. DIFC fintechs, startup incubators, flashy consumer apps. I\'ve worked with Dubai clients. The energy is real. But Abu Dhabi is a different animal.",
+          "Abu Dhabi\'s design landscape is dominated by government, enterprise, and the ADGM fintech corridor. Government is the biggest player. Multiple semi-autonomous entities, each with their own digital transformation timeline, legacy systems, and vendor relationships stretching back a decade.",
+          "A government portal project here doesn\'t start with a blank Figma file. It starts with three existing portals that need consolidating, a legacy Oracle backend from 2012, and a bilingual requirement touching every component.",
+          "I learned this on a government-adjacent project where the client needed an Arabic-first interface for citizen services. Arabic-first, not Arabic-translated. Entirely different problem.",
+        ],
+      },
+      {
+        heading: "Bilingual design isn\'t translation. It\'s a layout problem.",
+        body: [
+          "Most designers treat Arabic as a translation layer. Design in English, hand off strings to a translator, flip the layout. Works for a marketing page. Falls apart on a government services portal.",
+          "Arabic text expands by roughly thirty percent compared to English. Navigation labels that fit neatly in a sidebar spill into two lines. Tables designed for left-to-right scanning break when the reading direction flips. Everything shifts.",
+          "At Valmont, we supported forty countries but one primary language per deployment. Abu Dhabi forced me to rethink every layout decision through a bidirectional lens. Components that worked in both directions. Grid systems independent of reading order. Icon placements that made sense regardless of text alignment. Type scales accounting for Arabic script\'s visual weight, which lands differently on screen than Latin characters.",
+          "Government portals here legally require Arabic interfaces. If your Arabic layout breaks, your project is not delayed. It is dead.",
+        ],
+      },
+      {
+        heading: "The ADGM effect",
+        body: [
+          "Abu Dhabi Global Market has built a fintech ecosystem under English common law. It attracts the kind of client I freelanced for with FinFlow, my savings optimization app. ADGM startups move fast, want clean interfaces, and don\'t carry the legacy baggage of government.",
+          "But they share one thing with government clients: designers who understand compliance. ADGM-regulated apps have disclosure requirements, risk warnings, data residency rules. These aren\'t product decisions. They are legal constraints shaping every screen.",
+          "The best product designers here sit at the intersection of government compliance and fintech agility. Enterprise-grade interfaces that pass regulatory review, built with component reusability and startup iteration speed.",
+        ],
+      },
+      {
+        heading: "What the job market looks like",
+        body: [
+          "Search for a \"product designer abu dhabi\" role and you\'ll find three categories.",
+          "Government and semi-government entities. They pay well, move slowly, care about pedigree. They want designers who\'ve worked on complex systems. Your Dribbble portfolio of weather app redesigns won\'t cut it.",
+          "ADGM fintechs and consultancies. They want T-shaped designers who handle research, interaction design, and some front-end code. I\'ve been hired specifically because I read TypeScript and understand what\'s feasible before handoff.",
+          "Agencies servicing the first two. The stepping stone. You work on government portals through an agency before a government entity hires you directly.",
+          "I\'ve freelanced for eight plus clients across all three. The common thread, whether it was a fintech app or a travel platform redesign for Voyacher: Abu Dhabi clients don\'t care about design trends. They care whether your solution works in production with actual users.",
+        ],
+      },
+      {
+        heading: "Design systems solve different problems here",
+        body: [
+          "At Valmont, I built a sixty-component design system that reduced design-to-dev handoff by forty percent. In the US enterprise market, design systems are about speed and consistency. Here, they\'re also about governance.",
+          "When a government entity adopts a design system, they\'re creating a single source of truth that multiple vendors follow over multi-year contracts. A dropdown component isn\'t just a dropdown. It\'s a compliance artifact.",
+          "Every component needs documentation for its bilingual behavior, accessibility compliance, and fallback states for low-bandwidth connections. Some citizen services portals still need to work on devices that would qualify as vintage anywhere else.",
+        ],
+      },
+      {
+        heading: "The AI tools nobody talks about",
+        body: [
+          "I use AI tools heavily. Claude for research synthesis. Cursor for prototyping in React and Next.js. n8n for workflow automation. Hermes for agent-based tasks.",
+          "Most design influencers talk about AI as a concept generator. That\'s not where the real gain is.",
+          "The real gain is reducing the gap between design intent and working code. When I prototype a complex form in React directly from a design concept, stakeholder review happens on a real interface, not a Figma prototype that lies about performance. Government stakeholders here have been burned by beautiful prototypes that couldn\'t be implemented within their tech stack.",
+        ],
+      },
+      {
+        heading: "What I\'d tell a product designer considering Abu Dhabi",
+        body: [
+          "The market is smaller than Dubai but less saturated. Government work is stable. ADGM fintech is growing. Bilingual design skills are table stakes.",
+          "Learn right-to-left layouts properly. Not just flipping the canvas. Understand Arabic typography, visual hierarchy, and how information architecture changes when users scan from right to left.",
+          "Build a portfolio that shows complex systems, not beautiful screens. Abu Dhabi clients want enterprise complexity. Show them the sixty-component design system, not the landing page.",
+          "Learn to sit in a room with twelve stakeholders and take feedback without getting defensive. The review culture here is direct. People point out problems in front of everyone. It\'s not personal. It\'s how things get built.",
+          "I still think about that bilingual layout mistake from my first Abu Dhabi project. These days, every file I open starts with both language directions visible. Some lessons only stick when they cost you a weekend of rework and a very quiet drive home.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "product-designer-sharjah",
+    date: "05 Jul 2026",
+    category: "Career",
+    title: "Untitled",
+    excerpt:
+      "Three years ago I took a wrong turn coming back from a client meeting and ended up somewhere near University City. I\'d lived in the UAE for years but Sharjah wa...",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "Three years ago I took a wrong turn coming back from a clien...",
+        body: [
+          "Three years ago I took a wrong turn coming back from a client meeting and ended up somewhere near University City. I\'d lived in the UAE for years but Sharjah was always just the emirate you passed through on the way to the northern ones. That afternoon I parked near a coffee shop, watched students spill out of campus gates, and realized I knew nothing about the place where a huge chunk of this country\'s actual thinking happens.",
+          "I\'m a product designer. Eleven years doing it, five of those in Dubai. I\'ve led UX for enterprise apps at Valmont where we consolidated five separate legacy systems into one unified platform used across 40 countries. I built a 60+ component design system from scratch. I cut design-to-dev handoff time by 40%. And yet I\'d somehow never seriously considered Sharjah as a place where design work happens.",
+        ],
+      },
+      {
+        heading: "That was dumb of me.",
+        body: [
+          "That was dumb of me.",
+          "Sharjah isn\'t Dubai\'s quieter cousin. It\'s a different thing entirely. Dubai runs on speed. Sharjah runs on depth. Walk through Sharjah Publishing City or the Book Authority headquarters and you feel the difference immediately. This emirate has positioned itself as the cultural and educational backbone of the UAE and that creates a specific kind of design demand most product designers overlook.",
+        ],
+      },
+      {
+        heading: "When you design for an edtech platform aimed at Arabic-speak...",
+        body: [
+          "When you design for an edtech platform aimed at Arabic-speaking university students you\'re not just slapping an RTL toggle on an English UI and calling it a day. The reading patterns are different. The visual hierarchy expectations are different. Arabic typography interacts differently with UI density and card layouts. These aren\'t edge cases. They\'re core design concerns affecting millions of users. Sharjah, with its concentration of universities and publishing houses, is ground zero for getting this right.",
+          "I started actively looking for design work connected to Sharjah about a year ago. Not because I wanted to move offices but because the problems were more interesting than I expected. A bilingual Arabic/English learning management system. A digital archive interface for a publishing house with documents spanning 70 years. A fintech savings app called FinFlow that needed to work for users who think about money differently than the typical Revolut user in London.",
+        ],
+      },
+      {
+        heading: "These projects forced me to unlearn some habits. In Dubai th...",
+        body: [
+          "These projects forced me to unlearn some habits. In Dubai the default assumption is English comes first and Arabic is the translation layer. In Sharjah that assumption flips for a significant portion of users. Designing bilingual interfaces where neither language feels secondary is genuinely hard. It affects navigation structures, information density, even the emotional tone of microcopy. I\'ve had to rework entire component libraries because what felt natural in left-to-right flow created friction in right-to-left.",
+          "The other thing about Sharjah that doesn\'t get talked about enough is cost. Startups burn cash on Dubai office space and wonder why their runway shrinks. Sharjah offers licensing packages and commercial space at a fraction of Dubai prices. I\'ve worked with two early-stage startups in the last year that chose Sharjah specifically for this reason. They get access to the same talent pool, they\'re 20 minutes from Dubai when they need to be there, and they keep enough capital to actually iterate on product instead of just paying rent.",
+        ],
+      },
+      {
+        heading: "For a product designer this matters because longer runway me...",
+        body: [
+          "For a product designer this matters because longer runway means more design cycles and more user research. I can\'t tell you how many Dubai startups I\'ve seen ship half baked MVPs because the burn rate forced their hand. Sharjah based teams I\'ve worked with have been able to do proper discovery phases. They run usability tests with actual target users from the universities. They iterate. The output is visibly better.",
+          "The remote and hybrid angle is also real. Post pandemic, a lot of designers I know moved to Sharjah or Ajman because they could get larger homes with actual office space for the same rent as a one bedroom in Marina. Commuting into Dubai two or three days a week is manageable. The rest of the time they\'re working from home setups that actually support deep work. I do hybrid myself. Some days I\'m in Dubai for client workshops. Other days I\'m at my desk with Claude and Cursor open, building prototypes in React and Next.js, running n8n automations for design ops tasks that used to eat hours of manual work.",
+        ],
+      },
+      {
+        heading: "I should clarify something. When I say I\'m a product designe...",
+        body: [
+          "I should clarify something. When I say I\'m a product designer who codes I don\'t mean I dabble in HTML. I write TypeScript. I build in React and Next.js. I use AI tools like Claude and Cursor to accelerate my workflow but the foundation is real. That matters in Sharjah where companies often can\'t afford separate design and front end teams. A designer who can take something from Figma to functional prototype without a handoff bottleneck is worth their weight in gold. I\'ve seen the 40% reduction in handoff time prove itself across eight freelance clients in fintech, travel, and logistics.",
+          "If you\'re searching for a product designer in Sharjah or a UI UX designer in Sharjah you\'re probably either building something here or considering it. My advice: lean into what makes this emirate different. Don\'t design for Sharjah the way you\'d design for Dubai. The users aren\'t the same. The constraints aren\'t the same. The opportunity isn\'t the same. Find someone who understands bilingual UX at a structural level not just as a localization checkmark. Find someone who knows when to use a design system component and when to break the system because the context demands it.",
+        ],
+      },
+      {
+        heading: "I\'m still learning this market myself. Every project here te...",
+        body: [
+          "I\'m still learning this market myself. Every project here teaches me something I didn\'t know. But that\'s what I signed up for. Eleven years in and I\'d rather be slightly uncomfortable in a new problem space than comfortably repeating the same patterns with different logos.",
+          "If you\'re building something interesting in Sharjah, get in touch. My portfolio is at enkay.dev. I work in English and Malayalam natively. I read enough Arabic to understand when a design isn\'t working in both languages and when it needs to be rebuilt from the ground up rather than translated.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "product-designer-umm-al-quwain",
+    date: "05 Jul 2026",
+    category: "Career",
+    title: "I\'m a Product Designer Based in Umm Al Quwain. Here\'s Why That\'s Not a Typo.",
+    excerpt:
+      "Last month someone on LinkedIn messaged me with genuine confusion. \"Mohammed, your profile says Umm Al Quwain. Is that a mistake? Aren\'t all designers in Dubai?...",
+    readTime: "5 min read",
+    content: [
+      {
+        heading: "Last month someone on LinkedIn messaged me with genuine conf...",
+        body: [
+          "Last month someone on LinkedIn messaged me with genuine confusion. \"Mohammed, your profile says Umm Al Quwain. Is that a mistake? Aren\'t all designers in Dubai?\"",
+          "I laughed. Then I realized this was the fourth time I\'d gotten that question in six months.",
+          "So let me clear this up. I live and work from Umm Al Quwain. Yes, the quiet emirate. No, I\'m not joking. And no, it hasn\'t hurt my career one bit.",
+        ],
+      },
+      {
+        heading: "Here\'s the thing nobody tells you about design work in 2026....",
+        body: [
+          "Here\'s the thing nobody tells you about design work in 2026. The client doesn\'t care where your desk is. They care whether the thing you build solves their problem. They care about the 5 enterprise apps you consolidated into one unified platform at Valmont, handling agriculture operations across 40 countries. They care about the 60+ component design system that cut handoff time by 40%. They care about results. Not coordinates.",
+          "I moved to UAQ three years ago. Before that, I was in Dubai like everyone else. The commute, the noise, the rental prices that make you question every life choice you\'ve ever made. One day I asked myself what I was actually paying for. Proximity to offices I wasn\'t visiting? Coffee shops I could find anywhere?",
+          "The math was embarrassingly simple. My rent dropped by more than half. My workspace got twice as big. I now have a dedicated room for my setup instead of a corner of my living room pretending to be an office. The only thing I lost was traffic.",
+        ],
+      },
+      {
+        heading: "But the real question people are asking when they message me...",
+        body: [
+          "But the real question people are asking when they message me about UAQ isn\'t about rent. It\'s about relevance. Can you do serious product design work from a smaller emirate? Will clients take you seriously? Does the Dubai bias still matter?",
+          "I\'ve freelanced for 8+ clients across fintech, travel, and logistics since moving here. Not one has asked me to come to an office. Not one has cared about my location beyond the timezone. I built FinFlow, a savings app for the UAE market, entirely from my home office in UAQ. I redesigned the Voyacher travel platform while drinking karak from a cafeteria that costs 1 dirham.",
+          "The tools I use now make location even less relevant. AI has changed my workflow in ways I didn\'t expect two years ago. I use Claude for research and content structuring. Cursor has transformed how I prototype directly in code instead of handing off static Figma files and hoping the developer reads my annotations. I build automation workflows with n8n and manage multi-agent toolchains with Hermes. I write actual HTML, CSS, TypeScript, React, and Next.js. Not because every product designer needs to code, but because when you can prototype working interfaces instead of describing them, the distance between you and the developer collapses to zero.",
+        ],
+      },
+      {
+        heading: "This is the part where I should probably say something about...",
+        body: [
+          "This is the part where I should probably say something about how remote work enables work-life balance or some other LinkedIn-optimized phrase. I won\'t. What I will say is this: the quiet matters. UAQ gives me the kind of focus I never had in Dubai. When I\'m deep in a design problem, working through component architecture for a design system, or untangling the UX flow for a complex enterprise dashboard, the last thing I need is noise. The smaller emirates offer something the big cities can\'t: actual uninterrupted time.",
+          "There\'s another angle here I don\'t see discussed much. UAE businesses outside Dubai and Abu Dhabi need design talent too. Local companies in the northern emirates, startups in Ras Al Khaimah, government entities in Ajman. They often can\'t compete with Dubai salaries for in-house designers. But they can hire someone who understands the local context, speaks the language, and works remotely at rates that make sense for both sides. That\'s not a compromise. That\'s a market.",
+          "I speak English fluently, Malayalam natively, and I read Arabic. I understand how products need to work in this region because I\'ve been here for over a decade. I\'ve led UX and UI for products deployed in 40 countries. The location on my profile doesn\'t diminish any of that.",
+        ],
+      },
+      {
+        heading: "If you\'re a product designer considering the move to Umm Al ...",
+        body: [
+          "If you\'re a product designer considering the move to Umm Al Quwain or any of the smaller emirates, here\'s my honest take. The cost advantage is real. You can work with UAE clients at competitive rates while keeping your expenses low. The infrastructure is solid. Internet speeds are fine. You\'re still 45 minutes from Dubai if you genuinely need to be there. And the quality of daily life improves in small but significant ways. Less time in a car. More time doing actual work. Or not doing work. Both are valid.",
+          "If you\'re a business looking for a UI UX designer in UAQ, or a product designer in Umm Al Quwain, I hope this gives you a clearer picture. The talent isn\'t only in Dubai and Abu Dhabi. Some of us are out here in the quiet emirates, shipping products for clients across the UAE and beyond, with lower overhead and the same 11+ years of experience.",
+          "The location thing is a filter, not a barrier. It filters out clients who think design happens in a specific postal code. It leaves the ones who care about the work itself.",
+        ],
+      },
+      {
+        heading: "I\'m fine with that.",
+        body: [
+          "I\'m fine with that.",
+        ],
+      },
+    ],
+  }
 ];
 
 export function getArticle(slug: string): Article | undefined {
