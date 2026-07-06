@@ -17,7 +17,7 @@ export default function LeadForm({ source }: LeadFormProps) {
     setStatus("sending");
 
     try {
-      const res = await fetch("https://n8n.enkay.dev/webhook/enkay-lead", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message, source }),
