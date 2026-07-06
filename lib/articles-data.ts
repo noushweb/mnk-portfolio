@@ -446,7 +446,7 @@ export const articles: Article[] = [
     slug: "senior-product-designer-dubai",
     date: "05 Jul 2026",
     category: "Career",
-    title: "Untitled",
+    title: "Being a Senior Product Designer in Dubai (the version nobody posts on LinkedIn)",
     excerpt:
       "I moved to Dubai four years ago. Not for the tax-free salary, not for the Burj Khalifa views, not for the Instagram brunches. I moved because a project I was fr...",
     readTime: "7 min read",
@@ -504,7 +504,7 @@ export const articles: Article[] = [
     slug: "senior-product-designer-riyadh",
     date: "05 Jul 2026",
     category: "Career",
-    title: "Untitled",
+    title: "Designing for Riyadh: What Nobody Tells You About Product Design in Saudi Arabia",
     excerpt:
       "The first Saudi government portal I worked on, I made a mistake that still makes me cringe. I designed the entire interface left-to-right, in English, and figur...",
     readTime: "7 min read",
@@ -849,7 +849,7 @@ export const articles: Article[] = [
     slug: "product-designer-sharjah",
     date: "05 Jul 2026",
     category: "Career",
-    title: "Untitled",
+    title: "What 11 Years of Product Design Taught Me About Working in Sharjah",
     excerpt:
       "Three years ago I took a wrong turn coming back from a client meeting and ended up somewhere near University City. I\'d lived in the UAE for years but Sharjah wa...",
     readTime: "6 min read",
