@@ -19,7 +19,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/dubai", priority: 0.7, lastmod: "2026-07-05", freq: "monthly" as const },
     { path: "/india", priority: 0.6, lastmod: "2026-07-05", freq: "monthly" as const },
     { path: "/riyadh", priority: 0.7, lastmod: "2026-07-05", freq: "monthly" as const },
-    { path: "/uae", priority: 0.7, lastmod: "2026-07-05", freq: "monthly" as const },
+    { path: "/uae", priority: 0.7, lastmod: "2026-07-06", freq: "monthly" as const },
+    { path: "/kerala", priority: 0.6, lastmod: "2026-07-06", freq: "monthly" as const },
+    { path: "/kochi", priority: 0.6, lastmod: "2026-07-06", freq: "monthly" as const },
+    { path: "/bangalore", priority: 0.6, lastmod: "2026-07-06", freq: "monthly" as const },
+    { path: "/abu-dhabi", priority: 0.6, lastmod: "2026-07-06", freq: "monthly" as const },
+    { path: "/sharjah", priority: 0.6, lastmod: "2026-07-06", freq: "monthly" as const },
+    { path: "/umm-al-quwain", priority: 0.6, lastmod: "2026-07-06", freq: "monthly" as const },
   ];
 
   const routes = staticRoutes.map((route) => ({
