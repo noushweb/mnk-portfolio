@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, Clock } from "lucide-react";
 import ArticleTOC from "@/components/ArticleTOC";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import LeadForm from "@/components/LeadForm";
 import { getArticle, getAllSlugs, articles } from "@/lib/articles-data";
 
 export function generateStaticParams() {
@@ -137,6 +138,21 @@ export default async function ArticlePage({
 
         {/* Divider */}
         <div className="border-t border-[var(--color-border)] mt-24 mb-16" />
+
+        {/* Lead CTA */}
+        <section className="mb-24">
+          <div className="max-w-2xl mx-auto text-center space-y-4">
+            <h2 className="text-2xl md:text-3xl font-medium tracking-tight">
+              Need a product designer?
+            </h2>
+            <p className="text-lg text-[var(--color-text-secondary)]">
+              Based in Dubai, available remotely. Enterprise UX, design systems, AI-powered development.
+            </p>
+          </div>
+          <div className="mt-8">
+            <LeadForm source={`article-${article.slug}`} />
+          </div>
+        </section>
 
         {/* Continue Reading */}
         <section>
