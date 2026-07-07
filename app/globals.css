@@ -448,3 +448,8 @@ a:hover .tag-pill {
     animation: none;
   }
 }
+
+/* Hide Dograh default CTA button — unified ChatWidget handles voice calls */
+.dograh-widget-cta {
+  display: none !important;
+}
