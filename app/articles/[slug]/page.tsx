@@ -23,14 +23,26 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Mohammed Noushad`,
     description: article.excerpt,
+    alternates: {
+      canonical: `https://enkay.dev/articles/${slug}`,
+    },
     openGraph: {
       title: article.title,
       description: article.excerpt,
+      url: `https://enkay.dev/articles/${slug}`,
       type: "article",
       publishedTime: article.date,
       images: [
         { url: "/og-image.jpg", width: 1200, height: 630, alt: article.title },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.excerpt,
+      site: "@noushad_design",
+      creator: "@noushad_design",
+      images: ["/og-image.jpg"],
     },
   };
 }

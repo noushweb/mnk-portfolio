@@ -31,9 +31,11 @@ export default function DubaiPage() {
               I design products from Kochi — for startups, enterprises, and global markets.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
-              Based in Dubai with 11+ years designing and shipping products across the UAE,
-              India, and the US. I specialise in enterprise UX/UI, design systems, and
-              AI-powered product development.
+              Kochi has one of the most exciting emerging tech scenes in India, and I&apos;ve
+              had the privilege of mentoring product designers here while building global
+              products from my studio. There&apos;s a unique energy in Kochi — startup founders
+              who think big, talent that&apos;s hungrier than anywhere else, and a city that
+              connects Kerala to the world.
             </p>
           </div>
 

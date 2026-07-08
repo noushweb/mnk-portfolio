@@ -31,9 +31,11 @@ export default function DubaiPage() {
               I design products from Dubai — for enterprise, fintech, and the Middle East.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
-              Based in Dubai with 11+ years designing and shipping products across the UAE,
-              India, and the US. I specialise in enterprise UX/UI, design systems, and
-              AI-powered product development.
+              I&apos;ve been based in Dubai for over 11 years, designing and shipping products
+              for companies across the UAE, India, and the US. From the enterprise dashboards
+              at Valmont to the travel platform at Voyacher, my work is rooted in the region&apos;s
+              ambition — building for fast-growing markets where trust, bilingual UX, and
+              performance matter.
             </p>
           </div>
 

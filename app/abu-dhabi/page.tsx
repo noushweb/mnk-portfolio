@@ -31,9 +31,11 @@ export default function DubaiPage() {
               I design products for Abu Dhabi — government, enterprise, and fintech.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
-              Based in Dubai with 11+ years designing and shipping products across the UAE,
-              India, and the US. I specialise in enterprise UX/UI, design systems, and
-              AI-powered product development.
+              Abu Dhabi&apos;s government and enterprise sectors are transforming fast, and
+              I&apos;ve been fortunate to work on products that serve this space — from
+              bilingual enterprise dashboards to fintech platforms built for the UAE&apos;s
+              regulatory environment. I understand the compliance, the cultural nuance, and
+              the level of polish that Abu Dhabi clients expect.
             </p>
           </div>
 

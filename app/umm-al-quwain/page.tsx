@@ -31,9 +31,11 @@ export default function DubaiPage() {
               I design products for Umm Al Quwain — remote, reliable, results-driven.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
-              Based in Dubai with 11+ years designing and shipping products across the UAE,
-              India, and the US. I specialise in enterprise UX/UI, design systems, and
-              AI-powered product development.
+              Umm Al Quwain might be one of the smaller emirates, but it&apos;s home to
+              ambitious businesses that are digitising fast. I help companies here — whether
+              in tourism, logistics, or local services — build polished digital products that
+              feel world-class. Being based in the UAE means I can collaborate in person
+              whenever needed, with the full weight of 11+ years of global experience.
             </p>
           </div>
 

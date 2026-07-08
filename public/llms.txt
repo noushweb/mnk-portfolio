@@ -11,6 +11,12 @@
 - [Product Designer India](https://enkay.dev/india): Product designer from India — remote-first, fintech UX, design systems for global teams.
 - [Senior UI Designer Riyadh](https://enkay.dev/riyadh): Senior UI Designer available for Riyadh — enterprise design systems, fintech, Figma mastery, embedded team experience.
 - [Freelance Product Designer UAE](https://enkay.dev/uae): Freelance Product Designer in UAE — 0→1 product design, design systems, UX audits, AI-enhanced workflows.
+- [Product Designer Kerala](https://enkay.dev/kerala): Senior Product Designer from Kerala, India — enterprise UX/UI, design systems, AI-powered development.
+- [Product Designer Kochi](https://enkay.dev/kochi): Senior Product Designer in Kochi, Kerala — enterprise UX/UI, design systems, AI-powered development.
+- [Product Designer Bangalore](https://enkay.dev/bangalore): Senior Product Designer in Bangalore — enterprise UX/UI, design systems, AI-powered development.
+- [Product Designer Abu Dhabi](https://enkay.dev/abu-dhabi): Senior Product Designer in Abu Dhabi — enterprise UX/UI, design systems, AI-powered development.
+- [Product Designer Sharjah](https://enkay.dev/sharjah): Senior Product Designer in Sharjah — enterprise UX/UI, design systems, AI-powered development.
+- [Product Designer Umm Al Quwain](https://enkay.dev/umm-al-quwain): Senior Product Designer in Umm Al Quwain — enterprise UX/UI, design systems, AI-powered development.
 
 ## Case Studies
 - [Valmont Legacy Redesign](https://enkay.dev/valmont-legacy-redesign): Five legacy enterprise applications modernised into one unified web experience — redesigned information architecture, shared component library, and role-based dashboards.
@@ -32,6 +38,17 @@
 - [From Visual Design to Product Thinking](https://enkay.dev/articles/visual-to-product-thinking): How shifting from visual-first to problem-first changed everything about my design practice.
 - [AI and Product Design: Not What I Expected](https://enkay.dev/articles/ai-and-product-design): Everyone said AI would replace designers. Instead it changed what "designer" even means.
 - [AI-Assisted Design Workflows](https://enkay.dev/articles/ai-assisted-workflows): A practical look at integrating AI tools into a real product design workflow.
+
+## Location Articles
+- [Senior Product Designer Dubai](https://enkay.dev/articles/senior-product-designer-dubai): Being a Senior Product Designer in Dubai — the version nobody posts on LinkedIn.
+- [Senior Product Designer Riyadh](https://enkay.dev/articles/senior-product-designer-riyadh): Designing for Riyadh — what nobody tells you about product design in Saudi Arabia.
+- [Product Designer Kerala](https://enkay.dev/articles/product-designer-kerala): 11 years of designing for global clients from Kerala — what it actually looks like.
+- [Product Designer Kochi](https://enkay.dev/articles/product-designer-kochi): Working from Kochi as a product designer — what that actually looks like.
+- [Product Designer India](https://enkay.dev/articles/product-designer-india): Eleven years as a product designer — what building for India taught me.
+- [Product Designer Bangalore](https://enkay.dev/articles/product-designer-bangalore): What 11 years of product design taught me about standing out in Bangalore.
+- [Product Designer Abu Dhabi](https://enkay.dev/articles/product-designer-abu-dhabi): What 11 years of product design taught me about working in Abu Dhabi.
+- [Product Designer Sharjah](https://enkay.dev/articles/product-designer-sharjah): What 11 years of product design taught me about working in Sharjah.
+- [Product Designer Umm Al Quwain](https://enkay.dev/articles/product-designer-umm-al-quwain): A product designer based in Umm Al Quwain — why that's not a typo.
 
 ## About
 Mohammed Noushad is a Senior Product Designer based in Dubai with 11+ years of experience in UX/UI design, design systems, and AI-powered development. He works across the full product lifecycle — from research and strategy through to code and deployment — using Claude, OpenCode, and agent platforms to ship what he designs without handoff delays. His work spans enterprise software, fintech, travel platforms, logistics, and agricultural technology. He has designed and shipped products for Valmont Industries, Voyacher, FinFlow, Road Show, and KartBlue.

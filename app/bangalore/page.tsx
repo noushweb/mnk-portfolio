@@ -31,9 +31,11 @@ export default function DubaiPage() {
               I design products for Bangalore — India's tech capital, served remotely.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
-              Based in Dubai with 11+ years designing and shipping products across the UAE,
-              India, and the US. I specialise in enterprise UX/UI, design systems, and
-              AI-powered product development.
+              I&apos;ve collaborated closely with Bangalore-based teams and startups over the
+              years, and I love how the city pushes product thinking forward. Whether it&apos;s
+              fintech UX for India&apos;s middle class or enterprise tools for global markets,
+              I bring a remote-first, async-friendly approach that fits Bangalore&apos;s
+              fast-paced product culture.
             </p>
           </div>
 

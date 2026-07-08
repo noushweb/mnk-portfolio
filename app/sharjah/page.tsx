@@ -31,9 +31,11 @@ export default function DubaiPage() {
               I design products for Sharjah — culture, education, and enterprise.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
-              Based in Dubai with 11+ years designing and shipping products across the UAE,
-              India, and the US. I specialise in enterprise UX/UI, design systems, and
-              AI-powered product development.
+              Sharjah has a distinct identity — it&apos;s the cultural and educational heart
+              of the UAE, and I&apos;ve worked on projects that require that same thoughtful,
+              detail-oriented approach. From edtech platforms to cultural institution
+              websites, I bring the same design rigour that works for enterprise — adapted
+              for audiences who value clarity and purpose over flash.
             </p>
           </div>
 

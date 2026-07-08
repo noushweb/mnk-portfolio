@@ -31,9 +31,10 @@ export default function DubaiPage() {
               I design products for Kerala — from Kochi to the world.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
-              Based in Dubai with 11+ years designing and shipping products across the UAE,
-              India, and the US. I specialise in enterprise UX/UI, design systems, and
-              AI-powered product development.
+              I grew up in Kerala and my design sensibilities were shaped here — the colour,
+              the craft, the attention to detail that runs through our culture. Even though I
+              work with clients globally, the way I approach product design still carries that
+              Kerala influence: thoughtful, deliberate, and human-first.
             </p>
           </div>
 
