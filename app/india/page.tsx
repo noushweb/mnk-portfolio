@@ -61,6 +61,7 @@ export default function IndiaPage() {
                 { href: "/finflow", title: "FinFlow — Behavioral Savings App", desc: "Designed for India's middle class — zero-based budgeting, goal-based round-ups, and AI-powered financial literacy in 8 Indian languages." },
                 { href: "/roadshow", title: "Road Show — Delivery Management", desc: "End-to-end logistics platform — route planning, real-time tracking, and settlement workflows for Indian delivery networks." },
                 { href: "/articles/ai-and-product-design", title: "AI and Product Design: Not What I Expected", desc: "How AI changed product design — from a designer building in India for global products." },
+                { href: "/articles/auto-india-20260713", title: "Why I Charge More Than the Average UI UX Designer Freelance Rate in India", desc: "11 years in product design, multilingual UX, and why I charge more than the average Indian freelance designer." },
               ].map((project) => (
                 <Link key={project.href} href={project.href} className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
                   <h3 className="font-semibold text-lg mb-1">{project.title}</h3>
