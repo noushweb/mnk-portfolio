@@ -69,6 +69,10 @@ export default function UAEPage() {
                 </Link>
               ))}
             </div>
+            <Link href="/articles/auto-uae-20260720" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
+              <h3 className="font-semibold text-lg mb-1">Latest article: The Dubai Freelance Trap</h3>
+              <p className="text-sm text-[var(--color-text-secondary)]">The real landscape of freelancing across the UAE emirates — and why Dubai isn't the only opportunity.</p>
+            </Link>
           </div>
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
