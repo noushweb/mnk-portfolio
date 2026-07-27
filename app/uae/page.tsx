@@ -10,11 +10,19 @@ export const metadata: Metadata = {
     canonical: "https://enkay.dev/uae",
   },
   openGraph: {
-    title: "Freelance Product Designer UAE | Mohammed Noushad",
+    title: "Freelance Product Designer UAE",
     description:
       "Freelance Product Designer in UAE — enterprise UX/UI, design systems, Figma, and AI-powered workflows. Available for contracts across Dubai and UAE.",
     url: "https://enkay.dev/uae",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — UAE Freelance Product Designer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Freelance Product Designer UAE",
+    description:
+      "Freelance Product Designer in UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered product development. Available for contracts across UAE.",
+    images: ["/og-image.jpg"],
   },
 };
 

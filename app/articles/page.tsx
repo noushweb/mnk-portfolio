@@ -8,8 +8,23 @@ export const metadata: Metadata = {
   title: "Articles | Mohammed Noushad — Product Designer",
   description:
     "Notes, reflections, and deep dives on product design, design systems, AI-assisted development, and building better digital experiences.",
+  alternates: {
+    canonical: "https://enkay.dev/articles",
+  },
   openGraph: {
     title: "Articles",
+    description:
+      "Notes, reflections, and deep dives on product design, design systems, AI-assisted development, and building better digital experiences.",
+    url: "https://enkay.dev/articles",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Articles" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Articles",
+    description:
+      "Notes, reflections, and deep dives on product design, design systems, AI-assisted development, and building better digital experiences.",
+    images: ["/og-image.jpg"],
   },
 };
 

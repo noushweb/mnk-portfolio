@@ -10,11 +10,19 @@ export const metadata: Metadata = {
     canonical: "https://enkay.dev/dubai",
   },
   openGraph: {
-    title: "Product Designer Dubai | Mohammed Noushad",
+    title: "Product Designer Dubai",
     description:
       "Senior Product Designer in Dubai, UAE — enterprise UX/UI, design systems, and AI-powered product development.",
     url: "https://enkay.dev/dubai",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Dubai Product Designer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Product Designer Dubai",
+    description:
+      "Senior Product Designer in Dubai, UAE — 11+ years delivering enterprise UX/UI and design systems for leading global brands.",
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -82,6 +90,10 @@ export default function DubaiPage() {
               ))}
             </div>
           </div>
+          <Link href="/articles/senior-product-designer-dubai" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
+            <h3 className="font-semibold text-lg mb-1">Read: Being a Senior Product Designer in Dubai</h3>
+            <p className="text-sm text-[var(--color-text-secondary)]">What 11 years in Dubai taught me about product design, client relationships, and building for the Middle East market.</p>
+          </Link>
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">

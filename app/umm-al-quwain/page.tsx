@@ -10,15 +10,23 @@ export const metadata: Metadata = {
     canonical: "https://enkay.dev/umm-al-quwain",
   },
   openGraph: {
-    title: "Product Designer Umm Al Quwain | Mohammed Noushad",
+    title: "Product Designer Umm Al Quwain",
     description:
       "Senior Product Designer for Umm Al Quwain, UAE — enterprise UX/UI, design systems, and AI-powered product development.",
     url: "https://enkay.dev/umm-al-quwain",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Umm Al Quwain Product Designer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Product Designer Umm Al Quwain",
+    description:
+      "Senior Product Designer for Umm Al Quwain, UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered development.",
+    images: ["/og-image.jpg"],
   },
 };
 
-export default function DubaiPage() {
+export default function UmmAlQuwainPage() {
   return (
     <div className="min-h-screen">
       <section className="py-32 px-8 md:px-20">
@@ -82,6 +90,10 @@ export default function DubaiPage() {
               ))}
             </div>
           </div>
+          <Link href="/articles/product-designer-umm-al-quwain" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
+            <h3 className="font-semibold text-lg mb-1">Read: Im a Product Designer Based in Umm Al Quwain</h3>
+            <p className="text-sm text-[var(--color-text-secondary)]">Product design from Umm Al Quwain — why this UAE emirate is an underrated design hub.</p>
+          </Link>
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">

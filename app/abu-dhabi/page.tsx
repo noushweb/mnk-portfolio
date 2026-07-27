@@ -10,15 +10,23 @@ export const metadata: Metadata = {
     canonical: "https://enkay.dev/abu-dhabi",
   },
   openGraph: {
-    title: "Product Designer Abu Dhabi | Mohammed Noushad",
+    title: "Product Designer Abu Dhabi",
     description:
       "Senior Product Designer in Abu Dhabi, UAE — enterprise UX/UI, design systems, and AI-powered product development.",
     url: "https://enkay.dev/abu-dhabi",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Abu Dhabi Product Designer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Product Designer Abu Dhabi",
+    description:
+      "Senior Product Designer in Abu Dhabi, UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered development.",
+    images: ["/og-image.jpg"],
   },
 };
 
-export default function DubaiPage() {
+export default function AbuDhabiPage() {
   return (
     <div className="min-h-screen">
       <section className="py-32 px-8 md:px-20">
@@ -82,6 +90,10 @@ export default function DubaiPage() {
               ))}
             </div>
           </div>
+          <Link href="/articles/product-designer-abu-dhabi" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
+            <h3 className="font-semibold text-lg mb-1">Read: Working in Abu Dhabi</h3>
+            <p className="text-sm text-[var(--color-text-secondary)]">Product design for Abu Dhabi's growing digital landscape — from government to fintech.</p>
+          </Link>
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">

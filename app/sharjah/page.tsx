@@ -10,15 +10,23 @@ export const metadata: Metadata = {
     canonical: "https://enkay.dev/sharjah",
   },
   openGraph: {
-    title: "Product Designer Sharjah | Mohammed Noushad",
+    title: "Product Designer Sharjah",
     description:
       "Senior Product Designer in Sharjah, UAE — enterprise UX/UI, design systems, and AI-powered product development.",
     url: "https://enkay.dev/sharjah",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Sharjah Product Designer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Product Designer Sharjah",
+    description:
+      "Senior Product Designer in Sharjah, UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered development.",
+    images: ["/og-image.jpg"],
   },
 };
 
-export default function DubaiPage() {
+export default function SharjahPage() {
   return (
     <div className="min-h-screen">
       <section className="py-32 px-8 md:px-20">
@@ -82,6 +90,10 @@ export default function DubaiPage() {
               ))}
             </div>
           </div>
+          <Link href="/articles/product-designer-sharjah" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
+            <h3 className="font-semibold text-lg mb-1">Read: Working in Sharjah</h3>
+            <p className="text-sm text-[var(--color-text-secondary)]">Designing for Sharjah's unique market — culture, education, and enterprise.</p>
+          </Link>
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">

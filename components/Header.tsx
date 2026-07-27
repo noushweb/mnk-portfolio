@@ -64,9 +64,10 @@ export default function Header() {
                 href="/casestudy/cv/mohammed_noushad_cv_ats.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                download="Mohammed_Noushad_CV.pdf"
                 className="font-medium text-[13px] uppercase tracking-[1.5px] text-[var(--color-text-secondary)] nav-link"
               >
-                Get CV
+                Download CV
               </a>
               <a
                 href="#contact"
@@ -178,10 +179,11 @@ export default function Header() {
             href="/casestudy/cv/mohammed_noushad_cv_ats.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            download="Mohammed_Noushad_CV.pdf"
             onClick={closeMenu}
             className="text-lg font-medium text-[var(--color-text-primary)] uppercase tracking-[1.5px] py-2 border-b border-[var(--color-border)]"
           >
-            Get CV
+            Download CV
           </a>
           <a
             href="#contact"

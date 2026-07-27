@@ -8,8 +8,23 @@ export const metadata: Metadata = {
   title: "Work | Mohammed Noushad — Product Designer",
   description:
     "A curated selection of product design projects — enterprise web apps, mobile platforms, design systems, and UX case studies from concept to shipped product.",
+  alternates: {
+    canonical: "https://enkay.dev/work",
+  },
   openGraph: {
     title: "Work",
+    description:
+      "A curated selection of product design projects — enterprise web apps, mobile platforms, design systems, and UX case studies from concept to shipped product.",
+    url: "https://enkay.dev/work",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Work" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Work",
+    description:
+      "A curated selection of product design projects — enterprise web apps, mobile platforms, design systems, and UX case studies from concept to shipped product.",
+    images: ["/og-image.jpg"],
   },
 };
 

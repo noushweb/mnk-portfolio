@@ -10,11 +10,19 @@ export const metadata: Metadata = {
     canonical: "https://enkay.dev/india",
   },
   openGraph: {
-    title: "Product Designer India | Mohammed Noushad",
+    title: "Product Designer India",
     description:
       "Senior Product Designer from India — enterprise UX/UI, design systems, and fintech. Remote-ready product designer for global teams.",
     url: "https://enkay.dev/india",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — India Product Designer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Product Designer India",
+    description:
+      "Senior Product Designer from India — 11+ years designing for global products. Enterprise UX/UI, design systems, and fintech. Remote-ready.",
+    images: ["/og-image.jpg"],
   },
 };
 

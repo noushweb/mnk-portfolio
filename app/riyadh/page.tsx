@@ -10,11 +10,19 @@ export const metadata: Metadata = {
     canonical: "https://enkay.dev/riyadh",
   },
   openGraph: {
-    title: "Senior UI Designer Riyadh | Mohammed Noushad",
+    title: "Senior UI Designer Riyadh",
     description:
       "Senior Product & UI Designer available for Riyadh — enterprise UX/UI, design systems, fintech, banking products. Figma mastery, embedded team experience.",
     url: "https://enkay.dev/riyadh",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Riyadh Product Designer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Senior UI Designer Riyadh",
+    description:
+      "Senior UI & Product Designer available for Riyadh — 11+ years in enterprise UX/UI, Fintech, and banking products across the region.",
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -70,6 +78,10 @@ export default function RiyadhPage() {
               ))}
             </div>
           </div>
+          <Link href="/articles/senior-product-designer-riyadh" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
+            <h3 className="font-semibold text-lg mb-1">Read: Designing for Riyadh</h3>
+            <p className="text-sm text-[var(--color-text-secondary)]">What it means to design for Saudi Arabia's digital transformation — banking, fintech, and bilingual UX.</p>
+          </Link>
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">
