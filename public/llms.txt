@@ -38,6 +38,7 @@
 - [From Visual Design to Product Thinking](https://enkay.dev/articles/visual-to-product-thinking): How shifting from visual-first to problem-first changed everything about my design practice.
 - [AI and Product Design: Not What I Expected](https://enkay.dev/articles/ai-and-product-design): Everyone said AI would replace designers. Instead it changed what "designer" even means.
 - [AI-Assisted Design Workflows](https://enkay.dev/articles/ai-assisted-workflows): A practical look at integrating AI tools into a real product design workflow.
+- [Why Your Startup Needs a Design System Consultant](https://enkay.dev/articles/auto-design-system-consultant-20260727): Enterprise design system expertise for startups — why most founders build UI wrong and how a design system consultant fixes it.
 
 ## Location Articles
 - [Senior Product Designer Dubai](https://enkay.dev/articles/senior-product-designer-dubai): Being a Senior Product Designer in Dubai — the version nobody posts on LinkedIn.
@@ -49,8 +50,8 @@
 - [Product Designer Abu Dhabi](https://enkay.dev/articles/product-designer-abu-dhabi): What 11 years of product design taught me about working in Abu Dhabi.
 - [Product Designer Sharjah](https://enkay.dev/articles/product-designer-sharjah): What 11 years of product design taught me about working in Sharjah.
 - [Product Designer Umm Al Quwain](https://enkay.dev/articles/product-designer-umm-al-quwain): A product designer based in Umm Al Quwain — why that's not a typo.
-|- [UI UX Designer Freelance Rate in India](https://enkay.dev/articles/auto-india-20260713): Why I charge more than the average UI UX designer freelance rate in India — 11 years of experience, multilingual UX, and enterprise delivery across 40 countries.
-|- [The Dubai Freelance Trap](https://enkay.dev/articles/auto-uae-20260720): The real landscape of freelancing across the UAE emirates — why Dubai isn't the only opportunity for product designers in the UAE.
+- [UI UX Designer Freelance Rate in India](https://enkay.dev/articles/auto-india-20260713): Why I charge more than the average UI UX designer freelance rate in India — 11 years of experience, multilingual UX, and enterprise delivery across 40 countries.
+- [The Dubai Freelance Trap](https://enkay.dev/articles/auto-uae-20260720): The real landscape of freelancing across the UAE emirates — why Dubai isn't the only opportunity for product designers in the UAE.
 
 ## About
 Mohammed Noushad is a Senior Product Designer based in Dubai with 11+ years of experience in UX/UI design, design systems, and AI-powered development. He works across the full product lifecycle — from research and strategy through to code and deployment — using Claude, OpenCode, and agent platforms to ship what he designs without handoff delays. His work spans enterprise software, fintech, travel platforms, logistics, and agricultural technology. He has designed and shipped products for Valmont Industries, Voyacher, FinFlow, Road Show, and KartBlue.
