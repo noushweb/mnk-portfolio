@@ -4,7 +4,6 @@ import {
   PenTool,
   Layers,
   Code,
-  Search,
   Smartphone,
   Palette,
   ArrowRight,
