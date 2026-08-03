@@ -57,6 +57,9 @@ export default function Header() {
               <Link href="/work" id="nav-link-work" className={navLinkClass("/work")}>
                 Work
               </Link>
+              <Link href="/services" id="nav-link-services" className={navLinkClass("/services")}>
+                Services
+              </Link>
               <Link href="/articles" id="nav-link-articles" className={navLinkClass("/articles")}>
                 Articles
               </Link>
@@ -167,6 +170,13 @@ export default function Header() {
             className="text-lg font-medium text-[var(--color-text-primary)] uppercase tracking-[1.5px] py-2 border-b border-[var(--color-border)]"
           >
             Work
+          </Link>
+          <Link
+            href="/services"
+            onClick={closeMenu}
+            className="text-lg font-medium text-[var(--color-text-primary)] uppercase tracking-[1.5px] py-2 border-b border-[var(--color-border)]"
+          >
+            Services
           </Link>
           <Link
             href="/articles"
