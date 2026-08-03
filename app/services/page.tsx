@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   title: "Services & Pricing | Mohammed Noushad — Senior Product Designer",
   description:
     "Product design services with transparent pricing — UI/UX audits, landing pages, mobile app UI, design systems, and design-to-code for startups and enterprises in Dubai & worldwide.",
+  robots: {
+    index: false,
+    follow: false,
+  },
   alternates: {
     canonical: "https://enkay.dev/services",
   },
