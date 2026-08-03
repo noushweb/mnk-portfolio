@@ -7,6 +7,79 @@ import ArticleJsonLd from "@/components/ArticleJsonLd";
 import LeadForm from "@/components/LeadForm";
 import { getArticle, getAllSlugs, articles } from "@/lib/articles-data";
 
+// Maps geo/career articles to their location landing pages for internal-link equity
+const LOCATION_LINKS: Record<
+  string,
+  { href: string; city: string; title: string; desc: string }
+> = {
+  "senior-product-designer-dubai": {
+    href: "/dubai",
+    city: "Dubai",
+    title: "Product Designer Dubai",
+    desc: "Senior product design in Dubai — enterprise UX, design systems, and bilingual interfaces for the Middle East.",
+  },
+  "senior-product-designer-riyadh": {
+    href: "/riyadh",
+    city: "Riyadh",
+    title: "Senior UI Designer Riyadh",
+    desc: "Product & UI design for Riyadh — enterprise design systems, fintech, and banking UX.",
+  },
+  "product-designer-kerala": {
+    href: "/kerala",
+    city: "Kerala",
+    title: "Product Designer Kerala",
+    desc: "Remote-first product design from Kerala — enterprise UX/UI, design systems, and fintech for global teams.",
+  },
+  "product-designer-kochi": {
+    href: "/kochi",
+    city: "Kochi",
+    title: "Product Designer Kochi",
+    desc: "Product design from Kochi — startups, enterprises, and global markets, shipped remote-first.",
+  },
+  "product-designer-india": {
+    href: "/india",
+    city: "India",
+    title: "Product Designer India",
+    desc: "Remote-ready product design from India — enterprise UX/UI, fintech, and design systems for global teams.",
+  },
+  "product-designer-bangalore": {
+    href: "/bangalore",
+    city: "Bangalore",
+    title: "Product Designer Bangalore",
+    desc: "Product design for Bangalore companies — fintech UX, design systems, and enterprise software.",
+  },
+  "product-designer-abu-dhabi": {
+    href: "/abu-dhabi",
+    city: "Abu Dhabi",
+    title: "Product Designer Abu Dhabi",
+    desc: "Product design for Abu Dhabi — government-grade enterprise UX, fintech, and compliance-aware design.",
+  },
+  "product-designer-sharjah": {
+    href: "/sharjah",
+    city: "Sharjah",
+    title: "Product Designer Sharjah",
+    desc: "Product design for Sharjah — education, culture, and enterprise, with clarity-first UX.",
+  },
+  "product-designer-umm-al-quwain": {
+    href: "/umm-al-quwain",
+    city: "Umm Al Quwain",
+    title: "Product Designer Umm Al Quwain",
+    desc: "World-class product design from Umm Al Quwain — tourism, logistics, and local services.",
+  },
+  "auto-uae-20260720": {
+    href: "/uae",
+    city: "UAE",
+    title: "Freelance Product Designer UAE",
+    desc: "Freelance product design across the UAE — 0→1 product design, design systems, and UX audits.",
+  },
+  "auto-india-20260713": {
+    href: "/india",
+    city: "India",
+    title: "Product Designer India",
+    desc: "Remote-ready product design from India — enterprise UX/UI, fintech, and design systems for global teams.",
+  },
+};
+
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
@@ -62,6 +135,8 @@ export default async function ArticlePage({
     articles[(currentIndex + 1) % articles.length],
     articles[(currentIndex + 2) % articles.length],
   ];
+
+  const locationLink = LOCATION_LINKS[slug];
 
   const headingIds = article.content.map((s) => ({
     id: s.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""),
@@ -147,6 +222,26 @@ export default async function ArticlePage({
             <ArticleTOC headings={headingIds} />
           </aside>
         </div>
+
+        {/* Related location landing page — internal link equity for money pages */}
+        {locationLink && (
+          <section className="mt-16">
+            <Link
+              href={locationLink.href}
+              className="group block p-8 border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 hover:shadow-lg hover:shadow-[var(--color-accent-warm)]/5 transition-all duration-300 bg-[var(--color-surface)]/30"
+            >
+              <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[var(--color-text-muted)]">
+                Hiring in {locationLink.city}?
+              </span>
+              <h2 className="text-xl md:text-2xl font-medium tracking-tight mt-2 mb-2 group-hover:text-[var(--color-accent-warm)] transition-colors duration-300">
+                {locationLink.title} →
+              </h2>
+              <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+                {locationLink.desc}
+              </p>
+            </Link>
+          </section>
+        )}
 
         {/* Divider */}
         <div className="border-t border-[var(--color-border)] mt-24 mb-16" />

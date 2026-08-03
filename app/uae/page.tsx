@@ -5,7 +5,7 @@ import LeadForm from "@/components/LeadForm";
 export const metadata: Metadata = {
   title: "Freelance Product Designer UAE | Mohammed Noushad",
   description:
-    "Freelance Product Designer in UAE — 11+ years UX/UI for enterprise SaaS, fintech, travel, and agritech. Design systems, Figma, and AI-powered workflows. Available for contracts in Dubai and across the UAE.",
+    "Freelance Product Designer in UAE — 11+ years of UX/UI for enterprise SaaS, fintech, travel, and agritech. Design systems, Figma, and AI-powered workflows. Dubai-based.",
   alternates: {
     canonical: "https://enkay.dev/uae",
   },
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@noushad_design",
+    creator: "@noushad_design",
     title: "Freelance Product Designer UAE",
     description:
       "Freelance Product Designer in UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered product development. Available for contracts across UAE.",

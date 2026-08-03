@@ -5,7 +5,7 @@ import LeadForm from "@/components/LeadForm";
 export const metadata: Metadata = {
   title: "Product Designer Kerala | Mohammed Noushad",
   description:
-    "Senior Product Designer from Kerala, India — 11+ years in enterprise UX/UI, design systems, and AI-powered development. Portfolio of shipped products for Valmont, Voyacher, and FinFlow.",
+    "Senior Product Designer from Kerala — remote-first, 11+ years of global product design. Enterprise UX/UI, design systems, and fintech for Valmont, FinFlow, and Voyacher.",
   alternates: {
     canonical: "https://enkay.dev/kerala",
   },
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@noushad_design",
+    creator: "@noushad_design",
     title: "Product Designer Kerala",
     description:
       "Senior Product Designer from Kerala, India — 11+ years in enterprise UX/UI, design systems, and AI-powered product development.",
@@ -50,10 +52,10 @@ export default function KeralaPage() {
             <h2 className="text-2xl font-medium">What I do</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { title: "Enterprise Product Design", desc: "Complex B2B applications, dashboards, data-heavy interfaces" },
-                { title: "Design Systems", desc: "Scalable component libraries powering 5+ enterprise products" },
-                { title: "UX/UI for Middle East Markets", desc: "Bilingual interfaces, RTL/LTR, cultural UX patterns" },
-                { title: "AI-Powered Development", desc: "Design-to-code pipelines, agent workflows, automated QA" },
+                { title: "Global Product Design", desc: "Enterprise-grade UX designed remotely from Kerala for US, UAE, and India clients" },
+                { title: "Design Systems", desc: "60+ component libraries with tokens and governance, maintained across product teams" },
+                { title: "Fintech UX", desc: "FinFlow — zero-based budgeting and goal-based round-ups for India's aspirational middle class" },
+                { title: "Multilingual UX", desc: "Products in 8 Indian languages plus Arabic and English, designed with cultural nuance" },
               ].map((item) => (
                 <div key={item.title} className="p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]/50">
                   <h3 className="font-semibold mb-2">{item.title}</h3>
@@ -66,7 +68,7 @@ export default function KeralaPage() {
           <div className="space-y-6">
             <h2 className="text-2xl font-medium">Companies I&apos;ve designed for</h2>
             <div className="flex flex-wrap gap-3">
-              {["Valmont Industries", "Voyacher", "FinFlow", "Road Show", "KartBlue"].map((company) => (
+              {["FinFlow", "Valmont Industries", "Voyacher", "Road Show"].map((company) => (
                 <span key={company} className="px-4 py-2 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-sm">
                   {company}
                 </span>
@@ -78,9 +80,9 @@ export default function KeralaPage() {
             <h2 className="text-2xl font-medium">Featured work</h2>
             <div className="space-y-4">
               {[
-                { href: "/valmont-legacy-redesign", title: "Valmont Industries — Legacy Redesign", desc: "5 legacy enterprise apps modernised into one unified web suite." },
-                { href: "/voyacher", title: "Voyacher — Voucher Travel Platform", desc: "Dubai-based travel platform — voucher-first UX for the Middle East market." },
-                { href: "/valley-dealer-suite", title: "Valley Dealer Suite", desc: "Dealer-facing mobile suite for irrigation sales in the US and Middle East." },
+                { href: "/finflow", title: "FinFlow — Behavioral Savings App", desc: "Designed for India's middle class — zero-based budgeting, goal-based round-ups, and AI-powered financial literacy in 8 Indian languages." },
+                { href: "/roadshow", title: "Road Show — Delivery Management", desc: "End-to-end logistics platform — route planning, real-time tracking, and settlement workflows for Indian delivery networks." },
+                { href: "/valmont-legacy-redesign", title: "Valmont Industries — Legacy Redesign", desc: "5 legacy enterprise apps modernised into one unified web suite serving 40 countries." },
               ].map((project) => (
                 <Link key={project.href} href={project.href} className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
                   <h3 className="font-semibold text-lg mb-1">{project.title}</h3>

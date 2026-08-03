@@ -86,7 +86,7 @@ export const articles: Article[] = [
     category: "AI & Development",
     title: "I Started Building What I Design — Here's What Changed",
     excerpt:
-      "For 10 years I designed and handed off. Then I picked up Claude, OpenCode, and Next.js. Now I ship what I design. This is what the transition actually looked like — mistakes, wins, and the parts nobody talks about.",
+      "For 10 years I designed and handed off. Then I picked up Claude, OpenCode, and Next.js. Now I ship what I design — the transition, the mistakes, and the wins.",
     readTime: "8 min read",
     content: [
       {
@@ -137,7 +137,7 @@ export const articles: Article[] = [
     category: "AI & Design",
     title: "Agent Platforms for Designers: A No-Nonsense Guide",
     excerpt:
-      "I set up Hermes, wired it to n8n, and now AI agents handle my SEO, research, and repetitive design tasks. Here is what agent platforms actually do for a working designer — no hype, just what I use every day.",
+      "I set up Hermes, wired it to n8n, and now AI agents handle my SEO, research, and repetitive design tasks. What agent platforms actually do — no hype.",
     readTime: "7 min read",
     content: [
       {
@@ -189,7 +189,7 @@ export const articles: Article[] = [
     category: "Design Systems",
     title: "How AI Cut My Design System Workflow from Weeks to Hours",
     excerpt:
-      "I used to spend two weeks on a component set. Now I design in Claude, convert to Figma, and ship in an afternoon. Here is the exact workflow — what I prompt, what I keep, and where AI still falls short.",
+      "I used to spend two weeks on a component set. Now I design in Claude, convert to Figma, and ship in an afternoon. The workflow, and where AI falls short.",
     readTime: "6 min read",
     content: [
       {
@@ -448,11 +448,11 @@ export const articles: Article[] = [
     category: "Career",
     title: "Being a Senior Product Designer in Dubai (the version nobody posts on LinkedIn)",
     excerpt:
-      "I moved to Dubai four years ago. Not for the tax-free salary, not for the Burj Khalifa views, not for the Instagram brunches. I moved because a project I was fr...",
+      "I moved to Dubai four years ago. Not for the tax-free salary, not for the Burj Khalifa views, not for the Instagram brunches. What nobody posts on LinkedIn.",
     readTime: "7 min read",
     content: [
       {
-        heading: "## The move nobody asks about",
+        heading: "The move nobody asks about",
         body: [
           "I moved to Dubai four years ago. Not for the tax-free salary, not for the Burj Khalifa views, not for the Instagram brunches. I moved because a project I was freelancing on turned into a full-time offer at Valmont Industries, and I needed to be closer to the agricultural dealers and field technicians I was designing for.",
           "Nobody tells you this when you search \"senior product designer Dubai\" on LinkedIn. Most of the work here is not glamorous. It is not designing the next big consumer app. It is sitting in a hybrid office in Dubai Investments Park, trying to figure out why a dealer in rural Egypt cannot find the submit button because the latency on their ancient tablet makes the modal disappear before they can tap it.",
@@ -506,7 +506,7 @@ export const articles: Article[] = [
     category: "Career",
     title: "Designing for Riyadh: What Nobody Tells You About Product Design in Saudi Arabia",
     excerpt:
-      "The first Saudi government portal I worked on, I made a mistake that still makes me cringe. I designed the entire interface left-to-right, in English, and figur...",
+      "The first Saudi government portal I worked on, I made a mistake that still makes me cringe — I designed it left-to-right, in English. Riyadh taught me the rest.",
     readTime: "7 min read",
     content: [
       {
@@ -550,7 +550,7 @@ export const articles: Article[] = [
     category: "Career",
     title: "I\'m a product designer from Kerala. Here\'s what 11 years of designing for global clients actually looks like.",
     excerpt:
-      "I was the guy who had to fix this mess.",
+      "11 years of designing for global clients from Kerala — what it actually looks like, from enterprise design systems to the craft that shaped it all.",
     readTime: "7 min read",
     content: [
       {
@@ -608,7 +608,7 @@ export const articles: Article[] = [
     category: "Career",
     title: "I\'m a Product Designer Working from Kochi. Here\'s What That Actually Looks Like.",
     excerpt:
-      "I nodded.",
+      "Working from Kochi as a product designer — what that actually looks like day to day, and why Kerala's startup scene is punching above its weight.",
     readTime: "7 min read",
     content: [
       {
@@ -673,7 +673,7 @@ export const articles: Article[] = [
     category: "Career",
     title: "What Eleven Years as a Product Designer Taught Me About Building for India",
     excerpt:
-      "It was 2013. I had just finished my diploma and landed a freelance project, a basic inventory app for a textile wholesaler. I showed up with clean screens, logi...",
+      "It was 2013. I had finished my diploma and landed a freelance project — an inventory app for a textile wholesaler. It taught me what designing for India means.",
     readTime: "7 min read",
     content: [
       {
@@ -713,7 +713,7 @@ export const articles: Article[] = [
     category: "Career",
     title: "What 11 Years of Product Design Taught Me About Standing Out in Bangalore",
     excerpt:
-      "I still remember walking into my first design class in Bangalore, 2008. Diploma program. I had no portfolio, no MacBook, and no idea what \"user experience\" even...",
+      "I still remember my first design class in Bangalore, 2008. No portfolio, no MacBook, no idea what \"user experience\" meant. Here's how I learned to stand out.",
     readTime: "6 min read",
     content: [
       {
@@ -771,7 +771,7 @@ export const articles: Article[] = [
     category: "Career",
     title: "What 11 Years of Product Design Taught Me About Working in Abu Dhabi",
     excerpt:
-      "I\'d been a product designer for eight years at that point. I\'d shipped enterprise apps across forty countries at Valmont. I\'d built a sixty-component design sys...",
+      "Eight years in, I'd shipped enterprise apps across forty countries and built a sixty-component design system. Working for Abu Dhabi changed my approach.",
     readTime: "7 min read",
     content: [
       {
@@ -851,7 +851,7 @@ export const articles: Article[] = [
     category: "Career",
     title: "What 11 Years of Product Design Taught Me About Working in Sharjah",
     excerpt:
-      "Three years ago I took a wrong turn coming back from a client meeting and ended up somewhere near University City. I\'d lived in the UAE for years but Sharjah wa...",
+      "Three years ago I took a wrong turn near University City — and found Sharjah, the UAE's cultural and educational heart. Designing for it changed my perspective.",
     readTime: "6 min read",
     content: [
       {
@@ -911,7 +911,7 @@ export const articles: Article[] = [
     category: "Career",
     title: "I\'m a Product Designer Based in Umm Al Quwain. Here\'s Why That\'s Not a Typo.",
     excerpt:
-      "Last month someone on LinkedIn messaged me with genuine confusion. \"Mohammed, your profile says Umm Al Quwain. Is that a mistake? Aren\'t all designers in Dubai?...",
+      "Last month someone on LinkedIn asked, \"Mohammed, your profile says Umm Al Quwain — is that a mistake?\" No. Here's why I design from the smallest emirate.",
     readTime: "5 min read",
     content: [
       {
@@ -969,7 +969,7 @@ export const articles: Article[] = [
     category: "Career",
     title: "Why I Charge More Than the Average UI UX Designer Freelance Rate in India",
     excerpt:
-      "I was building a fintech app for a client in Dubai when my mother called from Kerala. She wanted to know why the bank’s app wasn’t letting her send money to my ...",
+      "My mother called from Kerala while I was building a fintech app — she couldn't send money through her bank's app. Why I charge more than the average rate.",
     readTime: "6 min read",
     content: [
       {
@@ -1029,7 +1029,7 @@ export const articles: Article[] = [
     category: "Career",
     title: "The Dubai Freelance Trap and Why I Left It",
     excerpt:
-      "I was sitting in a coworking space in Business Bay, staring at my third coffee of the morning, when a client from London asked where I was based. I said Dubai. ...",
+      "A client from London asked where I was based while I sat in a Business Bay coworking space. I said Dubai — but freelancing in the UAE is a bigger story.",
     readTime: "6 min read",
     content: [
       {
@@ -1083,12 +1083,13 @@ export const articles: Article[] = [
     category: "Design Systems",
     title: "Why Your Startup Needs a Design System Consultant (And Why You Are Probably Doing It Wrong)",
     excerpt:
-      "A founder messaged me on LinkedIn last year. His startup had raised 2 million dollars. Their app looked like five different people designed it in five different...",
+      "A founder messaged me — his startup raised $2M, but the app looked like five people designed it in five decades. That's why it needed a design system.",
     readTime: "6 min read",
     content: [
       {
-        heading: "## A founder messaged me on LinkedIn last year. His startup had raised 2 million dollars. Their app looked like five different people designed it in five different decades. Buttons were round in one screen, square in another. The primary color shifted between blue and purple depending on which page you landed on. He said users kept bouncing because the app felt \"untrustworthy.\" He asked me to fix it. I told him the truth: you don\'t need a redesign. You need a design system. He laughed and said they couldn\'t afford one. I told him they couldn\'t afford not to.",
+        heading: "A founder messaged me on LinkedIn last year",
         body: [
+          "His startup had raised 2 million dollars. Their app looked like five different people designed it in five different decades. Buttons were round in one screen, square in another. The primary color shifted between blue and purple depending on which page you landed on. He said users kept bouncing because the app felt \"untrustworthy.\" He asked me to fix it. I told him the truth: you don\'t need a redesign. You need a design system. He laughed and said they couldn\'t afford one. I told him they couldn\'t afford not to.",
           "I spent 11 years in the trenches. At Valmont Industries I led UX/UI for five enterprise apps deployed across 40 countries. I built a 60 plus component design system from scratch. The result? Design to dev handoff time dropped by 40 percent. That wasnt a vanity metric. It meant engineers stopped asking me what color that button should be. It meant we shipped features faster with less friction. I know what enterprise scale looks like. I also know what startup chaos looks like because I freelanced for eight plus clients including FinFlow savings app and Voyacher travel platform. Both had the same problem. Inconsistent UI that bled trust and slowed growth.",
         ],
       },
@@ -1133,10 +1134,10 @@ export const articles: Article[] = [
   {
     slug: "auto-ux-audit-saas-20260803",
     date: "03 Aug 2026",
-    category: "Career",
+    category: "UX Process",
     title: "The UX Audit Is Not a Report. It\'s a Mirror.",
     excerpt:
-      "I spent last Thursday staring at a dashboard that had 47 different shades of blue. Not forty-seven blues in a design file. Forty-seven live hex values rendered on a production screen, in a SaaS product that had raised a Series B. The founder told me, \"We know it's a bit messy, but we're growing fast.\"...",
+      "I spent Thursday staring at a dashboard with 47 different shades of blue — in a SaaS product that raised a Series B. A UX audit is not a report; it's a mirror.",
     readTime: "6 min read",
     content: [
       {

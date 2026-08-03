@@ -5,7 +5,7 @@ import LeadForm from "@/components/LeadForm";
 export const metadata: Metadata = {
   title: "Product Designer India | Mohammed Noushad",
   description:
-    "Senior Product Designer from India — 11+ years designing for global products. Enterprise UX/UI, design systems, and fintech. Remote-ready, shipped for Valmont, FinFlow, and Voyacher.",
+    "Senior Product Designer from India — 11+ years designing global products. Enterprise UX/UI, design systems, and fintech. Remote-ready from Kerala for teams worldwide.",
   alternates: {
     canonical: "https://enkay.dev/india",
   },
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@noushad_design",
+    creator: "@noushad_design",
     title: "Product Designer India",
     description:
       "Senior Product Designer from India — 11+ years designing for global products. Enterprise UX/UI, design systems, and fintech. Remote-ready.",
@@ -68,6 +70,7 @@ export default function IndiaPage() {
               {[
                 { href: "/finflow", title: "FinFlow — Behavioral Savings App", desc: "Designed for India's middle class — zero-based budgeting, goal-based round-ups, and AI-powered financial literacy in 8 Indian languages." },
                 { href: "/roadshow", title: "Road Show — Delivery Management", desc: "End-to-end logistics platform — route planning, real-time tracking, and settlement workflows for Indian delivery networks." },
+                { href: "/articles/product-designer-india", title: "Eleven Years Building for India", desc: "What 11 years of designing for India's users taught me — from a textile inventory app in 2013 to fintech and enterprise products." },
                 { href: "/articles/ai-and-product-design", title: "AI and Product Design: Not What I Expected", desc: "How AI changed product design — from a designer building in India for global products." },
                 { href: "/articles/auto-india-20260713", title: "Why I Charge More Than the Average UI UX Designer Freelance Rate in India", desc: "11 years in product design, multilingual UX, and why I charge more than the average Indian freelance designer." },
               ].map((project) => (

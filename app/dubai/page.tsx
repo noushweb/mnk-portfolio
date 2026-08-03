@@ -5,7 +5,7 @@ import LeadForm from "@/components/LeadForm";
 export const metadata: Metadata = {
   title: "Product Designer Dubai | Mohammed Noushad",
   description:
-    "Senior Product Designer in Dubai, UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered development. Portfolio of shipped products for Valmont, Voyacher, and FinFlow.",
+    "Senior Product Designer in Dubai — 11+ years of enterprise UX/UI, bilingual (EN/AR) design, and design systems. Shipped for Valmont, Voyacher, and FinFlow.",
   alternates: {
     canonical: "https://enkay.dev/dubai",
   },
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@noushad_design",
+    creator: "@noushad_design",
     title: "Product Designer Dubai",
     description:
       "Senior Product Designer in Dubai, UAE — 11+ years delivering enterprise UX/UI and design systems for leading global brands.",
@@ -51,10 +53,10 @@ export default function DubaiPage() {
             <h2 className="text-2xl font-medium">What I do</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { title: "Enterprise Product Design", desc: "Complex B2B applications, dashboards, data-heavy interfaces" },
-                { title: "Design Systems", desc: "Scalable component libraries powering 5+ enterprise products" },
-                { title: "UX/UI for Middle East Markets", desc: "Bilingual interfaces, RTL/LTR, cultural UX patterns" },
-                { title: "AI-Powered Development", desc: "Design-to-code pipelines, agent workflows, automated QA" },
+                { title: "Enterprise Product Design", desc: "B2B dashboards and data-heavy interfaces for Dubai's enterprise and government sector" },
+                { title: "Bilingual UX (EN/AR)", desc: "Arabic and English interfaces, RTL layouts, and cultural patterns built for GCC users" },
+                { title: "Design Systems", desc: "Token-based component libraries that cut design-to-dev handoff time by 40%" },
+                { title: "AI-Powered Delivery", desc: "Design-to-code pipelines and agent workflows that ship UI faster without cutting corners" },
               ].map((item) => (
                 <div key={item.title} className="p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]/50">
                   <h3 className="font-semibold mb-2">{item.title}</h3>

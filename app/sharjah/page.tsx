@@ -5,7 +5,7 @@ import LeadForm from "@/components/LeadForm";
 export const metadata: Metadata = {
   title: "Product Designer Sharjah | Mohammed Noushad",
   description:
-    "Senior Product Designer in Sharjah, UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered development. Portfolio of shipped products for Valmont, Voyacher, and FinFlow.",
+    "Senior Product Designer in Sharjah — 11+ years designing for education, culture, and enterprise. Clear, purposeful UX for the UAE's cultural capital.",
   alternates: {
     canonical: "https://enkay.dev/sharjah",
   },
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@noushad_design",
+    creator: "@noushad_design",
     title: "Product Designer Sharjah",
     description:
       "Senior Product Designer in Sharjah, UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered development.",
@@ -51,10 +53,10 @@ export default function SharjahPage() {
             <h2 className="text-2xl font-medium">What I do</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { title: "Enterprise Product Design", desc: "Complex B2B applications, dashboards, data-heavy interfaces" },
-                { title: "Design Systems", desc: "Scalable component libraries powering 5+ enterprise products" },
-                { title: "UX/UI for Middle East Markets", desc: "Bilingual interfaces, RTL/LTR, cultural UX patterns" },
-                { title: "AI-Powered Development", desc: "Design-to-code pipelines, agent workflows, automated QA" },
+                { title: "Edtech & Cultural UX", desc: "Clear, purposeful interfaces for education and cultural institutions" },
+                { title: "Enterprise Product Design", desc: "The rigour that serves enterprise — adapted for audiences who value clarity over flash" },
+                { title: "Design Systems", desc: "Component libraries that keep multi-team products coherent and maintainable" },
+                { title: "Bilingual Interfaces", desc: "Arabic and English UX, RTL layouts, and typography tuned for UAE audiences" },
               ].map((item) => (
                 <div key={item.title} className="p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]/50">
                   <h3 className="font-semibold mb-2">{item.title}</h3>
@@ -67,7 +69,7 @@ export default function SharjahPage() {
           <div className="space-y-6">
             <h2 className="text-2xl font-medium">Companies I&apos;ve designed for</h2>
             <div className="flex flex-wrap gap-3">
-              {["Valmont Industries", "Voyacher", "FinFlow", "Road Show", "KartBlue"].map((company) => (
+              {["Valmont Industries", "FinFlow", "Voyacher", "Road Show"].map((company) => (
                 <span key={company} className="px-4 py-2 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-sm">
                   {company}
                 </span>
@@ -79,9 +81,9 @@ export default function SharjahPage() {
             <h2 className="text-2xl font-medium">Featured work</h2>
             <div className="space-y-4">
               {[
+                { href: "/finflow", title: "FinFlow — Behavioral Savings App", desc: "Clear, trustworthy fintech UX — behavioral savings designed for India's middle class." },
+                { href: "/voyacher", title: "Voyacher — Voucher Travel Platform", desc: "Voucher-first travel platform — discovery flows, voucher management, and cross-device checkout." },
                 { href: "/valmont-legacy-redesign", title: "Valmont Industries — Legacy Redesign", desc: "5 legacy enterprise apps modernised into one unified web suite." },
-                { href: "/voyacher", title: "Voyacher — Voucher Travel Platform", desc: "Dubai-based travel platform — voucher-first UX for the Middle East market." },
-                { href: "/valley-dealer-suite", title: "Valley Dealer Suite", desc: "Dealer-facing mobile suite for irrigation sales in the US and Middle East." },
               ].map((project) => (
                 <Link key={project.href} href={project.href} className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
                   <h3 className="font-semibold text-lg mb-1">{project.title}</h3>

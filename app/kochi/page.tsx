@@ -5,7 +5,7 @@ import LeadForm from "@/components/LeadForm";
 export const metadata: Metadata = {
   title: "Product Designer Kochi | Mohammed Noushad",
   description:
-    "Senior Product Designer in Kochi, Kerala — 11+ years in enterprise UX/UI, design systems, and AI-powered development. Portfolio of shipped products for Valmont, Voyacher, and FinFlow.",
+    "Senior Product Designer in Kochi — 11+ years shipping global products from Kerala's startup hub. Enterprise UX/UI, design systems, and AI-powered workflows.",
   alternates: {
     canonical: "https://enkay.dev/kochi",
   },
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@noushad_design",
+    creator: "@noushad_design",
     title: "Product Designer Kochi",
     description:
       "Senior Product Designer in Kochi, Kerala — 11+ years in enterprise UX/UI, design systems, and AI-powered product development.",
@@ -51,10 +53,10 @@ export default function KochiPage() {
             <h2 className="text-2xl font-medium">What I do</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { title: "Enterprise Product Design", desc: "Complex B2B applications, dashboards, data-heavy interfaces" },
-                { title: "Design Systems", desc: "Scalable component libraries powering 5+ enterprise products" },
-                { title: "UX/UI for Middle East Markets", desc: "Bilingual interfaces, RTL/LTR, cultural UX patterns" },
-                { title: "AI-Powered Development", desc: "Design-to-code pipelines, agent workflows, automated QA" },
+                { title: "Startup Product Design (0→1)", desc: "From idea to shipped product — research, UX strategy, wireframes, and high-fidelity UI" },
+                { title: "Enterprise UX", desc: "Data-heavy B2B applications and dashboards used across 40 countries" },
+                { title: "Design Systems", desc: "Component libraries and tokens that scale from one product to five" },
+                { title: "AI-Augmented Delivery", desc: "Design-to-code pipelines and automated QA that compress delivery timelines" },
               ].map((item) => (
                 <div key={item.title} className="p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]/50">
                   <h3 className="font-semibold mb-2">{item.title}</h3>
@@ -67,7 +69,7 @@ export default function KochiPage() {
           <div className="space-y-6">
             <h2 className="text-2xl font-medium">Companies I&apos;ve designed for</h2>
             <div className="flex flex-wrap gap-3">
-              {["Valmont Industries", "Voyacher", "FinFlow", "Road Show", "KartBlue"].map((company) => (
+              {["FinFlow", "Voyacher", "Valmont Industries", "Road Show"].map((company) => (
                 <span key={company} className="px-4 py-2 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-sm">
                   {company}
                 </span>
@@ -79,9 +81,9 @@ export default function KochiPage() {
             <h2 className="text-2xl font-medium">Featured work</h2>
             <div className="space-y-4">
               {[
-                { href: "/valmont-legacy-redesign", title: "Valmont Industries — Legacy Redesign", desc: "5 legacy enterprise apps modernised into one unified web suite." },
-                { href: "/voyacher", title: "Voyacher — Voucher Travel Platform", desc: "Dubai-based travel platform — voucher-first UX for the Middle East market." },
-                { href: "/valley-dealer-suite", title: "Valley Dealer Suite", desc: "Dealer-facing mobile suite for irrigation sales in the US and Middle East." },
+                { href: "/finflow", title: "FinFlow — Behavioral Savings App", desc: "Fintech from concept to prototype — gamified goal tracking, nudges, and AI-powered financial literacy." },
+                { href: "/voyacher", title: "Voyacher — Voucher Travel Platform", desc: "Voucher-first travel UX built for the Middle East market — discovery flows and cross-device checkout." },
+                { href: "/roadshow", title: "Road Show — Delivery Management", desc: "Route planning, real-time tracking, and settlement workflows for delivery networks." },
               ].map((project) => (
                 <Link key={project.href} href={project.href} className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
                   <h3 className="font-semibold text-lg mb-1">{project.title}</h3>

@@ -5,7 +5,7 @@ import LeadForm from "@/components/LeadForm";
 export const metadata: Metadata = {
   title: "Product Designer Bangalore | Mohammed Noushad",
   description:
-    "Senior Product Designer for Bangalore Companies — 11+ years in enterprise UX/UI, design systems, and AI-powered development. Portfolio of shipped products for Valmont, Voyacher, and FinFlow.",
+    "Senior Product Designer for Bangalore companies — 11+ years of fintech UX, design systems, and enterprise software. Remote-first partner for India's startup capital.",
   alternates: {
     canonical: "https://enkay.dev/bangalore",
   },
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@noushad_design",
+    creator: "@noushad_design",
     title: "Product Designer Bangalore",
     description:
       "Senior Product Designer for Bangalore Companies — 11+ years in enterprise UX/UI, design systems, and AI-powered development.",
@@ -51,10 +53,10 @@ export default function BangalorePage() {
             <h2 className="text-2xl font-medium">What I do</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { title: "Enterprise Product Design", desc: "Complex B2B applications, dashboards, data-heavy interfaces" },
-                { title: "Design Systems", desc: "Scalable component libraries powering 5+ enterprise products" },
-                { title: "UX/UI for Middle East Markets", desc: "Bilingual interfaces, RTL/LTR, cultural UX patterns" },
-                { title: "AI-Powered Development", desc: "Design-to-code pipelines, agent workflows, automated QA" },
+                { title: "Fintech UX for India", desc: "FinFlow — behavioral savings design for India's aspirational middle class" },
+                { title: "Enterprise Software", desc: "Complex B2B products shipped for Valmont and deployed across 40 countries" },
+                { title: "Design Systems", desc: "Scalable component libraries that keep 5+ enterprise products consistent" },
+                { title: "Remote Collaboration", desc: "Async-friendly, remote-first delivery that fits Bangalore's fast-paced product culture" },
               ].map((item) => (
                 <div key={item.title} className="p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]/50">
                   <h3 className="font-semibold mb-2">{item.title}</h3>
@@ -67,7 +69,7 @@ export default function BangalorePage() {
           <div className="space-y-6">
             <h2 className="text-2xl font-medium">Companies I&apos;ve designed for</h2>
             <div className="flex flex-wrap gap-3">
-              {["Valmont Industries", "Voyacher", "FinFlow", "Road Show", "KartBlue"].map((company) => (
+              {["FinFlow", "Valmont Industries", "Road Show", "Voyacher"].map((company) => (
                 <span key={company} className="px-4 py-2 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-sm">
                   {company}
                 </span>
@@ -79,8 +81,8 @@ export default function BangalorePage() {
             <h2 className="text-2xl font-medium">Featured work</h2>
             <div className="space-y-4">
               {[
-                { href: "/valmont-legacy-redesign", title: "Valmont Industries — Legacy Redesign", desc: "5 legacy enterprise apps modernised into one unified web suite." },
-                { href: "/voyacher", title: "Voyacher — Voucher Travel Platform", desc: "Dubai-based travel platform — voucher-first UX for the Middle East market." },
+                { href: "/finflow", title: "FinFlow — Behavioral Savings App", desc: "Behavioral savings for India's middle class — goal-based round-ups and AI-powered financial literacy." },
+                { href: "/roadshow", title: "Road Show — Delivery Management", desc: "End-to-end delivery management — route planning, real-time tracking, and settlements for Indian networks." },
                 { href: "/valley-dealer-suite", title: "Valley Dealer Suite", desc: "Dealer-facing mobile suite for irrigation sales in the US and Middle East." },
               ].map((project) => (
                 <Link key={project.href} href={project.href} className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">

@@ -5,7 +5,7 @@ import LeadForm from "@/components/LeadForm";
 export const metadata: Metadata = {
   title: "Senior UI Designer Riyadh | Mohammed Noushad",
   description:
-    "Senior Product & UI Designer available for Riyadh roles — 11+ years in enterprise UX/UI, design systems, fintech, and banking products. Figma mastery, embedded team experience, Arabic-speaking region.",
+    "Senior Product & UI Designer for Riyadh — 11+ years of enterprise UX/UI, design systems, fintech, and banking products. Figma mastery and embedded team experience.",
   alternates: {
     canonical: "https://enkay.dev/riyadh",
   },
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@noushad_design",
+    creator: "@noushad_design",
     title: "Senior UI Designer Riyadh",
     description:
       "Senior UI & Product Designer available for Riyadh — 11+ years in enterprise UX/UI, Fintech, and banking products across the region.",
