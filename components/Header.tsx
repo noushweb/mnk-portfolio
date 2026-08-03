@@ -51,9 +51,9 @@ export default function Header() {
           {/* Desktop: nav links + theme toggle together on right */}
           <div className="hidden md:flex items-center gap-10">
             <nav className="flex items-center gap-10">
-              <a href="/#about" id="nav-link-about" className="font-medium text-[13px] uppercase tracking-[1.5px] text-[var(--color-text-secondary)] nav-link">
+              <Link href="/#about" id="nav-link-about" className="font-medium text-[13px] uppercase tracking-[1.5px] text-[var(--color-text-secondary)] nav-link">
                 About
-              </a>
+              </Link>
               <Link href="/work" id="nav-link-work" className={navLinkClass("/work")}>
                 Work
               </Link>
@@ -157,13 +157,13 @@ export default function Header() {
         }`}
       >
         <div className="flex flex-col p-8 pt-24 space-y-8">
-          <a
+          <Link
             href="/#about"
             onClick={closeMenu}
             className="text-lg font-medium text-[var(--color-text-primary)] uppercase tracking-[1.5px] py-2 border-b border-[var(--color-border)]"
           >
             About
-          </a>
+          </Link>
           <Link
             href="/work"
             onClick={closeMenu}
