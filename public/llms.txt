@@ -41,6 +41,8 @@
 - [Why Your Startup Needs a Design System Consultant](https://enkay.dev/articles/auto-design-system-consultant-20260727): Enterprise design system expertise for startups — why most founders build UI wrong and how a design system consultant fixes it.
 - [The UX Audit Is Not a Report. It's a Mirror.](https://enkay.dev/articles/auto-ux-audit-saas-20260803): What a UX audit for a SaaS product actually finds, why founders wait too long, what it costs, and how it differs from hiring a full-time designer.
 
+- [I Learned More About Money From a Cab Driver Than From 11 Years of Design](https://enkay.dev/articles/auto-fintech-ux-20260810): A Mumbai cab driver at 2 AM taught me the entire job of a fintech product designer: don't make the user feel stupid when their money is on the line.
+
 ## Location Articles
 - [Senior Product Designer Dubai](https://enkay.dev/articles/senior-product-designer-dubai): Being a Senior Product Designer in Dubai — the version nobody posts on LinkedIn.
 - [Senior Product Designer Riyadh](https://enkay.dev/articles/senior-product-designer-riyadh): Designing for Riyadh — what nobody tells you about product design in Saudi Arabia.
