@@ -1258,7 +1258,64 @@ export const articles: Article[] = [
         ],
       },
     ],
-  }
+  },
+  {
+    slug: "auto-saas-ux-services-20260817",
+    date: "17 Aug 2026",
+    category: "Product Design",
+    title: "SaaS UI/UX Design Services: Nobody Shows You the Empty States",
+    excerpt:
+      "A client once asked me to make an industrial dashboard look like Stripe. I said no. That\'s the real difference between SaaS UI/UX design services that ship, and ones that just look pretty.",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "The meeting that changed how I sell",
+        body: [
+          "In 2019 I sat in a meeting in Dubai with the head of product at Valmont Industries. On screen was a dashboard with 14 data points crammed into a 13 inch laptop. He asked me: can you make this look like Stripe? I said no.",
+          "He laughed. I wasn\'t joking. Stripe\'s dashboard works because it serves one type of user doing one job. His software ran in 40 countries, used by field technicians with different permissions, different languages, different network speeds, and different comfort levels with a mouse. Making it look like Stripe would have been a failure, not a win.",
+          "That conversation changed the way I work. I spent the next 18 months building a 60+ component design system for Valmont\'s enterprise software. Not hero screenshots. Tables, filters, role-based permission matrices, offline sync indicators, error states a 55 year old technician in rural Brazil could understand without calling support. We cut design to dev handoff by 40% across 5 apps. I measured it. That number is real.",
+          "Here is what I learned about SaaS UI/UX design services in 2026, and why I think you should be careful before hiring an agency.",
+        ],
+      },
+      {
+        heading: "The dirty secret of SaaS design",
+        body: [
+          "When a founder or CTO types \'saas ui ux design services\' into Google, they get a million agency sites. All of them show the same portfolio: a beautiful landing page, a mobile app mockup, a dashboard with colorful charts. None of them show the empty states. None show the permission matrix where a supervisor sees driver locations but not salaries, while a cashier processes refunds but can\'t void transactions. None show what happens when a user with 300 saved items opens a filter and the UI freezes.",
+          "That is the real work of SaaS design in 2026. Dense data. Multi-tenant complexity. Onboarding flows that reduce churn. Error states that don\'t make users feel stupid. Agencies hate this work. It\'s not sexy, it doesn\'t win awards, and it takes time to understand the domain. It means asking questions like \'what happens when a driver\'s phone dies mid-delivery?\' and designing for that instead of assuming the phone works.",
+          "I\'ve been that solo designer on the other side of the call. FinFlow, a behavioral savings app for India\'s aspirational middle class, where the challenge was making finance feel like a game and not a lecture. Voyacher\'s voucher-first UX for Qatar travel, where users want instant confirmation, not a 72 hour hold. Road Show\'s delivery dashboards, where supervisors, cashiers, and drivers all need different views of the same chaos. None of that fits on a single case study slide.",
+        ],
+      },
+      {
+        heading: "The agency assembly line",
+        body: [
+          "Here is what happens when you hire an agency for SaaS UI/UX design services. A kickoff call with a senior strategist who asks smart questions. You get excited. Then the strategist disappears and you\'re handed to an account manager who relays feedback to a junior designer who has never logged into your product.",
+          "The junior designer produces a Figma file with nice gradients. The account manager emails \'Design v1 ready for review.\' You spend 40 minutes writing feedback. The button color changes. Repeat for six weeks.",
+          "I was that junior designer once. I know the assembly line from the inside. It is not designed to give you good work. It is designed to justify the retainer.",
+          "When you hire me, you get one person. I answer your Slack messages. I\'ve logged into your staging environment, broken your build twice, and fixed it. I design in Figma and I implement in React and TypeScript. I can look at a dropdown I spec\'d and tell you if it will cause a layout shift in production. Eight freelance clients, zero to one, and every one of them got a working product, not a clickable prototype.",
+        ],
+      },
+      {
+        heading: "What to ask before you buy",
+        body: [
+          "Forget the portfolio. Forget the awards. If you\'re shopping for SaaS UI/UX design services, ask these four questions instead.",
+          "Show me your empty states. A dashboard with no data is the first thing a new user sees. A blank white box with grey \'No data\' text loses them. I design empty states that guide users to their first action, whether that\'s importing a CSV or connecting a bank account.",
+          "Walk me through your permission matrix. Can the design handle a user who is an admin in one workspace and a viewer in another? Role hierarchies? Most agencies freeze. I built these from scratch at Valmont, where five enterprise apps had overlapping roles across 40 countries.",
+          "What happens on error? Not the pretty 404. The API timeout. The double click on a submit button. I\'ve designed for that and coded for that.",
+          "How do you handle onboarding? A SaaS product is a tool, not a landing page. The first ten minutes decide if a user comes back tomorrow. FinFlow\'s onboarding turned a savings app into a daily habit for users in Mumbai and Bangalore.",
+          "If a designer or agency can\'t answer these, they\'re selling you screenshots, not software.",
+        ],
+      },
+      {
+        heading: "What I actually offer",
+        body: [
+          "I\'m Mohammed Noushad. Eleven years as a senior product designer in Dubai, across enterprise industrial software, fintech, travel, and logistics. I\'m not a brand agency and I don\'t do visual identity. I take SaaS products with complex workflows, make them usable, then build them.",
+          "I\'m the rare designer who codes. Not \'hands off to developers.\' I write React components in Next.js and TypeScript. When I say a design cut handoff time by 40%, it\'s because I measured it on my own projects.",
+          "You don\'t need an agency account manager or a junior designer who doesn\'t understand your domain. You need one senior person accountable for the whole experience, from the permission matrix to the empty state to the error message that actually helps a user recover.",
+          "I\'m not for everyone. If your SaaS is a simple CRUD app with three screens, hire a freelance visual designer and save the money. But if you\'re building something with real roles, real data, and real consequences when it breaks, you need someone who has been in the trenches. I\'d rather spend a week getting your permission model right than a day making your login page pretty. That\'s the service. That\'s the value.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
