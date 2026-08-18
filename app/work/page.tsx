@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
-import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 
 export const metadata: Metadata = {
   title: "Work | Mohammed Noushad — Product Designer",
@@ -35,12 +34,7 @@ const projects = [
     image: "/casestudy/images/redesign/home.webp",
     tags: ["Enterprise", "B2B"],
     title: "Valmont Industries — Legacy Redesign",
-    description:
-      "5 legacy apps modernised into one unified enterprise suite — cutting onboarding time and support load.",
-    beforeAfter: {
-      before: "/casestudy/images/redesign/ag portal -before.webp",
-      after: "/casestudy/images/redesign/ag portal -after.webp",
-    },
+    description: "5 legacy apps modernised into one unified enterprise web suite.",
   },
   {
     href: "/voyacher",
@@ -48,7 +42,7 @@ const projects = [
     tags: ["Travel", "Web Platform"],
     title: "Voyacher — Voucher Travel Platform",
     description:
-      "Enabling users to pay together — voucher-first UX that lifted booking completion.",
+      "Buy a voucher. Book anything. A unified travel platform built around voucher-first UX.",
   },
   {
     href: "/finflow",
@@ -56,7 +50,7 @@ const projects = [
     tags: ["FinTech", "Mobile"],
     title: "FinFlow — Behavioral Savings App",
     description:
-      "Behavioral nudges that turned saving from a chore into a daily habit.",
+      "Behavioral savings app designed for India's aspirational middle class.",
   },
   {
     href: "/roadshow",
@@ -64,7 +58,7 @@ const projects = [
     tags: ["Logistics", "Mobile"],
     title: "Road Show — Delivery Management",
     description:
-      "One platform connecting supervisors, cashiers and drivers — end to end.",
+      "End-to-end delivery management platform spanning web dashboard and driver mobile app.",
   },
   {
     href: "/valley-dealer-suite",
@@ -132,19 +126,9 @@ export default function WorkPage() {
                 <Link href={p.href} className="group block">
                   <div className="relative h-full overflow-hidden rounded-2xl border border-[var(--color-border)]/50 bg-[var(--color-surface)]/30 backdrop-blur-md transition-all duration-300 hover:border-[var(--color-accent-warm)]/50 hover:shadow-xl hover:shadow-[var(--color-accent-warm)]/5">
                     <div className="relative aspect-[16/10] overflow-hidden" style={{ backgroundColor: p.imageBg ?? "var(--color-bg-alt)" }}>
-                      {p.beforeAfter ? (
-                        <BeforeAfterSlider
-                          before={p.beforeAfter.before}
-                          after={p.beforeAfter.after}
-                          alt={p.title}
-                        />
-                      ) : (
-                        <>
-                          <Image src={p.image} alt={p.title} width={800} height={500} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-                          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-surface)]/80 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-40" />
-                        </>
-                      )}
-                      <div className="absolute top-4 left-4 z-10 flex gap-2">
+                      <Image src={p.image} alt={p.title} width={800} height={500} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-surface)]/80 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-40" />
+                      <div className="absolute top-4 left-4 flex gap-2">
                         {p.tags.map((tag) => (
                           <span key={tag} className="bg-[var(--color-surface)]/80 backdrop-blur-sm text-[var(--color-text-primary)] text-[10px] px-3 py-1 uppercase tracking-wider font-semibold rounded-full border border-[var(--color-border)]/40">{tag}</span>
                         ))}

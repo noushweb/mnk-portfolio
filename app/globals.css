@@ -381,36 +381,6 @@ h1, h2, h3, .display-font {
   box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.08);
 }
 
-/* ── Hero marquee strip ── */
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-.marquee-track {
-  animation: marquee 45s linear infinite;
-}
-
-.marquee-wrap:hover .marquee-track {
-  animation-play-state: paused;
-}
-
-/* ── Showcase horizontal scroll ── */
-.showcase-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-text-muted) transparent;
-}
-.showcase-scroll::-webkit-scrollbar {
-  height: 6px;
-}
-.showcase-scroll::-webkit-scrollbar-thumb {
-  background: var(--color-text-muted);
-  border-radius: 999px;
-}
-.showcase-scroll::-webkit-scrollbar-track {
-  background: transparent;
-}
-
 /* ── Image zoom on hover ── */
 .img-zoom-wrapper {
   overflow: hidden;

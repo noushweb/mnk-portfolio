@@ -6,10 +6,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Valmont Legacy Redesign — Case Study | Mohammed Noushad",
-  description: "Five legacy enterprise apps modernised into one unified web experience — redesigned information architecture, component library, and role-based dashboards.",
+  description: "Five legacy enterprise applications modernised into one unified web experience — redesigned information architecture, shared component library, and role-based dashboards.",
   openGraph: {
     title: "Valmont Legacy Redesign — Case Study",
-    description: "Five legacy enterprise apps modernised into one unified web experience — redesigned information architecture, component library, and role-based dashboards.",
+    description: "Five legacy enterprise applications modernised into one unified web experience — redesigned information architecture, shared component library, and role-based dashboards.",
     type: "article",
     images: [{ url: "/casestudy/images/redesign/hero.webp", width: 1200, height: 630, alt: "Valmont Legacy Redesign — Enterprise Case Study" }],
   },

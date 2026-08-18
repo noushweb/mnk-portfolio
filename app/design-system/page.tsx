@@ -6,10 +6,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Valley Design System — Case Study | Mohammed Noushad",
-  description: "A production design system bridging design and engineering — design tokens, component library, and governance guidelines that scaled consistency across 5+ enterprise products.",
+  description: "A production-ready design system bridging design and engineering — design tokens, component library, and governance guidelines that scaled consistency across 5+ enterprise products.",
   openGraph: {
     title: "Valley Design System — Case Study",
-    description: "A production design system bridging design and engineering — design tokens, component library, and governance guidelines that scaled consistency across 5+ enterprise products.",
+    description: "A production-ready design system bridging design and engineering — design tokens, component library, and governance guidelines that scaled consistency across 5+ enterprise products.",
     type: "article",
     images: [{ url: "/casestudy/images/design%20system/hero_design_%20system.webp", width: 1200, height: 630, alt: "Valley Design System — Design System Case Study" }],
   },

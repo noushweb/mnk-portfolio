@@ -17,7 +17,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Voyacher — Case Study | Mohammed Noushad",
   description:
-    "Voyacher is a Qatar-based travel platform — buy a voucher, book anything. A UX redesign covering discovery flows, voucher management, and cross-device checkout.",
+    "Voyacher is a Qatar-based travel platform — buy a voucher, book anything. A complete UX redesign covering discovery flows, voucher management, and cross-device checkout.",
   openGraph: {
     title: "Voyacher — Case Study",
     description: "Voyacher is a Qatar-based travel platform — buy a voucher, book anything. A complete UX redesign covering discovery flows, voucher management, and cross-device checkout.",
