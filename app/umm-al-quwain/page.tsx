@@ -5,7 +5,7 @@ import LeadForm from "@/components/LeadForm";
 export const metadata: Metadata = {
   title: "Product Designer Umm Al Quwain | Mohammed Noushad",
   description:
-    "Senior Product Designer for Umm Al Quwain — 11+ years of world-class product design, delivered remotely or on-site across the UAE. Tourism, logistics, and services.",
+    "Senior Product Designer for Umm Al Quwain — 11+ years of world-class product design, delivered remotely across the UAE. Tourism, logistics, and services.",
   alternates: {
     canonical: "https://enkay.dev/umm-al-quwain",
   },

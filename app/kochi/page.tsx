@@ -5,7 +5,7 @@ import LeadForm from "@/components/LeadForm";
 export const metadata: Metadata = {
   title: "Product Designer Kochi | Mohammed Noushad",
   description:
-    "Senior Product Designer in Kochi — 11+ years shipping global products from Kerala's startup hub. Enterprise UX/UI, design systems, and AI-powered workflows.",
+    "Senior Product Designer in Kochi — 11+ years shipping global products from Kerala's startup hub. Enterprise UX/UI, design systems, and AI workflows.",
   alternates: {
     canonical: "https://enkay.dev/kochi",
   },

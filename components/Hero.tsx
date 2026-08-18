@@ -4,6 +4,17 @@ import Image from "next/image";
 import { useTheme } from "./ThemeProvider";
 import { BackgroundPaths } from "./ui/background-paths";
 
+const marqueeShots = [
+  { src: "/casestudy/images/voyacher/hero.webp", alt: "Voyacher travel platform" },
+  { src: "/casestudy/images/finflow/hero.webp", alt: "FinFlow savings app" },
+  { src: "/casestudy/images/roadshow/hero.webp", alt: "Road Show delivery platform" },
+  { src: "/casestudy/images/redesign/home.webp", alt: "Valmont enterprise suite" },
+  { src: "/casestudy/images/Dealer/hero.webp", alt: "Valley Dealer Suite" },
+  { src: "/casestudy/images/FLT/main.webp", alt: "Field Layout Tool" },
+  { src: "/casestudy/images/DTC/all_work_page.webp", alt: "Design Tool Calculator" },
+  { src: "/casestudy/images/design%20system/hero_design_%20system.webp", alt: "Valley Design System" },
+];
+
 export default function Hero() {
   const { theme } = useTheme();
   const imgSrc =
@@ -15,7 +26,7 @@ export default function Hero() {
     <BackgroundPaths>
     <section
       id="hero"
-      className="relative w-full px-8 md:px-20 py-16 md:py-[100px] overflow-hidden lg:flex lg:items-center"
+      className="relative w-full px-8 md:px-20 pt-16 md:pt-[100px] pb-0 overflow-hidden"
     >
       <div className="hidden lg:block absolute right-0 top-0 w-[55%] h-full animate-hero-image">
         <Image
@@ -30,7 +41,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="max-w-7xl w-full mx-auto relative flex items-center gap-12">
+      <div className="max-w-7xl w-full mx-auto relative flex items-start gap-12">
         <div className="relative z-10 w-full lg:max-w-[821px] space-y-8 lg:shrink-0">
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[88px] font-medium tracking-tight leading-[1.12] text-[var(--color-text-primary)] animate-hero-text">
             I design. I build. AI makes it faster.
@@ -60,6 +71,29 @@ export default function Hero() {
           height={400}
           sizes="100vw"
         />
+      </div>
+
+      {/* Marquee strip of real product shots — craft proof in the first viewport */}
+      <div className="marquee-wrap relative mt-14 md:mt-20">
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 md:w-32 bg-gradient-to-r from-[var(--color-bg)] to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 md:w-32 bg-gradient-to-l from-[var(--color-bg)] to-transparent" />
+        <div className="marquee-track flex w-max gap-5">
+          {[...marqueeShots, ...marqueeShots].map((s, i) => (
+            <div
+              key={i}
+              className="relative h-40 md:h-52 w-64 md:w-80 shrink-0 overflow-hidden rounded-xl border border-[var(--color-border)]/60 shadow-sm"
+            >
+              <Image
+                src={s.src}
+                alt={s.alt}
+                fill
+                sizes="(max-width: 768px) 256px, 320px"
+                className="object-cover object-top"
+                loading={i < 6 ? "eager" : "lazy"}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
     </BackgroundPaths>

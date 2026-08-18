@@ -11,10 +11,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "FinFlow — Case Study | Mohammed Noushad",
-  description: "A savings app designed to change how India thinks about money — behavioral nudges, goal-based tracking, and a gamified rewards layer that builds lasting financial habits.",
+  description: "A savings app that changes how India thinks about money — behavioral nudges, goal-based tracking, and a gamified rewards layer that builds lasting financial habits.",
   openGraph: {
     title: "FinFlow — Case Study",
-    description: "A savings app designed to change how India thinks about money — behavioral nudges, goal-based tracking, and a gamified rewards layer that builds lasting financial habits.",
+    description: "A savings app that changes how India thinks about money — behavioral nudges, goal-based tracking, and a gamified rewards layer that builds lasting financial habits.",
     type: "article",
     images: [{ url: "/casestudy/images/finflow/hero.webp", width: 1200, height: 630, alt: "FinFlow — Savings App Case Study" }],
   },
