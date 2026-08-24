@@ -102,12 +102,6 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        {/* Dograh Voice Widget — button hidden via CSS, triggered by ChatWidget */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='https://enkay.dev/dograh-widget.js?v=6&token=emb_jlrO6dkcn24jUdatCUo0Jv_ZmqOevSF7wxC_CLoWVAU&environment=production&apiEndpoint=https://dograh-ciwu.srv1143714.hstgr.cloud';js.async=true;fjs.parentNode.insertBefore(js,fjs)}(document,'script','dograh-widget'));`,
-          }}
-        />
       </head>
       <body className="min-h-screen relative flex flex-col">
         <JsonLd />
