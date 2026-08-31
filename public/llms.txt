@@ -44,6 +44,7 @@
 - [I Learned More About Money From a Cab Driver Than From 11 Years of Design](https://enkay.dev/articles/auto-fintech-ux-20260810): A Mumbai cab driver at 2 AM taught me the entire job of a fintech product designer: don't make the user feel stupid when their money is on the line.
 - [SaaS UI/UX Design Services: Nobody Shows You the Empty States](https://enkay.dev/articles/auto-saas-ux-services-20260817): A client asked me to make an industrial dashboard look like Stripe. I said no. The real work of SaaS design is empty states, permission matrices, and error handling, not hero screenshots.
 - [A Fintech Design System Is Not a UI Kit With a Bank Logo](https://enkay.dev/articles/auto-fintech-design-system-20260824): Six months into Valmont, a regulator made me rewrite 30 screens by hand. A fintech design system is a regulatory shock absorber, not a UI kit with a bank logo.
+- [Enterprise UX Design Services: The Work Nobody Puts in the Portfolio](https://enkay.dev/articles/auto-enterprise-ux-services-20260831): I sat in a meeting at Valmont and a VP told me my new navigation wasn't really design. Enterprise UX design services are the boring work that saves real money, and nobody puts it in a portfolio.
 
 ## Location Articles
 - [Senior Product Designer Dubai](https://enkay.dev/articles/senior-product-designer-dubai): Being a Senior Product Designer in Dubai — the version nobody posts on LinkedIn.

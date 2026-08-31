@@ -1378,6 +1378,62 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "auto-enterprise-ux-services-20260831",
+    date: "31 Aug 2026",
+    category: "Product Design",
+    title: "Enterprise UX Design Services: The Work Nobody Puts in the Portfolio",
+    excerpt:
+      "I sat in a meeting at Valmont and a VP told me my new navigation wasn\'t \'really design.\' He was half right. Enterprise UX design services are the boring work that saves real money, and nobody puts it in a portfolio.",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "The meeting where a VP said it wasn\'t design",
+        body: [
+          "I sat in a meeting at Valmont Industries in my second month. A VP looked at the navigation I had spent three weeks rebuilding and said, \"This is fine, but it\'s not really design, is it? It\'s just moving things around.\"",
+          "I did not have a good answer that day. He was half right. The navigation had no hero gradient, no clever animation, no micro-interactions. It had a search bar that worked, a menu that grouped forty features into seven buckets, and a back button that actually went back.",
+          "What it did was cut the clicks a field technician needed to log a service request from eleven to four. Across forty countries and hundreds of technicians a day, that is real money. But you cannot screenshot it. So enterprise UX work lives in the part of the portfolio nobody posts.",
+        ],
+      },
+      {
+        heading: "The dirty secret of enterprise UX",
+        body: [
+          "When you search enterprise UX design services, most of what you find is agencies selling the same thing as their SaaS page. A dashboard with colorful charts. A login screen that looks like a credit card ad. What you almost never see is the actual job.",
+          "Enterprise UX is not a bigger, slower version of consumer design. It is a different discipline. In a consumer app, a confused user churns and you lose a subscription. In enterprise software, a confused user files a support ticket, their boss gets angry, and six months later a company cancels a seven-figure contract.",
+          "And the users are not like you. At Valmont I designed for agricultural dealers in rural Egypt on seven-year-old tablets with 3G connections, field technicians in Brazil who work in 40-degree heat wearing gloves, and a support manager in Nebraska who had been on the same green-on-black terminal for twenty years. None of them cares about your design tokens. They care whether they can find the submit button before the modal times out.",
+        ],
+      },
+      {
+        heading: "The work that actually saves the money",
+        body: [
+          "Here is what I mean by boring work. I once spent a week on the permission matrix for a dealer portal. Five roles, each with a different view of the same inventory. A supervisor sees driver locations but not salaries. A cashier processes refunds but cannot void them. An admin can do everything, which is its own problem.",
+          "Nobody applauds a permission matrix. Get it wrong and you get a data breach or a support queue full of \"why can\'t I see this.\" Get it right and the software runs without anyone noticing it exists.",
+          "The Field Layout Tool was the same. Irrigation planners draw polygons on satellite imagery to define zones. The math underneath is genuinely hard. The UI is not. Big tap targets, high contrast, a save button that confirms instead of silently succeeding. That last one sounds trivial until a silent save failure costs a planner a morning of work in a moving truck.",
+          "I built a 60-plus component design system at Valmont to make this boring work consistent across five applications. The measured result was a 40 percent cut in design-to-dev handoff. But the part I am proud of is not that number. It is that a technician in Kenya and a dealer in Egypt now use the same button for the same job, and neither has to learn a new interface when they switch apps.",
+        ],
+      },
+      {
+        heading: "Why I tell founders to skip the agency",
+        body: [
+          "I spent years inside the agency model, so I know how it goes. A senior strategist on the kickoff call. Then a handoff to a junior designer who has never seen your users and never will. The deliverable is a Figma file with nice gradients and a login screen that looks expensive.",
+          "Enterprise software does not fail because the login screen is ugly. It fails because nobody mapped the roles, nobody asked what happens when the network drops mid-submission, nobody tested with an actual technician on an actual tablet.",
+          "I am the rare designer who codes. I write React, TypeScript, and Next.js, so when I spec a dropdown I know whether it will cause a layout shift in production. I have broken a client\'s build twice and fixed it, and I tell you that because it is true and because it matters. A designer who has never shipped does not know which of their decisions are cheap and which are secretly expensive.",
+          "I am not an agency. I am one senior designer who has done this for eleven years, across fintech like FinFlow, travel like Voyacher, and the industrial software at Valmont. If your product is a simple three-screen CRUD app, hire a visual designer and save your money. If it has real roles, real data, and real consequences when it breaks, that is where I do my best work.",
+        ],
+      },
+      {
+        heading: "What to ask before you hire anyone",
+        body: [
+          "Forget the portfolio for a minute. Ask these instead.",
+          "Show me your permission matrix. Can your design handle a user who is an admin in one workspace and a viewer in another? If they freeze, keep looking.",
+          "What happens when the network drops mid-submission? Enterprise users work in basements, trucks, and fields, not coffee shops. If the answer is a spinner, they have not shipped to real users.",
+          "How do you handle onboarding? A tool a technician learns once and uses for a decade is not a consumer app. The first ten minutes decide whether it becomes a habit or a help ticket.",
+          "And ask about the numbers. How does a 200-line inventory table behave on a seven-year-old tablet at 3G? If they cannot answer, they have only ever designed in a browser on a MacBook.",
+          "Enterprise UX design services are not glamorous. They will not get you a thousand likes. But when you get it right, you are not saving pixels. You are saving a field technician an hour a day, a support manager a hundred tickets a week, and a company a contract that almost walked away.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
