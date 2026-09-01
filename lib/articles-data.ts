@@ -13,6 +13,21 @@ export interface Article {
   content: ArticleSection[];
 }
 
+// Convert human-readable "22 Jun 2026" to ISO-8601 "2026-06-22".
+// schema.org (datePublished) and og:publishedTime require ISO-8601.
+export function toISODate(date: string): string {
+  const MONTHS: Record<string, string> = {
+    Jan: "01", Feb: "02", Mar: "03", Apr: "04", May: "05", Jun: "06",
+    Jul: "07", Aug: "08", Sep: "09", Oct: "10", Nov: "11", Dec: "12",
+  };
+  const match = date.match(/^(\d{1,2})\s+([A-Za-z]{3})\s+(\d{4})$/);
+  if (!match) return date;
+  const day = match[1].padStart(2, "0");
+  const month = MONTHS[match[2]];
+  if (!month) return date;
+  return `${match[3]}-${month}-${day}`;
+}
+
 export const articles: Article[] = [
   {
     slug: "ai-and-product-design",

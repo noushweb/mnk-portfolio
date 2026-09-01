@@ -5,7 +5,7 @@ import { ArrowLeft, Clock } from "lucide-react";
 import ArticleTOC from "@/components/ArticleTOC";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 import LeadForm from "@/components/LeadForm";
-import { getArticle, getAllSlugs, articles } from "@/lib/articles-data";
+import { getArticle, getAllSlugs, articles, toISODate } from "@/lib/articles-data";
 
 // Maps geo/career articles to their location landing pages for internal-link equity
 const LOCATION_LINKS: Record<
@@ -104,7 +104,7 @@ export async function generateMetadata({
       description: article.excerpt,
       url: `https://enkay.dev/articles/${slug}`,
       type: "article",
-      publishedTime: article.date,
+      publishedTime: toISODate(article.date),
       images: [
         { url: "/og-image.jpg", width: 1200, height: 630, alt: article.title },
       ],

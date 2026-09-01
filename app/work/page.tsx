@@ -24,6 +24,8 @@ export const metadata: Metadata = {
     title: "Work",
     description:
       "A curated selection of product design projects — enterprise web apps, mobile platforms, design systems, and UX case studies from concept to shipped product.",
+    site: "@noushad_design",
+    creator: "@noushad_design",
     images: ["/og-image.jpg"],
   },
 };

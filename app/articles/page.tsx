@@ -24,6 +24,8 @@ export const metadata: Metadata = {
     title: "Articles",
     description:
       "Notes, reflections, and deep dives on product design, design systems, AI-assisted development, and building better digital experiences.",
+    site: "@noushad_design",
+    creator: "@noushad_design",
     images: ["/og-image.jpg"],
   },
 };
