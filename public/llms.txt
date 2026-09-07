@@ -40,11 +40,11 @@
 - [AI-Assisted Design Workflows](https://enkay.dev/articles/ai-assisted-workflows): A practical look at integrating AI tools into a real product design workflow.
 - [Why Your Startup Needs a Design System Consultant](https://enkay.dev/articles/auto-design-system-consultant-20260727): Enterprise design system expertise for startups — why most founders build UI wrong and how a design system consultant fixes it.
 - [The UX Audit Is Not a Report. It's a Mirror.](https://enkay.dev/articles/auto-ux-audit-saas-20260803): What a UX audit for a SaaS product actually finds, why founders wait too long, what it costs, and how it differs from hiring a full-time designer.
-
 - [I Learned More About Money From a Cab Driver Than From 11 Years of Design](https://enkay.dev/articles/auto-fintech-ux-20260810): A Mumbai cab driver at 2 AM taught me the entire job of a fintech product designer: don't make the user feel stupid when their money is on the line.
 - [SaaS UI/UX Design Services: Nobody Shows You the Empty States](https://enkay.dev/articles/auto-saas-ux-services-20260817): A client asked me to make an industrial dashboard look like Stripe. I said no. The real work of SaaS design is empty states, permission matrices, and error handling, not hero screenshots.
 - [A Fintech Design System Is Not a UI Kit With a Bank Logo](https://enkay.dev/articles/auto-fintech-design-system-20260824): Six months into Valmont, a regulator made me rewrite 30 screens by hand. A fintech design system is a regulatory shock absorber, not a UI kit with a bank logo.
 - [Enterprise UX Design Services: The Work Nobody Puts in the Portfolio](https://enkay.dev/articles/auto-enterprise-ux-services-20260831): I sat in a meeting at Valmont and a VP told me my new navigation wasn't really design. Enterprise UX design services are the boring work that saves real money, and nobody puts it in a portfolio.
+- [MVP Design and Development: The First Version Is Supposed to Be a Little Embarrassing](https://enkay.dev/articles/auto-mvp-design-development-20260907): I still have the first build of FinFlow saved on a drive somewhere. It was ugly. The founder told me to ship it anyway. That is the whole philosophy behind MVP design and development.
 
 ## Location Articles
 - [Senior Product Designer Dubai](https://enkay.dev/articles/senior-product-designer-dubai): Being a Senior Product Designer in Dubai — the version nobody posts on LinkedIn.

@@ -1449,6 +1449,58 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "auto-mvp-design-development-20260907",
+    date: "07 Sep 2026",
+    category: "Product Design",
+    title: "MVP Design and Development: The First Version Is Supposed to Be a Little Embarrassing",
+    excerpt:
+      "I still have the first build of FinFlow saved on a drive somewhere. It was ugly. The founder told me to ship it anyway. That is the whole philosophy behind MVP design and development.",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "The version I almost didn\'t ship",
+        body: [
+          "I still have the first build of FinFlow saved on a drive somewhere. It was ugly. The onboarding asked for a user\'s income before their name. The savings goal screen used a progress bar that looked like it was drawn with a ruler and a shaky hand. The whole thing took forty-five seconds to load on a mid-range Android phone. I was embarrassed to show it to the founder, and I told him so.",
+          "He said something I still think about: \"Ship it. The version that never launches teaches you nothing.\"",
+          "That is the part of MVP design and development nobody puts in a case study. Every founder wants a minimum viable product until they see how minimum it has to be. Then they want one more feature, and one more, and suddenly launch is a quarter away and a competitor shipped while you were polishing a login screen.",
+        ],
+      },
+      {
+        heading: "An MVP is a question, not a product",
+        body: [
+          "Here is how most people get MVP design wrong. They think it means cheap, quick, and ugly. It does not. It means you are building the smallest thing that answers one specific question. Is there a real problem? Will anyone pay to fix it? Will they come back tomorrow?",
+          "For FinFlow the question was narrow. Would a savings app aimed at India\'s aspirational middle class actually get people to save, or would it be another finance app they downloaded and forgot? Everything that did not help answer that question got cut. Social features, cut. A full budgeting suite, cut. A dashboard with thirty charts, cut. What shipped was a goal, an automatic round-up, and one screen showing progress in the largest font we could fit. That was it.",
+          "The first version of FinFlow was not a smaller version of the finished product. It was a different product entirely. That is the point. You do not design an MVP by taking your roadmap and making it worse. You ask what the single most important thing to learn is, and you build only that.",
+        ],
+      },
+      {
+        heading: "The cuts nobody wants to make",
+        body: [
+          "I have shipped eight products from zero to one as a freelance designer. Voyacher, the voucher-first travel platform for Qatar. Road Show, the delivery logistics dashboards. In every one, the hard part was not designing or building. It was saying no. To the founder who wanted a referral program on day one. To the CTO who wanted to future-proof an architecture for a scale that was two years away. To my own instinct to add one more polish pass.",
+          "An MVP is a series of decisions you make before you have data. The discipline is remembering that everything you cut can come back later, but the weeks you spend building it now are weeks your competitor spends talking to your customers.",
+          "I keep a list on my desk of every feature that got cut from a launch. Most of them never came back. Not because they were bad ideas. Because once real users showed up, the problems were somewhere else entirely. The feature we were sure users wanted was usually the one nobody asked about.",
+        ],
+      },
+      {
+        heading: "The designer who codes cuts the time in half",
+        body: [
+          "The reason I ship an MVP fast is not that I am a better designer than the next person. It is that I code. React, Next.js, TypeScript. When I design a screen in Figma I already know whether an interaction is cheap or expensive to build. I know if a dropdown will cause a layout shift in production. I know which error states are worth designing and which are worth skipping for now.",
+          "That collapses the usual loop. Design, handoff, wait for a developer, review, revise, wait again. In FinFlow I prototyped the entire transaction flow in React before the backend team had finished their API spec. They looked at my prototype and built to it. That is what MVP design and development in one person gets you. Weeks instead of quarters.",
+          "I am not going to pretend I am a full-stack engineer. I am not. For real backend work, authentication, and infrastructure I still bring in engineers. But for an MVP the front end is most of the product, and I can take that from Figma to a working build with no handoff in between. That is the part that saves a founder real time and real money.",
+        ],
+      },
+      {
+        heading: "What MVP design and development actually costs",
+        body: [
+          "People ask what an MVP should cost, and the honest answer is less than you think and more than you hoped. The design and front-end build for a focused MVP is not the expensive part. The expensive part is the scope creep you allow in month two, the third-party integration you did not research, and the two weeks lost arguing about a logo.",
+          "I have seen founders spend more on the logo than on the product. A founder once paid an agency for a brand identity before we had a single user to show it to. The product shipped late, and the logo got redesigned six months later anyway when the direction changed.",
+          "The thing I tell every founder now is this: spend on decisions, not on decoration. Hire someone who will tell you what to cut, who has shipped enough zero-to-one products to know which corners are safe and which will collapse, and who can build what they design. That is the whole service. Not a Figma file. Not a prototype you click through in a meeting. A working product a real user can hold.",
+          "If you are building a fintech app, a travel platform, or a SaaS tool and you are stuck deciding what the first version should be, that is the conversation I like to have. I am Mohammed Noushad, a senior product designer in Dubai, eleven years in, and I have shipped eight products from zero to one. The first one was embarrassing too. That is how you know you are doing it right.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
