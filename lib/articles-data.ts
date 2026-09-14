@@ -1501,6 +1501,65 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "auto-saas-dashboard-design-20260914",
+    date: "14 Sep 2026",
+    category: "Product Design",
+    title: "I Cut a Dashboard From Thirty Charts to One Screen. Nobody Noticed.",
+    excerpt:
+      "A product manager once sent me a dashboard mockup with thirty-one charts on it. I asked which decision chart nineteen would drive. She went quiet, then said, \"It\'s for the wow factor.\" The wow version died, and what shipped was one screen.",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "The wow version died",
+        body: [
+          "A product manager once sent me a dashboard mockup with thirty-one charts on it. I counted. Thirty-one. When I asked which decision a user would make with chart nineteen, she went quiet, then said, \"It\'s for the wow factor.\"",
+          "That was the moment I stopped designing dashboards as pictures. It was FinFlow, a savings app for India\'s aspirational middle class, and the \"wow\" version died. What shipped was one screen. The retention numbers went up. The PM never brought up wow again.",
+          "I\'ve been designing for eleven years now, the last stretch of it in Dubai, shipping for clients across the UAE, Saudi and India. Eight products zero to one. Here\'s the thing about saas dashboard ui ux design that took me embarrassingly long to internalize. Nobody needs your charts. Users need to make a decision before their chai gets cold."
+        ],
+      },
+      {
+        heading: "A dashboard is a decision tool",
+        body: [
+          "Every widget on a dashboard has to answer one question. What should I do next? If a chart can\'t answer that, it\'s decoration, and decoration costs screen real estate, load time, and cognitive bandwidth.",
+          "At FinFlow we rebuilt around a numbers-first hierarchy. The user\'s savings goal, current progress, and the single next action, front and center. Everything else folded into a drawer or a drill-down. That dashboard used to take a support ticket a week. After, it mostly stopped.",
+          "The test I use now: cover every element except one. Can a user still make a decision? If yes, the rest is fighting for space it hasn\'t earned."
+        ],
+      },
+      {
+        heading: "The unsexy 80 percent: empty states and permissions",
+        body: [
+          "Nobody puts empty states in a portfolio. But an empty dashboard is the first dashboard every user ever sees. That\'s the whole onboarding experience and most teams treat it like a 404 page.",
+          "For Voyacher, a voucher-first travel platform for Qatar, the empty state was the product. New users landed on nothing. So we made the first screen a guided first action, claim a voucher, book a stay, with sample data ghosted behind real UI. Activation jumped because the blank screen stopped being a dead end.",
+          "Then there\'s the permission matrix. Dispatchers and drivers do not need the same dashboard. At Road Show, our delivery logistics work, the dispatcher view was dense, multi-column, live-updating, built for someone watching forty vehicles at once. The driver view was three cards on a phone, next stop, route, confirm delivery. Same data. Two completely different products. One dashboard for both, which was the original brief, would have served neither.",
+          "Here\'s my honest rule. If you can\'t draw the permission matrix on a whiteboard in ten minutes, you don\'t understand your own product yet. Who sees what, who can edit what, who gets the empty state. That grid is design work. It\'s just the part nobody claps for."
+        ],
+      },
+      {
+        heading: "Numbers first, chrome last",
+        body: [
+          "My FinFlow lesson generalized. Data should set the layout, not the other way around. I start with the numbers, their ranges, their update frequency, and their relationships. The visual container comes after. This is backwards from how most Figma files get built, where the grid comes first and the data is poured in like batter.",
+          "The Valmont enterprise design system made this concrete. Sixty plus components, and the hardest ones weren\'t the buttons. They were the dense data tables. Column behavior at 10 rows versus 10,000. Sticky headers. Inline editing. Cell states. That work cut handoff time by 40%, not because the components were pretty but because they encoded decisions engineers would otherwise make badly at 6pm on a Thursday.",
+          "A design system is not a component library. It\'s a set of decisions, pre-made, so your team stops re-litigating what a disabled state looks like on every sprint."
+        ],
+      },
+      {
+        heading: "I build the damn thing too",
+        body: [
+          "I code, React, Next.js, TypeScript. This changed how I design dashboards more than any course or conference. When you\'ve wired a live-updating table to a websocket, you stop designing tables that need a full re-render to sort a column.",
+          "Design-to-code in one person isn\'t about replacing engineers. It\'s about designing within real constraints instead of discovering them in review. The permission matrix, the empty states, the loading skeletons, I\'ve built all of them. That\'s why I design them first now."
+        ],
+      },
+      {
+        heading: "The dashboard has to earn its screen",
+        body: [
+          "Dubai to Riyadh to Bangalore, the users differ, the pattern doesn\'t. A dashboard is the most expensive real estate in your product. Every pixel there is a claim on someone\'s attention, and attention is the actual budget.",
+          "So before you add chart thirty-two, ask the question the PM couldn\'t answer. What decision does this drive? If nothing, it\'s not a dashboard. It\'s wallpaper.",
+          "If you\'re building a SaaS dashboard and the empty states are still a 404 page, or the dispatcher and the driver are staring at the same wall of charts, that is the conversation I like to have. I\'m Mohammed Noushad, a senior product designer in Dubai, eleven years in, and I ship dashboards that earn their screen."
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
