@@ -1560,6 +1560,64 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "auto-design-to-code-20260921",
+    date: "21 Sep 2026",
+    category: "Product Design",
+    title: "I Design It, Then I Build It. That Is the Whole Pitch.",
+    excerpt:
+      "In 2019 I spent three weeks designing a dashboard for a logistics client. I handed the Figma file to their developer and waited. Two months later the product shipped and looked nothing like my file. That was the week I stopped pretending handoff was a real thing.",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "Handoff is not a real thing",
+        body: [
+          "In 2019 I spent three weeks designing a dashboard for a logistics client. Beautiful thing. Perfect spacing, a color system I was proud of, states for every edge case I could imagine. I handed the Figma file to their developer, a nice guy who had sixteen other tickets open, and waited.",
+          "Two months later the product shipped. It looked nothing like my file. Buttons were the wrong blue. The empty states were missing. Someone had decided a dropdown was easier than the filter panel I designed, which, honestly, fair enough.",
+          "That was the week I stopped pretending handoff was a real thing. Handoff is just a fancy word for throwing something over a wall and hoping it lands.",
+        ],
+      },
+      {
+        heading: "Design to code is suddenly a buzzphrase",
+        body: [
+          "Open LinkedIn this week and everyone is talking about design to code. Design to code AI, design to code Figma plugins, the perfect design to code workflow. Figma ships a feature, some startup raises money, and suddenly every agency in Dubai is advertising \"AI-powered design to code pipelines.\"",
+          "Most of it is a demo. You type a prompt, get a React component, and it looks great until you click anything. The button has no focus state. The form forgets what you typed. Nobody thought about what happens when the API is slow.",
+          "Here is what design to code actually means to me, after eleven years: one person who designs the thing and then builds the thing. Not a tool. Not a pipeline. A person who sits on both sides of the table.",
+        ],
+      },
+      {
+        heading: "What that looks like on a real project",
+        body: [
+          "At Valmont I built a 60-component design system. Sixty components, every state documented, every spacing value on a token. On its own that is just a nice Figma library. The difference was that the tokens compiled to actual code. A spacing change in the design file became a spacing change in the repo. Same source of truth, no translation layer, no developer guessing whether 16px meant 16px.",
+          "Handoff got 40 percent faster. Not because I am some genius. Because there was nothing to hand off. The design and the code were the same decision made once.",
+          "Then FinFlow, a fintech app for India\'s middle class. This one I designed and built myself, front to back. Every screen, every component, then the actual front-end. When I designed the payment confirmation flow, I knew exactly how long the API call would take, so I designed the loading state around the real number instead of a fantasy. When a user in Pune on a mid-range Android phone saw the screen, it behaved the way I drew it. That almost never happens when two people who have never met are passing files around.",
+          "Voyacher, a travel platform, same story. I caught a booking flow problem in the browser that I never would have caught in Figma, because in Figma every network request succeeds instantly. Road Show, a logistics tool, same again. The messy parts of real software, the errors, the timeouts, the empty states, those are design decisions. You cannot make them properly from a static frame.",
+        ],
+      },
+      {
+        heading: "Why a founder should hire one of me instead of an agency",
+        body: [
+          "Agencies sell you a process. Discovery, wireframes, visual design, handoff, development. Five phases, five invoices, and a Figma file that gets interpreted by whoever is cheapest that month.",
+          "If you are a founder with a real product and a real deadline, here is the math. One designer who codes costs less than an agency retainer. They hold the whole picture in one head, so the design does not get lost in translation. They can ship a working feature instead of a picture of a feature. And when something feels wrong in the build, they fix it in the same afternoon instead of filing a ticket.",
+          "The agency model made sense when design and engineering were genuinely different skills. They mostly still are. But the wall between them costs founders time and money, and most of that cost is invisible until launch.",
+        ],
+      },
+      {
+        heading: "The honest limits",
+        body: [
+          "I am not a back-end engineer. Say it clearly. I cannot design your database schema or scale your infrastructure. I have opinions about APIs, and some of them are wrong. If your product is deep in machine learning or heavy distributed systems, you need real engineers and you should hire them.",
+          "What I can do is own everything the user touches, from the first sketch to the deployed interface. That is a smaller promise than \"we do full stack,\" and it is one I can actually keep.",
+        ],
+      },
+      {
+        heading: "The question to ask",
+        body: [
+          "If you are hiring right now, ask this. Who is going to make the decision about what happens when the payment fails at 2am on a slow connection? If the answer is \"the developer, based on the Figma file,\" you have already lost something. If the answer is \"the person who designed it,\" you are fine.",
+          "Design to code is not a plugin. It is a person who refuses to throw things over walls.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
