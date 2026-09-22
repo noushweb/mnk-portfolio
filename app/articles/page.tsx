@@ -107,23 +107,23 @@ export default function ArticlesPage() {
                         />
                       </div>
                     )}
-                    <div className={article.image ? "md:col-span-5" : "md:col-span-7"}>
+                    <div className={article.image ? "md:col-span-7" : "md:col-span-10"}>
                       <h2 className="text-2xl md:text-3xl font-medium tracking-tight mb-3 group-hover:text-[var(--color-accent-warm)] transition-colors duration-300">
                         {article.title}
                       </h2>
-                      <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4">
+                      <p className="text-[var(--color-text-secondary)] leading-relaxed mb-5">
                         {article.excerpt}
                       </p>
-                      <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider transition-all text-[var(--color-text-secondary)] group-hover:text-[var(--color-accent-warm)]">
-                        Read Article{" "}
-                        <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
-                      </span>
-                    </div>
-                    <div className="md:col-span-2 text-left md:text-right">
-                      <span className="inline-flex items-center gap-1.5 text-xs text-[var(--color-text-muted)] uppercase tracking-wider">
-                        <Clock className="w-3.5 h-3.5" />
-                        {article.readTime}
-                      </span>
+                      <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+                        <span className="inline-flex items-center gap-1.5 text-xs text-[var(--color-text-muted)] uppercase tracking-wider whitespace-nowrap">
+                          <Clock className="w-3.5 h-3.5" />
+                          {article.readTime}
+                        </span>
+                        <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider transition-all text-[var(--color-text-secondary)] group-hover:text-[var(--color-accent-warm)] whitespace-nowrap">
+                          Read Article
+                          <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </Link>
