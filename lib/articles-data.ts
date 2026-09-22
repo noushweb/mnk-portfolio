@@ -3,6 +3,13 @@ export interface ArticleSection {
   body: string[];
 }
 
+export interface ArticleImage {
+  src: string;
+  alt: string;
+  credit?: string;
+  creditUrl?: string;
+}
+
 export interface Article {
   slug: string;
   date: string;
@@ -10,6 +17,7 @@ export interface Article {
   title: string;
   excerpt: string;
   readTime: string;
+  image?: ArticleImage;
   content: ArticleSection[];
 }
 

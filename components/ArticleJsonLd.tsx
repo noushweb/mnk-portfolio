@@ -6,6 +6,7 @@ interface ArticleJsonLdProps {
   date: string;
   slug: string;
   category: string;
+  image?: string;
 }
 
 const AUTHOR_SAME_AS = [
@@ -24,7 +25,7 @@ const KNOWS_ABOUT = [
   "AI-assisted Design",
 ];
 
-export default function ArticleJsonLd({ title, description, date, slug, category }: ArticleJsonLdProps) {
+export default function ArticleJsonLd({ title, description, date, slug, category, image }: ArticleJsonLdProps) {
   const baseUrl = "https://enkay.dev";
   const url = `${baseUrl}/articles/${slug}`;
 
@@ -36,6 +37,7 @@ export default function ArticleJsonLd({ title, description, date, slug, category
       "description": description,
       "articleSection": category,
       "datePublished": toISODate(date),
+      "image": image ? `${baseUrl}${image}` : `${baseUrl}/og-image.jpg`,
       "author": {
         "@type": "Person",
         "name": "Mohammed Noushad",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock } from "lucide-react";
 import ArticleTOC from "@/components/ArticleTOC";
@@ -106,7 +107,7 @@ export async function generateMetadata({
       type: "article",
       publishedTime: toISODate(article.date),
       images: [
-        { url: "/og-image.jpg", width: 1200, height: 630, alt: article.title },
+        { url: article.image?.src ?? "/og-image.jpg", width: 1200, height: 630, alt: article.image?.alt ?? article.title },
       ],
     },
     twitter: {
@@ -115,7 +116,7 @@ export async function generateMetadata({
       description: article.excerpt,
       site: "@noushad_design",
       creator: "@noushad_design",
-      images: ["/og-image.jpg"],
+      images: [article.image?.src ?? "/og-image.jpg"],
     },
   };
 }
@@ -151,6 +152,7 @@ export default async function ArticlePage({
         date={article.date}
         slug={article.slug}
         category={article.category}
+        image={article.image?.src}
       />
       <div className="max-w-7xl mx-auto">
         {/* Breadcrumb */}
@@ -192,6 +194,37 @@ export default async function ArticlePage({
             </span>
           </div>
         </header>
+
+        {article.image && (
+          <figure className="mb-16">
+            <div className="overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-alt)]">
+              <Image
+                src={article.image.src}
+                alt={article.image.alt}
+                width={1200}
+                height={630}
+                priority
+                className="w-full aspect-[16/9] object-cover"
+              />
+            </div>
+            {(article.image.credit || article.image.creditUrl) && (
+              <figcaption className="mt-3 text-xs text-[var(--color-text-muted)]">
+                Image: {article.image.creditUrl ? (
+                  <a
+                    href={article.image.creditUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 hover:text-[var(--color-accent-warm)]"
+                  >
+                    {article.image.credit ?? article.image.creditUrl}
+                  </a>
+                ) : (
+                  article.image.credit
+                )}
+              </figcaption>
+            )}
+          </figure>
+        )}
 
         {/* Divider */}
         <div className="border-t border-[var(--color-border)] mb-16" />

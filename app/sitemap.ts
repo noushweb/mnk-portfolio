@@ -7,7 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     { path: "", priority: 1.0, lastmod: "2026-06-01", freq: "monthly" as const },
     { path: "/work", priority: 0.8, lastmod: "2026-06-01", freq: "monthly" as const },
-    { path: "/articles", priority: 0.7, lastmod: "2026-06-08", freq: "weekly" as const },
+    { path: "/articles", priority: 0.7, lastmod: "2026-09-22", freq: "weekly" as const },
+    { path: "/articles/archive", priority: 0.5, lastmod: "2026-09-22", freq: "weekly" as const },
     { path: "/valmont-legacy-redesign", priority: 0.6, lastmod: "2026-05-15", freq: "yearly" as const },
     { path: "/voyacher", priority: 0.6, lastmod: "2026-05-15", freq: "yearly" as const },
     { path: "/finflow", priority: 0.6, lastmod: "2026-05-15", freq: "yearly" as const },
