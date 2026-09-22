@@ -106,7 +106,7 @@ export default function ArticleArchivePage() {
                       href={`/articles/${article.slug}`}
                       className="group grid grid-cols-1 md:grid-cols-12 gap-4 py-7 first:pt-0"
                     >
-                      <div className="md:col-span-8">
+                      <div className="md:col-span-12">
                         <div className="flex items-center gap-3 mb-2 flex-wrap">
                           <span className="px-2.5 py-0.5 bg-[var(--color-tag-bg)] text-[var(--color-text-secondary)] text-[10px] uppercase font-bold tracking-widest rounded-full">
                             {article.category}
@@ -121,16 +121,16 @@ export default function ArticleArchivePage() {
                         <p className="mt-2 text-sm text-[var(--color-text-secondary)] leading-relaxed line-clamp-2">
                           {article.excerpt}
                         </p>
-                      </div>
-                      <div className="md:col-span-4 md:text-right flex md:block items-center justify-between gap-4">
-                        <span className="inline-flex items-center gap-1.5 text-xs text-[var(--color-text-muted)] uppercase tracking-wider">
-                          <Clock className="w-3.5 h-3.5" />
-                          {article.readTime}
-                        </span>
-                        <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[var(--color-text-secondary)] group-hover:text-[var(--color-accent-warm)] transition-colors md:mt-4">
-                          Read
-                          <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
-                        </span>
+                        <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-3">
+                          <span className="inline-flex items-center gap-1.5 text-xs text-[var(--color-text-muted)] uppercase tracking-wider whitespace-nowrap">
+                            <Clock className="w-3.5 h-3.5" />
+                            {article.readTime}
+                          </span>
+                          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[var(--color-text-secondary)] group-hover:text-[var(--color-accent-warm)] transition-colors whitespace-nowrap">
+                            Read
+                            <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+                          </span>
+                        </div>
                       </div>
                     </Link>
                   ))}
