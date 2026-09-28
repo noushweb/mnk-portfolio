@@ -1626,6 +1626,65 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "auto-fintech-case-study-20260928",
+    date: "28 Sep 2026",
+    category: "Product Design",
+    title: "Fintech Product Design Case Study: FinFlow from Idea to App in 14 Days",
+    excerpt:
+      "My mother could not send money through her bank app because the error message was in English and she reads Malayalam. This is the FinFlow case study: the fintech app I designed and built myself in 14 days.",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "A phone call from Kerala",
+        body: [
+          "My mother called me from Kerala about her bank app. She had tried to send money to my sister, failed twice, and the app showed her an error in English she did not understand. She is 61. She reads Malayalam, gets by in Hindi, and the error message might as well have been Latin. I have been a product designer for 11 years, eight of them in Dubai, and I could not explain to her what \"transaction could not be processed\" means in a way that helped.",
+          "That call stayed with me. It is the reason I eventually designed and built FinFlow, a working fintech app for India\'s aspirational middle class. I built it myself, Next.js and Tailwind front to back, in about 14 days from idea to working app. This is the fintech product design case study I would walk a client through, honestly, including the messy parts.",
+        ],
+      },
+      {
+        heading: "The problem was not features",
+        body: [
+          "India has thousands of banking apps. Most of them are built for people who already understand banking language. The aspirational middle class, freelancers, small shop owners, young salaried workers sending money home, does not need more features. They need software that does not make them feel stupid. My mother is not a low-literacy user. She runs a household budget better than I run mine. The app failed her, not the other way around.",
+        ],
+      },
+      {
+        heading: "Three days in a Bangalore coworking space",
+        body: [
+          "I flew to Bangalore and sat in a coworking space for three days watching freelancers manage invoices. Not interviewing them. Watching. One designer I shadowed had 14 client payments tracked in a Google Sheet, colour-coded, with a separate column for \"chased\" and \"paid.\" Another guy was reconciling UPI transfers against screenshots in his phone gallery. Nobody I watched used a dedicated finance app for this. They used spreadsheets and memory because every app they tried assumed they were an accountant.",
+          "I wrote down three things. First, people want to know who owes them money, in plain language, not \"receivables.\" Second, they check payment status obsessively for about an hour after sending. Third, they switch languages mid-task, thinking in Malayalam or Hindi but reading numbers and names in English.",
+        ],
+      },
+      {
+        heading: "What I actually designed",
+        body: [
+          "The home screen does not open with a balance. It opens with a sentence: \"Ravi owes you 4,500 rupees.\" That was the single most argued-about decision in my own head. A balance is abstract. A name and a number is a task. I put the balance lower, small, because it is reference information, not action.",
+          "Language switching sits at the top of every screen, not buried in settings. I built the copy so Malayalam and Hindi strings carry the emotional weight, while error messages stay bilingual. If a payment fails, the user sees a short English line for the technical reason and a full sentence in their chosen language for what to do next. The error message that confused my mother now reads as an instruction, not a verdict.",
+          "The payment confirmation flow was designed around real API latency. UPI callbacks take 2 to 6 seconds in testing, sometimes longer. Most apps show a spinner and hope. I built a three-state screen: \"sending\" with the recipient\'s name visible, \"confirming with bank\" with a timestamp, and a final state that either celebrates or explains. That middle state exists purely because I measured the wait and decided the user deserved to know what was happening during it.",
+        ],
+      },
+      {
+        heading: "Building it myself changed the design",
+        body: [
+          "I have spent years handing off specs. At Valmont, I built a 60-component design system that cut handoff time by roughly 40 percent, and I am proud of it. But building FinFlow alone taught me things a design system never could. I had to design the empty states before the happy path because the database was empty for two days. I cut a feature I loved, a spending chart, because wiring it properly would have cost me three of my 14 days. The chart was for me, not the user. Knowing the build cost made that decision fast.",
+        ],
+      },
+      {
+        heading: "The validation that mattered",
+        body: [
+          "I showed FinFlow to five users from that Bangalore trip. Four gave polite feedback. One, a freelance photographer, looked at the \"who owes you\" screen, paused, and said \"I\'d pay for this.\" That sentence did more for my confidence than any metrics dashboard. It also told me the core screen was right and everything else was secondary.",
+          "I did not chase scale. I shipped a working app, tested with real people, and moved on. My Voyacher travel project taught me the same lesson earlier: a small product that works beats a big product that is almost finished.",
+        ],
+      },
+      {
+        heading: "What a real fintech case study should include",
+        body: [
+          "People search \"case study examples\" and find polished decks with stock photos and invented personas. Here is what I think a real one needs. The actual trigger, mine was a phone call from Kerala. The research method, three days of watching, not surveys. The decisions you reversed and why. The build constraints, because design that ignores engineering is fiction. Real numbers, 14 days, 5 users, 2 to 6 seconds of latency. And the honest ending, which is usually \"this worked, this did not, I would do it differently next time.\"",
+          "If you are hiring a product designer, ask for that version. The tidy one is easy to fake.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
