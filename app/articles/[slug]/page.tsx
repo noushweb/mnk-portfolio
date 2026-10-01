@@ -131,10 +131,16 @@ export default async function ArticlePage({
 
   if (!article) notFound();
 
-  const currentIndex = articles.findIndex((a) => a.slug === slug);
+  // The raw `articles` array is not chronologically sorted, so sort a copy
+  // by published date (newest first) for a coherent "Continue Reading" flow.
+  const sortedByDate = [...articles].sort(
+    (a, b) =>
+      new Date(toISODate(b.date)).getTime() - new Date(toISODate(a.date)).getTime()
+  );
+  const currentIndex = sortedByDate.findIndex((a) => a.slug === slug);
   const nextArticles = [
-    articles[(currentIndex + 1) % articles.length],
-    articles[(currentIndex + 2) % articles.length],
+    sortedByDate[(currentIndex + 1) % sortedByDate.length],
+    sortedByDate[(currentIndex + 2) % sortedByDate.length],
   ];
 
   const locationLink = LOCATION_LINKS[slug];
