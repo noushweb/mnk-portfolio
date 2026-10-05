@@ -48,6 +48,7 @@
 - [I Cut a Dashboard From Thirty Charts to One Screen. Nobody Noticed.](https://enkay.dev/articles/auto-saas-dashboard-design-20260914): A product manager sent me a dashboard mockup with thirty-one charts. I asked what decision chart nineteen drove. She said it was for the wow factor. What shipped was one screen, and retention went up.
 - [I Design It, Then I Build It. That Is the Whole Pitch.](https://enkay.dev/articles/auto-design-to-code-20260921): In 2019 I designed a dashboard, handed off the Figma file, and watched it ship looking nothing like my design. Design to code means one person who designs and builds, so nothing gets thrown over a wall.
 - [Fintech Product Design Case Study: FinFlow from Idea to App in 14 Days](https://enkay.dev/articles/auto-fintech-case-study-20260928): My mother could not send money through her bank app because the error was in English. The FinFlow case study: how I designed and built a fintech app for India's middle class in 14 days.
+- [Freelance Product Designer Hourly Rate](https://enkay.dev/articles/auto-freelance-product-designer-rate-20261005): A founder emailed me asking my hourly rate. The honest answer is a range so wide it is almost useless. What actually drives a freelance product designer's rate, and why hourly is the wrong question.
 
 ## Location Articles
 - [Senior Product Designer Dubai](https://enkay.dev/articles/senior-product-designer-dubai): Being a Senior Product Designer in Dubai — the version nobody posts on LinkedIn.

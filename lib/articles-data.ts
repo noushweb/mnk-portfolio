@@ -1685,6 +1685,61 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "auto-freelance-product-designer-rate-20261005",
+    date: "05 Oct 2026",
+    category: "Career",
+    title: "Freelance Product Designer Hourly Rate: $25 or $250, It Depends on What You\'re Buying",
+    excerpt:
+      "A founder emailed me last week with one line: \"What\'s your hourly rate?\" I stared at it for a minute, because I don\'t have one clean answer.",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "What\'s your hourly rate?",
+        body: [
+          "A founder emailed me last week. One line. \"What\'s your hourly rate?\" I stared at it for a minute, because I don\'t have one clean answer. I have a number I quote for projects, and it shifts depending on what I\'m being asked to do. When I sent it over, he wrote back, \"That\'s more than my developer.\" It probably was. His developer was not going to sit with him and figure out what his product should even do. That is the difference."
+        ],
+      },
+      {
+        heading: "The number you googled is not a number",
+        body: [
+          "If you typed freelance product designer hourly rate into a search bar, you wanted a figure. Something to drop in a spreadsheet, something to budget against. I get it. Here is the honest version. The answer is a range so wide it is almost useless. Somewhere between twenty five dollars an hour and two hundred and fifty, and sometimes more.",
+          "Those are not the same service with different markups. A designer charging twenty five an hour is usually selling you screens. A designer charging two fifty is usually selling you the judgment that decides which screens matter. Same job title, completely different product. If you hire by the hour without understanding that, you will grab the cheap number and pay for it later in rework.",
+          "Sites that publish a tidy average are not exactly lying, but an average hides the spread. The same person can quote one rate for a two week sprint and a different one for a six month retainer, and both can be fair."
+        ],
+      },
+      {
+        heading: "Three things actually move the number",
+        body: [
+          "First, whether the designer can build. Most product designers stop at a Figma file. The ones who write React and ship a working interface cost more, because they erase the gap between the design and the thing that launches. At Valmont I built a design system with 60 plus components, and the tokens compiled straight to code. Handoff got 40 percent faster. That number is not marketing. It is why clients pay me more than someone who hands over a file and hopes.",
+          "Second, domain depth. Eight of my eleven years have been in Dubai, working across fintech, logistics, and travel. I know what a payment error should say to someone whose transfer just failed. I know a dispatcher and a driver need different views of the same route. You don\'t get that from a bootcamp. You get it by shipping FinFlow from idea to a working app in 14 days, and by watching a travel booking flow drop its abandonment rate 22 percent.",
+          "Third, where the designer sits and who they can serve. I work from Dubai for clients in London, Singapore, and New York. The time zone overlap is the boring part. The real edge is I design for users who don\'t think in English first, which matters more than most founders expect."
+        ],
+      },
+      {
+        heading: "What I charge, and the year I spent digging out",
+        body: [
+          "Early in my career I charged too little because I was scared someone would say no. I once said yes to a discount before the client finished asking for it. I built him a dashboard and undercharged for it, and he referred me to two friends at that same low price. I spent a year digging out of my own pricing hole. Nobody puts that part in the blog post.",
+          "Now I charge a rate that makes some people flinch. When a founder says it\'s too expensive, I ask what they are comparing it to. Usually another designer with a similar title and none of the shipping history. I show them the Valmont rollout across 40 countries. I show them FinFlow, built front to back in two weeks. I show them the Voyacher flow that moved a real number. Then I ask if they are still comparing."
+        ],
+      },
+      {
+        heading: "Hourly is the wrong question",
+        body: [
+          "Hourly rates punish the fast. If I can solve your problem in a week because I\'ve been doing it for eleven years, billing by the hour pays me less for being better. That is backwards. Most of my work is fixed scope or retainer, because it lines my incentive up with the founder\'s. We both want the thing to ship and work.",
+          "Think in outcomes instead. You are not buying hours. You are buying the difference between a product that ships and a Figma file that doesn\'t. If a designer quotes a number that feels high, ask what has actually shipped. If they can\'t answer fast, keep looking. If they can, the rate is probably the cheapest part of the deal."
+        ],
+      },
+      {
+        heading: "So what should you actually budget",
+        body: [
+          "For a freelance product designer who can own a product from first sketch to deployed interface, budget in the high three figures per day, or the hourly equivalent if you insist on hours. Less than that and you are hiring someone to draw. That is fine, just know that is what you bought. More than that and you are usually paying an agency for a process instead of a person.",
+          "If your product is a thin wrapper and you just need a refresh, hire cheap and fast. If it\'s the thing your company lives or dies on, hire the person who has shipped that kind of thing before.",
+          "I still answer every \"what\'s your hourly rate\" email. The reply is never one line. If that annoys you, we probably wouldn\'t have worked well together anyway."
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
