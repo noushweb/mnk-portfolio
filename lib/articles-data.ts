@@ -1740,6 +1740,63 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "auto-saas-onboarding-flow-20261012",
+    date: "12 Oct 2026",
+    category: "Product Design",
+    title: "SaaS Onboarding Flow Design: The First Ten Minutes Decide Everything",
+    excerpt:
+      "A founder once showed me a signup flow with nine steps and a smile on his face. He called it thorough. I called it a polite way to lose people.",
+    readTime: "6 min read",
+    content: [
+      {
+        heading: "Nine steps and a smile",
+        body: [
+          "A founder once showed me a signup flow with nine steps and a smile on his face. He called it thorough. I called it a polite way to lose people. The product was good, too. That was the annoying part. Once you reached the dashboard, the value was obvious. But before that, it asked for company size, team role, phone number, billing country, invite list, and a few other things nobody wants to type before seeing the thing they came for.",
+          "This is why SaaS onboarding flow design is not a decoration problem. It is a trust problem. The user has just given you an email address and a small piece of optimism. If your first response is a form that feels like immigration paperwork, you have already spent more trust than you earned."
+        ],
+      },
+      {
+        heading: "Onboarding is not a tour",
+        body: [
+          "A lot of SaaS products treat onboarding as a product tour. Five tooltips, a progress bar, maybe a friendly illustration waving from the corner. I have built those. I have also deleted them. Most tours explain the interface before the user has a reason to care. That is like giving someone a lecture about kitchen cabinets while their food is burning.",
+          "The first job of onboarding is not to teach every feature. It is to get the user to one useful moment quickly. In FinFlow, that moment was not completing a profile. It was seeing a savings goal with a number that felt possible. In Voyacher, it was not choosing every travel preference. It was seeing one trip plan that made the user think, okay, this understands me. The rest can come later.",
+          "When I audit a SaaS onboarding flow, I ask one boring question first. What is the smallest action that proves value? Not the action that makes the CRM happy. Not the action that fills out the user table nicely. The action that makes a human feel the product might be worth returning to tomorrow."
+        ],
+      },
+      {
+        heading: "The dashboard should not be the reward for paperwork",
+        body: [
+          "SaaS teams often hide the product behind setup. Connect your data source. Add your team. Configure your workspace. Pick your notification preferences. Upload a logo. Then, if you are still alive, here is the dashboard. I understand why this happens. Engineering wants clean state. Sales wants qualification data. Customer success wants segmentation. Everyone wants one more field. Nobody wants to admit the user wanted to try the product, not complete an internal census.",
+          "At Valmont, I learned this the hard way with enterprise users. Field teams did not care that our database model was elegant. They cared that the tool opened fast, showed the right task, and did not make them think about permissions unless permissions mattered. The design system eventually had 60 plus components, but the onboarding rule was simple. Show people the path they need today, not the whole building.",
+          "For SaaS onboarding, that usually means progressive setup. Let someone see a sample dashboard before connecting data. Let them invite a teammate after they understand why. Let them skip optional fields without making the skip link look like a crime. Every field you delay is not lost information. It is borrowed patience returned to the user."
+        ],
+      },
+      {
+        heading: "Empty states do more work than welcome screens",
+        body: [
+          "The most expensive onboarding screen is often the one nobody designs. The empty state. A new user lands in a product and sees no projects, no reports, no campaigns, no invoices, no trips, no routes. The interface says \"No data available\" and expects motivation to appear from the ceiling. That is not an empty state. That is a dead end with padding.",
+          "Good SaaS onboarding flow design treats empty states as instructions, not placeholders. If there is no data, say what to add first. If there are three ways to start, recommend one. If the user needs a teammate, explain why before asking for an invitation. I have seen products spend weeks polishing a welcome modal while the real first experience was a blank table with a grey icon. The blank table won. It always does."
+        ],
+      },
+      {
+        heading: "What I look for in an onboarding audit",
+        body: [
+          "When a founder asks me to review onboarding, I do not start in Figma. I start with the current flow and a timer. How long from signup to first value? How many decisions does the user make before seeing anything useful? Which steps are for the user, and which are really for the company? Where does the copy sound like a database field wearing a shirt?",
+          "Then I look at the recovery paths. What happens if the user skips setup? What happens if an integration fails? What if they are not the admin? What if they are on mobile because the signup link came through WhatsApp? Real onboarding is full of small failures. The happy path is the brochure version.",
+          "This is where being a designer who codes helps. I can tell the difference between a flow that is hard because the product needs it and a flow that is hard because the implementation was convenient. Sometimes the fix is a new screen. Sometimes it is moving a required field to day two. Sometimes it is replacing four steps with one default and an edit button. The best onboarding work often looks like subtraction."
+        ],
+      },
+      {
+        heading: "The first ten minutes are a promise",
+        body: [
+          "If you are hiring someone for SaaS onboarding flow design, ask them what they would remove. If their answer starts with adding tooltips, be careful. Tooltips are useful, but they are usually painkillers. You still need to find the bruise.",
+          "A strong onboarding flow does three things. It proves value fast, asks only for information it can justify, and gives the user a clear next step when the product is empty. That sounds simple because the sentence is simple. The work is not. It means saying no to internal requests, resisting the urge to explain everything, and designing for the user who is distracted, skeptical, and one browser tab away from leaving.",
+          "The first ten minutes are a promise. If your product feels heavy there, people assume it will feel heavy forever. If it feels clear, they give you another session. Sometimes that is the whole game."
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
