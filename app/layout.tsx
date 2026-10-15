@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Mohammed Noushad — Senior Product Designer | Dubai, UAE",
   description:
-    "Senior Product Designer in Dubai & India. 11+ years in UX/UI, enterprise design systems & AI product development. Shipped for Valmont, Voyacher, FinFlow.",
+    "Dubai-based Senior Product Designer serving UAE & India. 11+ years in UX/UI, enterprise design systems & AI development. Valmont, Voyacher, FinFlow.",
   metadataBase: new URL("https://enkay.dev"),
   openGraph: {
     title: {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       default: "Mohammed Noushad — Senior Product Designer | Dubai, UAE",
     },
     description:
-      "Senior Product Designer in Dubai & India. 11+ years in UX/UI, enterprise design systems & AI product development. Shipped for Valmont, Voyacher, FinFlow.",
+      "Dubai-based Senior Product Designer serving UAE & India. 11+ years in UX/UI, enterprise design systems & AI development. Valmont, Voyacher, FinFlow.",
     url: "https://enkay.dev",
     siteName: "Mohammed Noushad",
     locale: "en_US",
@@ -92,6 +92,7 @@ export default function RootLayout({
       className={`scroll-smooth ${archivo.variable} ${spaceGrotesk.variable}`}
     >
       <head>
+        <link rel="alternate" type="application/rss+xml" title="Mohammed Noushad — Product Design Articles" href="https://enkay.dev/feed.xml" />
         <link
           rel="preconnect"
           href="https://fonts.googleapis.com"

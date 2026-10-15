@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
+import EngagementOptions from "@/components/EngagementOptions";
 
 export const metadata: Metadata = {
   title: "Freelance Product Designer UAE | Mohammed Noushad",
@@ -81,14 +82,18 @@ export default function UAEPage() {
             </div>
             <Link href="/articles/auto-uae-20260720" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
               <h3 className="font-semibold text-lg mb-1">Latest article: The Dubai Freelance Trap</h3>
-              <p className="text-sm text-[var(--color-text-secondary)]">The real landscape of freelancing across the UAE emirates — and why Dubai isn't the only opportunity.</p>
+              <p className="text-sm text-[var(--color-text-secondary)]">The real landscape of freelancing across the UAE emirates — and why Dubai isn&apos;t the only opportunity.</p>
             </Link>
           </div>
+
+          <EngagementOptions market="the UAE" />
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">
               <h2 className="text-2xl font-medium">Let&apos;s talk</h2>
+              <div id="project-enquiry" className="scroll-mt-24">
               <LeadForm source="uae" />
+              </div>
             </div>
             <Link href="/work" className="text-[var(--color-accent)] hover:underline font-medium">
               View all case studies →

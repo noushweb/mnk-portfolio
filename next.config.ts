@@ -5,6 +5,11 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    return [
+      { source: "/index.xml", destination: "/feed.xml", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

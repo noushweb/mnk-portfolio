@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
+import EngagementOptions from "@/components/EngagementOptions";
 
 export const metadata: Metadata = {
   title: "Product Designer Abu Dhabi | Mohammed Noushad",
   description:
-    "Senior Product Designer in Abu Dhabi — 11+ years of government-grade enterprise UX, fintech, and bilingual design. Compliance-aware design for the UAE capital.",
+    "Senior Product Designer for Abu Dhabi — 11+ years of government-grade enterprise UX, fintech, and bilingual design. Compliance-aware design for the UAE capital.",
   alternates: {
     canonical: "https://enkay.dev/abu-dhabi",
   },
   openGraph: {
     title: "Product Designer Abu Dhabi",
     description:
-      "Senior Product Designer in Abu Dhabi, UAE — enterprise UX/UI, design systems, and AI-powered product development.",
+      "Senior Product Designer for Abu Dhabi, UAE — enterprise UX/UI, design systems, and AI-powered product development.",
     url: "https://enkay.dev/abu-dhabi",
     type: "website",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Abu Dhabi Product Designer" }],
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     creator: "@noushad_design",
     title: "Product Designer Abu Dhabi",
     description:
-      "Senior Product Designer in Abu Dhabi, UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered development.",
+      "Senior Product Designer for Abu Dhabi, UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered development.",
     images: ["/og-image.jpg"],
   },
 };
@@ -35,7 +36,7 @@ export default function AbuDhabiPage() {
         <div className="max-w-3xl mx-auto space-y-10">
           <div className="space-y-4">
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-[var(--color-text-muted)]">
-              Product Designer in Abu Dhabi, UAE
+              Product Designer for Abu Dhabi, UAE
             </span>
             <h1 className="text-4xl md:text-5xl font-medium tracking-tight">
               I design products for Abu Dhabi — government, enterprise, and fintech.
@@ -94,13 +95,17 @@ export default function AbuDhabiPage() {
           </div>
           <Link href="/articles/product-designer-abu-dhabi" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
             <h3 className="font-semibold text-lg mb-1">Read: Working in Abu Dhabi</h3>
-            <p className="text-sm text-[var(--color-text-secondary)]">Product design for Abu Dhabi's growing digital landscape — from government to fintech.</p>
+            <p className="text-sm text-[var(--color-text-secondary)]">Product design for Abu Dhabi&apos;s growing digital landscape — from government to fintech.</p>
           </Link>
+
+          <EngagementOptions market="Abu Dhabi" />
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">
               <h2 className="text-2xl font-medium">Let&apos;s talk</h2>
+              <div id="project-enquiry" className="scroll-mt-24">
               <LeadForm source="abu-dhabi" />
+              </div>
             </div>
             <Link href="/work" className="text-[var(--color-accent)] hover:underline font-medium">
               View all case studies →

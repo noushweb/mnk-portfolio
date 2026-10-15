@@ -1,3 +1,4 @@
+import EmailLink from "@/components/EmailLink";
 import ScrollReveal from "./ScrollReveal";
 import { ContactButton } from "./ContactButton";
 
@@ -27,13 +28,13 @@ export default function Contact() {
         </ScrollReveal>
         <ScrollReveal delay={200}>
           <div className="py-8">
-            <a
+            <EmailLink
               href="mailto:hello@enkay.dev"
               id="contact-email-main"
               className="text-3xl md:text-5xl lg:text-6xl font-medium tracking-tighter hover:text-[var(--color-accent-warm)] transition-all duration-300 break-all underline-reveal text-[var(--color-bg)]"
             >
               hello@enkay.dev
-            </a>
+            </EmailLink>
           </div>
         </ScrollReveal>
         <ScrollReveal delay={300}>

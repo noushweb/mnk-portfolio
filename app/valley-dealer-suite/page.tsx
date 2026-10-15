@@ -7,11 +7,19 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Valley Dealer Suite — Case Study | Mohammed Noushad",
   description: "A centralized mobile hub for the Valley® dealer ecosystem — inventory management, order tracking, and customer support workflows unified in one app.",
+  alternates: { canonical: "https://enkay.dev/valley-dealer-suite" },
   openGraph: {
+    url: "https://enkay.dev/valley-dealer-suite",
     title: "Valley Dealer Suite — Case Study",
     description: "A centralized mobile hub for the Valley® dealer ecosystem — inventory management, order tracking, and customer support workflows unified in one app.",
     type: "article",
     images: [{ url: "/casestudy/images/Dealer/hero.webp", width: 1200, height: 630, alt: "Valley Dealer Suite — Mobile Hub Case Study" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Valley Dealer Suite — Case Study",
+    description: "A centralized mobile hub for the Valley® dealer ecosystem — inventory management, order tracking, and customer support workflows unified in one app.",
+    images: ["/casestudy/images/Dealer/hero.webp"],
   },
 };
 

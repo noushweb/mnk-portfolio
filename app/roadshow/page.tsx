@@ -12,11 +12,19 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Road Show — Case Study | Mohammed Noushad",
   description: "End-to-end delivery management platform connecting supervisors, cashiers, and drivers — route planning, real-time tracking, and settlement workflows in one mobile dashboard.",
+  alternates: { canonical: "https://enkay.dev/roadshow" },
   openGraph: {
+    url: "https://enkay.dev/roadshow",
     title: "Road Show — Case Study",
     description: "End-to-end delivery management platform connecting supervisors, cashiers, and drivers — route planning, real-time tracking, and settlement workflows in one mobile dashboard.",
     type: "article",
     images: [{ url: "/casestudy/images/roadshow/hero.webp", width: 1200, height: 630, alt: "Road Show — Delivery Management Case Study" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Road Show — Case Study",
+    description: "End-to-end delivery management platform connecting supervisors, cashiers, and drivers — route planning, real-time tracking, and settlement workflows in one mobile dashboard.",
+    images: ["/casestudy/images/roadshow/hero.webp"],
   },
 };
 

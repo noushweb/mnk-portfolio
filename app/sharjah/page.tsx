@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
+import EngagementOptions from "@/components/EngagementOptions";
 
 export const metadata: Metadata = {
   title: "Product Designer Sharjah | Mohammed Noushad",
   description:
-    "Senior Product Designer in Sharjah — 11+ years designing for education, culture, and enterprise. Clear, purposeful UX for the UAE's cultural capital.",
+    "Senior Product Designer for Sharjah — 11+ years designing for education, culture, and enterprise. Clear, purposeful UX for the UAE's cultural capital.",
   alternates: {
     canonical: "https://enkay.dev/sharjah",
   },
   openGraph: {
     title: "Product Designer Sharjah",
     description:
-      "Senior Product Designer in Sharjah, UAE — enterprise UX/UI, design systems, and AI-powered product development.",
+      "Senior Product Designer for Sharjah, UAE — enterprise UX/UI, design systems, and AI-powered product development.",
     url: "https://enkay.dev/sharjah",
     type: "website",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Sharjah Product Designer" }],
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     creator: "@noushad_design",
     title: "Product Designer Sharjah",
     description:
-      "Senior Product Designer in Sharjah, UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered development.",
+      "Senior Product Designer for Sharjah, UAE — 11+ years in enterprise UX/UI, design systems, and AI-powered development.",
     images: ["/og-image.jpg"],
   },
 };
@@ -35,7 +36,7 @@ export default function SharjahPage() {
         <div className="max-w-3xl mx-auto space-y-10">
           <div className="space-y-4">
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-[var(--color-text-muted)]">
-              Product Designer in Sharjah, UAE
+              Product Designer for Sharjah, UAE
             </span>
             <h1 className="text-4xl md:text-5xl font-medium tracking-tight">
               I design products for Sharjah — culture, education, and enterprise.
@@ -94,13 +95,17 @@ export default function SharjahPage() {
           </div>
           <Link href="/articles/product-designer-sharjah" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
             <h3 className="font-semibold text-lg mb-1">Read: Working in Sharjah</h3>
-            <p className="text-sm text-[var(--color-text-secondary)]">Designing for Sharjah's unique market — culture, education, and enterprise.</p>
+            <p className="text-sm text-[var(--color-text-secondary)]">Designing for Sharjah&apos;s unique market — culture, education, and enterprise.</p>
           </Link>
+
+          <EngagementOptions market="Sharjah" />
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">
               <h2 className="text-2xl font-medium">Let&apos;s talk</h2>
+              <div id="project-enquiry" className="scroll-mt-24">
               <LeadForm source="sharjah" />
+              </div>
             </div>
             <Link href="/work" className="text-[var(--color-accent)] hover:underline font-medium">
               View all case studies →

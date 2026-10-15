@@ -7,11 +7,19 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Valley Design Tool Calculator — Case Study | Mohammed Noushad",
   description: "Precision engineering calculations built for the field — structural load analysis and irrigation planning tools that work offline on any device, anywhere.",
+  alternates: { canonical: "https://enkay.dev/design-tool-calculator" },
   openGraph: {
+    url: "https://enkay.dev/design-tool-calculator",
     title: "Valley Design Tool Calculator — Case Study",
     description: "Precision engineering calculations built for the field — structural load analysis and irrigation planning tools that work offline on any device, anywhere.",
     type: "article",
     images: [{ url: "/casestudy/images/DTC/hero.webp", width: 1200, height: 630, alt: "Valley Design Tool Calculator — Engineering Case Study" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Valley Design Tool Calculator — Case Study",
+    description: "Precision engineering calculations built for the field — structural load analysis and irrigation planning tools that work offline on any device, anywhere.",
+    images: ["/casestudy/images/DTC/hero.webp"],
   },
 };
 

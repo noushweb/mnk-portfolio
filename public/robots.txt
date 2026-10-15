@@ -5,7 +5,8 @@ ai-train: no
 
 User-Agent: *
 Allow: /
-Disallow: /_next/
+# Public JavaScript, CSS and optimized images must remain crawlable.
+Allow: /_next/
 
 User-Agent: GPTBot
 Allow: /

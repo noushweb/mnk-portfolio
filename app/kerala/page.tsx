@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
+import EngagementOptions from "@/components/EngagementOptions";
 
 export const metadata: Metadata = {
   title: "Product Designer Kerala | Mohammed Noushad",
@@ -38,7 +39,7 @@ export default function KeralaPage() {
               Product Designer from Kerala, India
             </span>
             <h1 className="text-4xl md:text-5xl font-medium tracking-tight">
-              I design products for Kerala — from Kochi to the world.
+              I design products for Kerala and the world — from Dubai.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
               I grew up in Kerala and my design sensibilities were shaped here — the colour,
@@ -52,7 +53,7 @@ export default function KeralaPage() {
             <h2 className="text-2xl font-medium">What I do</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { title: "Global Product Design", desc: "Enterprise-grade UX designed remotely from Kerala for US, UAE, and India clients" },
+                { title: "Global Product Design", desc: "Enterprise-grade UX delivered from Dubai for Kerala, US, UAE, and India teams" },
                 { title: "Design Systems", desc: "60+ component libraries with tokens and governance, maintained across product teams" },
                 { title: "Fintech UX", desc: "FinFlow — zero-based budgeting and goal-based round-ups for India's aspirational middle class" },
                 { title: "Multilingual UX", desc: "Products in 8 Indian languages plus Arabic and English, designed with cultural nuance" },
@@ -96,10 +97,14 @@ export default function KeralaPage() {
             <p className="text-sm text-[var(--color-text-secondary)]">Growing up in Kerala shaped my design sensibilities — colour, craft, and human-first thinking.</p>
           </Link>
 
+          <EngagementOptions market="Kerala" />
+
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">
               <h2 className="text-2xl font-medium">Let&apos;s talk</h2>
+              <div id="project-enquiry" className="scroll-mt-24">
               <LeadForm source="kerala" />
+              </div>
             </div>
             <Link href="/work" className="text-[var(--color-accent)] hover:underline font-medium">
               View all case studies →

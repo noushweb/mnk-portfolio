@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
+import EngagementOptions from "@/components/EngagementOptions";
 
 export const metadata: Metadata = {
   title: "Product Designer Dubai | Mohammed Noushad",
@@ -41,7 +42,7 @@ export default function DubaiPage() {
               I design products from Dubai — for enterprise, fintech, and the Middle East.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
-              I&apos;ve been based in Dubai for over 11 years, designing and shipping products
+              I&apos;ve been based in Dubai for 11 years, designing and shipping products
               for companies across the UAE, India, and the US. From the enterprise dashboards
               at Valmont to the travel platform at Voyacher, my work is rooted in the region&apos;s
               ambition — building for fast-growing markets where trust, bilingual UX, and
@@ -97,10 +98,14 @@ export default function DubaiPage() {
             <p className="text-sm text-[var(--color-text-secondary)]">What 11 years in Dubai taught me about product design, client relationships, and building for the Middle East market.</p>
           </Link>
 
+          <EngagementOptions market="Dubai" />
+
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">
               <h2 className="text-2xl font-medium">Let&apos;s talk</h2>
+              <div id="project-enquiry" className="scroll-mt-24">
               <LeadForm source="dubai" />
+              </div>
             </div>
             <Link href="/work" className="text-[var(--color-accent)] hover:underline font-medium">
               View all case studies →

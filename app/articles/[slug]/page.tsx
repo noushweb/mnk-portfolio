@@ -1,3 +1,4 @@
+import EmailLink from "@/components/EmailLink";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -5,8 +6,10 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, Clock } from "lucide-react";
 import ArticleTOC from "@/components/ArticleTOC";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import ArticleEvidence from "@/components/ArticleEvidence";
 import LeadForm from "@/components/LeadForm";
 import { getArticle, getAllSlugs, articles, toISODate } from "@/lib/articles-data";
+import { articleModifiedDate } from "@/lib/content-dates";
 
 // Maps geo/career articles to their location landing pages for internal-link equity
 const LOCATION_LINKS: Record<
@@ -29,19 +32,19 @@ const LOCATION_LINKS: Record<
     href: "/kerala",
     city: "Kerala",
     title: "Product Designer Kerala",
-    desc: "Remote-first product design from Kerala — enterprise UX/UI, design systems, and fintech for global teams.",
+    desc: "Product design for Kerala teams from a Dubai-based designer with Kerala roots — enterprise UX, design systems and fintech.",
   },
   "product-designer-kochi": {
     href: "/kochi",
     city: "Kochi",
     title: "Product Designer Kochi",
-    desc: "Product design from Kochi — startups, enterprises, and global markets, shipped remote-first.",
+    desc: "Remote product design for Kochi startups and enterprises from Dubai — UX/UI, design systems and product development.",
   },
   "product-designer-india": {
     href: "/india",
     city: "India",
     title: "Product Designer India",
-    desc: "Remote-ready product design from India — enterprise UX/UI, fintech, and design systems for global teams.",
+    desc: "Product design for teams in India — enterprise UX/UI, fintech and design systems, delivered remotely from Dubai.",
   },
   "product-designer-bangalore": {
     href: "/bangalore",
@@ -65,7 +68,7 @@ const LOCATION_LINKS: Record<
     href: "/umm-al-quwain",
     city: "Umm Al Quwain",
     title: "Product Designer Umm Al Quwain",
-    desc: "World-class product design from Umm Al Quwain — tourism, logistics, and local services.",
+    desc: "Product design for Umm Al Quwain teams — tourism, logistics and local services, delivered from Dubai.",
   },
   "auto-uae-20260720": {
     href: "/uae",
@@ -77,7 +80,7 @@ const LOCATION_LINKS: Record<
     href: "/india",
     city: "India",
     title: "Product Designer India",
-    desc: "Remote-ready product design from India — enterprise UX/UI, fintech, and design systems for global teams.",
+    desc: "Product design for teams in India — enterprise UX/UI, fintech and design systems, delivered remotely from Dubai.",
   },
 };
 
@@ -106,6 +109,7 @@ export async function generateMetadata({
       url: `https://enkay.dev/articles/${slug}`,
       type: "article",
       publishedTime: toISODate(article.date),
+      modifiedTime: articleModifiedDate(article),
       images: [
         { url: article.image?.src ?? "/og-image.jpg", width: 1200, height: 630, alt: article.image?.alt ?? article.title },
       ],
@@ -193,6 +197,11 @@ export default async function ArticlePage({
             <span className="uppercase tracking-[0.15em] font-semibold">
               {article.date}
             </span>
+            {articleModifiedDate(article) !== toISODate(article.date) && (
+              <time dateTime={articleModifiedDate(article)} className="text-xs uppercase tracking-wider">
+                Updated {new Intl.DateTimeFormat("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: "UTC" }).format(new Date(articleModifiedDate(article)))}
+              </time>
+            )}
             <span className="w-1 h-1 rounded-full bg-[var(--color-border)]" />
             <span className="inline-flex items-center gap-1.5 uppercase tracking-wider font-semibold text-xs">
               <Clock className="w-3.5 h-3.5" />
@@ -249,7 +258,7 @@ export default async function ArticlePage({
                     key={j}
                     className="text-lg leading-relaxed text-[var(--color-text-secondary)] mb-5 last:mb-0"
                   >
-                    {paragraph}
+                    <ArticleEvidence text={paragraph} slug={slug} />
                   </p>
                 ))}
               </section>
@@ -343,12 +352,12 @@ export default async function ArticlePage({
             <ArrowLeft className="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1" />
             All Articles
           </Link>
-          <a
+          <EmailLink
             href="mailto:hello@enkay.dev"
             className="text-sm font-semibold uppercase tracking-wider text-[var(--color-text-muted)] hover:text-[var(--color-accent-warm)] transition-colors"
           >
             Let&apos;s discuss
-          </a>
+          </EmailLink>
         </div>
       </div>
     </main>

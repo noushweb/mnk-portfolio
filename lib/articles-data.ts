@@ -471,13 +471,13 @@ export const articles: Article[] = [
     category: "Career",
     title: "Being a Senior Product Designer in Dubai (the version nobody posts on LinkedIn)",
     excerpt:
-      "I moved to Dubai four years ago. Not for the tax-free salary, not for the Burj Khalifa views, not for the Instagram brunches. What nobody posts on LinkedIn.",
+      "I have lived in Dubai for 11 years. Not for the tax-free salary, not for the Burj Khalifa views, not for the Instagram brunches. What nobody posts on LinkedIn.",
     readTime: "7 min read",
     content: [
       {
         heading: "The move nobody asks about",
         body: [
-          "I moved to Dubai four years ago. Not for the tax-free salary, not for the Burj Khalifa views, not for the Instagram brunches. I moved because a project I was freelancing on turned into a full-time offer at Valmont Industries, and I needed to be closer to the agricultural dealers and field technicians I was designing for.",
+          "I have lived in Dubai for 11 years. Not for the tax-free salary, not for the Burj Khalifa views, not for the Instagram brunches. At Valmont Industries, my work has focused on the agricultural dealers and field technicians I design for.",
           "Nobody tells you this when you search \"senior product designer Dubai\" on LinkedIn. Most of the work here is not glamorous. It is not designing the next big consumer app. It is sitting in a hybrid office in Dubai Investments Park, trying to figure out why a dealer in rural Egypt cannot find the submit button because the latency on their ancient tablet makes the modal disappear before they can tap it.",
           "That is the real Dubai design scene.",
         ],
@@ -533,7 +533,7 @@ export const articles: Article[] = [
     readTime: "7 min read",
     content: [
       {
-        heading: "I moved to Dubai eight years ago thinking I understood the Middle East. I did not. And when I started taking on projects that served users in Riyadh, I realized I knew even less than I thought.",
+        heading: "I have lived in Dubai for 11 years, but that did not mean I understood every market in the Middle East. I did not. And when I started taking on projects that served users in Riyadh, I realized I knew even less than I thought.",
         body: [
           "The first Saudi government portal I worked on, I made a mistake that still makes me cringe. I designed the entire interface left-to-right, in English, and figured I would just flip it for Arabic later. Flip it. Like it was a mirror. Like Arabic speakers were just English speakers who happened to read the other way. I spent two weeks on a layout that completely fell apart the moment someone pasted actual Arabic content into it. The text did not just reverse, the entire visual hierarchy collapsed. Call-to-action buttons that felt natural in English looked lost in Arabic. The information architecture I was so proud of assumed a reading pattern that half the users did not follow.",
           "I had to rebuild the whole thing from scratch. That was a 5,000 AED lesson in humility.",
@@ -573,7 +573,7 @@ export const articles: Article[] = [
     category: "Career",
     title: "I\'m a product designer from Kerala. Here\'s what 11 years of designing for global clients actually looks like.",
     excerpt:
-      "11 years of designing for global clients from Kerala — what it actually looks like, from enterprise design systems to the craft that shaped it all.",
+      "11 years of designing for global clients as a designer from Kerala — what it actually looks like, from enterprise design systems to the craft that shaped it all.",
     readTime: "7 min read",
     content: [
       {
@@ -629,9 +629,9 @@ export const articles: Article[] = [
     slug: "product-designer-kochi",
     date: "05 Jul 2026",
     category: "Career",
-    title: "I\'m a Product Designer Working from Kochi. Here\'s What That Actually Looks Like.",
+    title: "I\'m a Product Designer from Kerala, Working with Kochi Teams.",
     excerpt:
-      "Working from Kochi as a product designer — what that actually looks like day to day, and why Kerala's startup scene is punching above its weight.",
+      "A Dubai-based product designer from Kerala on working with Kochi teams, remote collaboration, and the skills that matter for global product work.",
     readTime: "7 min read",
     content: [
       {
@@ -640,8 +640,8 @@ export const articles: Article[] = [
           "I nodded.",
           "*\"And you\'re doing product design... from there?\"*",
           "I nodded again, and honestly, I didn\'t fully appreciate how strange that sounded until much later.",
-          "I\'m Mohammed Noushad. I\'ve been a product designer for 11 years now. Most of that time, I lived in Dubai. But for the past few years, I\'ve been splitting my time between Dubai and Kochi, and increasingly, Kochi is where I do my best work.",
-          "This isn\'t one of those *\"Kochi is the next Silicon Valley\"* posts. It\'s not. And I\'m not going to tell you that working from Kerala is some magical productivity hack. Some days the power goes out, sometimes the internet gets moody, and I\'ve definitely taken calls where an auto-rickshaw horn became an accidental sound effect in my design review.",
+          "I\'m Mohammed Noushad. I\'ve been a product designer for 11 years now. I have lived in Dubai for 11 years, and my roots are in Kerala. I work remotely with teams in Kochi and beyond.",
+          "This isn\'t one of those *\"Kochi is the next Silicon Valley\"* posts. It\'s not. And I\'m not going to tell you that working from Kerala is some magical productivity hack. Remote collaboration still needs reliable communication, clear documentation, and an understanding of the people using the product.",
           "But here\'s what\'s actually true: Kochi is quietly becoming one of the most interesting places in India to be a product designer, and almost nobody is talking about it.",
         ],
       },
@@ -668,7 +668,7 @@ export const articles: Article[] = [
         body: [
           "I use AI tools now. Claude. Cursor. n8n automations. I\'ve built my own Hermes agent setup that handles parts of my workflow I used to waste hours on.",
           "Here\'s the uncomfortable truth: AI doesn\'t make mediocre designers great. It makes good designers faster. If you can\'t articulate *why* a design decision works, no language model will fix that for you. But if you already know your craft? AI is the difference between delivering a design system in four months versus eight.",
-          "This is actually where Kochi-based designers have an edge. The cost of living here means you can afford to experiment. You can spend three months going deep on AI-assisted design workflows without burning through your savings. I know designers in Bangalore paying 40% of their income on rent who can\'t take that kind of risk.",
+          "This is actually where Kochi-based designers have an edge. The cost of living in Kochi means you can afford to experiment. You can spend three months going deep on AI-assisted design workflows without burning through your savings. I know designers in Bangalore paying 40% of their income on rent who can\'t take that kind of risk.",
           "I\'ve been writing HTML and CSS since I started, and I still code in TypeScript and React today. Knowing how your designs actually get built, not just how they look in a mockup, changes everything. When a developer tells me something is \"technically impossible\" in Next.js, I can usually tell whether they mean \"actually impossible\" or \"I don\'t want to do it.\" That literacy came from coding real projects, not from reading Medium articles.",
         ],
       },
@@ -684,7 +684,7 @@ export const articles: Article[] = [
         heading: "This isn\'t a pitch",
         body: [
           "I\'m not selling a course. I don\'t have a design mentorship program. I\'m just saying what I\'ve seen: Kochi works. Not because it\'s perfect. It\'s not. But because the things that actually matter for a design career (skill, communication, taste, speed) don\'t depend on your city anymore.",
-          "If you\'re looking for a product designer in Kochi who can build design systems for enterprise, prototype in code, and ship things that work across 40 countries, I exist. So do a lot of other talented people here. That\'s the point.",
+          "If you\'re looking for a product designer for your Kochi team who can build design systems for enterprise, prototype in code, and ship things that work across 40 countries, I work remotely from Dubai. There are also talented designers in Kochi itself. That\'s the point.",
           "The fish curry is pretty good too.",
         ],
       },
@@ -881,7 +881,7 @@ export const articles: Article[] = [
         heading: "Three years ago I took a wrong turn coming back from a clien...",
         body: [
           "Three years ago I took a wrong turn coming back from a client meeting and ended up somewhere near University City. I\'d lived in the UAE for years but Sharjah was always just the emirate you passed through on the way to the northern ones. That afternoon I parked near a coffee shop, watched students spill out of campus gates, and realized I knew nothing about the place where a huge chunk of this country\'s actual thinking happens.",
-          "I\'m a product designer. Eleven years doing it, five of those in Dubai. I\'ve led UX for enterprise apps at Valmont where we consolidated five separate legacy systems into one unified platform used across 40 countries. I built a 60+ component design system from scratch. I cut design-to-dev handoff time by 40%. And yet I\'d somehow never seriously considered Sharjah as a place where design work happens.",
+          "I\'m a product designer. Eleven years doing it, with Dubai as my home for 11 years. I\'ve led UX for enterprise apps at Valmont where we consolidated five separate legacy systems into one unified platform used across 40 countries. I built a 60+ component design system from scratch. I cut design-to-dev handoff time by 40%. And yet I\'d somehow never seriously considered Sharjah as a place where design work happens.",
         ],
       },
       {
@@ -932,48 +932,48 @@ export const articles: Article[] = [
     slug: "product-designer-umm-al-quwain",
     date: "05 Jul 2026",
     category: "Career",
-    title: "I\'m a Product Designer Based in Umm Al Quwain. Here\'s Why That\'s Not a Typo.",
+    title: "Product Design for Umm Al Quwain, from a Dubai Base",
     excerpt:
-      "Last month someone on LinkedIn asked, \"Mohammed, your profile says Umm Al Quwain — is that a mistake?\" No. Here's why I design from the smallest emirate.",
+      "Based in Dubai for 11 years, I work with businesses across the UAE. Here is how remote product design can serve teams in Umm Al Quwain.",
     readTime: "5 min read",
     content: [
       {
-        heading: "Last month someone on LinkedIn messaged me with genuine conf...",
+        heading: "Serving Umm Al Quwain does not require a local address",
         body: [
-          "Last month someone on LinkedIn messaged me with genuine confusion. \"Mohammed, your profile says Umm Al Quwain. Is that a mistake? Aren\'t all designers in Dubai?\"",
-          "I laughed. Then I realized this was the fourth time I\'d gotten that question in six months.",
-          "So let me clear this up. I live and work from Umm Al Quwain. Yes, the quiet emirate. No, I\'m not joking. And no, it hasn\'t hurt my career one bit.",
+          "A business in Umm Al Quwain should not have to limit its search for a product designer to a local office address.",
+          "The useful question is whether a designer understands the product, the users, and the way your team works.",
+          "So let me clear this up. I live and work in Dubai and have lived here for 11 years. I am available to work with businesses in Umm Al Quwain remotely.",
         ],
       },
       {
         heading: "Here\'s the thing nobody tells you about design work in 2026....",
         body: [
           "Here\'s the thing nobody tells you about design work in 2026. The client doesn\'t care where your desk is. They care whether the thing you build solves their problem. They care about the 5 enterprise apps you consolidated into one unified platform at Valmont, handling agriculture operations across 40 countries. They care about the 60+ component design system that cut handoff time by 40%. They care about results. Not coordinates.",
-          "I moved to UAQ three years ago. Before that, I was in Dubai like everyone else. The commute, the noise, the rental prices that make you question every life choice you\'ve ever made. One day I asked myself what I was actually paying for. Proximity to offices I wasn\'t visiting? Coffee shops I could find anywhere?",
-          "The math was embarrassingly simple. My rent dropped by more than half. My workspace got twice as big. I now have a dedicated room for my setup instead of a corner of my living room pretending to be an office. The only thing I lost was traffic.",
+          "I have not relocated to UAQ. Dubai remains my base. Serving clients in another emirate does not require moving my desk: it requires clear scope, communication, and an agreed way of working.",
+          "For a remote engagement, the practical questions are shared working hours, access to users, and how design decisions reach the engineering team. An office address does not answer any of those questions.",
         ],
       },
       {
         heading: "But the real question people are asking when they message me...",
         body: [
           "But the real question people are asking when they message me about UAQ isn\'t about rent. It\'s about relevance. Can you do serious product design work from a smaller emirate? Will clients take you seriously? Does the Dubai bias still matter?",
-          "I\'ve freelanced for 8+ clients across fintech, travel, and logistics since moving here. Not one has asked me to come to an office. Not one has cared about my location beyond the timezone. I built FinFlow, a savings app for the UAE market, entirely from my home office in UAQ. I redesigned the Voyacher travel platform while drinking karak from a cafeteria that costs 1 dirham.",
+          "I\'ve freelanced for 8+ clients across fintech, travel, and logistics. Not one has asked me to come to an office. Not one has cared about my location beyond the timezone. I built FinFlow, a savings app for the UAE market, as a remote project. I redesigned the Voyacher travel platform while drinking karak from a cafeteria that costs 1 dirham.",
           "The tools I use now make location even less relevant. AI has changed my workflow in ways I didn\'t expect two years ago. I use Claude for research and content structuring. Cursor has transformed how I prototype directly in code instead of handing off static Figma files and hoping the developer reads my annotations. I build automation workflows with n8n and manage multi-agent toolchains with Hermes. I write actual HTML, CSS, TypeScript, React, and Next.js. Not because every product designer needs to code, but because when you can prototype working interfaces instead of describing them, the distance between you and the developer collapses to zero.",
         ],
       },
       {
         heading: "This is the part where I should probably say something about...",
         body: [
-          "This is the part where I should probably say something about how remote work enables work-life balance or some other LinkedIn-optimized phrase. I won\'t. What I will say is this: the quiet matters. UAQ gives me the kind of focus I never had in Dubai. When I\'m deep in a design problem, working through component architecture for a design system, or untangling the UX flow for a complex enterprise dashboard, the last thing I need is noise. The smaller emirates offer something the big cities can\'t: actual uninterrupted time.",
+          "This is the part where I should probably say something about how remote work enables work-life balance or some other LinkedIn-optimized phrase. I won\'t. What I will say is this: uninterrupted time matters. When I\'m deep in a design problem, working through component architecture for a design system, or untangling the UX flow for a complex enterprise dashboard, the last thing I need is noise. That is a working condition to plan for, not a benefit I can claim from living in UAQ.",
           "There\'s another angle here I don\'t see discussed much. UAE businesses outside Dubai and Abu Dhabi need design talent too. Local companies in the northern emirates, startups in Ras Al Khaimah, government entities in Ajman. They often can\'t compete with Dubai salaries for in-house designers. But they can hire someone who understands the local context, speaks the language, and works remotely at rates that make sense for both sides. That\'s not a compromise. That\'s a market.",
-          "I speak English fluently, Malayalam natively, and I read Arabic. I understand how products need to work in this region because I\'ve been here for over a decade. I\'ve led UX and UI for products deployed in 40 countries. The location on my profile doesn\'t diminish any of that.",
+          "I speak English fluently, Malayalam natively, and I read Arabic. I understand how products need to work in this region because I\'ve been here for over a decade. I\'ve led UX and UI for products deployed in 40 countries. Working from Dubai for a team in Umm Al Quwain does not diminish any of that.",
         ],
       },
       {
         heading: "If you\'re a product designer considering the move to Umm Al ...",
         body: [
           "If you\'re a product designer considering the move to Umm Al Quwain or any of the smaller emirates, here\'s my honest take. The cost advantage is real. You can work with UAE clients at competitive rates while keeping your expenses low. The infrastructure is solid. Internet speeds are fine. You\'re still 45 minutes from Dubai if you genuinely need to be there. And the quality of daily life improves in small but significant ways. Less time in a car. More time doing actual work. Or not doing work. Both are valid.",
-          "If you\'re a business looking for a UI UX designer in UAQ, or a product designer in Umm Al Quwain, I hope this gives you a clearer picture. The talent isn\'t only in Dubai and Abu Dhabi. Some of us are out here in the quiet emirates, shipping products for clients across the UAE and beyond, with lower overhead and the same 11+ years of experience.",
+          "If you\'re a business looking for a UI UX designer in UAQ, or a product designer in Umm Al Quwain, I hope this gives you a clearer picture. The talent isn\'t only in Dubai and Abu Dhabi. I serve businesses in the quieter emirates from Dubai, bringing the same 11+ years of experience to products for clients across the UAE and beyond.",
           "The location thing is a filter, not a barrier. It filters out clients who think design happens in a specific postal code. It leaves the ones who care about the work itself.",
         ],
       },
@@ -1000,7 +1000,7 @@ export const articles: Article[] = [
         body: [
           "I was building a fintech app for a client in Dubai when my mother called from Kerala. She wanted to know why the bank’s app wasn’t letting her send money to my sister. I walked her through it. “Press the blue button, Amma.” She pressed the red one. The app showed an error in English. She doesn’t read English. She speaks Malayalam and some Hindi. The error might as well have been written in Martian.",
           "That was six years ago. I was three years into my career, fresh off a project where I’d designed a dashboard for a logistics company that looked gorgeous in Figma and made zero sense to anyone who actually drove a truck. I’d shipped 40+ screens, 15 user flows, and a component library that my engineering team told me was “too rigid.” I didn’t know what I didn’t know. Now I do. That’s why my freelance rate is higher than the average UI UX designer freelance rate in India.",
-          "Let me be specific. I’m Mohammed Noushad. Eleven years in product design. Eight of those in Dubai. I’ve built five enterprise applications for Valmont that run in 40 countries. I designed a design system with 60+ components that cut handoff time by 40%. I’ve worked with eight freelance clients across fintech, logistics, and SaaS. I built FinFlow from zero to prototype. I designed Voyacher’s booking flow. I use Claude, Cursor, n8n, and Hermes to ship faster than most teams I’ve worked with. I write TypeScript, React, and Next.js when I need to. Not because I want to be a unicorn, but because I got tired of designers who hand off a Figma file and say “make it pop.”",
+          "Let me be specific. I’m Mohammed Noushad. Eleven years in product design. Dubai has been my home for 11 years. I’ve built five enterprise applications for Valmont that run in 40 countries. I designed a design system with 60+ components that cut handoff time by 40%. I’ve worked with eight freelance clients across fintech, logistics, and SaaS. I built FinFlow from zero to prototype. I designed Voyacher’s booking flow. I use Claude, Cursor, n8n, and Hermes to ship faster than most teams I’ve worked with. I write TypeScript, React, and Next.js when I need to. Not because I want to be a unicorn, but because I got tired of designers who hand off a Figma file and say “make it pop.”",
         ],
       },
       {
@@ -1288,7 +1288,7 @@ export const articles: Article[] = [
     category: "Product Design",
     title: "SaaS UI/UX Design Services: Nobody Shows You the Empty States",
     excerpt:
-      "A client once asked me to make an industrial dashboard look like Stripe. I said no. That\'s the real difference between SaaS UI/UX design services that ship, and ones that just look pretty.",
+      "A client asked me to make an industrial dashboard look like Stripe. I said no. Why SaaS UI/UX design services should solve real workflows, not just look pretty.",
     readTime: "6 min read",
     content: [
       {
@@ -1345,7 +1345,7 @@ export const articles: Article[] = [
     category: "Design Systems",
     title: "A Fintech Design System Is Not a UI Kit With a Bank Logo",
     excerpt:
-      "Six months into Valmont, a regulator made me rewrite 30 screens by hand in two weeks. That\'s when I learned a fintech design system is a regulatory shock absorber, not a UI kit.",
+      "A regulator made me rewrite 30 Valmont screens in two weeks. Why a fintech design system needs to absorb regulatory change, not just standardise UI.",
     readTime: "6 min read",
     content: [
       {
@@ -1407,7 +1407,7 @@ export const articles: Article[] = [
     category: "Product Design",
     title: "Enterprise UX Design Services: The Work Nobody Puts in the Portfolio",
     excerpt:
-      "I sat in a meeting at Valmont and a VP told me my new navigation wasn\'t \'really design.\' He was half right. Enterprise UX design services are the boring work that saves real money, and nobody puts it in a portfolio.",
+      "A Valmont VP said my new navigation was not really design. Why enterprise UX design services focus on the unglamorous work that saves time and money.",
     readTime: "6 min read",
     content: [
       {
@@ -1463,7 +1463,7 @@ export const articles: Article[] = [
     category: "Product Design",
     title: "MVP Design and Development: The First Version Is Supposed to Be a Little Embarrassing",
     excerpt:
-      "I still have the first build of FinFlow saved on a drive somewhere. It was ugly. The founder told me to ship it anyway. That is the whole philosophy behind MVP design and development.",
+      "The first FinFlow build was ugly. The founder told me to ship it anyway. What that taught me about MVP design and development.",
     readTime: "6 min read",
     content: [
       {
@@ -1515,7 +1515,7 @@ export const articles: Article[] = [
     category: "Product Design",
     title: "I Cut a Dashboard From Thirty Charts to One Screen. Nobody Noticed.",
     excerpt:
-      "A product manager once sent me a dashboard mockup with thirty-one charts on it. I asked which decision chart nineteen would drive. She went quiet, then said, \"It\'s for the wow factor.\" The wow version died, and what shipped was one screen.",
+      "A dashboard mockup had 31 charts but no clear decisions. How we dropped the wow factor and shipped one useful screen instead.",
     readTime: "6 min read",
     content: [
       {
@@ -1523,7 +1523,7 @@ export const articles: Article[] = [
         body: [
           "A product manager once sent me a dashboard mockup with thirty-one charts on it. I counted. Thirty-one. When I asked which decision a user would make with chart nineteen, she went quiet, then said, \"It\'s for the wow factor.\"",
           "That was the moment I stopped designing dashboards as pictures. It was FinFlow, a savings app for India\'s aspirational middle class, and the \"wow\" version died. What shipped was one screen. The retention numbers went up. The PM never brought up wow again.",
-          "I\'ve been designing for eleven years now, the last stretch of it in Dubai, shipping for clients across the UAE, Saudi and India. Eight products zero to one. Here\'s the thing about saas dashboard ui ux design that took me embarrassingly long to internalize. Nobody needs your charts. Users need to make a decision before their chai gets cold."
+          "I\'ve been designing for eleven years now, with Dubai as my home for those eleven years, shipping for clients across the UAE, Saudi and India. Eight products zero to one. Here\'s the thing about saas dashboard ui ux design that took me embarrassingly long to internalize. Nobody needs your charts. Users need to make a decision before their chai gets cold."
         ],
       },
       {
@@ -1574,7 +1574,7 @@ export const articles: Article[] = [
     category: "Product Design",
     title: "I Design It, Then I Build It. That Is the Whole Pitch.",
     excerpt:
-      "In 2019 I spent three weeks designing a dashboard for a logistics client. I handed the Figma file to their developer and waited. Two months later the product shipped and looked nothing like my file. That was the week I stopped pretending handoff was a real thing.",
+      "I spent three weeks designing a logistics dashboard. The shipped product looked nothing like my Figma file. Why that changed my approach to design-to-code handoff.",
     readTime: "6 min read",
     content: [
       {
@@ -1632,13 +1632,13 @@ export const articles: Article[] = [
     category: "Product Design",
     title: "Fintech Product Design Case Study: FinFlow from Idea to App in 14 Days",
     excerpt:
-      "My mother could not send money through her bank app because the error message was in English and she reads Malayalam. This is the FinFlow case study: the fintech app I designed and built myself in 14 days.",
+      "My mother could not use her bank app because its errors were in English. The FinFlow case study: a fintech app I designed and built in 14 days.",
     readTime: "6 min read",
     content: [
       {
         heading: "A phone call from Kerala",
         body: [
-          "My mother called me from Kerala about her bank app. She had tried to send money to my sister, failed twice, and the app showed her an error in English she did not understand. She is 61. She reads Malayalam, gets by in Hindi, and the error message might as well have been Latin. I have been a product designer for 11 years, eight of them in Dubai, and I could not explain to her what \"transaction could not be processed\" means in a way that helped.",
+          "My mother called me from Kerala about her bank app. She had tried to send money to my sister, failed twice, and the app showed her an error in English she did not understand. She is 61. She reads Malayalam, gets by in Hindi, and the error message might as well have been Latin. I have been a product designer for 11 years, with Dubai as my home for those 11 years, and I could not explain to her what \"transaction could not be processed\" means in a way that helped.",
           "That call stayed with me. It is the reason I eventually designed and built FinFlow, a working fintech app for India\'s aspirational middle class. I built it myself, Next.js and Tailwind front to back, in about 14 days from idea to working app. This is the fintech product design case study I would walk a client through, honestly, including the messy parts.",
         ],
       },
@@ -1712,7 +1712,7 @@ export const articles: Article[] = [
         heading: "Three things actually move the number",
         body: [
           "First, whether the designer can build. Most product designers stop at a Figma file. The ones who write React and ship a working interface cost more, because they erase the gap between the design and the thing that launches. At Valmont I built a design system with 60 plus components, and the tokens compiled straight to code. Handoff got 40 percent faster. That number is not marketing. It is why clients pay me more than someone who hands over a file and hopes.",
-          "Second, domain depth. Eight of my eleven years have been in Dubai, working across fintech, logistics, and travel. I know what a payment error should say to someone whose transfer just failed. I know a dispatcher and a driver need different views of the same route. You don\'t get that from a bootcamp. You get it by shipping FinFlow from idea to a working app in 14 days, and by watching a travel booking flow drop its abandonment rate 22 percent.",
+          "Second, domain depth. Dubai has been my home for 11 years, working across fintech, logistics, and travel. I know what a payment error should say to someone whose transfer just failed. I know a dispatcher and a driver need different views of the same route. You don\'t get that from a bootcamp. You get it by shipping FinFlow from idea to a working app in 14 days, and by watching a travel booking flow drop its abandonment rate 22 percent.",
           "Third, where the designer sits and who they can serve. I work from Dubai for clients in London, Singapore, and New York. The time zone overlap is the boring part. The real edge is I design for users who don\'t think in English first, which matters more than most founders expect."
         ],
       },

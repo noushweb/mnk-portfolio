@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
+import EngagementOptions from "@/components/EngagementOptions";
 
 export const metadata: Metadata = {
   title: "Product Designer Kochi | Mohammed Noushad",
   description:
-    "Senior Product Designer in Kochi — 11+ years shipping global products from Kerala's startup hub. Enterprise UX/UI, design systems, and AI-powered workflows.",
+    "Product designer for Kochi teams, based in Dubai for 11 years. Remote enterprise UX/UI, design systems, and AI-powered product development.",
   alternates: {
     canonical: "https://enkay.dev/kochi",
   },
   openGraph: {
     title: "Product Designer Kochi",
     description:
-      "Senior Product Designer in Kochi, Kerala — enterprise UX/UI, design systems, and AI-powered product development.",
+      "Senior Product Designer for Kochi, Kerala — enterprise UX/UI, design systems, and AI-powered product development.",
     url: "https://enkay.dev/kochi",
     type: "website",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Kochi Product Designer" }],
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     creator: "@noushad_design",
     title: "Product Designer Kochi",
     description:
-      "Senior Product Designer in Kochi, Kerala — 11+ years in enterprise UX/UI, design systems, and AI-powered product development.",
+      "Senior Product Designer for Kochi, Kerala — 11+ years in enterprise UX/UI, design systems, and AI-powered product development.",
     images: ["/og-image.jpg"],
   },
 };
@@ -35,15 +36,15 @@ export default function KochiPage() {
         <div className="max-w-3xl mx-auto space-y-10">
           <div className="space-y-4">
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-[var(--color-text-muted)]">
-              Product Designer in Kochi, Kerala
+              Product Designer for Kochi, Kerala
             </span>
             <h1 className="text-4xl md:text-5xl font-medium tracking-tight">
-              I design products from Kochi — for startups, enterprises, and global markets.
+              I design products for Kochi — for startups, enterprises, and global markets.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
-              Kochi has one of the most exciting emerging tech scenes in India, and I&apos;ve
-              had the privilege of mentoring product designers here while building global
-              products from my studio. There&apos;s a unique energy in Kochi — startup founders
+              Kochi has one of the most exciting emerging tech scenes in India. I offer
+              remote product design for its teams, building global products
+              from Dubai, my home for 11 years. There&apos;s a unique energy in Kochi — startup founders
               who think big, talent that&apos;s hungrier than anywhere else, and a city that
               connects Kerala to the world.
             </p>
@@ -93,14 +94,18 @@ export default function KochiPage() {
             </div>
           </div>
           <Link href="/articles/product-designer-kochi" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
-            <h3 className="font-semibold text-lg mb-1">Read: Im a Product Designer Working from Kochi</h3>
-            <p className="text-sm text-[var(--color-text-secondary)]">Designing global products from Kochi — remote-first, async-friendly, and proudly Kerala-based.</p>
+            <h3 className="font-semibold text-lg mb-1">Read: A Kerala Product Designer Working with Kochi Teams</h3>
+            <p className="text-sm text-[var(--color-text-secondary)]">Working with Kochi teams from Dubai — remote-first, async-friendly, and rooted in Kerala.</p>
           </Link>
+
+          <EngagementOptions market="Kochi" />
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">
               <h2 className="text-2xl font-medium">Let&apos;s talk</h2>
+              <div id="project-enquiry" className="scroll-mt-24">
               <LeadForm source="kochi" />
+              </div>
             </div>
             <Link href="/work" className="text-[var(--color-accent)] hover:underline font-medium">
               View all case studies →

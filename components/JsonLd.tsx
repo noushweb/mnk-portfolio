@@ -5,14 +5,7 @@ export default function JsonLd() {
     "name": "Mohammed Noushad",
     "url": "https://enkay.dev",
     "description": "Senior Product Designer — UX/UI, design systems & AI-powered development. Portfolio and case studies.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://enkay.dev/?s={search_term_string}",
-      },
-      "query-input": "required name=search_term_string",
-    },
+
   };
 
   const personSchema = {
@@ -23,7 +16,7 @@ export default function JsonLd() {
     "url": "https://enkay.dev",
     "email": "hello@enkay.dev",
     "description":
-      "Senior Product Designer based in Dubai and India with 11+ years in UX/UI, design systems, and AI-powered development.",
+      "Senior Product Designer based in Dubai for 11 years, serving teams in the UAE, India and beyond through UX/UI, design systems and AI-powered development.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Dubai",

@@ -18,11 +18,19 @@ export const metadata: Metadata = {
   title: "Voyacher — Case Study | Mohammed Noushad",
   description:
     "Voyacher is a Qatar-based travel platform — buy a voucher, book anything. A complete UX redesign covering discovery flows, voucher management, and cross-device checkout.",
+  alternates: { canonical: "https://enkay.dev/voyacher" },
   openGraph: {
+    url: "https://enkay.dev/voyacher",
     title: "Voyacher — Case Study",
     description: "Voyacher is a Qatar-based travel platform — buy a voucher, book anything. A complete UX redesign covering discovery flows, voucher management, and cross-device checkout.",
     type: "article",
     images: [{ url: "/casestudy/images/voyacher/hero.webp", width: 1200, height: 630, alt: "Voyacher — Travel Platform Case Study" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Voyacher — Case Study",
+    description: "Voyacher is a Qatar-based travel platform — buy a voucher, book anything. A complete UX redesign covering discovery flows, voucher management, and cross-device checkout.",
+    images: ["/casestudy/images/voyacher/hero.webp"],
   },
 };
 

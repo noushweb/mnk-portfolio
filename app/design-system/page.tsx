@@ -6,12 +6,20 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Valley Design System — Case Study | Mohammed Noushad",
-  description: "A production-ready design system bridging design and engineering — design tokens, component library, and governance guidelines that scaled consistency across 5+ enterprise products.",
+  description: "Production-ready enterprise design system — design tokens, reusable components and governance that align design and engineering across multiple products.",
+  alternates: { canonical: "https://enkay.dev/design-system" },
   openGraph: {
+    url: "https://enkay.dev/design-system",
     title: "Valley Design System — Case Study",
-    description: "A production-ready design system bridging design and engineering — design tokens, component library, and governance guidelines that scaled consistency across 5+ enterprise products.",
+    description: "Production-ready enterprise design system — design tokens, reusable components and governance that align design and engineering across multiple products.",
     type: "article",
     images: [{ url: "/casestudy/images/design%20system/hero_design_%20system.webp", width: 1200, height: 630, alt: "Valley Design System — Design System Case Study" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Valley Design System — Case Study",
+    description: "Production-ready enterprise design system — design tokens, reusable components and governance that align design and engineering across multiple products.",
+    images: ["/casestudy/images/design%20system/hero_design_%20system.webp"],
   },
 };
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
+import EngagementOptions from "@/components/EngagementOptions";
 
 export const metadata: Metadata = {
   title: "Product Designer Bangalore | Mohammed Noushad",
@@ -38,7 +39,7 @@ export default function BangalorePage() {
               Product Designer for Bangalore Companies
             </span>
             <h1 className="text-4xl md:text-5xl font-medium tracking-tight">
-              I design products for Bangalore — India's tech capital, served remotely.
+              I design products for Bangalore — India&apos;s tech capital, served remotely.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
               I&apos;ve collaborated closely with Bangalore-based teams and startups over the
@@ -94,13 +95,17 @@ export default function BangalorePage() {
           </div>
           <Link href="/articles/product-designer-bangalore" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
             <h3 className="font-semibold text-lg mb-1">Read: Standing Out in Bangalore</h3>
-            <p className="text-sm text-[var(--color-text-secondary)]">How I differentiate myself in Bangalore's competitive product design scene.</p>
+            <p className="text-sm text-[var(--color-text-secondary)]">How I differentiate myself in Bangalore&apos;s competitive product design scene.</p>
           </Link>
+
+          <EngagementOptions market="Bangalore" />
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">
               <h2 className="text-2xl font-medium">Let&apos;s talk</h2>
+              <div id="project-enquiry" className="scroll-mt-24">
               <LeadForm source="bangalore" />
+              </div>
             </div>
             <Link href="/work" className="text-[var(--color-accent)] hover:underline font-medium">
               View all case studies →

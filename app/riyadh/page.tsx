@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
+import EngagementOptions from "@/components/EngagementOptions";
 
 export const metadata: Metadata = {
   title: "Senior UI Designer Riyadh | Mohammed Noushad",
@@ -38,7 +39,7 @@ export default function RiyadhPage() {
               Senior UI Designer — Riyadh, Saudi Arabia
             </span>
             <h1 className="text-4xl md:text-5xl font-medium tracking-tight">
-              Designing for Saudi&apos;s digital future — from Riyadh.
+              Designing for Saudi&apos;s digital future — from Dubai.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
               I&apos;m a Senior Product Designer with 11+ years building enterprise
@@ -82,13 +83,17 @@ export default function RiyadhPage() {
           </div>
           <Link href="/articles/senior-product-designer-riyadh" className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
             <h3 className="font-semibold text-lg mb-1">Read: Designing for Riyadh</h3>
-            <p className="text-sm text-[var(--color-text-secondary)]">What it means to design for Saudi Arabia's digital transformation — banking, fintech, and bilingual UX.</p>
+            <p className="text-sm text-[var(--color-text-secondary)]">What it means to design for Saudi Arabia&apos;s digital transformation — banking, fintech, and bilingual UX.</p>
           </Link>
+
+          <EngagementOptions market="Riyadh" />
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">
               <h2 className="text-2xl font-medium">Let&apos;s talk</h2>
+              <div id="project-enquiry" className="scroll-mt-24">
               <LeadForm source="riyadh" />
+              </div>
             </div>
             <Link href="/work" className="text-[var(--color-accent)] hover:underline font-medium">
               View all case studies →

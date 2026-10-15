@@ -7,11 +7,19 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Field Layout Tool — Case Study | Mohammed Noushad",
   description: "A GPS-powered tablet app for agricultural pivot planning — real-time field mapping, zone layout, and crop planning tools built for farm technicians in the field.",
+  alternates: { canonical: "https://enkay.dev/field-layout-tool" },
   openGraph: {
+    url: "https://enkay.dev/field-layout-tool",
     title: "Field Layout Tool — Case Study",
     description: "A GPS-powered tablet app for agricultural pivot planning — real-time field mapping, zone layout, and crop planning tools built for farm technicians in the field.",
     type: "article",
     images: [{ url: "/casestudy/images/FLT/hero.webp", width: 1200, height: 630, alt: "Field Layout Tool — Pivot Planning Case Study" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Field Layout Tool — Case Study",
+    description: "A GPS-powered tablet app for agricultural pivot planning — real-time field mapping, zone layout, and crop planning tools built for farm technicians in the field.",
+    images: ["/casestudy/images/FLT/hero.webp"],
   },
 };
 

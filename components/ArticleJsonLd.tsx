@@ -1,4 +1,5 @@
 import { toISODate } from "@/lib/articles-data";
+import { articleModifiedDate } from "@/lib/content-dates";
 
 interface ArticleJsonLdProps {
   title: string;
@@ -37,6 +38,7 @@ export default function ArticleJsonLd({ title, description, date, slug, category
       "description": description,
       "articleSection": category,
       "datePublished": toISODate(date),
+      "dateModified": articleModifiedDate({ slug, date }),
       "image": image ? `${baseUrl}${image}` : `${baseUrl}/og-image.jpg`,
       "author": {
         "@type": "Person",

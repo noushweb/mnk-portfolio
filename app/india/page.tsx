@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
+import EngagementOptions from "@/components/EngagementOptions";
 
 export const metadata: Metadata = {
   title: "Product Designer India | Mohammed Noushad",
   description:
-    "Senior Product Designer from India — 11+ years designing global products. Enterprise UX/UI, design systems, and fintech. Remote-ready from Kerala for teams worldwide.",
+    "Product designer from India, based in Dubai for 11 years. Enterprise UX/UI, design systems, and fintech for India and global teams. Remote-first.",
   alternates: {
     canonical: "https://enkay.dev/india",
   },
@@ -41,9 +42,9 @@ export default function IndiaPage() {
               Product designer from India, building for the world.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
-              I design products from India for companies in the US, UAE, and beyond.
+              I am from Kerala and design products from Dubai for companies in India, the US, UAE, and beyond.
               11+ years across enterprise software, fintech, travel, and agritech.
-              Remote-first, async-friendly, shipping from Kerala.
+              Dubai has been my home for 11 years. Remote-first and async-friendly.
             </p>
           </div>
 
@@ -71,7 +72,7 @@ export default function IndiaPage() {
                 { href: "/finflow", title: "FinFlow — Behavioral Savings App", desc: "Designed for India's middle class — zero-based budgeting, goal-based round-ups, and AI-powered financial literacy in 8 Indian languages." },
                 { href: "/roadshow", title: "Road Show — Delivery Management", desc: "End-to-end logistics platform — route planning, real-time tracking, and settlement workflows for Indian delivery networks." },
                 { href: "/articles/product-designer-india", title: "Eleven Years Building for India", desc: "What 11 years of designing for India's users taught me — from a textile inventory app in 2013 to fintech and enterprise products." },
-                { href: "/articles/ai-and-product-design", title: "AI and Product Design: Not What I Expected", desc: "How AI changed product design — from a designer building in India for global products." },
+                { href: "/articles/ai-and-product-design", title: "AI and Product Design: Not What I Expected", desc: "How AI changed product design — from a designer from India building global products from Dubai." },
                 { href: "/articles/auto-india-20260713", title: "Why I Charge More Than the Average UI UX Designer Freelance Rate in India", desc: "11 years in product design, multilingual UX, and why I charge more than the average Indian freelance designer." },
               ].map((project) => (
                 <Link key={project.href} href={project.href} className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">
@@ -82,10 +83,14 @@ export default function IndiaPage() {
             </div>
           </div>
 
+          <EngagementOptions market="India" />
+
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">
               <h2 className="text-2xl font-medium">Let&apos;s talk</h2>
+              <div id="project-enquiry" className="scroll-mt-24">
               <LeadForm source="india" />
+              </div>
             </div>
             <Link href="/work" className="text-[var(--color-accent)] hover:underline font-medium">
               View all case studies →
