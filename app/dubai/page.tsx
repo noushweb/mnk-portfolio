@@ -4,16 +4,16 @@ import LeadForm from "@/components/LeadForm";
 import EngagementOptions from "@/components/EngagementOptions";
 
 export const metadata: Metadata = {
-  title: "Product Designer Dubai | Mohammed Noushad",
+  title: "Freelance Product Designer Dubai | Mohammed Noushad",
   description:
-    "Senior Product Designer in Dubai — 11+ years of enterprise UX/UI, bilingual (EN/AR) design, and design systems. Shipped for Valmont, Voyacher, and FinFlow.",
+    "Hire a freelance product designer in Dubai for SaaS UX, enterprise dashboards and design systems. Review relevant work and discuss your project with Mohammed Noushad.",
   alternates: {
     canonical: "https://enkay.dev/dubai",
   },
   openGraph: {
-    title: "Product Designer Dubai",
+    title: "Freelance Product Designer Dubai",
     description:
-      "Senior Product Designer in Dubai, UAE — enterprise UX/UI, design systems, and AI-powered product development.",
+      "Freelance product design for Dubai teams: SaaS UX, enterprise dashboards and design systems. Review case studies and discuss your project.",
     url: "https://enkay.dev/dubai",
     type: "website",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Dubai Product Designer" }],
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@noushad_design",
     creator: "@noushad_design",
-    title: "Product Designer Dubai",
+    title: "Freelance Product Designer Dubai",
     description:
-      "Senior Product Designer in Dubai, UAE — 11+ years delivering enterprise UX/UI and design systems for leading global brands.",
+      "Freelance product design for Dubai teams: SaaS UX, enterprise dashboards and design systems. Review case studies and discuss your project.",
     images: ["/og-image.jpg"],
   },
 };
@@ -36,10 +36,10 @@ export default function DubaiPage() {
         <div className="max-w-3xl mx-auto space-y-10">
           <div className="space-y-4">
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-[var(--color-text-muted)]">
-              Product Designer in Dubai, UAE
+              Freelance Product Designer in Dubai, UAE
             </span>
             <h1 className="text-4xl md:text-5xl font-medium tracking-tight">
-              I design products from Dubai — for enterprise, fintech, and the Middle East.
+              Freelance product design for SaaS and enterprise teams in Dubai.
             </h1>
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
               I&apos;ve been based in Dubai for 11 years, designing and shipping products
@@ -48,6 +48,7 @@ export default function DubaiPage() {
               ambition — building for fast-growing markets where trust, bilingual UX, and
               performance matter.
             </p>
+            <a href="#project-enquiry" className="btn-primary inline-flex">Discuss your project →</a>
           </div>
 
           <div className="space-y-6">
@@ -102,7 +103,7 @@ export default function DubaiPage() {
 
           <div className="pt-8 border-t border-[var(--color-border)] space-y-10">
             <div className="space-y-4">
-              <h2 className="text-2xl font-medium">Let&apos;s talk</h2>
+              <h2 className="text-2xl font-medium">Discuss your freelance project</h2>
               <div id="project-enquiry" className="scroll-mt-24">
               <LeadForm source="dubai" />
               </div>

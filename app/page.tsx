@@ -8,28 +8,26 @@ import Contact from "@/components/Contact";
 import { StaggerTestimonials } from "@/components/ui/stagger-testimonials";
 
 export const metadata: Metadata = {
-  title: "Mohammed Noushad — Senior Product Designer | Dubai, UAE",
+  title: "Freelance Product Designer | Mohammed Noushad",
   description:
-    "Senior Product Designer in Dubai & India. 11+ years in UX/UI, enterprise design systems & AI product development. Shipped for Valmont, Voyacher, FinFlow.",
-  alternates: {
-    canonical: "https://enkay.dev",
-  },
+    "Dubai-based freelance product designer for SaaS and enterprise teams. UX reviews, dashboards, design systems and design-to-code support. Discuss your project.",
+  alternates: { canonical: "https://enkay.dev" },
   openGraph: {
-    title: "Mohammed Noushad — Senior Product Designer | Dubai, UAE",
+    title: "Freelance Product Designer for SaaS & Enterprise",
     description:
-      "Senior Product Designer in Dubai & India. 11+ years in UX/UI, enterprise design systems & AI product development. Shipped for Valmont, Voyacher, FinFlow.",
+      "Dubai-based freelance product designer for SaaS and enterprise teams. UX reviews, dashboards, design systems and design-to-code support. Discuss your project.",
     url: "https://enkay.dev",
     siteName: "Mohammed Noushad",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Mohammed Noushad — Senior Product Designer",
-      },
-    ],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mohammed Noushad — Freelance Product Designer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Freelance Product Designer for SaaS & Enterprise",
+    description:
+      "Dubai-based freelance product design: SaaS UX, enterprise dashboards, design systems and design-to-code support. Discuss your project.",
+    images: ["/og-image.jpg"],
   },
 };
 

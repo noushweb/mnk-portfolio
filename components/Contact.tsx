@@ -15,15 +15,15 @@ export default function Contact() {
               LET&apos;S WORK TOGETHER
             </span>
             <h2 className="text-5xl md:text-7xl font-light tracking-tight text-[var(--color-bg)]">
-              Open to new ventures &amp; bold ideas.
+              Need a designer for your next product project?
             </h2>
           </div>
         </ScrollReveal>
         <ScrollReveal delay={100}>
           <p className="text-[var(--color-bg)] opacity-80 text-xl max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-            I&apos;m currently open to senior product design roles and freelance
-            engagements across the UAE — and open to remote collaboration
-            globally.
+            Tell me about your product, the users it serves, and what needs to improve.
+            We can start with a focused UX review, product design, or design-system work.
+            Based in Dubai, working with teams across the UAE and remotely worldwide.
           </p>
         </ScrollReveal>
         <ScrollReveal delay={200}>

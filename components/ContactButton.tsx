@@ -3,16 +3,18 @@
 import { useState } from "react";
 import ContactModal from "./ContactModal";
 
-export function ContactButton() {
+export function ContactButton({ label = "Send Me a Message", id }: { label?: string; id?: string }) {
   const [open, setOpen] = useState(false);
 
   return (
     <>
       <button
+        id={id}
+        type="button"
         onClick={() => setOpen(true)}
         className="btn-primary"
       >
-        Send Me a Message
+        {label}
       </button>
       <ContactModal open={open} onClose={() => setOpen(false)} />
     </>

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useTheme } from "./ThemeProvider";
 import { BackgroundPaths } from "./ui/background-paths";
+import { ContactButton } from "./ContactButton";
 
 export default function Hero() {
   const { theme } = useTheme();
@@ -37,15 +38,15 @@ export default function Hero() {
           </h1>
           <div className="space-y-3 animate-hero-text animate-hero-text-delay-1">
             <p className="text-base sm:text-lg md:text-xl text-[var(--color-text-secondary)] font-normal max-w-full lg:max-w-[620px]">
-              Product Designer · AI-Powered Development
+              Freelance Product Designer in Dubai
             </p>
             <p className="text-[var(--color-text-secondary)] max-w-full lg:max-w-[500px] leading-[1.6] text-sm sm:text-base">
-              After a decade designing products, I now use Claude, OpenCode, and agent platforms to build what I design — concept to working product, no handoffs, no delays.
+              UX reviews, SaaS product design, enterprise dashboards, and design systems. I help founders and product teams turn complex workflows into clear interfaces, with design-to-code support when you need it.
             </p>
           </div>
           <div className="flex flex-wrap gap-6 sm:gap-8 items-center pt-4 animate-hero-text animate-hero-text-delay-2">
-            <a href="#work" id="hero-cta-work" className="btn-primary">See My Work →</a>
-            <a href="#contact" id="hero-cta-contact" className="text-[var(--color-text-primary)] font-medium text-[15px] hover:text-[var(--color-accent-warm)] transition-all">Let&apos;s Talk</a>
+            <ContactButton label="Discuss your project →" id="hero-cta-contact" />
+            <a href="#work" id="hero-cta-work" className="text-[var(--color-text-primary)] font-medium text-[15px] hover:text-[var(--color-accent-warm)] transition-all">See my work →</a>
           </div>
         </div>
       </div>
