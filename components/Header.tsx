@@ -28,6 +28,8 @@ export default function Header() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [menuOpen]);
   const pathname = usePathname();
+  const inlineEnquiryPaths = ["/ux-audit", "/design-system-consultant", "/saas-product-design", "/dubai", "/uae", "/india", "/riyadh", "/kerala", "/kochi", "/bangalore", "/abu-dhabi", "/sharjah", "/umm-al-quwain"];
+  const enquiryHref = inlineEnquiryPaths.includes(pathname) ? "#project-enquiry" : "/#contact";
 
   const navLinkClass = (href: string) =>
     `font-medium text-[13px] uppercase tracking-[1.5px] nav-link relative ${
@@ -49,13 +51,16 @@ export default function Header() {
           <Logo onClick={closeMenu} />
 
           {/* Desktop: nav links + theme toggle together on right */}
-          <div className="hidden md:flex items-center gap-10">
-            <nav className="flex items-center gap-10">
+          <div className="hidden lg:flex items-center gap-6">
+            <nav className="flex items-center gap-5">
               <Link href="/#about" id="nav-link-about" className="font-medium text-[13px] uppercase tracking-[1.5px] text-[var(--color-text-secondary)] nav-link">
                 About
               </Link>
               <Link href="/work" id="nav-link-work" className={navLinkClass("/work")}>
                 Work
+              </Link>
+              <Link href="/ux-audit" id="nav-link-ux-audit" className={navLinkClass("/ux-audit")}>
+                UX Audit
               </Link>
               <Link href="/articles" id="nav-link-articles" className={navLinkClass("/articles")}>
                 Articles
@@ -70,7 +75,7 @@ export default function Header() {
                 Download CV
               </a>
               <a
-                href="#contact"
+                href={enquiryHref}
                 id="nav-cta-talk"
                 className="border rounded px-6 py-2.5 font-medium text-[13px] tracking-[0.5px] transition-all"
                 style={{
@@ -104,7 +109,7 @@ export default function Header() {
           </div>
 
           {/* Mobile: theme toggle + hamburger */}
-          <div className="flex md:hidden items-center gap-2">
+          <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full transition-colors hover:bg-[var(--color-border)]"
@@ -136,7 +141,7 @@ export default function Header() {
 
       {/* Mobile menu overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-black/30 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 z-40 bg-black/30 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
           menuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -144,16 +149,22 @@ export default function Header() {
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation"
+        aria-hidden={!menuOpen}
         onClick={closeMenu}
       />
 
       {/* Mobile menu panel */}
       <nav
-        className={`fixed top-0 right-0 z-50 h-full w-[280px] bg-[var(--color-surface)] shadow-2xl transform transition-transform duration-300 ease-in-out md:hidden ${
+        inert={!menuOpen}
+        aria-hidden={!menuOpen}
+        className={`fixed top-0 right-0 z-50 h-full w-[280px] bg-[var(--color-surface)] shadow-2xl transform transition-transform duration-300 ease-in-out lg:hidden ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex flex-col p-8 pt-24 space-y-8">
+          <Link href="/ux-audit" onClick={closeMenu} className="text-lg font-medium text-[var(--color-text-primary)] uppercase tracking-[1.5px] py-2 border-b border-[var(--color-border)]">
+            UX Audit
+          </Link>
           <Link
             href="/#about"
             onClick={closeMenu}
@@ -186,7 +197,7 @@ export default function Header() {
             Download CV
           </a>
           <a
-            href="#contact"
+            href={enquiryHref}
             onClick={closeMenu}
             className="btn-primary w-full text-center justify-center mt-4"
           >

@@ -57,7 +57,7 @@ export default function DubaiPage() {
               {[
                 { title: "Enterprise Product Design", desc: "B2B dashboards and data-heavy interfaces for Dubai's enterprise and government sector" },
                 { title: "Bilingual UX (EN/AR)", desc: "Arabic and English interfaces, RTL layouts, and cultural patterns built for GCC users" },
-                { title: "Design Systems", desc: "Token-based component libraries that cut design-to-dev handoff time by 40%" },
+                { title: "Design Systems", desc: "Token-based component libraries with shared states, naming conventions and developer-handoff guidance" },
                 { title: "AI-Powered Delivery", desc: "Design-to-code pipelines and agent workflows that ship UI faster without cutting corners" },
               ].map((item) => (
                 <div key={item.title} className="p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]/50">
@@ -84,7 +84,7 @@ export default function DubaiPage() {
             <div className="space-y-4">
               {[
                 { href: "/valmont-legacy-redesign", title: "Valmont Industries — Legacy Redesign", desc: "5 legacy enterprise apps modernised into one unified web suite." },
-                { href: "/voyacher", title: "Voyacher — Voucher Travel Platform", desc: "Dubai-based travel platform — voucher-first UX for the Middle East market." },
+                { href: "/voyacher", title: "Voyacher — Voucher Travel Platform", desc: "Qatar-based travel platform — voucher-first UX for the Middle East market." },
                 { href: "/valley-dealer-suite", title: "Valley Dealer Suite", desc: "Dealer-facing mobile suite for irrigation sales in the US and Middle East." },
               ].map((project) => (
                 <Link key={project.href} href={project.href} className="block p-6 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent-warm)]/50 transition-all hover:shadow-lg bg-[var(--color-surface)]/30">

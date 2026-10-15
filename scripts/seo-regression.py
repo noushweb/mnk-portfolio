@@ -22,11 +22,17 @@ class Page(HTMLParser):
         self.scripts = []
         self.jsonld = []
         self.title = ""
+        self.forms = 0
+        self.ids = set()
         self._title = False
         self._json = None
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if attrs.get("id"):
+            self.ids.add(attrs["id"])
+        if tag == "form":
+            self.forms += 1
         if tag == "meta":
             self.meta[attrs.get("name", attrs.get("property", ""))] = attrs.get("content", "")
         elif tag == "link" and attrs.get("rel") == "canonical":
@@ -85,11 +91,16 @@ def main():
 
     status, sitemap_body, _, _ = fetch("/sitemap.xml")
     check("sitemap HTTP 200", status == 200)
+    if status != 200:
+        print(json.dumps({"origin": origin, "checks": 1, "passed": 0, "failures": checks}, indent=2))
+        return 1
     entries = ET.fromstring(sitemap_body)
     urls = [node.text for node in entries.findall("{*}url/{*}loc") if node.text is not None]
     check("sitemap URLs unique", len(urls) == len(set(urls)), len(urls))
-    check("sitemap has all 54 existing pages", len(urls) >= 54, len(urls))
+    check("sitemap preserves original pages plus public service offers", len(urls) >= 57, len(urls))
     paths = [urllib.parse.urlsplit(url).path or "/" for url in urls]
+    service_paths = ["/ux-audit", "/design-system-consultant", "/saas-product-design"]
+    check("all three service pages are discoverable", all(path in paths for path in service_paths))
 
     def inspect(path):
         status, body, headers, final = fetch(path)
@@ -110,6 +121,11 @@ def main():
         check(f"{path}: not noindex", "noindex" not in page.meta.get("robots", "").lower()
               and "noindex" not in headers.get("x-robots-tag", "").lower())
         check(f"{path}: email links not Cloudflare 404", not any("/cdn-cgi/l/email-protection" in link for link in page.links))
+        if path in service_paths:
+            types = [kind for schema in page.jsonld for kind in schema_types(schema)]
+            check(f"{path}: Service schema", "Service" in types)
+            check(f"{path}: enquiry form and target", page.forms >= 1 and "project-enquiry" in page.ids)
+            check(f"{path}: relevant project proof links", any(link in page.links for link in ["/valmont-legacy-redesign", "/design-system", "/finflow", "/voyacher"]))
         if path.startswith("/articles/") and path != "/articles/archive":
             types = [t for schema in page.jsonld for t in schema_types(schema)]
             check(f"{path}: Article and Breadcrumb schema", "Article" in types and "BreadcrumbList" in types)
@@ -123,6 +139,7 @@ def main():
     rules.parse(robots.splitlines())
     check("robots HTTP 200", status == 200)
     homepage = next(page for path, _, page, _, _, _ in results if path == "/")
+    check("homepage links to all public service offers", all(path in homepage.links for path in service_paths))
     assets = [script for script in homepage.scripts if "/_next/" in script]
     check("homepage has public JavaScript assets", bool(assets))
     check("Googlebot allowed Next.js assets", all(rules.can_fetch("Googlebot", script) for script in assets))
@@ -140,6 +157,8 @@ def main():
     status, llms, _, _ = fetch("/llms.txt")
     check("llms.txt HTTP 200 and covers sitemap", status == 200 and all(url in llms for url in urls))
     check("unknown route remains a real 404", fetch("/nonexistent-seo-regression-test")[0] == 404)
+    check("aggregate analytics API has no public GET access", fetch("/api/analytics")[0] == 405)
+    check("private aggregate directory is not publicly served", fetch("/.lead-analytics/")[0] == 404)
     for path in ["/dubai", "/articles/senior-product-designer-dubai", "/articles/senior-product-designer-riyadh"]:
         body = next(body for p, _, _, _, body, _ in results if p == path)
         check(f"{path}: no contradictory move dates", not re.search(r"moved to Dubai (four|eight) years ago", body, re.I))

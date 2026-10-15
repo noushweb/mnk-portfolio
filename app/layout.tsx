@@ -1,10 +1,12 @@
 import type { Metadata, Viewport } from "next";
+import { Suspense } from "react";
 import { Archivo, Space_Grotesk } from "next/font/google";
 import ThemeProvider from "@/components/ThemeProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
 import JsonLd from "@/components/JsonLd";
+import LeadAnalytics from "@/components/LeadAnalytics";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -106,6 +108,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen relative flex flex-col">
         <JsonLd />
+        <Suspense fallback={null}><LeadAnalytics /></Suspense>
         <ThemeProvider>
           <div className="grain" />
           <Header />

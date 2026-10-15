@@ -40,3 +40,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Private, persistent aggregate counters and monitoring state (never commit).
+/.lead-analytics/
+/.lead-monitor/
+/data/lead-analytics/
+/scripts/__pycache__/

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/lib/articles-data";
 import { articleModifiedDate, latestArticleModifiedDate } from "@/lib/content-dates";
+import { serviceOffers } from "@/lib/service-offers";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://enkay.dev";
@@ -46,5 +47,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
+  for (const service of serviceOffers) {
+    routes.push({ url: `${baseUrl}/${service.slug}`, lastModified: new Date("2026-10-15"), changeFrequency: "monthly", priority: 0.8 });
+  }
   return routes;
 }

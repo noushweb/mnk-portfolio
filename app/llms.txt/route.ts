@@ -1,4 +1,5 @@
 import { articles } from "@/lib/articles-data";
+import { serviceOffers } from "@/lib/service-offers";
 
 export const dynamic = "force-static";
 
@@ -30,6 +31,8 @@ export function GET() {
     `- [Articles](${baseUrl}/articles): Latest product design articles.`,
     `- [Article Archive](${baseUrl}/articles/archive): Browse all articles by year and category.`,
     `- [RSS Feed](${baseUrl}/feed.xml): Subscribe to articles.`,
+    "", "## Freelance Services",
+    ...serviceOffers.map((service) => `- [${service.title}](${baseUrl}/${service.slug}): ${service.description}`),
     "", "## Markets Served",
     ...locations.map(([slug, name]) => `- [Product Design for ${name}](${baseUrl}/${slug}): UX/UI and design systems for teams in ${name}, delivered by a Dubai-based designer.`),
     "", "## Case Studies",

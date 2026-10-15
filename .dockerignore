@@ -1,5 +1,12 @@
 node_modules
 .next
-.env.local
 .git
 .DS_Store
+.env*
+!.env.example
+.lead-analytics
+.lead-monitor
+data/lead-analytics
+.build.log
+*.tsbuildinfo
+scripts/__pycache__
