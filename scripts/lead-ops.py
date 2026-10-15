@@ -99,7 +99,7 @@ def send_owner_email(subject, text, env_file, idempotency_key):
     if not key:
         raise RuntimeError("Resend is not configured")
     payload = {"from": "Enkay Site Monitor <hello@enkay.dev>", "to": ["hello@enkay.dev"], "subject": subject, "text": text}
-    request = urllib.request.Request("https://api.resend.com/emails", data=json.dumps(payload).encode(), headers={"Authorization": "Bearer " + key, "Content-Type": "application/json", "Idempotency-Key": idempotency_key}, method="POST")
+    request = urllib.request.Request("https://api.resend.com/emails", data=json.dumps(payload).encode(), headers={"Authorization": "Bearer " + key, "Content-Type": "application/json", "Idempotency-Key": idempotency_key, "User-Agent": "Mozilla/5.0 (EnkayLeadOps/1.0)", "Accept": "application/json"}, method="POST")
     try:
         with urllib.request.urlopen(request, timeout=25) as response:
             data = json.load(response)

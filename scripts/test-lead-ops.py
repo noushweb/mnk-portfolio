@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Unit tests using explicitly simulated checks; no network/email is sent."""
 import importlib.util
+import io
 import os
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 spec = importlib.util.spec_from_file_location("lead_ops", Path(__file__).with_name("lead-ops.py"))
 assert spec is not None and spec.loader is not None
@@ -13,6 +15,17 @@ spec.loader.exec_module(ops)
 
 
 class LeadOpsTests(unittest.TestCase):
+    def test_notification_request_has_explicit_user_agent_and_idempotency(self):
+        captured = []
+        def simulated_urlopen(request, timeout):
+            captured.append(request)
+            return io.BytesIO(b'{"id":"UNIT_TEST_NOT_A_REAL_MESSAGE_ID"}')
+        with patch.object(ops, "read_env", return_value={"RESEND_API_KEY": "UNIT_TEST_NOT_A_REAL_KEY"}), patch.object(ops.urllib.request, "urlopen", side_effect=simulated_urlopen):
+            result = ops.send_owner_email("UNIT TEST", "Simulated, not sent", "UNIT_TEST_ENV", "UNIT_TEST_IDEMPOTENCY")
+        self.assertEqual(result, "UNIT_TEST_NOT_A_REAL_MESSAGE_ID")
+        self.assertIn("EnkayLeadOps", captured[0].get_header("User-agent"))
+        self.assertEqual(captured[0].get_header("Idempotency-key"), "UNIT_TEST_IDEMPOTENCY")
+
     def test_storage_checks_report_corruption_without_suppressing_it(self):
         with tempfile.TemporaryDirectory(dir=Path.home() / ".hermes/cache/scratch") as directory:
             self.assertFalse(ops.storage_check(Path(directory) / "missing")["ok"])
