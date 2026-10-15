@@ -135,6 +135,8 @@ def update_health(previous, checks, send, now=None):
 def make_weekly_text(report, checks, installed_at):
     lines = ["enkay.dev — Weekly lead & health report", "", "ഈ report anonymous aggregate event counts ആണ്; unique visitors അല്ല.", "Tracking enabled at: " + (installed_at or "not established"), "Generated at: " + report.get("generated_at", utc_now()), "", "FUNNEL COUNTS (no earlier tracking history is reconstructed)"]
     total = report.get("total", {})
+    if report.get("window"):
+        lines.append("Completed UTC-day coverage: " + report["window"]["start_day"] + " to " + report["window"]["end_day"])
     for event, label in EVENT_LABELS.items():
         lines.append(f"- {label}: {int(total.get(event, 0))}")
     lines.extend(["", "PAGES"])
@@ -182,11 +184,11 @@ def main():
             if prior.get("week_key") == week_key and prior.get("provider_accepted_message_id"):
                 print(json.dumps({"kind": "weekly-report", "skipped": "already accepted this week", "week_key": week_key, "provider_accepted_message_id": prior["provider_accepted_message_id"]}))
                 return 0
-        result = subprocess.run(["python3", str(repo / "scripts/lead-report.py"), "--data-dir", str(data_dir), "--days", "7", "--json"], capture_output=True, text=True, check=True, timeout=30)
+        result = subprocess.run(["python3", str(repo / "scripts/lead-report.py"), "--data-dir", str(data_dir), "--days", "7", "--complete-days", "--json"], capture_output=True, text=True, check=True, timeout=30)
         report = json.loads(result.stdout)
         installed = data_dir / ".installed_at"
         text = make_weekly_text(report, checks, installed.read_text().strip() if installed.exists() else None)
-        summary = {"kind": "weekly-report", "week_key": week_key, "generated_at": utc_now(), "healthy": healthy, "totals": report.get("total", {}), "checks": checks, "notes": report.get("notes", [])}
+        summary = {"kind": "weekly-report", "week_key": week_key, "generated_at": utc_now(), "window": report.get("window"), "healthy": healthy, "totals": report.get("total", {}), "checks": checks, "notes": report.get("notes", [])}
         if args.notify:
             key = "enkay-weekly:" + week_key
             summary["provider_accepted_message_id"] = send("[Enkay] Weekly lead & health report", text, key)

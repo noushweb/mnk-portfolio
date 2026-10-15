@@ -12,9 +12,27 @@ spec = importlib.util.spec_from_file_location("lead_ops", Path(__file__).with_na
 assert spec is not None and spec.loader is not None
 ops = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(ops)
+report_spec = importlib.util.spec_from_file_location("lead_report", Path(__file__).with_name("lead-report.py"))
+assert report_spec is not None and report_spec.loader is not None
+reports = importlib.util.module_from_spec(report_spec)
+report_spec.loader.exec_module(reports)
 
 
 class LeadOpsTests(unittest.TestCase):
+    def test_weekly_window_covers_seven_complete_days_without_a_partial_day_gap(self):
+        today = reports.datetime.now(reports.timezone.utc).date()
+        with tempfile.TemporaryDirectory(dir=Path.home() / ".hermes/cache/scratch") as directory:
+            for offset in range(9):
+                day = (today - reports.timedelta(days=offset)).isoformat()
+                row = {"path": "/", "event": "page_view", "placement": "other", "count": offset or 999}
+                (Path(directory) / (day + ".json")).write_text(ops.json.dumps({"version": 1, "day": day, "counts": [row]}))
+            result = reports.report(Path(directory), 7, complete_days=True)
+            self.assertEqual(result["total"]["page_view"], sum(range(1, 8)))
+            self.assertEqual(len(result["daily"]), 7)
+            self.assertEqual(result["window"]["start_day"], (today - reports.timedelta(days=7)).isoformat())
+            self.assertEqual(result["window"]["end_day"], (today - reports.timedelta(days=1)).isoformat())
+            self.assertNotIn(today.isoformat(), [day["day"] for day in result["daily"]])
+
     def test_notification_request_has_explicit_user_agent_and_idempotency(self):
         captured = []
         def simulated_urlopen(request, timeout):

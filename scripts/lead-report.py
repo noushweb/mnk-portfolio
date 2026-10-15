@@ -16,20 +16,21 @@ def empty():
     return dict.fromkeys(EVENTS, 0)
 
 
-def report(data_dir, days):
+def report(data_dir, days, complete_days=False):
     now = datetime.now(timezone.utc)
+    end_day = now.date() - timedelta(days=int(complete_days))
     total, paths, daily = empty(), {}, []
     notes = [
         "Counts are events, not unique people, sessions, or deduplicated enquiries.",
         "No qualified-lead, conversion attribution, or revenue inference is made.",
         "lead_received means owner email provider acceptance, not delivery or a qualified lead.",
         "Diagnostic requests are excluded; client test mode opts out before sending events.",
-        "Window includes today (partial UTC day); missing days count as zero; retention is 90 days.",
+        ("Window uses completed UTC days and excludes today; consecutive weekly reports have no day gaps." if complete_days else "Window includes today (partial UTC day).") + " Missing days count as zero; retention is 90 days, pruned on event writes.",
     ]
     if not data_dir.exists():
         notes.append("Aggregate storage does not exist yet; no recorded counters available.")
     for offset in reversed(range(days)):
-        day = (now.date() - timedelta(days=offset)).isoformat()
+        day = (end_day - timedelta(days=offset)).isoformat()
         events = empty()
         file = data_dir / (day + ".json")
         try:
@@ -54,7 +55,7 @@ def report(data_dir, days):
             events[event] += count
             total[event] += count
         daily.append({"day": day, "events": events})
-    return {"generated_at": now.isoformat().replace("+00:00", "Z"), "days": days, "total": total,
+    return {"generated_at": now.isoformat().replace("+00:00", "Z"), "days": days, "window": {"start_day": (end_day - timedelta(days=days - 1)).isoformat(), "end_day": end_day.isoformat(), "complete_days": complete_days}, "total": total,
             "by_path": [{"path": page, "events": paths[page]} for page in sorted(paths)], "daily": daily, "notes": notes}
 
 
@@ -62,19 +63,20 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, default=Path(os.environ.get("LEAD_ANALYTICS_DIR", str(Path.cwd() / "data" / "lead-analytics"))))
     parser.add_argument("--days", type=int, default=7)
+    parser.add_argument("--complete-days", action="store_true", help="Exclude today; use this for a gap-free weekly reporting window")
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
     if not 1 <= args.days <= 90:
         parser.error("--days must be between 1 and 90")
     try:
-        result = report(args.data_dir, args.days)
+        result = report(args.data_dir, args.days, args.complete_days)
     except (OSError, ValueError, TypeError, KeyError):
         print("Could not read aggregate storage: unreadable or invalid aggregate data.", file=sys.stderr)
         return 1
     if args.json:
         print(json.dumps(result, indent=2))
     else:
-        print("Lead funnel event counts — last %d UTC days (including today)" % args.days)
+        print("Lead funnel event counts — %s to %s UTC" % (result["window"]["start_day"], result["window"]["end_day"]))
         for event, count in result["total"].items():
             print("%s: %d" % (event, count))
         for row in result["by_path"]:
