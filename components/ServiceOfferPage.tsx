@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
+import EnquiryLink from "@/components/EnquiryLink";
 import { serviceOffers, type ServiceOffer } from "@/lib/service-offers";
 
 const siteUrl = "https://enkay.dev";
@@ -87,23 +88,23 @@ export default function ServiceOfferPage({ offer }: { offer: ServiceOffer }) {
   };
 
   return (
-    <div className="pt-32 pb-24 px-6 md:px-20">
+    <div className="pt-32 pb-24 px-8 md:px-20">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
-      <div className="max-w-6xl mx-auto space-y-20 md:space-y-28">
+      <div className="max-w-7xl w-full mx-auto space-y-20 md:space-y-28">
         <section className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center" aria-labelledby="service-heading">
           <div className="space-y-6">
-            <p className="text-xs uppercase tracking-[0.2em] font-bold text-[var(--color-text-muted)]">{offer.eyebrow}</p>
-            <h1 id="service-heading" className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tighter leading-[1.1]">{offer.heading}</h1>
+            <p className="sr-only">{offer.eyebrow}</p>
+            <h1 id="service-heading" className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-balance">{offer.heading}</h1>
             <p className={`text-lg ${bodyClass}`}>{offer.intro}</p>
-            <p className="text-sm text-[var(--color-text-muted)]">I&apos;m Mohammed Noushad, from Kerala and based in Dubai for 11 years. I work with UAE teams and collaborate remotely.</p>
+            <p className="text-sm text-[var(--color-text-secondary)]">I&apos;m Mohammed Noushad, from Kerala and based in Dubai for 11 years. I work with UAE teams and collaborate remotely.</p>
             <div className="flex flex-wrap items-center gap-5">
-              <a href="#project-enquiry" className="btn-primary inline-flex">Discuss the scope →</a>
-              <a href="#relevant-work" className="text-sm underline underline-offset-4">Review relevant work</a>
+              <EnquiryLink href="#project-enquiry" className="btn-primary inline-flex">Discuss the scope →</EnquiryLink>
+              <a href="#relevant-work" className="inline-flex min-h-11 items-center text-sm underline underline-offset-4">Review relevant work</a>
             </div>
           </div>
           <figure className="space-y-3">
-            <Image src={image.url} alt={image.alt} width={image.width} height={image.height} priority className="w-full h-auto rounded-xl border border-[var(--color-border)]" />
-            <figcaption className="text-xs text-[var(--color-text-muted)]">From the portfolio: {offer.proof[0].href === "/design-system" ? "Valley Design System" : offer.slug === "ux-audit" ? "Valmont enterprise redesign" : "Voyacher travel platform"}.</figcaption>
+            <Image src={image.url} alt={image.alt} width={image.width} height={image.height} sizes="(min-width: 1536px) 608px, (min-width: 1024px) calc((100vw - 224px) / 2), (min-width: 768px) calc(100vw - 160px), calc(100vw - 64px)" priority className="w-full h-auto rounded-xl border border-[var(--color-border)]" />
+            <figcaption className="text-xs text-[var(--color-text-secondary)]">From the portfolio: {offer.proof[0].href === "/design-system" ? "Valley Design System" : offer.slug === "ux-audit" ? "Valmont enterprise redesign" : "Voyacher travel platform"}.</figcaption>
           </figure>
         </section>
 
@@ -114,7 +115,7 @@ export default function ServiceOfferPage({ offer }: { offer: ServiceOffer }) {
           </ul>
         </section>
 
-        <section className={`${cardClass} md:p-10 border-l-4 border-l-[var(--color-accent-warm)] space-y-4`}>
+        <section className={`${cardClass} md:p-10 space-y-4`}>
           <h2 className="text-2xl md:text-3xl font-medium tracking-tight">{offer.first.title}</h2>
           <p className={`${bodyClass} max-w-3xl`}>{offer.first.description}</p>
         </section>
@@ -140,7 +141,7 @@ export default function ServiceOfferPage({ offer }: { offer: ServiceOffer }) {
           <ol className="grid md:grid-cols-3 gap-6">
             {offer.process.map((item, index) => (
               <li key={item.title} className="space-y-3 border-t border-[var(--color-border)] pt-5">
-                <span className="text-xs font-bold text-[var(--color-text-muted)]">0{index + 1}</span>
+                <span className="text-xs font-bold text-[var(--color-text-secondary)]">0{index + 1}</span>
                 <h3 className="text-lg font-semibold">{item.title}</h3>
                 <p className={`text-sm ${bodyClass}`}>{item.description}</p>
               </li>
@@ -165,9 +166,9 @@ export default function ServiceOfferPage({ offer }: { offer: ServiceOffer }) {
           <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Questions about {offer.slug === "ux-audit" ? "the UX audit" : offer.slug === "design-system-consultant" ? "design system consulting" : "SaaS product design"}</h2>
           <div className="divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
             {offer.faqs.map((item) => (
-              <details key={item.question} className="py-5 group">
-                <summary className="font-medium cursor-pointer pr-4">{item.question}</summary>
-                <p className={`${bodyClass} text-sm mt-4`}>{item.answer}</p>
+              <details key={item.question} className="group">
+                <summary className="min-h-11 py-5 font-medium cursor-pointer pr-4">{item.question}</summary>
+                <p className={`${bodyClass} text-sm pb-5`}>{item.answer}</p>
               </details>
             ))}
           </div>
@@ -177,7 +178,7 @@ export default function ServiceOfferPage({ offer }: { offer: ServiceOffer }) {
           <div className="space-y-5">
             <h2 id="enquiry-heading" className="text-2xl md:text-3xl font-medium tracking-tight">{offer.enquiryHeading}</h2>
             <p className={bodyClass}>{offer.enquiry}</p>
-            <p className="text-sm text-[var(--color-text-muted)]">Scope, fees, availability and any next steps are agreed before an engagement begins.</p>
+            <p className="text-sm text-[var(--color-text-secondary)]">Scope, fees, availability and any next steps are agreed before an engagement begins.</p>
           </div>
           <LeadForm source={offer.slug} />
         </section>

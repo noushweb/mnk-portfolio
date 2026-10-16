@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 import Logo from "./Logo";
+import EnquiryLink from "./EnquiryLink";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -74,7 +75,7 @@ export default function Header() {
               >
                 Download CV
               </a>
-              <a
+              <EnquiryLink
                 href={enquiryHref}
                 id="nav-cta-talk"
                 className="border rounded px-6 py-2.5 font-medium text-[13px] tracking-[0.5px] transition-all"
@@ -93,7 +94,7 @@ export default function Header() {
                 }}
               >
                 LET&apos;S TALK
-              </a>
+              </EnquiryLink>
             </nav>
             <button
               onClick={toggleTheme}
@@ -196,13 +197,13 @@ export default function Header() {
           >
             Download CV
           </a>
-          <a
+          <EnquiryLink
             href={enquiryHref}
             onClick={closeMenu}
             className="btn-primary w-full text-center justify-center mt-4"
           >
             LET&apos;S TALK
-          </a>
+          </EnquiryLink>
         </div>
       </nav>
     </>
