@@ -5,6 +5,21 @@ import { usePathname } from "next/navigation";
 import { Mail } from "lucide-react";
 import Logo from "./Logo";
 
+function ResumeLink() {
+  return (
+    <a
+      id="footer-cv"
+      href="/casestudy/cv/mohammed_noushad_cv_ats.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      download="Mohammed_Noushad_CV.pdf"
+      className="inline-flex min-h-11 items-center text-sm text-[var(--color-text-secondary)] underline underline-offset-4 hover:text-[var(--color-accent-warm)] transition-colors"
+    >
+      Download CV
+    </a>
+  );
+}
+
 export default function Footer() {
   const pathname = usePathname();
 
@@ -51,6 +66,7 @@ export default function Footer() {
                 Email
               </EmailLink>
             </div>
+            <ResumeLink />
           </div>
           <div className="text-left md:text-right">
             <p className="text-[var(--color-text-muted)] text-sm mb-2">
@@ -126,8 +142,11 @@ export default function Footer() {
             <Mail className="w-5 h-5" />
           </EmailLink>
         </div>
-        <div className="text-[var(--color-text-muted)] text-xs font-medium uppercase tracking-widest">
-          &copy; {new Date().getFullYear()} Mohammed Noushad. Built in Dubai.
+        <div className="text-center md:text-right">
+          <ResumeLink />
+          <p className="text-[var(--color-text-muted)] text-xs font-medium uppercase tracking-widest">
+            &copy; {new Date().getFullYear()} Mohammed Noushad. Built in Dubai.
+          </p>
         </div>
       </div>
     </footer>
