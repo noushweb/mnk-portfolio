@@ -143,7 +143,7 @@ export default function Footer() {
           </EmailLink>
         </div>
         <div className="text-center md:text-right">
-          <ResumeLink />
+          {pathname !== "/" && <ResumeLink />}
           <p className="text-[var(--color-text-muted)] text-xs font-medium uppercase tracking-widest">
             &copy; {new Date().getFullYear()} Mohammed Noushad. Built in Dubai.
           </p>

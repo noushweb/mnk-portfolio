@@ -39,12 +39,25 @@ export default function Contact() {
         </ScrollReveal>
         <ScrollReveal delay={300}>
           <div className="flex flex-col lg:flex-row justify-between items-center gap-8 pt-12 border-t border-[var(--color-bg)]/10">
-            <div className="flex flex-wrap justify-center gap-6 text-sm text-[var(--color-bg)] opacity-60 uppercase tracking-widest font-medium">
+            <div id="contact-availability" className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-[var(--color-bg)] opacity-60 uppercase tracking-widest font-medium">
               <span>Based in Dubai, UAE</span>
               <span>·</span>
               <span>Available Immediately</span>
               <span>·</span>
               <span>Hybrid &amp; Remote</span>
+              <span className="inline-flex items-center gap-6">
+                <span aria-hidden="true">·</span>
+                <a
+                  id="contact-cv"
+                  href="/casestudy/cv/mohammed_noushad_cv_ats.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Mohammed_Noushad_CV.pdf"
+                  className="inline-flex min-h-11 items-center whitespace-nowrap underline-offset-4 hover:underline focus-visible:underline"
+                >
+                  Download CV
+                </a>
+              </span>
             </div>
             <ContactButton />
           </div>
